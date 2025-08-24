@@ -1,0 +1,277 @@
+// Unified content types for both posts and news articles
+
+// Base content interface that both posts and news will implement
+export interface BaseContent {
+  slug: string;
+  title: string;
+  date: string;
+  author: string;
+  categories: string[];
+  description: string;
+  image: string;
+  contentType: 'post' | 'news'; // To distinguish between post and news
+}
+
+// Interface for hardcoded blog posts
+export interface Post extends BaseContent {
+  contentType: 'post';
+}
+
+// Types for news articles from API
+export interface ContentSection {
+  type: 'introduction' | 'section' | 'quote' | 'list' | 'statistics' | 'conclusion' | 'sources';
+  title?: string;
+  content: string;
+}
+
+export interface FactCheckSource {
+  url: string;
+  title: string;
+  publisher: string;
+  relevantQuote: string;
+}
+
+export interface FactCheck {
+  claim: string;
+  accuracy: 'accurate' | 'partially accurate' | 'inaccurate';
+  correction: string;
+  sources: FactCheckSource[];
+  searchQueries: string[];
+  additionalContext: string;
+}
+
+export interface FactCheckSummary {
+  overallAccuracy: string;
+  strengthsOfAnalysis: string;
+  areasForImprovement: string;
+  recommendedSources: {
+    url: string;
+    title: string;
+    description: string;
+  }[];
+}
+
+// Original news article interface
+export interface NewsArticle {
+  _id: string;
+  title: string;
+  slug: string;
+  originalNewsSource?: {
+    title: string;
+    url: string;
+    publishedAt: string;
+  };
+  content: string;
+  contentSections?: ContentSection[];
+  summary: string;
+  analysisAngle?: string;
+  categories: string[];
+  tags: string[];
+  keywords?: string[];
+  seoMetadata: {
+    metaTitle: string;
+    metaDescription: string;
+    focusKeyword: string;
+    secondaryKeywords: string[];
+  };
+  images: {
+    url: string;
+    alt: string;
+    caption?: string;
+    isGenerated?: boolean;
+  }[];
+  sources: {
+    text: string;
+    url: string;
+  }[];
+  factChecking?: {
+    factChecks: FactCheck[];
+    summary: FactCheckSummary;
+    lastCheckedAt: string;
+  };
+  status?: 'draft' | 'review' | 'published';
+  publishedAt: string;
+  createdAt?: string;
+  updatedAt?: string;
+}
+
+// Adapter for news articles to match the BaseContent interface
+export interface NewsContentAdapter extends BaseContent {
+  contentType: 'news';
+  originalArticle: NewsArticle; // Keep the original article data for detailed views
+}
+
+// Response from the news API
+export interface NewsArticlesResponse {
+  articles: NewsArticle[];
+  totalPages: number;
+  currentPage: number;
+  totalArticles: number;
+}
+
+// Sample post data that was previously in page.tsx
+export const samplePosts: Post[] = [
+  {
+    slug: 'capitalism-a-ghost-story',
+    title: 'Capitalism - A Ghost Story - Arundhati Roy',
+    date: '2020-03-27',
+    author: 'Arundhati Roy',
+    categories: ['Capitalism', 'India'],
+    description: 'Capitalism A Ghost Story by Arundhati Roy is a book that will show you what kind of inequality we live in, how it is bread and maintained by capitalism.',
+    image: 'Capitalism_a_ghost_story_small.png',
+    contentType: 'post'
+  },
+  {
+    slug: 'right-to-information',
+    title: 'Right to Information Act - Explained',
+    date: '2020-04-08',
+    author: 'Left Diary',
+    categories: ['India', 'Democracy'],
+    description: 'A comprehensive guide to understanding the Right to Information Act in India and how it empowers citizens.',
+    image: 'The_RTI_Story.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'Summary-Requiem-for-the-American-Dream',
+    title: 'Requiem for the American Dream - Noam Chomsky',
+    date: '2020-04-13',
+    author: 'Noam Chomsky',
+    categories: ['Politics', 'Media'],
+    description: 'A deep dive into the political thoughts and media analysis of Noam Chomsky, one of the most influential intellectuals of our time.',
+    image: 'Requiem_small.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: '10-must-read-noam-chomsky-books',
+    title: '10 Must Read Noam Chomsky Books',
+    date: '2020-04-13',
+    author: 'Left Diary',
+    categories: ['Politics', 'Media'],
+    description: 'A deep dive into the political thoughts and media analysis of Noam Chomsky, one of the most influential intellectuals of our time.',
+    image: 'top10_Chomsky_2000x1000.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'pedagogy-of-the-oppressed',
+    title: 'Pedagogy of the Oppressed',
+    date: '2020-04-13',
+    author: 'Paulo Freire',
+    categories: ['Education', 'Oppression'],
+    description: 'Explore the groundbreaking ideas of Paulo Freire in Pedagogy of the Oppressed. Critique traditional education systems and discover a new approach towards liberation and empowerment.',
+    image: 'pedagogy.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'beginner-leftist-books',
+    title: 'Beginner Leftist Books',
+    date: '2020-04-13',
+    author: 'Left Diary',
+    categories: ['beginner', 'Must read'],
+    description: 'Have you just realized that there is something fundamentally wrong with the world we live in today? Have you been wondering where to begin to learn more about the world we live in today and what is wrong with it?',
+    image: 'Beginner_leftist books_portrait.png',
+    contentType: 'post'
+  },
+  {
+    slug: 'feminism-is-for-everybody-bell-hooks',
+    title: 'Feminism is for Everybody - Bell Hooks',
+    date: '2023-01-31',
+    author: 'Bell Hooks',
+    categories: ['Feminism'],
+    description: 'Feminism is for Everybody by bell hooks is a groundbreaking and insightful book that explores the meaning and significance of feminism in modern society.',
+    image: 'Feminism-is-for-Everybody.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'graeber-bullshit-jobs-summary',
+    title: 'Bullshit Jobs by David Graeber',
+    date: '2023-02-05',
+    author: 'David Graeber',
+    categories: ['Work', 'Anti-Work', 'Capitalism'],
+    description: 'The book Bullshit Jobs by David Graeber explores the concept of jobs deemed unnecessary and purposeless in society.',
+    image: 'bullshit-jobs.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'beginner-feminist-books',
+    title: 'New to Feminism? Here are 10 Essential Books to Get You Started',
+    date: '2023-02-15',
+    author: 'Left Diary',
+    categories: ['beginner', 'Must read', 'Feminism'],
+    description: 'Explore the world of feminism with these 10 essential books for beginners. From classic works to contemporary essays, discover the voices that have shaped the movement.',
+    image: 'feminism.png',
+    contentType: 'post'
+  },
+  {
+    slug: 'beginner-leftist-novels',
+    title: 'Socialism in Fiction - A Beginner\'s Guide to Leftist Novels',
+    date: '2023-08-20',
+    author: 'Left Diary',
+    categories: ['beginner', 'Must read', 'Feminism'],
+    description: 'Are you a beginner looking to explore leftist ideologies and socialism through fiction? Look no further than this list of ten must-read novels!',
+    image: 'Socialism-in-Fiction.jpeg',
+    contentType: 'post'
+  }
+];
+
+// Fetch news articles from API
+export async function getNewsArticles(page = 1, limit = 50): Promise<NewsArticlesResponse> {
+  try {
+    const apiUrl = process.env.NEWS_AGENT_API_URL || 'http://localhost:5000';
+    const res = await fetch(`${apiUrl}/api/articles?page=${page}&limit=${limit}`, {
+      next: { revalidate: 300 }, // Revalidate every 5 minutes
+      cache: 'no-store' // Disable cache for development
+    });
+    
+    return res.json();
+  } catch (error) {
+    console.error('Failed to fetch news articles:', error);
+    return {
+      articles: [],
+      totalPages: 0,
+      currentPage: page,
+      totalArticles: 0
+    };
+  }
+}
+
+// Convert a NewsArticle to the unified BaseContent format
+export function adaptNewsArticle(article: NewsArticle): NewsContentAdapter {
+  // Get the first image or use a placeholder
+  const imageUrl = article.images && article.images.length > 0 
+    ? article.images[0].url 
+    : '/images/placeholder.jpg';
+  
+  // Format the date with fallback for invalid date
+  const formattedDate = article.publishedAt ? 
+    new Date(article.publishedAt).toISOString().split('T')[0] : 
+    new Date().toISOString().split('T')[0];
+  
+  return {
+    slug: article.slug,
+    title: article.title,
+    date: formattedDate,
+    author: article.originalNewsSource?.title || 'Left Diary',
+    categories: article.categories,
+    description: article.summary,
+    image: imageUrl,
+    contentType: 'news',
+    originalArticle: article
+  };
+}
+
+// Get combined content (posts and news) for the home page
+export async function getCombinedContent(newsLimit: number = 100): Promise<BaseContent[]> {
+  // Get news articles
+  const { articles } = await getNewsArticles(1, newsLimit);
+  
+  // Convert news articles to the unified format
+  const newsContent: NewsContentAdapter[] = articles.map(adaptNewsArticle);
+  // Combine posts and news
+  const combinedContent: BaseContent[] = [
+    ...newsContent,
+    ...samplePosts,
+  ];
+  
+  // Sort by date (newest first)
+  return combinedContent
+}
