@@ -218,13 +218,28 @@ export async function getNewsArticles(page = 1, limit = 50): Promise<NewsArticle
   try {
     const apiUrl = process.env.NEWS_AGENT_API_URL || 'http://localhost:5000';
     const res = await fetch(`${apiUrl}/api/articles?page=${page}&limit=${limit}`, {
-      next: { revalidate: 300 }, // Revalidate every 5 minutes
-      cache: 'no-store' // Disable cache for development
+      next: { revalidate: 3600 }, // Revalidate every hour for better static generation
+      headers: {
+        'Content-Type': 'application/json',
+      },
     });
     
-    return res.json();
+    if (!res.ok) {
+      console.error(`API error: ${res.status} ${res.statusText}`);
+      // Return empty response instead of throwing for static generation
+      return {
+        articles: [],
+        totalPages: 0,
+        currentPage: page,
+        totalArticles: 0
+      };
+    }
+    
+    const data = await res.json();
+    return data;
   } catch (error) {
     console.error('Failed to fetch news articles:', error);
+    // Return empty response for static generation compatibility
     return {
       articles: [],
       totalPages: 0,
@@ -261,17 +276,30 @@ export function adaptNewsArticle(article: NewsArticle): NewsContentAdapter {
 
 // Get combined content (posts and news) for the home page
 export async function getCombinedContent(newsLimit: number = 100): Promise<BaseContent[]> {
-  // Get news articles
-  const { articles } = await getNewsArticles(1, newsLimit);
+  let newsContent: NewsContentAdapter[] = [];
   
-  // Convert news articles to the unified format
-  const newsContent: NewsContentAdapter[] = articles.map(adaptNewsArticle);
+  try {
+    // Get news articles with proper error handling
+    const { articles } = await getNewsArticles(1, newsLimit);
+    
+    // Convert news articles to the unified format
+    newsContent = articles.map(adaptNewsArticle);
+  } catch (error) {
+    console.error('Failed to fetch news for combined content:', error);
+    // Continue without news articles if API is unavailable
+    newsContent = [];
+  }
+  
   // Combine posts and news
   const combinedContent: BaseContent[] = [
     ...newsContent,
     ...samplePosts,
   ];
   
-  // Sort by date (newest first)
-  return combinedContent
+  // Sort by date (newest first) with proper date handling
+  return combinedContent.sort((a, b) => {
+    const dateA = new Date(a.date).getTime();
+    const dateB = new Date(b.date).getTime();
+    return dateB - dateA;
+  });
 }

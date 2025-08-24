@@ -3,6 +3,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import MasonryGrid from '@/components/blog/MasonryGrid';
 
+// Force static generation
+export const dynamic = 'force-static';
+export const revalidate = 3600; // Revalidate every hour
+
 // Types
 interface ContentSection {
   type: 'introduction' | 'section' | 'quote' | 'list' | 'statistics' | 'conclusion' | 'sources';
@@ -92,13 +96,32 @@ async function getNewsArticles(page = 1, limit = 12) {
   try {
     const apiUrl = process.env.NEWS_AGENT_API_URL || 'http://localhost:5000';
     const res = await fetch(`${apiUrl}/api/articles?page=${page}&limit=${limit}`, {
-      next: { revalidate: 300 }, // Revalidate every 5 minutes
-      cache: 'no-store' // Disable cache for development
+      next: { revalidate: 3600 }, // Revalidate every hour for better static generation
+      headers: {
+        'Content-Type': 'application/json',
+      },
     });
     
-    return res.json();
+    if (!res.ok) {
+      console.error(`API error: ${res.status} ${res.statusText}`);
+      return {
+        articles: [],
+        totalPages: 0,
+        currentPage: page,
+        totalArticles: 0
+      };
+    }
+    
+    const data = await res.json();
+    return data;
   } catch (error) {
     console.error('Failed to fetch news articles:', error);
+    return {
+      articles: [],
+      totalPages: 0,
+      currentPage: page,
+      totalArticles: 0
+    };
   }
 }
 

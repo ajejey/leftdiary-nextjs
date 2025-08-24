@@ -175,3 +175,15 @@ export function generateBlurDataURL(width: number = 10, height: number = 10): st
   // Server-side fallback - return a simple base64 encoded small gray image
   return 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAKAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyb28ldNE/Wm2WV1KkvTyRjjG7nLHwofeejf//Z';
 }
+
+// Default export for build compatibility
+export default {
+  getContentImagePath,
+  getGoogleDiscoverImageAttributes,
+  validateImageForGoogleDiscover,
+  generateResponsiveImageSizes,
+  generateImageSchemaMarkup,
+  getOptimizedImageProps,
+  generateBlurDataURL,
+  GOOGLE_DISCOVER_REQUIREMENTS
+};

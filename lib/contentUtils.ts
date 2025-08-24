@@ -12,8 +12,10 @@ export async function getNewsArticleBySlug(slug: string): Promise<NewsArticle | 
   try {
     const apiUrl = process.env.NEWS_AGENT_API_URL || 'http://localhost:5000';
     const res = await fetch(`${apiUrl}/api/articles/${slug}`, {
-      next: { revalidate: 300 }, // Revalidate every 5 minutes
-      cache: 'no-store' // Disable cache for development
+      next: { revalidate: 3600 }, // Revalidate every hour for better static generation
+      headers: {
+        'Content-Type': 'application/json',
+      },
     });
     
     if (!res.ok) {
@@ -24,7 +26,6 @@ export async function getNewsArticleBySlug(slug: string): Promise<NewsArticle | 
       return null;
     }
     const data = await res.json();
-    console.log("news article ", data);
     
     return data;
   } catch (error) {

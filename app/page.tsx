@@ -3,6 +3,10 @@ import { getCombinedContent } from '@/lib/content';
 import { Suspense } from 'react';
 import Link from 'next/link';
 
+// Force static generation
+export const dynamic = 'force-static';
+export const revalidate = 3600; // Revalidate every hour
+
 // Enhanced loading component for the masonry grid
 function LoadingGrid() {
   return (
@@ -115,8 +119,6 @@ function StatsSection({ totalArticles }: { totalArticles: number }) {
 export default async function Home() {
   // Fetch combined content (posts and news)
   const combinedContent = await getCombinedContent();
-  
-  console.log("combined content ", combinedContent);
   
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">

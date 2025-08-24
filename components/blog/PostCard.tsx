@@ -5,7 +5,15 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { format } from 'date-fns';
 import { BaseContent } from '@/lib/content';
-import { getContentImagePath } from '@/utils/imageOptimization';
+
+// Local function to get content image path
+function getContentImagePath(image: string, contentType: 'post' | 'news'): string {
+  if (contentType === 'post') {
+    return `/images/cover_pages/${image}`;
+  }
+  // For news articles, the image URL is already complete
+  return image;
+}
 
 interface PostCardProps {
   post: BaseContent;
