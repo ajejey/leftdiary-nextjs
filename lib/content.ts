@@ -210,6 +210,46 @@ export const samplePosts: Post[] = [
     description: 'Are you a beginner looking to explore leftist ideologies and socialism through fiction? Look no further than this list of ten must-read novels!',
     image: 'Socialism-in-Fiction.jpeg',
     contentType: 'post'
+  },
+  {
+    slug: 'bell-hooks-essential-reads-feminism-is-for-everybody-will-to-change',
+    title: 'Bell Hooks Essential Reads: Feminism is for Everybody & Will to Change',
+    date: '2023-03-10',
+    author: 'Left Diary',
+    categories: ['Feminism', 'Must read'],
+    description: 'Explore the essential works of bell hooks, including Feminism is for Everybody and The Will to Change, and understand their impact on feminist theory.',
+    image: 'bell-hooks-books.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'federici-caliban-witch-capitalism',
+    title: 'Caliban and the Witch by Silvia Federici - Capitalism and Primitive Accumulation',
+    date: '2023-04-15',
+    author: 'Silvia Federici',
+    categories: ['Feminism', 'Capitalism', 'History'],
+    description: 'Silvia Federici\'s groundbreaking analysis of how the rise of capitalism was built on the subjugation of women and the witch hunts of early modern Europe.',
+    image: 'caliban-witch.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'marx-engels-false-consciousness',
+    title: 'Marx and Engels on False Consciousness',
+    date: '2023-05-20',
+    author: 'Left Diary',
+    categories: ['Marxism', 'Theory', 'Politics'],
+    description: 'Understanding Marx and Engels\' concept of false consciousness and its relevance to modern capitalist society.',
+    image: 'marx-engels.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'summary-of-bullshit-jobs-david-graeber',
+    title: 'Summary of Bullshit Jobs by David Graeber',
+    date: '2023-06-05',
+    author: 'David Graeber',
+    categories: ['Work', 'Anti-Work', 'Capitalism'],
+    description: 'A comprehensive summary of David Graeber\'s influential book on meaningless work and its impact on society.',
+    image: 'bullshit-jobs-summary.jpg',
+    contentType: 'post'
   }
 ];
 
@@ -302,4 +342,33 @@ export async function getCombinedContent(newsLimit: number = 100): Promise<BaseC
     const dateB = new Date(b.date).getTime();
     return dateB - dateA;
   });
+}
+
+// Get all posts for sitemap
+export function getAllPosts(): Post[] {
+  return samplePosts;
+}
+
+// Get all published news articles for sitemap
+export async function getAllPublishedNewsArticles(): Promise<NewsArticle[]> {
+  try {
+    const apiUrl = process.env.NEWS_AGENT_API_URL || 'http://localhost:5000';
+    const res = await fetch(`${apiUrl}/api/articles?status=published&limit=1000`, {
+      next: { revalidate: 3600 }, // Revalidate every hour
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    
+    if (!res.ok) {
+      console.error(`API error: ${res.status} ${res.statusText}`);
+      return [];
+    }
+    
+    const data = await res.json();
+    return data.articles || [];
+  } catch (error) {
+    console.error('Failed to fetch published news articles for sitemap:', error);
+    return [];
+  }
 }

@@ -1,55 +1,43 @@
 import { NextResponse } from 'next/server';
+import { getAllPosts, getAllPublishedNewsArticles } from '@/lib/content';
 
-// You'll need to implement these functions to fetch your content
-// import { getAllPosts } from '@/lib/posts';
-// import { getAllNewsArticles } from '@/lib/news';
+// Force static generation for better performance
+export const dynamic = 'force-static';
+export const revalidate = 3600; // Revalidate every hour
 
-// Define interfaces for type safety
-interface PostItem {
-  slug: string;
-  title: string;
-  description: string;
-  image?: string;
-  createdAt: string;
-  updatedAt?: string;
+function escapeXml(unsafe: string): string {
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
-interface NewsArticleItem {
-  slug: string;
-  title: string;
-  description: string;
-  publishedAt: string;
-  createdAt: string;
-  updatedAt?: string;
-  keywords?: string[];
-  images?: Array<{
-    url: string;
-    caption?: string;
-  }>;
+function formatDateForSitemap(dateString: string): string {
+  const date = new Date(dateString);
+  return date.toISOString();
 }
 
 export async function GET() {
   const baseUrl = 'https://leftdiary.com';
+  const currentDate = new Date().toISOString();
   
-  // Static pages
+  // Static pages with SEO priorities
   const staticPages = [
-    '',
-    '/about',
-    '/contact',
-    '/privacy',
-    '/terms',
-    '/disclaimer',
-    '/news',
-    '/posts'
+    { path: '', priority: '1.0', changefreq: 'daily' },
+    { path: '/about', priority: '0.8', changefreq: 'monthly' },
+    { path: '/contact', priority: '0.6', changefreq: 'monthly' },
+    { path: '/privacy', priority: '0.3', changefreq: 'yearly' },
+    { path: '/terms', priority: '0.3', changefreq: 'yearly' },
+    { path: '/disclaimer', priority: '0.3', changefreq: 'yearly' },
+    { path: '/news', priority: '0.9', changefreq: 'daily' },
+    { path: '/posts', priority: '0.8', changefreq: 'weekly' }
   ];
 
-  // TODO: Implement these functions to fetch your actual content
-  // const posts = await getAllPosts();
-  // const newsArticles = await getAllNewsArticles();
-  
-  // For now, using placeholder data - replace with actual data fetching
-  const posts: PostItem[] = [];
-  const newsArticles: NewsArticleItem[] = [];
+  // Get real data
+  const posts = getAllPosts();
+  const newsArticles = await getAllPublishedNewsArticles();
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -58,55 +46,64 @@ export async function GET() {
   
   ${staticPages.map(page => `
   <url>
-    <loc>${baseUrl}${page}</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
-    <changefreq>${page === '' ? 'daily' : 'weekly'}</changefreq>
-    <priority>${page === '' ? '1.0' : '0.8'}</priority>
+    <loc>${baseUrl}${page.path}</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>${page.changefreq}</changefreq>
+    <priority>${page.priority}</priority>
   </url>`).join('')}
 
-  ${posts.map((post: PostItem) => `
+  ${posts.map((post) => {
+    const lastMod = formatDateForSitemap(post.date);
+    const imageUrl = post.image ? `${baseUrl}/images/cover_pages/${post.image}` : null;
+    
+    return `
   <url>
     <loc>${baseUrl}/posts/${post.slug}</loc>
-    <lastmod>${post.updatedAt || post.createdAt}</lastmod>
+    <lastmod>${lastMod}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    ${post.image ? `
+    <priority>0.7</priority>${imageUrl ? `
     <image:image>
-      <image:loc>${baseUrl}/images/cover_pages/${post.image}</image:loc>
-      <image:title>${post.title}</image:title>
-      <image:caption>${post.description}</image:caption>
+      <image:loc>${imageUrl}</image:loc>
+      <image:title>${escapeXml(post.title)}</image:title>
+      <image:caption>${escapeXml(post.description)}</image:caption>
     </image:image>` : ''}
-  </url>`).join('')}
+  </url>`;
+  }).join('')}
 
-  ${newsArticles.map((article: NewsArticleItem) => `
+  ${newsArticles.map((article) => {
+    const lastMod = formatDateForSitemap(article.publishedAt);
+    const isRecentNews = (new Date().getTime() - new Date(article.publishedAt).getTime()) < (48 * 60 * 60 * 1000); // Last 48 hours
+    const imageUrl = article.images && article.images[0] ? article.images[0].url : null;
+    
+    return `
   <url>
     <loc>${baseUrl}/posts/${article.slug}</loc>
-    <lastmod>${article.updatedAt || article.createdAt}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>${lastMod}</lastmod>
+    <changefreq>${isRecentNews ? 'hourly' : 'weekly'}</changefreq>
+    <priority>${isRecentNews ? '0.9' : '0.8'}</priority>${isRecentNews ? `
     <news:news>
       <news:publication>
         <news:name>Left Diary</news:name>
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>${article.publishedAt}</news:publication_date>
-      <news:title>${article.title}</news:title>
-      <news:keywords>${article.keywords?.join(', ') || ''}</news:keywords>
-    </news:news>
-    ${article.images && article.images[0] ? `
+      <news:title>${escapeXml(article.title)}</news:title>
+      <news:keywords>${article.keywords ? escapeXml(article.keywords.join(', ')) : ''}</news:keywords>
+    </news:news>` : ''}${imageUrl ? `
     <image:image>
-      <image:loc>${article.images[0].url}</image:loc>
-      <image:title>${article.title}</image:title>
-      <image:caption>${article.images[0].caption || article.title}</image:caption>
+      <image:loc>${escapeXml(imageUrl)}</image:loc>
+      <image:title>${escapeXml(article.title)}</image:title>
+      <image:caption>${escapeXml(article.summary || article.title)}</image:caption>
     </image:image>` : ''}
-  </url>`).join('')}
+  </url>`;
+  }).join('')}
 
 </urlset>`;
 
   return new NextResponse(sitemap, {
     headers: {
-      'Content-Type': 'application/xml',
-      'Cache-Control': 'public, max-age=3600, revalidate',
+      'Content-Type': 'application/xml; charset=utf-8',
+      'Cache-Control': 'public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400',
     },
   });
 }
