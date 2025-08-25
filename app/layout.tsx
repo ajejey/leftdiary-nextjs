@@ -241,6 +241,7 @@ export default function RootLayout({
         {/* Defer non-critical JavaScript */}
         <Script id="defer-non-critical" strategy="lazyOnload" dangerouslySetInnerHTML={{ __html: deferNonCriticalJS }} />
         
+        
         {/* Add defer-trigger element for intersection observer */}
         <div className="defer-trigger" style={{ height: '1px', width: '1px', position: 'absolute', bottom: '100vh', opacity: 0 }} />
       </body>
