@@ -33,7 +33,7 @@ export async function GET(request: NextRequest) {
       headers: {
         'Content-Type': 'application/json'
       },
-      next: { revalidate: 60 } // Revalidate every minute
+      cache: 'no-store' // No caching for immediate updates
     });
 
     if (!response.ok) {

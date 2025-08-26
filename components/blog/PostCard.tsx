@@ -17,6 +17,7 @@ function getContentImagePath(image: string, contentType: 'post' | 'news'): strin
 
 interface PostCardProps {
   post: BaseContent;
+  className?: string;
 }
 
 // Calculate estimated reading time
@@ -34,13 +35,13 @@ const truncateText = (text: string, maxLength: number): string => {
   return lastSpace > 0 ? truncated.substring(0, lastSpace) + '...' : truncated + '...';
 };
 
-const PostCard = ({ post }: PostCardProps) => {
+const PostCard = ({ post, className = '' }: PostCardProps) => {
   const readingTime = calculateReadingTime(post.description);
   const formattedDate = format(new Date(post.date), 'MMM dd, yyyy');
 
   return (
     <motion.article 
-      className="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-gray-700 transition-all duration-500 flex flex-col h-full"
+      className={`group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 dark:border-gray-700 transition-all duration-500 ${className}`}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}

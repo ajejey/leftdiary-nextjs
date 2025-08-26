@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
 import { getAllPosts, getAllPublishedNewsArticles } from '@/lib/content';
 
-// Force static generation for better performance
-export const dynamic = 'force-static';
-export const revalidate = 3600; // Revalidate every hour
+// Force dynamic generation for immediate updates
+export const dynamic = 'force-dynamic';
+// No caching for immediate availability of new articles
 
 function escapeXml(unsafe: string): string {
   return unsafe

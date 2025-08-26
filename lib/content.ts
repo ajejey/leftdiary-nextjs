@@ -218,7 +218,7 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Feminism', 'Must read'],
     description: 'Explore the essential works of bell hooks, including Feminism is for Everybody and The Will to Change, and understand their impact on feminist theory.',
-    image: 'bell-hooks-books.jpg',
+    image: 'bell-hooks.webp',
     contentType: 'post'
   },
   {
@@ -228,7 +228,7 @@ export const samplePosts: Post[] = [
     author: 'Silvia Federici',
     categories: ['Feminism', 'Capitalism', 'History'],
     description: 'Silvia Federici\'s groundbreaking analysis of how the rise of capitalism was built on the subjugation of women and the witch hunts of early modern Europe.',
-    image: 'caliban-witch.jpg',
+    image: 'caliban-witch.png',
     contentType: 'post'
   },
   {
@@ -238,7 +238,7 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Marxism', 'Theory', 'Politics'],
     description: 'Understanding Marx and Engels\' concept of false consciousness and its relevance to modern capitalist society.',
-    image: 'marx-engels.jpg',
+    image: 'marx-engels.png',
     contentType: 'post'
   },
   {
@@ -248,7 +248,7 @@ export const samplePosts: Post[] = [
     author: 'David Graeber',
     categories: ['Work', 'Anti-Work', 'Capitalism'],
     description: 'A comprehensive summary of David Graeber\'s influential book on meaningless work and its impact on society.',
-    image: 'bullshit-jobs-summary.jpg',
+    image: 'bullshit-jobs.jpg',
     contentType: 'post'
   }
 ];
@@ -257,12 +257,14 @@ export const samplePosts: Post[] = [
 export async function getNewsArticles(page = 1, limit = 50): Promise<NewsArticlesResponse> {
   try {
     const apiUrl = process.env.NEWS_AGENT_API_URL || 'http://localhost:5000';
+    // console.log(`Fetching news articles from ${apiUrl}`);
     const res = await fetch(`${apiUrl}/api/articles?page=${page}&limit=${limit}`, {
-      next: { revalidate: 3600 }, // Revalidate every hour for better static generation
+      cache: 'no-store', // No caching for immediate updates
       headers: {
         'Content-Type': 'application/json',
       },
     });
+    // console.log('API response:', res);
     
     if (!res.ok) {
       console.error(`API error: ${res.status} ${res.statusText}`);
@@ -276,6 +278,7 @@ export async function getNewsArticles(page = 1, limit = 50): Promise<NewsArticle
     }
     
     const data = await res.json();
+    // console.log('API response data:', data);
     return data;
   } catch (error) {
     console.error('Failed to fetch news articles:', error);
@@ -321,6 +324,7 @@ export async function getCombinedContent(newsLimit: number = 100): Promise<BaseC
   try {
     // Get news articles with proper error handling
     const { articles } = await getNewsArticles(1, newsLimit);
+    // console.log(`Fetched ${articles.length} news articles `, articles);
     
     // Convert news articles to the unified format
     newsContent = articles.map(adaptNewsArticle);
@@ -353,22 +357,26 @@ export function getAllPosts(): Post[] {
 export async function getAllPublishedNewsArticles(): Promise<NewsArticle[]> {
   try {
     const apiUrl = process.env.NEWS_AGENT_API_URL || 'http://localhost:5000';
-    const res = await fetch(`${apiUrl}/api/articles?status=published&limit=1000`, {
-      next: { revalidate: 3600 }, // Revalidate every hour
+    const fullUrl = `${apiUrl}/api/articles?status=published&limit=1000`;
+    
+    const res = await fetch(fullUrl, {
+      cache: 'no-store', // No caching for immediate updates
       headers: {
         'Content-Type': 'application/json',
       },
     });
     
     if (!res.ok) {
-      console.error(`API error: ${res.status} ${res.statusText}`);
+      console.error(`getAllPublishedNewsArticles: API error: ${res.status} ${res.statusText}`);
       return [];
     }
     
     const data = await res.json();
+    console.log(`getAllPublishedNewsArticles: Found ${data.articles?.length || 0} published articles`);
+    
     return data.articles || [];
   } catch (error) {
-    console.error('Failed to fetch published news articles for sitemap:', error);
+    console.error('getAllPublishedNewsArticles: Failed to fetch published news articles for sitemap:', error);
     return [];
   }
 }

@@ -12,7 +12,7 @@ export async function getNewsArticleBySlug(slug: string): Promise<NewsArticle | 
   try {
     const apiUrl = process.env.NEWS_AGENT_API_URL || 'http://localhost:5000';
     const res = await fetch(`${apiUrl}/api/articles/${slug}`, {
-      next: { revalidate: 3600 }, // Revalidate every hour for better static generation
+      cache: 'no-store', // No caching for immediate updates
       headers: {
         'Content-Type': 'application/json',
       },

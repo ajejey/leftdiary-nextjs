@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
 import { getAllPosts, getAllPublishedNewsArticles, type Post, type NewsArticle } from '@/lib/content';
 
-// Force static generation for better performance
-export const dynamic = 'force-static';
-export const revalidate = 3600; // Revalidate every hour
+// Force dynamic generation for immediate updates
+export const dynamic = 'force-dynamic';
+// No caching for immediate availability of new articles
 
 interface SitemapEntry {
   url: string;
@@ -51,6 +51,9 @@ export async function GET() {
   // Get real data
   const posts = getAllPosts();
   const newsArticles = await getAllPublishedNewsArticles();
+  
+  console.log(`Sitemap: Found ${posts.length} posts and ${newsArticles.length} news articles`);
+  
 
   const entries: SitemapEntry[] = [];
 

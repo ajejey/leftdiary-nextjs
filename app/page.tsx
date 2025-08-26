@@ -1,30 +1,28 @@
-import MasonryGrid from '@/components/blog/MasonryGrid';
 import { getCombinedContent } from '@/lib/content';
 import { Suspense } from 'react';
 import Link from 'next/link';
+import PostCard from '@/components/blog/PostCard';
 
-// Force static generation
-export const dynamic = 'force-static';
-export const revalidate = 3600; // Revalidate every hour
+// Force dynamic generation for immediate content updates
+export const dynamic = 'force-dynamic';
+// No caching for immediate availability of new articles
 
-// Enhanced loading component for the masonry grid
+// Enhanced loading component for the responsive grid
 function LoadingGrid() {
   return (
-    <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
       {[...Array(12)].map((_, i) => (
-        <div key={i} className="break-inside-avoid mb-6">
-          <div className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 animate-pulse">
-            <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600" />
-            <div className="p-6 space-y-3">
-              <div className="flex gap-2">
-                <div className="h-6 bg-gray-200 dark:bg-gray-700 rounded-full w-16" />
-                <div className="h-6 bg-gray-200 dark:bg-gray-700 rounded-full w-20" />
-              </div>
-              <div className="h-6 bg-gray-200 dark:bg-gray-700 rounded-lg w-4/5" />
-              <div className="space-y-2">
-                <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded w-full" />
-                <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded w-3/4" />
-              </div>
+        <div key={i} className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 animate-pulse">
+          <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600" />
+          <div className="p-6 space-y-3">
+            <div className="flex gap-2">
+              <div className="h-6 bg-gray-200 dark:bg-gray-700 rounded-full w-16" />
+              <div className="h-6 bg-gray-200 dark:bg-gray-700 rounded-full w-20" />
+            </div>
+            <div className="h-6 bg-gray-200 dark:bg-gray-700 rounded-lg w-4/5" />
+            <div className="space-y-2">
+              <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded w-full" />
+              <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded w-3/4" />
             </div>
           </div>
         </div>
@@ -119,6 +117,7 @@ function StatsSection({ totalArticles }: { totalArticles: number }) {
 export default async function Home() {
   // Fetch combined content (posts and news)
   const combinedContent = await getCombinedContent();
+  // console.log("combinedContent ", combinedContent)
   
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
@@ -142,7 +141,15 @@ export default async function Home() {
           </div>
           
           <Suspense fallback={<LoadingGrid />}>
-            <MasonryGrid posts={combinedContent} />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {combinedContent.map((post) => (
+                <PostCard 
+                  key={post.slug} 
+                  post={post}
+                  className="h-full flex flex-col"
+                />
+              ))}
+            </div>
           </Suspense>
         </div>
       </div>
