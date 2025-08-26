@@ -21,7 +21,9 @@ function formatDateForSitemap(dateString: string): string {
 
 export async function GET() {
   const baseUrl = 'https://leftdiary.com';
-  const currentDate = new Date().toISOString();
+  
+  // Use a fixed date for static pages so crawlers don't think they change every hour.
+  const staticPagesLastMod = new Date().toISOString();
   
   // Static pages with SEO priorities
   const staticPages = [
@@ -38,7 +40,7 @@ export async function GET() {
   // Get real data
   const posts = getAllPosts();
   const newsArticles = await getAllPublishedNewsArticles();
-
+  
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
@@ -47,11 +49,10 @@ export async function GET() {
   ${staticPages.map(page => `
   <url>
     <loc>${baseUrl}${page.path}</loc>
-    <lastmod>${currentDate}</lastmod>
+    <lastmod>${staticPagesLastMod}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
   </url>`).join('')}
-
   ${posts.map((post) => {
     const lastMod = formatDateForSitemap(post.date);
     const imageUrl = post.image ? `${baseUrl}/images/cover_pages/${post.image}` : null;
@@ -69,7 +70,6 @@ export async function GET() {
     </image:image>` : ''}
   </url>`;
   }).join('')}
-
   ${newsArticles.map((article) => {
     const lastMod = formatDateForSitemap(article.publishedAt);
     const isRecentNews = (new Date().getTime() - new Date(article.publishedAt).getTime()) < (48 * 60 * 60 * 1000); // Last 48 hours
@@ -97,7 +97,6 @@ export async function GET() {
     </image:image>` : ''}
   </url>`;
   }).join('')}
-
 </urlset>`;
 
   return new NextResponse(sitemap, {
