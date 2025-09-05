@@ -192,12 +192,27 @@ export default function RootLayout({
             gtag('event', 'page_view');
           `}
         </Script>
+
+        {/* Google News Publisher Center */}
+        <Script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js" strategy="afterInteractive" />
+        <Script id="google-news-init" strategy="afterInteractive">
+          {`
+            (self.SWG_BASIC = self.SWG_BASIC || []).push( basicSubscriptions => {
+              basicSubscriptions.init({
+                type: "NewsArticle",
+                isPartOfType: ["Product"],
+                isPartOfProductId: "CAow_oK-DA:openaccess",
+                clientOptions: { theme: "light", lang: "en" },
+              });
+            });
+          `}
+        </Script>
         
         {/* Schema.org markup for Organization */}
         <script type="application/ld+json">
           {JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'Organization',
+            '@type': 'NewsMediaOrganization',
             'name': 'Left Diary',
             'url': 'https://leftdiary.com',
             'logo': 'https://leftdiary.com/logo.png',
@@ -210,7 +225,11 @@ export default function RootLayout({
               '@type': 'ContactPoint',
               'contactType': 'Editorial',
               'url': 'https://leftdiary.com/contact'
-            }
+            },
+            'termsOfService': 'https://leftdiary.com/terms',
+            'privacyPolicy': 'https://leftdiary.com/privacy',
+            'ethicsPolicy': 'https://leftdiary.com/about',
+            'correctionsPolicy': 'https://leftdiary.com/about'
           })}
         </script>
         
