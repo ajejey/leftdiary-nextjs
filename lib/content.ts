@@ -310,6 +310,16 @@ export const samplePosts: Post[] = [
     description: 'Before the enclosure acts, most people in England had the commons — land they could graze, fish, and farm without paying rent to anyone. Parliament, controlled by landowners, passed 5,000 laws to take it away. Unemployment didn\'t exist before that. Here\'s what they destroyed to make the wage system inevitable.',
     image: 'enclosure-commons-cover.jpg',
     contentType: 'post'
+  },
+  {
+    slug: 'debt-as-social-control',
+    title: 'How Does Debt Keep People In Line?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'Debt', 'History'],
+    description: 'Ancient Babylon cancelled debt every 30 years — not out of charity, but because compound interest always produces more debt than can be repaid. Haiti paid France for 122 years for winning the Haitian Revolution. Here\'s how debt became the mechanism that keeps individuals, nations, and whole economies from getting free.',
+    image: 'debt-social-control-cover.jpg',
+    contentType: 'post'
   }
 ];
 
