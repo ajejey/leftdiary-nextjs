@@ -86,7 +86,7 @@ const jsonLd = {
           name: 'When was unemployment invented?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Unemployment — a physically able person willing to work but unable to find anyone to pay them — didn't exist as a concept before capitalism. There was famine, disaster, and poverty. But the specific situation of someone who wants to work but can't find a buyer for their labor only makes sense in a wage-labor system. Before enclosure, people grew food, used common land, and engaged in subsistence production. After enclosure, survival depended on finding an employer. The word 'unemployment' didn't enter common usage in English until the 1890s.",
+            text: "Unemployment — a physically able person willing to work but unable to find anyone to pay them — didn't exist as a concept before enclosure. There was famine, disaster, and poverty. But the specific situation of someone who wants to work but can't find a buyer for their labor only makes sense in a wage-labor system. Before enclosure, people grew food, used common land, and engaged in subsistence production. After enclosure, survival depended on finding an employer. The word 'unemployment' didn't enter common usage in English until the 1890s.",
           },
         },
         {
@@ -193,7 +193,7 @@ const FAQ_ITEMS: FAQItem[] = [
     answer: (
       <>
         Unemployment — a physically able person willing to work but unable to find anyone to pay
-        them — didn&apos;t exist as a concept before capitalism. Before enclosure, people grew
+        them — didn&apos;t exist as a concept before enclosure. Before enclosure, people grew
         food, used common land, and engaged in subsistence production. After enclosure, survival
         depended on finding an employer. The word &ldquo;unemployment&rdquo; didn&apos;t enter
         common usage in English until the 1890s — the concept had to be invented alongside the
@@ -669,14 +669,14 @@ export default function HowDidPeopleSurviveBeforeCapitalism() {
           &ldquo;natural&rdquo; — something women did out of love, out of duty, out of their
           nature as wives and mothers. Federici&apos;s argument: this wasn&apos;t a natural
           development. It was the enclosure of women&apos;s labor — making it invisible and
-          unpaid so that capitalism got an enormous subsidy. The workers in the factories had to be
-          fed, clothed, and cared for. The cost of that reproduction was transferred to women and
-          called &ldquo;love.&rdquo;
+          unpaid so that the factory owners got an enormous subsidy. The workers in the factories
+          had to be fed, clothed, and cared for. The cost of that reproduction was transferred to
+          women and called &ldquo;love.&rdquo;
         </P>
         <P>
           The housewife — as a specific social role, economically dependent on a husband&apos;s
-          wage — is an invention of capitalism. It required enclosing women out of the independent
-          economy.
+          wage — was built by the same enclosure that built the factory system. It required
+          enclosing women out of the independent economy.
         </P>
       </ArticleSection>
 
