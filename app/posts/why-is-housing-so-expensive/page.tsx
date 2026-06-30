@@ -492,9 +492,15 @@ export default function HousingPage() {
           would pay more for it in the future.
         </P>
         <P>
-          This process — <em>financialization</em> — describes what happens when financial logic
-          colonizes sectors of the economy previously governed by different values. Housing is
-          the clearest example in the modern world.
+          This was not a slow drift. It was a series of decisions. In 1986, the UK deregulated
+          financial markets — the &ldquo;Big Bang&rdquo; — removing restrictions on what banks could
+          lend for and how much. Mortgage credit expanded. In 1980, the US <a href="https://en.wikipedia.org/wiki/Depository_Institutions_Deregulation_and_Monetary_Control_Act" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Depository Institutions
+          Deregulation Act</a> and then the <a href="https://en.wikipedia.org/wiki/Garn%E2%80%93St._Germain_Depository_Institutions_Act" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Garn-St. Germain Act of 1982</a> deregulated
+          savings institutions and expanded mortgage lending. In both countries, the effect
+          was the same: more money, created by banks as loans, flowing into property. Property
+          prices rose. People who owned property before the deregulation became wealthier.
+          People who didn&apos;t, paid for it — in rent, and in the higher prices they eventually
+          had to borrow to meet.
         </P>
 
         <H3 id="tax-subsidies">The Tax Subsidies That Made It Worse</H3>
@@ -525,7 +531,7 @@ export default function HousingPage() {
           In 1879, the American journalist and theorist <a href="https://en.wikipedia.org/wiki/Henry_George" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Henry George</a> published <a href="https://en.wikipedia.org/wiki/Progress_and_Poverty" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700"><em>Progress and Poverty</em></a>.
           It became one of the bestselling books in the English-speaking world — read by Leo Tolstoy,
           George Bernard Shaw, Albert Einstein, and Winston Churchill. Its central argument is still
-          one of the most radical and most correct analyses of capitalism ever written.
+          one of the most radical and most honest analyses of land ownership ever written.
         </P>
         <P>
           George noticed a paradox: as societies became richer through industrial progress, poverty
@@ -568,10 +574,13 @@ export default function HousingPage() {
         </P>
         <P>
           For <strong>mortgaged homeowners</strong>, high house prices are a mixed blessing. They feel wealthy
-          on paper. Their home is their pension plan. They have strong incentives to oppose new
-          construction that might bring prices down and vote against land value taxes. This is not
-          false consciousness — it is rational behavior given the system they are embedded in.
-          The system has made their retirement security dependent on housing scarcity.
+          on paper. Their home is their pension plan. They vote against new construction and
+          against any policy that might bring prices down. Their retirement savings are in
+          that house — that&apos;s not a mistake they made, it&apos;s the trap that was set for them.
+          Pension funds were hollowed out over decades. Savings accounts pay nothing. The only
+          wealth-building mechanism left for most people is a house that goes up in value.
+          So they walk into the trap and then vote to keep it in place, because the alternative
+          is losing the one thing standing between them and poverty in old age.
         </P>
         <P>
           For <strong>large-scale property investors</strong> — developers, REITs, private equity firms, offshore
@@ -620,9 +629,8 @@ export default function HousingPage() {
       <ArticleSection id="colonial">
         <H2 id="colonial">Colonial Enclosure: The Same Story Globally</H2>
         <P>
-          The enclosure of common land that created English capitalism was not a uniquely English
-          event. It was a template that European colonialism exported across the globe, with
-          consequences that remain unresolved.
+          The enclosure of common land was not a uniquely English event. It was a template that
+          European colonizers exported across the globe, with consequences that remain unresolved.
         </P>
         <P>
           In Africa, Asia, and the Americas, colonizers encountered land-use systems that looked
@@ -649,10 +657,11 @@ export default function HousingPage() {
       <ArticleSection id="supply-argument">
         <H2 id="supply-argument">What the Supply Argument Gets Wrong</H2>
         <P>
-          The supply argument for housing affordability is not entirely wrong. Building more homes
-          does, in general, reduce upward price pressure in a given market. Restrictive zoning does
-          contribute to scarcity. But taken alone, the supply argument is radically insufficient
-          for several reasons.
+          The standard response to housing costs is: build more. The supply is constrained,
+          prices are high, so add supply. This sounds like common sense. It is also, on its own,
+          a way of avoiding the actual question — because it accepts private land ownership as
+          the unchallengeable starting point and asks only how to add more product within
+          that system. Three things the supply argument cannot explain:
         </P>
         <P>
           First, in a financialized housing market, new supply does not automatically become
@@ -675,41 +684,47 @@ export default function HousingPage() {
       </ArticleSection>
 
       <ArticleSection id="solutions">
-        <H2 id="solutions">What Would Actually Make Housing Affordable</H2>
+        <H2 id="solutions">What the Record Shows — and Why It Was Taken Away</H2>
 
-        <H3 id="lvt">Land Value Tax</H3>
+        <H3 id="social-housing">Vienna Built It. Thatcher Sold It.</H3>
         <P>
-          A meaningful land value tax would fundamentally change the incentive structure of land
-          ownership. It would penalize idle speculation and land banking. It would reduce the
-          incentive to hold land as a pure investment. Every serious economist who has examined
-          it endorses its logic. The political barriers are not intellectual — they are a direct
-          expression of concentrated landowning power.
-        </P>
-
-        <H3 id="social-housing">Social Housing at Scale</H3>
-        <P>
-          Vienna has maintained a system of municipal housing — <a href="https://en.wikipedia.org/wiki/Gemeindebau" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Gemeindebau</a> — for over a century.
+          Vienna has maintained municipal housing — <a href="https://en.wikipedia.org/wiki/Gemeindebau" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Gemeindebau</a> — since the 1920s.
           Roughly 60% of Vienna&apos;s population lives in publicly subsidized housing. Rents are capped.
-          Tenure is secure. <a href="https://www.economist.com/europe/2023/10/05/vienna-still-has-the-worlds-best-housing-policy" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Vienna consistently ranks among the world&apos;s most livable cities</a>, with
-          housing costs that are a fraction of London&apos;s or San Francisco&apos;s. This is not a fantasy.
-          It exists. It has existed for a century.
+          Tenure is secure. <a href="https://www.economist.com/europe/2023/10/05/vienna-still-has-the-worlds-best-housing-policy" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Vienna consistently ranks among the world&apos;s most livable cities</a>,
+          with housing costs that are a fraction of London&apos;s or San Francisco&apos;s. It works.
+          It has worked for a hundred years.
         </P>
         <P>
-          The question is not whether publicly organized housing can work — it demonstrably can.
-          The question is why English-speaking governments systematically dismantled their public
-          housing stock from the 1980s onward, sold it off at below-market prices, and then made
-          it impossible to replace by prohibiting councils from reinvesting the proceeds in new
-          social housing. That was a political decision — a transfer of assets from the public to
-          the private.
+          Britain had something like this. By 1979, <a href="https://en.wikipedia.org/wiki/Council_house" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">council housing</a> provided homes for
+          roughly 30% of the population — not a marginal program, a mainstream housing option.
+          The Thatcher government introduced <a href="https://en.wikipedia.org/wiki/Right_to_Buy" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Right to Buy</a> in 1980: tenants could purchase
+          their council homes at below-market prices. Over 1.5 million homes were sold off.
+          Councils were then barred from using the proceeds to build replacements. A two-step
+          transfer: sell the public asset at a discount, then prevent its replacement. The people
+          who bought got an asset. Everyone who came after got a longer waiting list and a
+          private landlord.
+        </P>
+        <P>
+          This is not a story about where housing policy went wrong. It is a story about who
+          benefits from housing being scarce and expensive — and who controls what gets passed
+          into law. The people who took the council housing are the same people who now collect
+          rent on it.
         </P>
 
-        <H3 id="security-of-tenure">Security of Tenure</H3>
+        <H3 id="lvt">The Solution No One Will Pass</H3>
         <P>
-          Germany, the Netherlands, and Sweden maintain rent controls alongside coordinated housing
-          policy — and do not produce the market collapse that Anglo-American economists predict.
-          What they produce is security: the ability of people to remain in their homes and
-          communities without being forced out by market-rate increases. Security of tenure is
-          not a luxury. It is a precondition for human flourishing.
+          A tax on the value of land — not the buildings on it, just the land itself — would
+          collapse the investment logic of property ownership. You cannot pass it on to tenants.
+          You cannot avoid it by restructuring. It makes sitting on empty land expensive and
+          building on your land relatively cheaper. Economists have endorsed this for 150 years,
+          since Henry George made the case in <em>Progress and Poverty</em> in 1879.
+        </P>
+        <P>
+          It has never been implemented at meaningful scale. Not because it doesn&apos;t work.
+          Because the people who own land also, largely, control who gets elected. The barrier
+          is not intellectual. It is the same barrier that prevented the commons from being
+          restored after enclosure: the people who benefit from the taking are in charge
+          of deciding whether to give it back.
         </P>
       </ArticleSection>
 
@@ -717,15 +732,15 @@ export default function HousingPage() {
 
       <ArticleFurtherReading title="Go Deeper" items={FURTHER_READING} />
 
-      <ArticleCallout variant="dark" title="The System Is Rigged: Understanding How">
+      <ArticleCallout variant="dark" title="This Was Built. It Can Be Named.">
         <p>
-          This article is part of Left Diary&apos;s ongoing series examining the political and historical
-          roots of systems that feel natural but were deliberately built: money, land, debt, work.
-          None of it was inevitable. All of it was chosen, by people with interests, against the
-          interests of people who had less power.
+          None of this was inevitable. The enclosures were laws. The deregulation was a vote.
+          The sale of council housing was a policy. Right to Buy was a choice. All of it was
+          done by specific people with names, at specific moments that can be dated.
         </p>
         <p>
-          Understanding the construction is the first step toward imagining the reconstruction.
+          If it was built, it can be taken apart. But the first step is refusing to be told
+          it&apos;s just the way things are.
         </p>
       </ArticleCallout>
 

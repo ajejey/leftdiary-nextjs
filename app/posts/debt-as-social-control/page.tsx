@@ -529,11 +529,17 @@ export default function DebtAsSocialControl() {
           debts in the US). It follows you for decades.
         </P>
         <P>
-          The function: young people in their twenties, who might otherwise be most free to
-          challenge the status quo, are instead most constrained by their debt service. You
-          can&apos;t afford to work at a nonprofit. You can&apos;t afford to start a union.
-          You can&apos;t afford to fail. The risk tolerance that youth normally provides is
-          cancelled by the debt.
+          In 1998, Congress made student debt non-dischargeable in bankruptcy — uniquely among
+          all consumer debts in the United States. Before 1998, you could include student loans
+          in a bankruptcy filing. Congress removed that option, under pressure from the lending
+          industry. This was not an administrative oversight. It was a specific decision by
+          specific people that permanently changed the relationship between 18-year-olds and
+          debt. Young people who are most likely to be free to organize, to strike, to refuse
+          bad conditions — because they have the least to lose — are instead, by design, the
+          most obligated. You can&apos;t afford to work at a nonprofit. You can&apos;t afford
+          to join a union that might get you fired. You can&apos;t afford to fail. Your twenties,
+          the decade most likely to produce someone willing to challenge anything, are committed
+          in advance to a payment.
         </P>
 
         <H3 id="designed-inescapable">When Debt Is Designed to Be Inescapable</H3>
@@ -547,7 +553,7 @@ export default function DebtAsSocialControl() {
           >
             300–400%
           </a>{' '}
-          in many states. These are legal. They are targeted at people with no financial buffer —
+          in many states. These are legal. They are targeted at people with no savings —
           people who are one broken car or one medical bill from not making rent. The structure
           is designed so that the principal can never be repaid while interest accumulates — the
           debtor rolls the loan over repeatedly, paying interest perpetually without reducing what
@@ -634,6 +640,9 @@ export default function DebtAsSocialControl() {
       <ArticleSection>
         <H2 id="imf-debt-weapon">The IMF: Debt as Colonial Instrument</H2>
         <P>
+          Haiti paid off its debt to France in 1947. The mechanism changed. The dependency didn&apos;t.
+        </P>
+        <P>
           The{' '}
           <a
             href="https://en.wikipedia.org/wiki/International_Monetary_Fund"
@@ -643,32 +652,23 @@ export default function DebtAsSocialControl() {
           >
             International Monetary Fund
           </a>{' '}
-          was created in 1944 to prevent the kind of currency crises and competitive devaluations
-          that had deepened the Great Depression. The mechanism: countries in trouble could borrow
-          from the IMF to stabilize their currency and balance of payments. In return: policy
-          conditions.
+          was founded in 1944 at a conference in Bretton Woods, New Hampshire, where the United
+          States and United Kingdom negotiated who would control postwar global finance. The US
+          won. The IMF became the institution through which the United States would direct the
+          financial terms of the postwar world.
         </P>
         <P>
-          The conditions evolved into what became known as{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Structural_adjustment"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            structural adjustment programs
-          </a>
-          . The standard package: cut government spending (specifically healthcare, education,
-          food subsidies), privatize state enterprises, remove tariffs and trade barriers, allow
-          foreign companies unrestricted investment, devalue the currency.
+          The standard package the IMF attached to any loan: cut government spending on healthcare,
+          education, and food subsidies. Sell state enterprises — the water company, the telephone
+          company, the national airline — to private buyers. Remove tariffs. Open to foreign
+          investment with no restrictions. Devalue the currency.
         </P>
         <P>
-          Every single one of today&apos;s wealthy industrial nations developed through strategies
-          that structural adjustment prohibits:
-        </P>
-        <P>
-          The United States used protectionist tariffs from independence until the mid-20th
-          century. Alexander Hamilton&apos;s{' '}
+          Each of these conditions benefits specific people. Privatized state assets go to buyers
+          with money — overwhelmingly foreign corporations and investors. Removed tariffs open the
+          country to competition from Western companies that were themselves protected during their
+          own development. The United States built its industrial economy behind tariff walls from
+          1790 until the mid-20th century. Alexander Hamilton&apos;s{' '}
           <a
             href="https://en.wikipedia.org/wiki/Report_on_Manufactures"
             target="_blank"
@@ -677,52 +677,41 @@ export default function DebtAsSocialControl() {
           >
             Report on Manufactures (1791)
           </a>{' '}
-          explicitly argued for protecting infant American industries from British competition.
-          South Korea and Japan built their industrial economies through state-directed investment,
-          protected domestic markets, and subsidized national champions — companies like Samsung,
-          Toyota, and Hyundai that could not have survived free competition with established
-          Western corporations in their early years.
+          explicitly argued for protecting American industries from British competition. South
+          Korea and Japan built their industrial economies through state-directed investment and
+          protected domestic markets. The IMF conditions prevent the countries that need help
+          most from doing what the countries that don&apos;t need help actually did.
         </P>
         <P>
-          The IMF demands that developing nations open their markets to exactly that competition —
-          from the same Western corporations that were protected during their own development. It&apos;s
-          as if you used steroids to become a boxing champion, then demanded that your challengers
-          compete drug-free.
+          It&apos;s as if you used steroids to become a boxing champion, then required that your
+          challengers compete drug-free — and called the rule &ldquo;fair competition.&rdquo;
         </P>
         <P>
-          The{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Washington_Consensus"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            Washington Consensus
-          </a>{' '}
-          — the set of policies centered on the IMF, World Bank, and US Treasury — has been
-          applied to dozens of countries in crisis since the 1980s. The pattern of outcomes:
-          immediate economic contraction (GDP falls when government spending is cut), increased
-          unemployment (privatized state enterprises shed workers), rising inequality (asset
-          owners benefit from privatization and currency liberalization), permanent debt dependence
-          (the IMF loans are used to pay previous IMF loans).
+          The countries that went through these programs: Greece (2010–2018), Argentina
+          (repeatedly), Ghana, Kenya, Jamaica, the Philippines, Ecuador, Bolivia, Pakistan.
+          What happened in each case: public services shrank, public assets were bought up
+          cheaply by foreign investors, workers lost jobs, the currency fell. And the debt
+          remained, because the loans issued to pay old debts created new debts.
         </P>
         <P>
-          Greece, from 2010 to 2018. Argentina, repeatedly. Ghana, Kenya, Jamaica, the Philippines.
-          Ecuador, Bolivia, Pakistan. The same playbook applied. The same results.
+          Haiti is still in that loop. When the 2010 earthquake struck, Haiti needed international
+          loans to respond. The loans came with conditions. Decades after the last franc was
+          paid to France, Haiti was still structurally unable to build what its people needed —
+          not because of any failure of will or talent, but because each debt created conditions
+          that made the next debt necessary.
         </P>
         <P>
-          Haiti doesn&apos;t need historical distance to illustrate debt as colonial instrument.
-          It needed IMF loans to recover from the 2010 earthquake — loans that came with
-          conditions that constrained its ability to rebuild public services. The 1947 payment
-          ended. The structural dependency didn&apos;t.
+          The hut tax, the indemnity to France, the IMF conditions. Three centuries, three
+          instruments. The same result: a country cannot choose its own direction because it owes
+          something to someone who won&apos;t let it.
         </P>
       </ArticleSection>
 
       <ArticleSection>
         <H2 id="compound-interest-problem">The Compound Interest Problem</H2>
         <P>
-          Graeber notes a mathematical fact that the Babylonians understood intuitively and that
-          we seem to have forgotten.
+          The Babylonians understood something that was later deliberately removed from how we
+          think about debt.
         </P>
         <P>
           Compound interest, by definition, grows faster than anything in the real world. A debt
@@ -763,11 +752,23 @@ export default function DebtAsSocialControl() {
           .
         </P>
         <P>
-          The ancients dealt with this by periodic cancellation. We don&apos;t. Instead we have:
-          inflation (which erodes debt in real terms — the reason central banks fought so hard
-          against 2022&apos;s inflation was partly that it was reducing the real value of creditors&apos;
-          claims), default (which produces crises, recessions, banking collapses), and the
-          long slow grind of paying interest forever without reducing the principal.
+          There is something worth sitting with here. In 2022, inflation rose sharply in most
+          countries. Central banks immediately raised interest rates — aggressively, faster than
+          they had in decades — specifically to bring inflation back down. The official reason
+          was protecting ordinary people from rising prices. But here is what high inflation
+          actually does: it reduces the real value of debts. Your mortgage of $300,000 is
+          easier to pay off when wages and prices have both risen. The creditor, who is owed
+          $300,000, gets paid back in money that is worth less than when they lent it.
+          Central banks — whose boards are staffed by people from the financial industry,
+          whose inflation target was designed in consultation with bondholders — moved
+          immediately to stop this. Jubilee used to happen by royal decree. Now it is
+          prevented by interest rate policy.
+        </P>
+        <P>
+          What we have instead: default (which wipes out savings, triggers banking crises,
+          and lands hardest on people who are not rich enough to have seen it coming), and
+          the long slow grind of paying interest forever, year after year, on a balance
+          that barely moves.
         </P>
         <P>
           The mortgage you take out for a house increases your total payment to almost double. The
@@ -779,42 +780,36 @@ export default function DebtAsSocialControl() {
       </ArticleSection>
 
       <ArticleSection>
-        <H2 id="the-moral-trick">The Moral Trick</H2>
+        <H2 id="the-moral-trick">The Language Was Designed by Creditors</H2>
         <P>
-          The most sophisticated thing debt does is reframe obligation as morality.
+          In German, one word means both debt and guilt: <em>Schuld</em>. The word
+          &ldquo;owing&rdquo; in English is related, etymologically, to &ldquo;ought.&rdquo;
+          You <em>owe</em> it, therefore you <em>ought</em> to pay it. The language of debt
+          is also the language of being a bad person.
         </P>
         <P>
-          In English (and German, where the connection is even clearer), &ldquo;debt&rdquo; and
-          &ldquo;guilt&rdquo; share etymology. <em>Schuld</em> in German means both debt and
-          guilt. The word &ldquo;owing&rdquo; is related to &ldquo;owed,&rdquo; but also, more
-          anciently, to &ldquo;ought.&rdquo; The language of debt is the language of moral
-          obligation: you <em>owe</em>, therefore you <em>ought</em> to pay.
+          This is not an accident of grammar. The people who created the systems of debt also
+          controlled what language meant. If not paying a debt makes you guilty — not just legally
+          liable, but morally culpable, a person who doesn&apos;t do what they ought — then the
+          question of how the debt was created disappears. It doesn&apos;t matter that Haiti was
+          forced at gunpoint. It doesn&apos;t matter that the Babylonian farmer&apos;s harvest
+          failed. It doesn&apos;t matter that the 18-year-old was told there was no other way
+          to get a credential. It doesn&apos;t matter that the IMF&apos;s conditions made
+          repayment impossible. You owe it. You ought to pay it. To suggest otherwise is to
+          be irresponsible.
         </P>
         <P>
-          This moral framing serves creditors in a specific way. It means that however the debt
-          was created — whatever the terms, whatever the power imbalance, whatever the
-          circumstances — the debtor is in the wrong for not paying. The question &ldquo;should
-          this debt be paid?&rdquo; becomes morally equivalent to &ldquo;should this person do
-          the right thing?&rdquo;
+          Graeber pointed out that in every period of history where debtors had some power —
+          peasant revolts, early modern debt rebellions, the Jubilee traditions — the question
+          of whether specific debts were legitimate was treated as an open question. In our
+          period, it is treated as settled in advance. Of course debts must be paid. The only
+          question is how.
         </P>
         <P>
-          But debts are created in specific circumstances. The Haitian debt was created at
-          gunpoint. The farmer&apos;s Babylonian debt was created by a bad harvest. The American
-          student&apos;s debt was created by a system that told them they had no choice but to
-          borrow. The Ghanaian government&apos;s debt was created by structural adjustment loans
-          whose conditions prevented the growth that would have allowed repayment.
-        </P>
-        <P>
-          The circumstances of debt creation matter enormously to whether repayment is just. But
-          the moral framing of debt eliminates that question. Once you owe, you owe. The past is
-          irrelevant. Just pay.
-        </P>
-        <P>
-          Graeber&apos;s observation: this is a moral framework designed by creditors. In societies
-          where debtors had power (medieval peasant revolts, early modern debt rebellions), the
-          question of whether debts were legitimate was contested. In societies where creditors
-          have power — like ours — the question is considered settled in advance. Of course debts
-          must be paid. To say otherwise is to be irresponsible.
+          That settlement was not a moral development. It was a political one. The people who
+          lend wrote the rules about what kind of person doesn&apos;t pay. Then they wrote
+          the laws. Then they funded the schools and the economics departments that taught
+          those laws as neutral facts.
         </P>
 
         <ArticleCallout variant="dark">
@@ -828,16 +823,18 @@ export default function DebtAsSocialControl() {
           personal and sovereign debt disciplines individuals and nations into compliance.
           <br />
           <br />
-          Each mechanism is real. Each is documented. Each, on its own, is enough to explain
-          inequality. Together they form something that starts to look less like a set of market
-          outcomes and more like a system — a set of reinforcing structures that consistently
-          transfer wealth and power from the many to the few.
+          Each mechanism is real. Each is documented. Enclosure took the land and manufactured
+          wage dependency. Colonial taxation did the same globally. Banks create money and direct
+          it upward. Returns on ownership outpace wages, mathematically, every year. Personal
+          and national debt chains people and countries to whoever holds the note. And the
+          language of morality makes it your fault.
           <br />
           <br />
-          Which raises the question we have been circling: is this a system with designers? Is
-          there a ruling class? Not as a conspiracy theory. As a sociological question — is there
-          a group of people who share interests, communicate, and act in ways that consistently
-          maintain these structures? And if so: who are they?
+          None of this happened by accident. Every piece of it was built. Specific laws passed
+          by specific people. Specific institutions funded by specific interests. Which raises
+          the question the evidence is pointing toward: who built it? Who is still building it?
+          Is there a group of people who know each other, benefit from the same things, and
+          act in ways that keep those things in place? And if so — can we name them?
           <br />
           <br />
           <Link

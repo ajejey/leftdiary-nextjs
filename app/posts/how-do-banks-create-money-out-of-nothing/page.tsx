@@ -582,57 +582,50 @@ export default function BanksCreateMoneyPage() {
           in higher prices and higher rents — while generating no corresponding wealth of their own.
         </P>
         <P>
-          This is not a story about individual bad actors in banking. It is a description of what
-          private money creation, directed by profit motive, produces when it is pointed at a fixed
-          resource (land) with inelastic supply.
+          Banks do this because it is profitable. When 80% of new lending goes into property,
+          it is not because someone centrally decided that housing was more important than
+          factories or hospitals. It is because lending against property is low-risk for the
+          bank — the land is always there as collateral — and generates steady income for
+          decades. The decision is made thousands of times a day, by loan officers and credit
+          committees, and the cumulative result is that new money in the economy flows primarily
+          into land prices. Not into wages. Not into schools. Into land.
         </P>
       </ArticleSection>
 
       <ArticleSection id="no-money-for-hospitals">
         <H2 id="no-money-for-hospitals">If Banks Can Create Money, Why Is There Never Money for Hospitals?</H2>
         <P>
-          By now, the question is probably forming itself.
+          If Barclays can create £300,000 on Thursday afternoon by approving a mortgage — money
+          that literally did not exist on Wednesday — then what exactly is meant when a government
+          minister stands up and says there is &ldquo;no money&rdquo; for nurses&apos; pay?
         </P>
         <P>
-          If Barclays can create £300,000 on Thursday afternoon by approving a mortgage — if this
-          money literally did not exist on Wednesday — then what exactly is meant when a government
-          minister says there is &ldquo;no money&rdquo; for school buildings, or nurses&apos; pay, or social care?
+          Watch what happened in 2008. The US government found $700 billion for failing banks
+          in a matter of days. The UK government guaranteed £500 billion. These were not funds
+          that had been saved up. They were created. The political will existed, the numbers
+          were typed, the money appeared. The same governments that spent a decade explaining
+          that schools and hospitals would have to make do with less found, when banks were
+          in trouble, that there was no limit.
         </P>
         <P>
-          The honest answer is that the constraints are different, and the differences matter.
-          Banks create money as loans, and loans must be repaid. If a borrower defaults, the bank
-          has a problem. The whole system is backstopped by the assumption that the money created
-          will flow around the economy and eventually return to service the debt.
+          The same thing happened in 2020. The UK furlough scheme paid 80% of wages for
+          millions of workers for over a year. The US government sent stimulus checks to
+          almost every adult in the country. Twice. The money was created. No one asked
+          where it was coming from, because the alternative — mass unemployment and
+          economic collapse — was politically unacceptable.
         </P>
         <P>
-          Governments that issue their own currency — like the UK, the US, Japan — face a
-          different constraint: not solvency, but inflation. If a government creates too much money
-          relative to what the economy can actually produce, prices rise. That is a real limit. But
-          it is not the same as the household-budget story that dominates political debate — the
-          idea that governments, like families, must collect money before they can spend it, and
-          that running out of money is the fundamental danger.
+          When a government says it cannot afford hospitals, it is making a choice about
+          what is worth creating money for. Hospitals are not more expensive than bank
+          bailouts. They are less politically urgent to the people making the decision.
+          &ldquo;We can&apos;t afford it&rdquo; is not a financial statement. It is a statement
+          about whose emergencies count.
         </P>
         <P>
-          <a href="https://en.wikipedia.org/wiki/Stephanie_Kelton" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Stephanie Kelton</a>&apos;s{' '}
-          <a href="https://en.wikipedia.org/wiki/The_Deficit_Myth" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700"><em>The Deficit Myth</em></a> (2020) makes this case in detail:
-          currency-issuing governments are not revenue-constrained in the way households are. The
-          question is not &ldquo;do we have the money&rdquo; but &ldquo;will this spending cause inflation, and is
-          it worth the tradeoffs?&rdquo; These are real questions, but they are political and economic
-          questions, not questions of monetary impossibility.
-        </P>
-        <P>
-          When a government announces billions for a bank bailout in 48 hours — as happened in 2008,
-          and again with COVID support schemes — it is not because the money was sitting somewhere
-          unused. It is because the political will existed to create it. When the same government
-          then explains that the NHS cannot have a budget increase, or that teachers must accept a
-          real-terms pay cut, the explanation given is financial. But the constraint is not the same.
-        </P>
-        <P>
-          Understanding how money is created — not by governments printing cash, but primarily by
-          private banks making loans — is the beginning of understanding why &ldquo;we can&apos;t afford it&rdquo;
-          is almost always a political statement dressed in the language of inevitability. The money
-          exists when the decision to create it exists. The question is always: who gets to make
-          that decision, and for whose benefit?
+          The money supply is controlled by private banks making profit decisions — loans
+          that serve shareholders — and by governments making political decisions. Neither
+          set of decisions is natural or inevitable. Both reflect who has power over what
+          gets funded, and who doesn&apos;t.
         </P>
       </ArticleSection>
 
