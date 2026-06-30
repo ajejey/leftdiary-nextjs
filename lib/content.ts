@@ -320,6 +320,16 @@ export const samplePosts: Post[] = [
     description: 'Ancient Babylon cancelled debt every 30 years — not out of charity, but because compound interest always produces more debt than can be repaid. Haiti paid France for 122 years for winning the Haitian Revolution. Here\'s how debt became the mechanism that keeps individuals, nations, and whole economies from getting free.',
     image: 'debt-social-control-cover.jpg',
     contentType: 'post'
+  },
+  {
+    slug: 'what-is-the-ruling-class',
+    title: 'Is There a Ruling Class?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Politics', 'Power', 'Class'],
+    description: "The term sounds like a conspiracy theory. It isn't. C. Wright Mills asked it as a sociologist in 1956, backed it with data, and named it 'The Power Elite.' 65% of British senior judges went to private school. Every US Secretary of State since 1953 has been a Council on Foreign Relations member except one. Here's the documented answer.",
+    image: 'ruling-class-cover.jpg',
+    contentType: 'post'
   }
 ];
 
