@@ -280,6 +280,16 @@ export const samplePosts: Post[] = [
     description: 'When a bank approves your mortgage, it doesn\'t move existing money — it creates new money on the spot. The Bank of England confirmed this in 2014. Here is how money is actually created, and what it means for debt, housing, and public spending.',
     image: 'banks-create-money-cover.jpg',
     contentType: 'post'
+  },
+  {
+    slug: 'why-did-colonizers-tax-africans',
+    title: 'Why Did Colonizers Tax Africans?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'History', 'Colonialism'],
+    description: 'If governments can create money, why do they collect taxes? Colonizers accidentally answered this question. The hut tax didn\'t raise revenue — it forced Africans into wage labor. That same logic explains modern austerity, the IMF, and why the government says it "can\'t afford" hospitals.',
+    image: 'colonizers-tax-africans-cover.jpg',
+    contentType: 'post'
   }
 ];
 
