@@ -733,10 +733,7 @@ export default function WhatIsTheRulingClass() {
           describe a class that exercises substantial influence over the conditions of its own rule.
         </P>
 
-        <ArticleCallout variant="dark">
-          <strong>And Because This Is True, Something Else Collapses</strong>
-          <br />
-          <br />
+        <ArticleCallout variant="dark" title="And Because This Is True, Something Else Collapses">
           There is a ruling class. It is documented. Named. Visible. Its continued power does not
           rest only on money and legislation and debt — though it rests on those. It rests on the
           majority of people not challenging it. Not because they are stupid. But because the ideas

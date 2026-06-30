@@ -822,10 +822,7 @@ export default function HowDidPeopleSurviveBeforeCapitalism() {
       </ArticleSection>
 
       <ArticleSection>
-        <ArticleCallout variant="dark">
-          <strong>And Because This Is True, Something Else Collapses</strong>
-          <br />
-          <br />
+        <ArticleCallout variant="dark" title="And Because This Is True, Something Else Collapses">
           The commons was enclosed by legislation. The workhouses were legislated. The colonial
           land seizures were legislated. At every step, political power was used to manufacture
           economic dependency — to take away the alternatives so that selling your labor to someone

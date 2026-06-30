@@ -783,10 +783,7 @@ export default function WhoOwnsTheMedia() {
           systematically distorting than any individual editorial decision.
         </P>
 
-        <ArticleCallout variant="dark">
-          <strong>What This Means Altogether</strong>
-          <br />
-          <br />
+        <ArticleCallout variant="dark" title="What This Means Altogether">
           We have now traced eight interlocking mechanisms. The foundational myths of economics
           (barter, neutral money, banks-as-intermediaries, taxes-as-revenue). The enclosure of
           land and commons. The manufacture of wage dependency. The channeling of new money

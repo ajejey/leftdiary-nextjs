@@ -685,10 +685,7 @@ export default function WhyDoTheRichKeepGettingRicher() {
           choice are the people who benefit most from the current distribution.
         </P>
 
-        <ArticleCallout variant="dark">
-          <strong>And Because This Is True, Something Else Collapses</strong>
-          <br />
-          <br />
+        <ArticleCallout variant="dark" title="And Because This Is True, Something Else Collapses">
           If the wealthy keep getting wealthier through rules they helped write, and those rules
           can only be changed through a political system they substantially fund — then
           &ldquo;meritocracy&rdquo; is a story about why the people on top deserve to be there.

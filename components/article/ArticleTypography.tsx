@@ -33,10 +33,13 @@ export function H3({ id, children }: WithId) {
   );
 }
 
-export function Blockquote({ children }: { children: React.ReactNode }) {
+export function Blockquote({ children, cite }: { children: React.ReactNode; cite?: string }) {
   return (
     <blockquote className="pl-6 border-l-4 border-gray-300 italic my-8 text-xl text-gray-600 leading-relaxed">
       {children}
+      {cite && (
+        <footer className="not-italic text-base text-gray-500 mt-2">— {cite}</footer>
+      )}
     </blockquote>
   );
 }

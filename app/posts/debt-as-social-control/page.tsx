@@ -812,10 +812,7 @@ export default function DebtAsSocialControl() {
           those laws as neutral facts.
         </P>
 
-        <ArticleCallout variant="dark">
-          <strong>And Because This Is True, Something Else Collapses</strong>
-          <br />
-          <br />
+        <ArticleCallout variant="dark" title="And Because This Is True, Something Else Collapses">
           We have now tracked six interlocking mechanisms. The commons was enclosed to manufacture
           wage dependency. Colonial taxation manufactured wage dependency globally. Banks create
           money as debt and direct it upward. Capital returns outpace wages mathematically.

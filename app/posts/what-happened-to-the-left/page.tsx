@@ -861,10 +861,7 @@ export default function WhatHappenedToTheLeft() {
           That is not the same thing as recovery. It is the beginning of a longer question.
         </P>
 
-        <ArticleCallout variant="dark">
-          <strong>What This Series Has Established</strong>
-          <br />
-          <br />
+        <ArticleCallout variant="dark" title="What This Series Has Established">
           Over nine articles, we have traced a single argument: the economic world most people
           inhabit is not natural, not inevitable, and not the product of neutral market forces.
           It was built — through enclosure, through colonial taxation, through bank money directed
