@@ -629,29 +629,38 @@ export default function ColonizersTaxAfricansPage() {
           whether that tradeoff is acceptable.
         </P>
 
-        <H3 id="tax-the-rich">What &ldquo;Tax the Rich&rdquo; Actually Does</H3>
+        <H3 id="tax-the-rich">Tax the Rich Makes No Sense</H3>
         <P>
-          Once you understand that taxes don&apos;t fund government spending, the standard left-wing
-          demand — &ldquo;tax the rich to pay for public services&rdquo; — starts to look different. Not
-          wrong, exactly. But operating on a misunderstanding of the mechanism.
+          If governments don&apos;t need your money to spend — if they create it first and tax it
+          back later — then &ldquo;tax the rich to pay for schools&rdquo; is wrong at both ends.
+          The government doesn&apos;t need the money. And the rich aren&apos;t really paying anyway
+          — not in any way that hurts them. Tax the rich makes no sense. Full stop.
         </P>
         <P>
-          Taxing the rich does not, in a chartalist framework, give the government resources it
-          didn&apos;t have. The government can create those resources by spending. What taxing the
-          rich does instead:
+          Notice what the British did in Africa. They didn&apos;t tax <em>themselves</em>. The idea
+          never came up. What they did was tax the people who had an exit — the people who could
+          grow their own food, raise their own animals, refuse the wage, walk away. The hut tax
+          closed that door. It said: you no longer have the option of saying no.
         </P>
         <P>
-          It drains purchasing power from people who have too much of it — reducing inflationary
-          pressure and preventing concentrated wealth from driving up asset prices (housing,
-          art, financial instruments). It reduces private power: in a capitalist system, wealth
-          is power, and unlimited accumulation of wealth becomes unlimited accumulation of
-          political power. And it signals social values: what we choose to tax, we discourage;
-          what we exempt, we encourage.
+          That&apos;s what taxes actually do. Not fund things. Remove escape routes. Make sure
+          you have to show up.
         </P>
         <P>
-          These are all very good reasons to tax the rich. But &ldquo;so the government can afford
-          schools&rdquo; is not quite one of them. The government can afford schools regardless.
-          The decision not to fund schools is a political choice, not a financial constraint.
+          The rich do the same thing today — not by taxing themselves, but by eliminating the
+          alternatives. The commons are gone. The land is priced out of reach. The jobs that
+          don&apos;t exist anymore have been replaced by gig work with no floor. The social safety
+          net has been cut every decade since the 1980s. You can&apos;t grow your own food on land
+          you don&apos;t own. You can&apos;t refuse the wage when there&apos;s rent due on the first
+          of the month. The mechanism is the same as the hut tax. The uniform is different.
+        </P>
+        <P>
+          And if taxes don&apos;t build schools — if schools get built because we decide to build
+          them, because there is political will to build them — then there is no reason for anyone
+          to be paying taxes in the first place. The rich are largely exempt already. Maybe that
+          exemption should just extend to everyone. Schools don&apos;t come from tax receipts.
+          They come from deciding that children deserve to be educated. That decision has nothing
+          to do with how much was collected in April.
         </P>
 
         <H3 id="imf">How the IMF Uses This Against Poor Countries</H3>
