@@ -95,7 +95,7 @@ const jsonLd = {
           name: 'What is neoliberalism?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Neoliberalism is an economic and political philosophy that emphasizes free markets, deregulation, privatization, and reducing the role of government in the economy. It emerged as an organized intellectual project at the Mont Pelerin Society (founded 1947 by Friedrich Hayek) and was implemented politically by Reagan in the US (1981) and Thatcher in the UK (1979). Core tenets: cutting top tax rates, reducing union power, privatizing public services, deregulating financial markets, and using central bank independence to control inflation as the primary economic goal. 'There is no alternative' (Thatcher) became its slogan.",
+            text: "In 1947, Friedrich Hayek convened 36 economists and intellectuals at Mont Pelerin, Switzerland. Their explicit goal: to counter the postwar drift toward state planning and rebuild the case for free markets. For thirty years they operated at the margins. Then the 1970s gave them their opening. Margaret Thatcher (1979) and Ronald Reagan (1981) implemented the agenda: cut top tax rates, reduce union power, privatize public services, deregulate financial markets. 'There is no alternative,' said Thatcher. The word 'neoliberalism' is what economists call what those specific institutions, funders, and politicians built — starting in 1947 and implemented from 1979 onward.",
           },
         },
         {
@@ -201,6 +201,20 @@ const FAQ_ITEMS: FAQItem[] = [
     question: 'What is neoliberalism?',
     answer: (
       <>
+        In 1947, Hayek convened 36 economists and intellectuals at the{' '}
+        <a
+          href="https://en.wikipedia.org/wiki/Mont_Pelerin_Society"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline decoration-gray-400 hover:decoration-gray-700"
+        >
+          Mont Pelerin Society
+        </a>
+        {' '}with a specific goal: to counter the postwar drift toward state planning. For thirty
+        years they built the intellectual network. Then the 1970s gave them their opening.
+        Thatcher (1979) and Reagan (1981) implemented the agenda: cut top tax rates, break union
+        power, privatize public services, deregulate financial markets. &ldquo;There is no
+        alternative,&rdquo; said Thatcher.{' '}
         <a
           href="https://en.wikipedia.org/wiki/Neoliberalism"
           target="_blank"
@@ -209,19 +223,8 @@ const FAQ_ITEMS: FAQItem[] = [
         >
           Neoliberalism
         </a>{' '}
-        emphasizes free markets, deregulation, privatization, and reducing government economic
-        intervention. It emerged as an organized intellectual project at the{' '}
-        <a
-          href="https://en.wikipedia.org/wiki/Mont_Pelerin_Society"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline decoration-gray-400 hover:decoration-gray-700"
-        >
-          Mont Pelerin Society
-        </a>{' '}
-        (founded 1947 by Hayek) and was implemented politically by Reagan (1981) and Thatcher
-        (1979). Core tenets: cut top tax rates, reduce union power, privatize public services,
-        deregulate financial markets. &ldquo;There is no alternative&rdquo; became its slogan.
+        is what economists call what those specific people built — starting in 1947 and
+        implemented from 1979.
       </>
     ),
   },
@@ -912,8 +915,8 @@ export default function WhatHappenedToTheLeft() {
           >
             <em>The Road to Serfdom</em>
           </a>
-          , University of Chicago Press, 1944 — the intellectual foundation of the neoliberal
-          project.
+          , University of Chicago Press, 1944 — the intellectual foundation Hayek brought to the
+          1947 Mont Pelerin gathering.
         </li>
         <li>
           Thomas Piketty,{' '}

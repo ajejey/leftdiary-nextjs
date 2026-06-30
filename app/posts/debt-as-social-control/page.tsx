@@ -345,7 +345,7 @@ export default function DebtAsSocialControl() {
           individuals, knowing this, don&apos;t do more to change it.
         </P>
         <P>
-          The answer is older than capitalism. It&apos;s older than money. It might be the oldest
+          The answer is older than wage labor. It&apos;s older than money. It might be the oldest
           mechanism of control there is.
         </P>
         <P>

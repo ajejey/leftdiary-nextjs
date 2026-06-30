@@ -366,8 +366,8 @@ export default function HousingPage() {
           land became a commodity — how something that was common became private — is the history
           of some of the most deliberate, violent, and politically contested decisions in human
           history. Understanding it doesn&apos;t just explain why housing is so expensive. It explains
-          capitalism itself. The same logic that makes land ownership seem natural is what makes
-          money and markets seem natural — a story we examine in full in{' '}
+          how money and markets came to feel like nature — because the same logic that made land
+          ownership seem inevitable is what made markets seem inevitable. We examine that in full in{' '}
           <Link href="/posts/did-humans-ever-barter-before-money" className="underline decoration-gray-400 hover:decoration-gray-700">
             Did Humans Ever Barter Before Money?
           </Link>
