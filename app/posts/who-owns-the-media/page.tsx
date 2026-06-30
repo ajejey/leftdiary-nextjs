@@ -87,7 +87,7 @@ const jsonLd = {
           name: 'How does media ownership affect news coverage?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Media ownership affects coverage through structural incentives rather than direct censorship. Owners rarely need to call editors and order specific stories suppressed. Instead: stories unfavorable to advertisers risk losing advertising revenue; stories challenging the owner's political interests risk management displeasure; journalists learn over time what kinds of stories get rewarded and which get killed. Studies show systematic differences in coverage based on ownership: Murdoch-owned outlets consistently supported his favored political positions across Australia, the UK, and the US. The effect isn't primarily about what's said — it's about what's considered newsworthy enough to cover, and what framing is applied.",
+            text: "Media ownership shapes coverage without requiring direct instruction. The editor spikes the story that embarrasses the advertiser because revenue depends on that advertiser. The journalist learns which stories get promoted and which get buried. The people who rise are the ones who understood the culture. Studies show systematic differences based on ownership: Murdoch-owned outlets consistently supported his favored political positions across Australia, the UK, and the US. The effect isn't primarily about what's said — it's about what's considered newsworthy, and what framing is applied.",
           },
         },
         {
@@ -132,7 +132,7 @@ const TOC_ITEMS: TOCItem[] = [
   { id: 'murdoch-as-case-study', text: 'Murdoch as Case Study', level: 3 },
   { id: 'how-it-works-without-censorship', text: 'How It Works Without Censorship', level: 2 },
   { id: 'five-filters', text: 'The Five Filters: Manufacturing Consent', level: 3 },
-  { id: 'gramsci-hegemony', text: "Gramsci's Hegemony: Making the Cage Feel Natural", level: 2 },
+  { id: 'gramsci-hegemony', text: 'When One Class Owns the Room', level: 2 },
   { id: 'what-gets-left-out', text: 'What Gets Left Out', level: 2 },
   { id: 'social-media-new-gatekeepers', text: 'Social Media: New Gatekeepers, Same Class', level: 2 },
   { id: 'faq', text: 'Common Questions', level: 2 },
@@ -193,13 +193,14 @@ const FAQ_ITEMS: FAQItem[] = [
     question: 'How does media ownership affect news coverage?',
     answer: (
       <>
-        Media ownership affects coverage through structural incentives rather than direct
-        censorship. Owners rarely need to call editors. Instead: stories unfavorable to advertisers
-        risk revenue loss; stories challenging the owner&apos;s interests risk management
-        displeasure; journalists learn what gets rewarded. Studies show systematic differences
-        based on ownership: Murdoch-owned outlets consistently supported his favored political
-        positions across Australia, the UK, and the US. The effect is primarily about what&apos;s
-        considered newsworthy and what framing is applied.
+        Media ownership shapes coverage without requiring direct instruction. Owners rarely need
+        to call editors. Instead: the editor spikes the story that embarrasses the advertiser
+        because revenue depends on that advertiser; the journalist learns which stories get
+        promoted and which get buried; the people who rise are the ones who understood the
+        culture. Studies show systematic differences based on ownership: Murdoch-owned outlets
+        consistently supported his favored political positions across Australia, the UK, and the
+        US. The effect is primarily about what&apos;s considered newsworthy and what framing is
+        applied — not what is censored.
       </>
     ),
   },
@@ -292,9 +293,9 @@ export default function WhoOwnsTheMedia() {
           <>
             Every night, you watch the news. The news is owned by someone. The newspaper you read
             online — owned by someone. The social media algorithm that decides which posts you see
-            — controlled by someone. This isn&apos;t conspiracy territory. It&apos;s corporate
-            ownership. The question is what ownership does — not through dramatic censorship, but
-            through the quieter process of shaping what counts as normal, serious, and possible.
+            — controlled by someone. The ownership is documented. The question is what it does —
+            not through dramatic censorship, but through the quieter process of shaping what counts
+            as normal, serious, and possible.
           </>
         }
         date="June 30, 2026"
@@ -335,8 +336,8 @@ export default function WhoOwnsTheMedia() {
           class interests.
         </P>
         <P>
-          That&apos;s not a conspiracy. It&apos;s a structural fact. And the question is what it
-          produces.
+          That&apos;s who owns the institutions that tell you what is happening in the world. And
+          the question is what it produces.
         </P>
       </ArticleSection>
 
@@ -400,14 +401,14 @@ export default function WhoOwnsTheMedia() {
           written in close collaboration with industry. It passed.
         </P>
         <P>
-          This is the same{' '}
+          The 1996 Telecommunications Act was written in close collaboration with the industry it
+          was supposed to regulate. The same companies that lobbied for it benefited from it.{' '}
           <Link
             href="/posts/why-do-the-rich-keep-getting-richer"
             className="underline decoration-gray-400 hover:decoration-gray-700"
           >
-            regulatory capture
+            The same pattern played out with financial deregulation.
           </Link>{' '}
-          we described with financial regulation. The people being regulated shape the regulations.
           The outcome: an industry that has fewer owners, more concentrated power, and more capacity
           to influence what 330 million Americans consider the natural state of the world.
         </P>
@@ -542,8 +543,8 @@ export default function WhoOwnsTheMedia() {
           major corporations. The structural incentives favor official sources.
         </P>
         <P>
-          None of this requires conspiracy. It requires only that the structure of incentives
-          produces predictable patterns.
+          None of this requires conspiracy. It requires only that the people who rise in any
+          institution are the ones who understood what that institution selects for.
         </P>
 
         <H3 id="five-filters">The Five Filters: Manufacturing Consent</H3>
@@ -607,42 +608,43 @@ export default function WhoOwnsTheMedia() {
           to absorb. It shapes what editors are willing to defend.
         </P>
         <P>
-          <strong>Filter 5: The ideological framework.</strong> Herman and Chomsky originally
-          identified this as anti-communism — the shared assumption that capitalism is normal and
-          alternatives are dangerous. Since the Cold War, this has evolved into a broader
-          pro-market framework: growth is always the goal, markets always outperform governments,
-          property rights are the foundation of freedom. Ideas that challenge this framework don&apos;t
-          get censored — they get labeled &ldquo;extreme&rdquo; or &ldquo;outside the mainstream.&rdquo;
+          <strong>Filter 5: The shared framework.</strong> Herman and Chomsky originally
+          identified this as anti-communism — the assumption that markets are natural and
+          collective alternatives are dangerous. Since the Cold War, this has settled into
+          something so pervasive it reads as common sense: growth is always the goal, markets
+          always outperform governments, property rights are the foundation of freedom. Ideas that
+          challenge this don&apos;t get censored — they get labeled &ldquo;extreme&rdquo; or
+          &ldquo;outside the mainstream.&rdquo;
         </P>
         <P>
           The model doesn&apos;t require every journalist to be corrupt or every editor to take
-          orders. It just requires that the system selects for people who work within these
-          filters naturally. Most journalists sincerely believe they&apos;re covering the truth.
-          The model says they&apos;re covering the truth as it appears through five structural
-          filters that consistently favour certain kinds of stories over others.
+          orders. It just requires that the people who rise within these institutions are the ones
+          who worked naturally within these filters. Most journalists sincerely believe they&apos;re
+          covering the truth. The model says they&apos;re covering the truth as it appears through
+          five filters that consistently favour certain kinds of stories over others.
         </P>
       </ArticleSection>
 
       <ArticleSection>
-        <H2 id="gramsci-hegemony">Gramsci&apos;s Hegemony: Making the Cage Feel Natural</H2>
+        <H2 id="gramsci-hegemony">When One Class Owns the Room</H2>
         <P>
-          Antonio Gramsci was an Italian Marxist who was imprisoned by Mussolini&apos;s Fascist
-          government in 1926. He spent the next ten years in prison and died there in 1937. While
-          imprisoned, he wrote what became the{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Prison_Notebooks"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            Prison Notebooks
-          </a>
-          , some of the most influential political thinking of the 20th century.
+          The five filters explain how the mechanism works. There&apos;s a prior question: why
+          doesn&apos;t it look like bias? Why does the media&apos;s consistent tilt toward certain
+          interests read as &ldquo;the news&rdquo; rather than as propaganda?
         </P>
         <P>
-          Gramsci&apos;s central question: how does a minority class maintain power over a majority
-          that could, if it organized, simply vote them out or revolt? Force alone doesn&apos;t
-          work — you can&apos;t have a policeman on every corner. The answer: cultural hegemony.
+          Because when one class owns the newspapers, funds the universities, and staffs the
+          government — their assumptions about what&apos;s normal, serious, and possible become
+          everyone&apos;s assumptions. Not by argument. Not by instruction. By saturation.
+        </P>
+        <P>
+          Margaret Thatcher&apos;s phrase was &ldquo;There Is No Alternative.&rdquo; TINA. It
+          worked not because she was a compelling debater but because the conditions for it feeling
+          true had already been built. The economists who appeared on the BBC came from departments
+          funded by the same financial interests her government served. The journalists who rose
+          to prominence understood the editorial culture. The newspapers were owned by people in
+          her class. She didn&apos;t need to control the message — the message was already in the
+          room.
         </P>
 
         <Blockquote cite="Antonio Gramsci, Prison Notebooks (written 1929–1935)">
@@ -653,29 +655,16 @@ export default function WhoOwnsTheMedia() {
         </Blockquote>
 
         <P>
-          &ldquo;Spontaneous consent&rdquo; — that&apos;s the key phrase. Hegemony works when
-          people consent to being ruled, not because they&apos;ve been convinced by explicit
-          argument, but because the ruling class&apos;s worldview has become their common sense.
-          The current arrangement seems natural, inevitable, and the only realistic alternative to
-          chaos.
+          Gramsci, writing from a Fascist prison in 1929, named the same pattern.
+          &ldquo;Spontaneous consent&rdquo; — not coerced, not deceived in any single act. Just:
+          the ruling class&apos;s way of seeing things slowly becomes common sense, through
+          saturation of the cultural institutions they control. You don&apos;t need a censor when
+          the alternative ideas never feel credible enough to publish, never get the front page,
+          never get called serious.
         </P>
         <P>
-          &ldquo;There is no alternative.&rdquo; That was Margaret Thatcher&apos;s phrase. It
-          became her nickname — TINA. It was so successful that it migrated from political slogan
-          to accepted fact in mainstream discourse. Ideas that challenged it weren&apos;t
-          primarily suppressed — they were treated as not serious. As economically illiterate.
-          As utopian. As dangerous.
-        </P>
-        <P>
-          The media is a primary vehicle for this process. Not because editors are told to treat
-          certain ideas as dangerous. But because the media is produced by people who went to
-          certain schools, who work within certain institutional structures, who depend on certain
-          sources, and who have internalized certain frameworks for what counts as a serious
-          proposal versus what counts as irresponsible radicalism.
-        </P>
-        <P>
-          And the circle closes: the media that defines what&apos;s serious is owned by the same
-          class of people whose interests are served by the current definition of seriousness.
+          The circle: the media that defines what&apos;s serious is owned by the same class of
+          people whose interests are served by the current definition of seriousness.
         </P>
       </ArticleSection>
 
@@ -807,20 +796,24 @@ export default function WhoOwnsTheMedia() {
           infrastructure that makes all of this feel normal, natural, and inevitable.
           <br />
           <br />
-          These are not eight separate problems. They are eight facets of a single system that has
-          been built, maintained, and defended by a specific class of people in their specific
-          interests. None of this was inevitable. All of it was built. And what was built can be
-          examined, critiqued, and changed.
+          These are not eight separate problems. They are eight connected mechanisms, built,
+          maintained, and defended by a specific class of people in their specific interests.
+          None of this was inevitable. All of it was built.
           <br />
           <br />
-          But &ldquo;can be changed&rdquo; isn&apos;t the same as &ldquo;is being changed.&rdquo;
-          The question the next articles will take up: has anyone ever actually changed it? When?
-          How? And what happened to them when they tried?{' '}
+          The media piece has not reversed. It has accelerated. From 50 companies to 6. Then
+          social media — even more concentrated, less accountable, algorithmically optimized to
+          prevent the sustained attention that serious critique requires. The tools for
+          determining what counts as serious, normal, and possible are, if anything, more
+          concentrated now than in 1988 when Herman and Chomsky described them.
+          <br />
+          <br />
+          The next article takes up the question of what has actually been tried:{' '}
           <Link
             href="/posts/what-happened-to-the-left"
             className="underline decoration-gray-200 hover:decoration-white"
           >
-            What happened to the left?
+            what happened to the left?
           </Link>
         </ArticleCallout>
       </ArticleSection>
