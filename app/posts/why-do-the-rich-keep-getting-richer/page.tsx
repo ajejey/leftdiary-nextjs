@@ -618,24 +618,12 @@ export default function WhyDoTheRichKeepGettingRicher() {
           those lobbying firms.
         </P>
         <P>
-          This is what economists call{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Regulatory_capture"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            regulatory capture
-          </a>
-          : when the industry being regulated takes over the process of regulation. Not through
-          bribery (usually). Through the revolving door, through campaign finance, through the
-          simple fact that if political access costs money, the people with the most money have the
-          most access.
-        </P>
-        <P>
-          It&apos;s not a conspiracy. It doesn&apos;t require a secret meeting in a dark room.
-          It&apos;s structural. Put money at the center of political participation and the people
-          with the most money will gradually shape the rules in their favor. Every time.
+          This is not bribery — it doesn&apos;t need to be. The people who write the tax code
+          come from the lobbying firms that represent the companies that benefit from the tax code.
+          When they leave government, they go back to those firms. The people who vote on capital
+          gains rates receive campaign money from people whose entire income is capital gains.
+          No dark room required. No explicit deal. Just: the same people, moving between the same
+          institutions, making decisions that reliably benefit the same class of owners.
         </P>
         <P>
           The wealth concentration Piketty documented didn&apos;t just happen because r &gt; g in
@@ -659,56 +647,42 @@ export default function WhyDoTheRichKeepGettingRicher() {
       </ArticleSection>
 
       <ArticleSection>
-        <H2 id="what-would-actually-change-it">What Would Actually Change It</H2>
+        <H2 id="what-would-actually-change-it">The One Time It Was Different — and What Ended It</H2>
         <P>
-          Piketty wasn&apos;t neutral. He proposed a solution: a{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Wealth_tax"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            global progressive wealth tax
-          </a>
-          . Not just taxing income — taxing accumulated wealth itself. The stock portfolio, the
-          property, the bonds. And make it global so capital can&apos;t flee to{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Tax_haven"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            tax havens
-          </a>
-          .
+          Piketty&apos;s data shows one period when the gap narrowed: 1945 to 1975. Three things
+          were different.
         </P>
         <P>
-          Every country that has tried versions of this has faced immediate capital flight and
-          intense political opposition. France tried a wealth tax. Capital left. They repealed it.
-          Because the people who would pay it are the same people who fund the political campaigns
-          of the people who would vote on it.
+          First: the wars had physically destroyed a huge portion of inherited wealth across Europe.
+          The starting position was less concentrated than it had ever been.
         </P>
         <P>
-          Piketty pointed to the only historical period when it worked differently: 1945–1975.
-          What was different?
+          Second: unions. By 1950, roughly 35% of American workers were in unions. When workers
+          are organized and can credibly threaten to stop working, wages go up. The unions pushed
+          wages up faster than capital returns during that period.
         </P>
         <P>
-          Wars had destroyed a huge portion of inherited wealth — so there was less capital
-          concentration to begin with. Unions were powerful enough to push wages up faster than
-          capital returns. Top marginal income tax rates in the United States hit 91% under
-          Eisenhower — a Republican president. Estate taxes were high. Capital gains were taxed at
-          ordinary income rates.
+          Third: tax rates that actually bit. The top marginal income tax rate in the United
+          States under Eisenhower — a Republican — was 91%. Estate taxes were high. Capital
+          gains were taxed at ordinary income rates. The people who held wealth paid taxes on it.
         </P>
         <P>
-          And inequality fell. For thirty years, the gap actually narrowed. Then the political
-          project that started with Reagan and Thatcher systematically dismantled every one of
-          those conditions, and r &gt; g reasserted itself with a vengeance.
+          It worked. For thirty years the gap narrowed. Then Reagan cut the top rate to 28%.
+          Thatcher broke the unions. Capital gains taxes were reduced. Estate taxes were
+          loosened. Reagan fired 11,000 striking air traffic controllers in 1981 — making clear
+          that organizing workers would be met with the full force of the government. Union
+          membership fell from 35% to under 10%. And r &gt; g came back.
         </P>
         <P>
-          The brief postwar period doesn&apos;t prove that capitalism is fine if we just tweak the
-          taxes. It proves that the distribution of wealth is a political choice, not a natural law.
-          And right now, that choice is being made by the people who benefit most from the current
-          distribution.
+          What changed things was not a policy paper. It was countervailing power: unions strong
+          enough to push wages, tax rates enforced by political will, and wealth concentrated
+          enough by the wars that the starting position was temporarily different. What ended it
+          was organized dismantling of each of those conditions, by specific people who benefited
+          from their removal.
+        </P>
+        <P>
+          The distribution of wealth is a political choice. Right now, the people making that
+          choice are the people who benefit most from the current distribution.
         </P>
 
         <ArticleCallout variant="dark">
@@ -723,9 +697,10 @@ export default function WhyDoTheRichKeepGettingRicher() {
           <br />
           But there&apos;s a question this still doesn&apos;t answer. How did ordinary people end
           up in a position where they needed to sell their labor to someone else just to survive?
-          The enclosure of the commons didn&apos;t happen by accident either. Before capitalism,
-          most people in most of the world had direct access to the land and resources they needed
-          to live. Something had to happen to take that away.
+          Before wage labor was universal, most people had direct access to land and resources
+          they needed to live. They didn&apos;t need an employer. Something had to happen to take
+          that away — specifically, 5,000 Acts of Parliament passed by landowners, taking the
+          commons from the people who had used them for centuries.
           <br />
           <br />
           That&apos;s the next article:{' '}
@@ -733,7 +708,7 @@ export default function WhyDoTheRichKeepGettingRicher() {
             href="/posts/how-did-people-survive-before-capitalism"
             className="underline decoration-gray-200 hover:decoration-white"
           >
-            how did ordinary people survive before capitalism — and why did that change?
+            how did ordinary people survive before wage labor — and what was done to end that?
           </Link>
         </ArticleCallout>
       </ArticleSection>
