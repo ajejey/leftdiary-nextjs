@@ -7,31 +7,8 @@ export function getPostBySlug(slug: string): Post | null {
   return post || null;
 }
 
-// Fetch a news article from the API
-export async function getNewsArticleBySlug(slug: string): Promise<NewsArticle | null> {
-  try {
-    const apiUrl = process.env.NEWS_AGENT_API_URL || 'http://localhost:5000';
-    const res = await fetch(`${apiUrl}/api/articles/${slug}`, {
-      cache: 'no-store', // No caching for immediate updates
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-    
-    if (!res.ok) {
-      if (res.status === 404) {
-        return null;
-      }
-      console.error(`API error: ${res.status} ${res.statusText}`);
-      return null;
-    }
-    const data = await res.json();
-    
-    return data;
-  } catch (error) {
-    console.error('Failed to fetch news article:', error);
-    return null;
-  }
+export async function getNewsArticleBySlug(_slug: string): Promise<NewsArticle | null> {
+  return null;
 }
 
 // Unified function to get content by slug (either post or news)

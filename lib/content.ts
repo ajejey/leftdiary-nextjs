@@ -263,99 +263,15 @@ export const samplePosts: Post[] = [
   }
 ];
 
-// Fetch news articles from API
-export async function getNewsArticles(page = 1, limit = 50): Promise<NewsArticlesResponse> {
-  try {
-    const apiUrl = process.env.NEWS_AGENT_API_URL || 'http://localhost:5000';
-    // console.log(`Fetching news articles from ${apiUrl}`);
-    const res = await fetch(`${apiUrl}/api/articles?page=${page}&limit=${limit}`, {
-      cache: 'no-store', // No caching for immediate updates
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-    // console.log('API response:', res);
-    
-    if (!res.ok) {
-      console.error(`API error: ${res.status} ${res.statusText}`);
-      // Return empty response instead of throwing for static generation
-      return {
-        articles: [],
-        totalPages: 0,
-        currentPage: page,
-        totalArticles: 0
-      };
-    }
-    
-    const data = await res.json();
-    // console.log('API response data:', data);
-    return data;
-  } catch (error) {
-    console.error('Failed to fetch news articles:', error);
-    // Return empty response for static generation compatibility
-    return {
-      articles: [],
-      totalPages: 0,
-      currentPage: page,
-      totalArticles: 0
-    };
-  }
+export async function getNewsArticles(page = 1, _limit = 50): Promise<NewsArticlesResponse> {
+  return { articles: [], totalPages: 0, currentPage: page, totalArticles: 0 };
 }
 
-// Convert a NewsArticle to the unified BaseContent format
-export function adaptNewsArticle(article: NewsArticle): NewsContentAdapter {
-  // Get the first image or use a placeholder
-  const imageUrl = article.images && article.images.length > 0 
-    ? article.images[0].url 
-    : '/images/placeholder.jpg';
-  
-  // Format the date with fallback for invalid date
-  const formattedDate = article.publishedAt ? 
-    new Date(article.publishedAt).toISOString().split('T')[0] : 
-    new Date().toISOString().split('T')[0];
-  
-  return {
-    slug: article.slug,
-    title: article.title,
-    date: formattedDate,
-    author: article.originalNewsSource?.title || 'Left Diary',
-    categories: article.categories,
-    description: article.summary,
-    image: imageUrl,
-    contentType: 'news',
-    originalArticle: article
-  };
-}
-
-// Get combined content (posts and news) for the home page
-export async function getCombinedContent(newsLimit: number = 100): Promise<BaseContent[]> {
-  let newsContent: NewsContentAdapter[] = [];
-  
-  try {
-    // Get news articles with proper error handling
-    const { articles } = await getNewsArticles(1, newsLimit);
-    // console.log(`Fetched ${articles.length} news articles `, articles);
-    
-    // Convert news articles to the unified format
-    newsContent = articles.map(adaptNewsArticle);
-  } catch (error) {
-    console.error('Failed to fetch news for combined content:', error);
-    // Continue without news articles if API is unavailable
-    newsContent = [];
-  }
-  
-  // Combine posts and news
-  const combinedContent: BaseContent[] = [
-    ...newsContent,
-    ...samplePosts,
-  ];
-  
-  // Sort by date (newest first) with proper date handling
-  return combinedContent.sort((a, b) => {
-    const dateA = new Date(a.date).getTime();
-    const dateB = new Date(b.date).getTime();
-    return dateB - dateA;
-  });
+// Get combined content for the home page — posts only
+export function getCombinedContent(): BaseContent[] {
+  return [...samplePosts].sort((a, b) =>
+    new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 }
 
 // Get all posts for sitemap
@@ -363,30 +279,6 @@ export function getAllPosts(): Post[] {
   return samplePosts;
 }
 
-// Get all published news articles for sitemap
 export async function getAllPublishedNewsArticles(): Promise<NewsArticle[]> {
-  try {
-    const apiUrl = process.env.NEWS_AGENT_API_URL || 'http://localhost:5000';
-    const fullUrl = `${apiUrl}/api/articles?status=published&limit=1000`;
-    
-    const res = await fetch(fullUrl, {
-      cache: 'no-store', // No caching for immediate updates
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-    
-    if (!res.ok) {
-      console.error(`getAllPublishedNewsArticles: API error: ${res.status} ${res.statusText}`);
-      return [];
-    }
-    
-    const data = await res.json();
-    console.log(`getAllPublishedNewsArticles: Found ${data.articles?.length || 0} published articles`);
-    
-    return data.articles || [];
-  } catch (error) {
-    console.error('getAllPublishedNewsArticles: Failed to fetch published news articles for sitemap:', error);
-    return [];
-  }
+  return [];
 }

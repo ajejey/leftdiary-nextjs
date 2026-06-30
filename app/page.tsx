@@ -3,10 +3,6 @@ import { Suspense } from 'react';
 import Link from 'next/link';
 import PostCard from '@/components/blog/PostCard';
 
-// Force dynamic generation for immediate content updates
-export const dynamic = 'force-dynamic';
-// No caching for immediate availability of new articles
-
 // Enhanced loading component for the responsive grid
 function LoadingGrid() {
   return (
@@ -114,9 +110,8 @@ function StatsSection({ totalArticles }: { totalArticles: number }) {
   );
 }
 
-export default async function Home() {
-  // Fetch combined content (posts and news)
-  const combinedContent = await getCombinedContent();
+export default function Home() {
+  const combinedContent = getCombinedContent();
   // console.log("combinedContent ", combinedContent)
   
   return (
