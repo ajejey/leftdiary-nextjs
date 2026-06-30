@@ -250,6 +250,16 @@ export const samplePosts: Post[] = [
     description: 'A comprehensive summary of David Graeber\'s influential book on meaningless work and its impact on society.',
     image: 'bullshit-jobs.jpg',
     contentType: 'post'
+  },
+  {
+    slug: 'humans-never-bartered-barter-myth',
+    title: 'Humans Never Bartered: The Economic Myth That Justifies Everything',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'History', 'Capitalism'],
+    description: 'The story that humans first bartered, then invented money, is the founding fiction of economics. David Graeber spent years looking for evidence of barter economies. He found none. Here\'s what actually came before money — and why the lie matters.',
+    image: 'barter-myth-cover.jpg',
+    contentType: 'post'
   }
 ];
 
