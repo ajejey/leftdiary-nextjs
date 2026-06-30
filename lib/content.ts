@@ -260,6 +260,16 @@ export const samplePosts: Post[] = [
     description: 'The story that humans first bartered, then invented money, is the founding fiction of economics. David Graeber spent years looking for evidence of barter economies. He found none. Here\'s what actually came before money — and why the lie matters.',
     image: 'barter-myth-cover.jpg',
     contentType: 'post'
+  },
+  {
+    slug: 'why-is-housing-so-expensive',
+    title: 'Why Is Housing So Expensive? The Political History of Land as a Commodity',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'Housing', 'History'],
+    description: 'Housing didn\'t get expensive by accident. Land enclosure, financialization, and deliberate policy choices turned shelter into an asset class. Here\'s the real history of why you can\'t afford to live — and who decided it would be this way.',
+    image: 'housing-financialization-cover.jpg',
+    contentType: 'post'
   }
 ];
 
