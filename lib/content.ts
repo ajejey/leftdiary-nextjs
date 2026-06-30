@@ -330,6 +330,16 @@ export const samplePosts: Post[] = [
     description: "The term sounds like a conspiracy theory. It isn't. C. Wright Mills asked it as a sociologist in 1956, backed it with data, and named it 'The Power Elite.' 65% of British senior judges went to private school. Every US Secretary of State since 1953 has been a Council on Foreign Relations member except one. Here's the documented answer.",
     image: 'ruling-class-cover.jpg',
     contentType: 'post'
+  },
+  {
+    slug: 'who-owns-the-media',
+    title: 'Who Owns the Media?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Media', 'Politics', 'Power'],
+    description: "Six companies control roughly 90% of US media. In the UK, three men own most of the national press. Noam Chomsky called it Manufacturing Consent. Here's how media ownership shapes what you think is possible — not through censorship, but through what never gets framed as a serious idea.",
+    image: 'media-ownership-cover.jpg',
+    contentType: 'post'
   }
 ];
 
