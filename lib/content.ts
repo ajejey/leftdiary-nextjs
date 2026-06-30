@@ -300,6 +300,16 @@ export const samplePosts: Post[] = [
     description: 'Warren Buffett\'s secretary pays a higher tax rate than he does. He said it himself. Jeff Bezos paid $0 in federal income tax in 2007. Piketty\'s r > g explains why wealth concentration is a mathematical guarantee — and why the tax system was built to keep it that way.',
     image: 'wealth-inequality-cover.jpg',
     contentType: 'post'
+  },
+  {
+    slug: 'how-did-people-survive-before-capitalism',
+    title: 'How Did People Survive Before Capitalism?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'History', 'Capitalism'],
+    description: 'Before the enclosure acts, most people in England had the commons — land they could graze, fish, and farm without paying rent to anyone. Parliament, controlled by landowners, passed 5,000 laws to take it away. Unemployment didn\'t exist before that. Here\'s what they destroyed to make the wage system inevitable.',
+    image: 'enclosure-commons-cover.jpg',
+    contentType: 'post'
   }
 ];
 
