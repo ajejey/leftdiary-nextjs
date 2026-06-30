@@ -252,12 +252,12 @@ export const samplePosts: Post[] = [
     contentType: 'post'
   },
   {
-    slug: 'humans-never-bartered-barter-myth',
-    title: 'Humans Never Bartered: The Economic Myth That Justifies Everything',
+    slug: 'did-humans-ever-barter-before-money',
+    title: 'Did Humans Ever Barter Before Money?',
     date: '2026-06-30',
     author: 'Left Diary',
     categories: ['Economics', 'History', 'Capitalism'],
-    description: 'The story that humans first bartered, then invented money, is the founding fiction of economics. David Graeber spent years looking for evidence of barter economies. He found none. Here\'s what actually came before money — and why the lie matters.',
+    description: 'Did humans ever barter before money was invented? David Graeber spent years looking for a single documented example of a barter economy. He found none. Here is what the archaeological record actually shows came before money — and why the myth exists.',
     image: 'barter-myth-cover.jpg',
     contentType: 'post'
   },
