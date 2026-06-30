@@ -366,7 +366,11 @@ export default function HousingPage() {
           land became a commodity — how something that was common became private — is the history
           of some of the most deliberate, violent, and politically contested decisions in human
           history. Understanding it doesn&apos;t just explain why housing is so expensive. It explains
-          capitalism itself.
+          capitalism itself. The same logic that makes land ownership seem natural is what makes
+          money and markets seem natural — a story we examine in full in{' '}
+          <Link href="/posts/did-humans-ever-barter-before-money" className="underline decoration-gray-400 hover:decoration-gray-700">
+            Did Humans Ever Barter Before Money?
+          </Link>
         </P>
       </ArticleSection>
 
@@ -380,7 +384,7 @@ export default function HousingPage() {
           the same way air and water belonged to no one.
         </P>
         <P>
-          In medieval England, the system that prevailed for centuries was the commons. Open fields,
+          In medieval England, the system that prevailed for centuries was <a href="https://en.wikipedia.org/wiki/Commons" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">the commons</a>. Open fields,
           meadows, forests, and fens were available to the people of a village for grazing, gathering
           firewood, cutting peat, and gleaning after harvest. No single person owned these resources.
           The right to use them was attached to your membership in the community, not to any deed
@@ -395,7 +399,7 @@ export default function HousingPage() {
         <H3 id="enclosures">The Enclosures: Land Theft by Parliamentary Act</H3>
         <P>
           Between roughly 1500 and 1850, the English commons were systematically abolished. Through
-          over 5,000 Enclosure Acts, Parliament transferred millions of acres of common land into
+          over <a href="https://en.wikipedia.org/wiki/Inclosure_Acts" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">5,000 Enclosure Acts</a>, Parliament transferred millions of acres of common land into
           private ownership. Hedges were built. Fences went up. People who had grazed their animals
           on common land for generations were told that the land now belonged to a landlord, and
           they were trespassing.
@@ -407,7 +411,7 @@ export default function HousingPage() {
           nothing to sell but their labor. Which was, of course, the point.
         </P>
         <P>
-          Silvia Federici, in <em>Caliban and the Witch</em>, documents how enclosure was not just an
+          <a href="https://en.wikipedia.org/wiki/Silvia_Federici" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Silvia Federici</a>, in <a href="https://en.wikipedia.org/wiki/Caliban_and_the_Witch" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700"><em>Caliban and the Witch</em></a>, documents how enclosure was not just an
           economic policy but a project of social discipline. Common land gave people an exit option.
           If you could grow food, gather wood, and graze animals on the commons, you were not
           entirely dependent on wages. Enclosure destroyed that independence. It created a class
@@ -416,8 +420,8 @@ export default function HousingPage() {
           was constructed, violently, through the expropriation of the commons.
         </P>
         <P>
-          Contemporary observers were clear about what was happening. Thomas More, writing in
-          <em> Utopia</em> (1516), described sheep eating men — the wealthy converting arable land
+          Contemporary observers were clear about what was happening. <a href="https://en.wikipedia.org/wiki/Thomas_More" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Thomas More</a>, writing in
+          <a href="https://en.wikipedia.org/wiki/Utopia_(book)" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700"><em> Utopia</em></a> (1516), described sheep eating men — the wealthy converting arable land
           to pasture for wool production, driving peasants off their holdings and into beggary.
           This was not invisible. It was obvious, condemned, and done anyway, because it served
           the interests of the powerful.
@@ -427,9 +431,9 @@ export default function HousingPage() {
       <ArticleSection id="polanyi">
         <H2 id="polanyi">Karl Polanyi and the Great Transformation</H2>
         <P>
-          The Hungarian economic historian Karl Polanyi gave this process its most rigorous analysis
-          in <em>The Great Transformation</em> (1944). Polanyi identified what he called the &ldquo;fictitious
-          commodities&rdquo; — things treated as market commodities that fundamentally were not: land,
+          The Hungarian economic historian <a href="https://en.wikipedia.org/wiki/Karl_Polanyi" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Karl Polanyi</a> gave this process its most rigorous analysis
+          in <a href="https://en.wikipedia.org/wiki/The_Great_Transformation_(book)" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700"><em>The Great Transformation</em></a> (1944). Polanyi identified what he called the &ldquo;<a href="https://en.wikipedia.org/wiki/Fictitious_commodities" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">fictitious
+          commodities</a>&rdquo; — things treated as market commodities that fundamentally were not: land,
           labor, and money.
         </P>
         <P>
@@ -452,7 +456,11 @@ export default function HousingPage() {
         </Blockquote>
         <P>
           He was describing England in the 18th century. He might as well have been describing
-          London, Sydney, Toronto, or San Francisco today.
+          London, Sydney, Toronto, or San Francisco today. The same argument — that money and
+          markets are social constructions, not natural facts — runs through our piece on{' '}
+          <Link href="/posts/did-humans-ever-barter-before-money#politics" className="underline decoration-gray-400 hover:decoration-gray-700">
+            why the barter myth exists
+          </Link>.
         </P>
       </ArticleSection>
 
@@ -468,9 +476,9 @@ export default function HousingPage() {
         <P>
           Until the 1970s and 1980s, housing in most wealthy countries operated under significant
           constraints. Mortgage credit was regulated. Interest rates were controlled. Speculation
-          was limited. Then came financial deregulation. In the UK, the 1986 Big Bang deregulated
-          financial markets. In the US, the Depository Institutions Deregulation and Monetary
-          Control Act (1980) and the Garn-St. Germain Act (1982) loosened controls on mortgage
+          was limited. Then came financial deregulation. In the UK, the <a href="https://en.wikipedia.org/wiki/Big_Bang_(financial_markets)" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">1986 Big Bang</a> deregulated
+          financial markets. In the US, the <a href="https://en.wikipedia.org/wiki/Depository_Institutions_Deregulation_and_Monetary_Control_Act" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Depository Institutions Deregulation and Monetary
+          Control Act (1980)</a> and the <a href="https://en.wikipedia.org/wiki/Garn%E2%80%93St._Germain_Depository_Institutions_Act" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Garn-St. Germain Act (1982)</a> loosened controls on mortgage
           lending. Pension funds, insurance companies, and eventually global investment capital
           were permitted — and encouraged — to flow into property markets.
         </P>
@@ -492,9 +500,9 @@ export default function HousingPage() {
         <H3 id="tax-subsidies">The Tax Subsidies That Made It Worse</H3>
         <P>
           The financialization of housing was not just permitted by policy. It was actively
-          subsidized. In the United States, the mortgage interest deduction allowed homeowners
-          to deduct mortgage interest from taxable income — worth tens of billions of dollars
-          a year, flowing predominantly to wealthy homeowners with large mortgages. Capital
+          subsidized. In the United States, the <a href="https://en.wikipedia.org/wiki/Mortgage_interest_deduction" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">mortgage interest deduction</a> allowed homeowners
+          to deduct mortgage interest from taxable income — <a href="https://www.taxpolicycenter.org/briefing-book/what-impact-mortgage-interest-deduction" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">worth tens of billions of dollars
+          a year</a>, flowing predominantly to wealthy homeowners with large mortgages. Capital
           gains on property sales were taxed at lower rates than wages.
         </P>
         <P>
@@ -514,7 +522,7 @@ export default function HousingPage() {
       <ArticleSection id="henry-george">
         <H2 id="henry-george">Henry George and the Road Not Taken</H2>
         <P>
-          In 1879, the American journalist and theorist Henry George published <em>Progress and Poverty</em>.
+          In 1879, the American journalist and theorist <a href="https://en.wikipedia.org/wiki/Henry_George" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Henry George</a> published <a href="https://en.wikipedia.org/wiki/Progress_and_Poverty" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700"><em>Progress and Poverty</em></a>.
           It became one of the bestselling books in the English-speaking world — read by Leo Tolstoy,
           George Bernard Shaw, Albert Einstein, and Winston Churchill. Its central argument is still
           one of the most radical and most correct analyses of capitalism ever written.
@@ -567,8 +575,8 @@ export default function HousingPage() {
         </P>
         <P>
           For <strong>large-scale property investors</strong> — developers, REITs, private equity firms, offshore
-          wealth funds — high house prices are straightforwardly profitable. Blackstone alone owns
-          more than 300,000 rental homes in the United States. They hold assets that appreciate.
+          wealth funds — high house prices are straightforwardly profitable. <a href="https://www.theguardian.com/us-news/2023/mar/21/blackstone-landlord-rent-housing-private-equity" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Blackstone alone owns
+          more than 300,000 rental homes in the United States</a>. They hold assets that appreciate.
           They extract rent. They use housing scarcity as a business model.
         </P>
         <P>
@@ -626,10 +634,15 @@ export default function HousingPage() {
           wage economy.
         </P>
         <P>
-          The hut tax — imposed across British Africa in the late 19th and early 20th centuries —
+          The <a href="https://en.wikipedia.org/wiki/Hut_tax" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">hut tax</a> — imposed across British Africa in the late 19th and early 20th centuries —
           was a precise mechanism for this: tax people in cash for the right to live in their own
           homes, then force them to seek wage labor when they couldn&apos;t pay. Land enclosure and
-          labor coercion were not separate policies. They were two sides of the same coin.
+          labor coercion were not separate policies. They were two sides of the same coin. We trace
+          the full argument about how{' '}
+          <Link href="/posts/did-humans-ever-barter-before-money#colonial" className="underline decoration-gray-400 hover:decoration-gray-700">
+            colonial taxes forced people into the cash economy
+          </Link>{' '}
+          in our piece on the barter myth.
         </P>
       </ArticleSection>
 
@@ -675,9 +688,9 @@ export default function HousingPage() {
 
         <H3 id="social-housing">Social Housing at Scale</H3>
         <P>
-          Vienna has maintained a system of municipal housing — Gemeindebau — for over a century.
+          Vienna has maintained a system of municipal housing — <a href="https://en.wikipedia.org/wiki/Gemeindebau" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Gemeindebau</a> — for over a century.
           Roughly 60% of Vienna&apos;s population lives in publicly subsidized housing. Rents are capped.
-          Tenure is secure. Vienna consistently ranks among the world&apos;s most livable cities, with
+          Tenure is secure. <a href="https://www.economist.com/europe/2023/10/05/vienna-still-has-the-worlds-best-housing-policy" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Vienna consistently ranks among the world&apos;s most livable cities</a>, with
           housing costs that are a fraction of London&apos;s or San Francisco&apos;s. This is not a fantasy.
           It exists. It has existed for a century.
         </P>
