@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'COINTELPRO explained',
     'Mont Pelerin Society explained',
     'history of trade unions',
-    'why did unions decline',
+    'how were unions destroyed',
   ],
   openGraph: {
     title: 'What Happened to the Left?',
@@ -100,10 +100,10 @@ const jsonLd = {
         },
         {
           '@type': 'Question',
-          name: 'Why did unions decline?',
+          name: 'How were unions destroyed?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Union decline in the US and UK resulted from a combination of factors: deliberate policy (Reagan's PATCO firing sent a signal that state protection of striking workers was over; Thatcher's defeat of the miners in 1984-85 had the same effect); legal changes that made organizing harder; globalization that moved manufacturing to lower-wage countries, gutting union strongholds; deindustrialization that shifted employment to service sectors historically harder to organize; and the loss of the cultural and political infrastructure that sustained union organizing. US union membership fell from 35% in the 1950s to around 10% today.",
+            text: "Unions were destroyed through several simultaneous moves. Reagan fired 11,359 PATCO strikers and banned them from federal employment for life — the signal that striking workers were on their own. Thatcher defeated the miners in a confrontation she had specifically prepared for. Legal changes made organizing harder. Manufacturers moved production to lower-wage countries, gutting the industries where unions were strongest. The financial industry grew to dominate employment in sectors that had never been organized. US union membership fell from 35% in the 1950s to around 10% today.",
           },
         },
       ],
@@ -226,15 +226,17 @@ const FAQ_ITEMS: FAQItem[] = [
     ),
   },
   {
-    question: 'Why did unions decline?',
+    question: 'How were unions destroyed?',
     answer: (
       <>
-        Union decline resulted from: deliberate policy (Reagan&apos;s PATCO firing, Thatcher&apos;s
-        defeat of the miners&apos; strike sent signals that state protection was over); legal
-        changes making organizing harder; globalization moving manufacturing to lower-wage
-        countries, gutting union strongholds; deindustrialization shifting employment to service
-        sectors harder to organize; and the loss of the cultural infrastructure that sustained
-        union organizing. US union membership fell from 35% in the 1950s to around 10% today.
+        Unions were destroyed through several simultaneous moves. Reagan fired 11,359 PATCO
+        strikers and banned them from federal employment for life — the signal that striking workers
+        were on their own. Thatcher defeated the miners in a confrontation she had specifically
+        prepared for. Legal changes made organizing harder to sustain. Manufacturers moved
+        production to lower-wage countries, gutting the industries where unions were strongest.
+        The financial industry — deregulated from 1986 onward — grew to dominate employment in
+        sectors that had never been organized. US union membership fell from 35% in the 1950s to
+        around 10% today.
       </>
     ),
   },
@@ -305,8 +307,8 @@ export default function WhatHappenedToTheLeft() {
         <P>
           There is a tendency, on the left, to treat its history as a long story of defeat. That&apos;s
           wrong, and getting it wrong matters. Because if the left has only ever lost, then losing
-          feels inevitable, feels natural — feels like the kind of thing Gramsci would call
-          hegemony working correctly.
+          feels inevitable, feels natural — and that feeling is exactly what the people who
+          dismantled it wanted.
         </P>
         <P>
           The actual history is more complicated and more interesting. There was a period — roughly
@@ -505,10 +507,9 @@ export default function WhatHappenedToTheLeft() {
       <ArticleSection>
         <H2 id="the-counter-revolution">The Counter-Revolution That Was Planned</H2>
         <P>
-          The neoliberal project that produced Reagan and Thatcher was not a spontaneous reaction
-          to economic crisis. It was a deliberate long-term project, begun in the 1940s, funded
-          by business interests, and intellectually developed in networks that spent thirty years
-          waiting for their opening.
+          What produced Reagan and Thatcher was not a spontaneous reaction to economic crisis.
+          It was a deliberate long-term project, begun in the 1940s, funded by business interests,
+          and intellectually developed in networks that spent thirty years waiting for their opening.
         </P>
 
         <H3 id="mont-pelerin">The Mont Pelerin Society</H3>
@@ -840,17 +841,21 @@ export default function WhatHappenedToTheLeft() {
           only partially succeeded.
         </P>
         <P>
-          The ideas are also not lost. The labor movement is weaker but not dead. Union organizing
-          at Amazon and Starbucks in the US in the 2020s, the rise of Sanders and Corbyn as
-          mainstream political figures, the Green New Deal — these are not the same as the CIO
-          of the 1930s or the Labour government of 1945. But they suggest that the left, however
-          battered, has not been permanently defeated.
+          What did survive: the NHS, Social Security, Medicare and Medicaid, public education.
+          Not because they were economically untouchable — the ruling class had ideological
+          objections to all of them — but because they were too politically embedded to remove.
+          Thatcher tried to privatize the NHS and was stopped. Reagan tried to cut Social Security
+          and was stopped. The left built those fortresses when it was strong. They survived
+          because they were built to last.
         </P>
         <P>
-          The conditions that generated left politics in the first place — inequality, poverty,
-          precarity, the sense that the system isn&apos;t working for most people — have not been
-          resolved. They have gotten worse since the 1980s. The left was beaten back. The
-          conditions that produce it remain.
+          The conditions that generated the labor movement — inequality, poverty, precarity —
+          have not been resolved. They have gotten worse since the 1980s. But the conditions that
+          made the labor movement powerful have been systematically dismantled: 35% union density
+          is now 10%, the industrial sectors that sustained organizing are gutted, the political
+          parties that represented workers have largely stopped doing so. The Amazon union and the
+          Starbucks baristas are real. They are also what starting over from 10% looks like.
+          That is not the same thing as recovery. It is the beginning of a longer question.
         </P>
 
         <ArticleCallout variant="dark">
@@ -870,10 +875,10 @@ export default function WhatHappenedToTheLeft() {
           <br />
           <br />
           The most important question — the one this whole series has been approaching — is what
-          comes next. Not as a call to action (that would be presumptuous). As a genuine
-          intellectual question: given what we know about how the system works, what would it look
-          like to build something different? What has been tried? What worked, and where? That&apos;s
-          where the next articles go.
+          comes next. Given what the record shows about how power actually works — who built it,
+          how they defended it, what it took to challenge it and what happened when people did —
+          what would it take to build something different? What has actually been tried? What
+          worked, where, and why? That&apos;s where the next articles go.
         </ArticleCallout>
       </ArticleSection>
 
