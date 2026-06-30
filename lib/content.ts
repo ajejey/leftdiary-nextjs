@@ -263,12 +263,22 @@ export const samplePosts: Post[] = [
   },
   {
     slug: 'why-is-housing-so-expensive',
-    title: 'Why Is Housing So Expensive? The Political History of Land as a Commodity',
+    title: 'Why Is Housing So Expensive?',
     date: '2026-06-30',
     author: 'Left Diary',
     categories: ['Economics', 'Housing', 'History'],
-    description: 'Housing didn\'t get expensive by accident. Land enclosure, financialization, and deliberate policy choices turned shelter into an asset class. Here\'s the real history of why you can\'t afford to live — and who decided it would be this way.',
+    description: 'Housing didn\'t get expensive by accident. Land enclosure, financialization, and deliberate policy choices turned shelter into an asset class. The real history of why you can\'t afford to live — and who decided it would be this way.',
     image: 'housing-financialization-cover.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'how-do-banks-create-money-out-of-nothing',
+    title: 'How Do Banks Create Money Out of Nothing?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'Banking', 'Money'],
+    description: 'When a bank approves your mortgage, it doesn\'t move existing money — it creates new money on the spot. The Bank of England confirmed this in 2014. Here is how money is actually created, and what it means for debt, housing, and public spending.',
+    image: 'banks-create-money-cover.jpg',
     contentType: 'post'
   }
 ];
