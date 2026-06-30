@@ -132,8 +132,8 @@ const TOC_ITEMS: TOCItem[] = [
   { id: 'us-ivy-league-pipeline', text: 'The US: Ivy League to Everything', level: 3 },
   { id: 'the-revolving-door', text: 'The Revolving Door', level: 2 },
   { id: 'the-forums', text: 'The Forums No One Voted For', level: 2 },
-  { id: 'not-a-conspiracy', text: 'Why This Is Not a Conspiracy Theory', level: 2 },
-  { id: 'class-not-cabal', text: 'A Class, Not a Cabal', level: 3 },
+  { id: 'not-a-conspiracy', text: "It's All in Public", level: 2 },
+  { id: 'class-not-cabal', text: 'No Secret Meeting Required', level: 3 },
   { id: 'what-the-ruling-class-actually-does', text: 'What the Ruling Class Actually Does', level: 2 },
   { id: 'faq', text: 'Common Questions', level: 2 },
 ];
@@ -293,15 +293,7 @@ export default function WhatIsTheRulingClass() {
       <ArticleHeader
         categories={['Politics', 'Power', 'Class']}
         title="Is There a Ruling Class?"
-        lead={
-          <>
-            The term sounds extreme. It sounds like a conspiracy theory, like you&apos;re about to
-            claim that twelve lizard people meet in a bunker to decide everything. The suspicion is
-            worth taking seriously — because if it <em>were</em> a conspiracy, it would be easy to
-            dismiss and hard to prove. But what if it&apos;s not a conspiracy? What if it&apos;s
-            something more ordinary, more durable, and much better documented?
-          </>
-        }
+        lead="Parliament — controlled by landowners — passed 5,000 laws to enclose the commons. Colonial administrators designed the hut tax to force Africans into labor. The capital gains tax was written at half the income tax rate by people who earn from capital. The question isn't whether powerful people make decisions that serve themselves. The question is whether they form something more coherent — and whether we can document it."
         date="June 30, 2026"
         dateTime="2026-06-30"
         readingTime="14 min read"
@@ -641,41 +633,37 @@ export default function WhatIsTheRulingClass() {
       </ArticleSection>
 
       <ArticleSection>
-        <H2 id="not-a-conspiracy">Why This Is Not a Conspiracy Theory</H2>
+        <H2 id="not-a-conspiracy">It&apos;s All in Public</H2>
         <P>
-          A conspiracy theory typically requires: secret coordination, secret knowledge, and a
-          specific plot. None of that is necessary for what we&apos;ve been describing.
+          None of what we&apos;ve described requires secrecy. That&apos;s what makes it durable.
         </P>
         <P>
-          The school statistics are public. The revolving door is reported in mainstream journalism.
-          The Bilderberg attendance list is published each year. The CFR membership is listed on
-          their website. The Koch brothers&apos; funding of the libertarian think tank network was
-          documented by journalists, reported in mainstream outlets, and eventually described by
-          Charles Koch himself in his own book.
+          The school statistics are from the Sutton Trust — a published report. The revolving door
+          is reported in mainstream journalism every time a Goldman Sachs partner becomes Treasury
+          Secretary. The Bilderberg attendance list is posted publicly each year. The CFR membership
+          is on their website. Charles Koch wrote about his strategy to fund think tanks and shift
+          what was considered acceptable policy — in his own book.
         </P>
         <P>
-          None of this requires a secret. It&apos;s operating in public. That&apos;s the point.
+          None of it is hidden. It operates openly, in plain sight, and has for decades. The reason
+          it feels like a conspiracy when someone names it is not because the facts are secret. It&apos;s
+          because the facts are familiar and naming them — putting them together and saying what they
+          add up to — is treated as the suspicious act.
         </P>
 
-        <H3 id="class-not-cabal">A Class, Not a Cabal</H3>
+        <H3 id="class-not-cabal">No Secret Meeting Required</H3>
         <P>
-          Think about a simpler version. If everyone who owns a rental property in a city tends to
-          vote against rent control, is that a conspiracy? No. It&apos;s class interest operating
-          independently. Each landlord votes according to their economic interest without needing
-          to coordinate with other landlords.
+          If every landlord in a city votes against rent control, is that a conspiracy? No. It&apos;s
+          each person acting in their own interest. No coordination needed — the interest is shared,
+          so the behavior converges.
         </P>
         <P>
-          Now scale that up. A network of people who went to the same schools, share social
-          connections through those schools and through boards and through the revolving door, and
-          who all have substantial capital — their interests converge structurally. They don&apos;t
-          need to meet secretly. They already agree on the fundamentals because their material
-          position makes those fundamentals in their interest. And they talk constantly — at
-          Davos, at Bilderberg, in board meetings, at the charitable foundations that function as
-          their social infrastructure, at the alumni events of the schools they attended.
-        </P>
-        <P>
-          The coordination isn&apos;t hidden. It&apos;s just not called coordination. It&apos;s
-          called networking.
+          Scale that up. A network of people who went to the same schools, share boards and
+          foundations and alumni networks, all hold substantial capital — they don&apos;t need to
+          meet secretly. They already agree on the fundamentals because their position makes those
+          fundamentals in their interest. And they do meet constantly: at Davos, at Bilderberg,
+          in board rooms, at foundations that function as their social infrastructure. The
+          coordination isn&apos;t hidden. It&apos;s just called networking.
         </P>
 
         <Blockquote cite="Marx and Engels, The German Ideology (1845)">
@@ -685,11 +673,11 @@ export default function WhatIsTheRulingClass() {
         </Blockquote>
 
         <P>
-          Marx wasn&apos;t claiming the ruling class held secret meetings to decide which ideas
-          would be dominant. He was making a structural claim: whoever controls the major
-          institutions of production (and, in the modern age, media, education, and finance) will
-          find that their worldview is the one that gets amplified, taught, and naturalized as
-          common sense. Not through conspiracy. Through structural dominance.
+          Marx in 1845. The same point the Sutton Trust data shows in 2019. The people who own
+          the major institutions — production, media, education, finance — find that their way
+          of seeing things is the one that gets taught, amplified, and treated as common sense.
+          Not because they hold secret meetings about it. Because when you own the newspaper and
+          fund the university and staff the government, your worldview is already in the room.
         </P>
       </ArticleSection>
 
@@ -749,12 +737,11 @@ export default function WhatIsTheRulingClass() {
           <strong>And Because This Is True, Something Else Collapses</strong>
           <br />
           <br />
-          If there is something that functions like a ruling class — documented, studied, visible —
-          then its continued power depends on something more than money and legislation and debt.
-          It depends on the majority of people not challenging it. Not because they&apos;re stupid.
-          But because the ideas that naturalize and justify the current distribution of power are
-          everywhere — in schools, in newspapers, in how economic &ldquo;common sense&rdquo; is
-          defined.
+          There is a ruling class. It is documented. Named. Visible. Its continued power does not
+          rest only on money and legislation and debt — though it rests on those. It rests on the
+          majority of people not challenging it. Not because they are stupid. But because the ideas
+          that justify the current distribution of power are everywhere — in schools, in newspapers,
+          in what gets called serious and what gets called extreme.
           <br />
           <br />
           The ruling class doesn&apos;t need to censor alternative ideas if those ideas never feel
