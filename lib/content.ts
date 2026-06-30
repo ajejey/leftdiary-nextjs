@@ -290,6 +290,16 @@ export const samplePosts: Post[] = [
     description: 'If governments can create money, why do they collect taxes? Colonizers accidentally answered this question. The hut tax didn\'t raise revenue — it forced Africans into wage labor. That same logic explains modern austerity, the IMF, and why the government says it "can\'t afford" hospitals.',
     image: 'colonizers-tax-africans-cover.jpg',
     contentType: 'post'
+  },
+  {
+    slug: 'why-do-the-rich-keep-getting-richer',
+    title: 'Why Do the Rich Keep Getting Richer?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'Inequality', 'Capitalism'],
+    description: 'Warren Buffett\'s secretary pays a higher tax rate than he does. He said it himself. Jeff Bezos paid $0 in federal income tax in 2007. Piketty\'s r > g explains why wealth concentration is a mathematical guarantee — and why the tax system was built to keep it that way.',
+    image: 'wealth-inequality-cover.jpg',
+    contentType: 'post'
   }
 ];
 
