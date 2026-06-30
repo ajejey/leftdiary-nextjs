@@ -340,6 +340,16 @@ export const samplePosts: Post[] = [
     description: "Six companies control roughly 90% of US media. In the UK, three men own most of the national press. Noam Chomsky called it Manufacturing Consent. Here's how media ownership shapes what you think is possible — not through censorship, but through what never gets framed as a serious idea.",
     image: 'media-ownership-cover.jpg',
     contentType: 'post'
+  },
+  {
+    slug: 'what-happened-to-the-left',
+    title: 'What Happened to the Left?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Politics', 'History', 'Labor'],
+    description: "In 1945, Labour won the most decisive election victory in British history and built the NHS. In 1981, Reagan fired 11,000 striking air traffic controllers — and union membership began a collapse that hasn't stopped. Here's how the most powerful labor movement in history was defeated, and what was used to defeat it.",
+    image: 'left-history-cover.jpg',
+    contentType: 'post'
   }
 ];
 
