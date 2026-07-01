@@ -621,12 +621,43 @@ export default function ColonizersTaxAfricansPage() {
           It had been a choice, dressed as a fact.
         </P>
         <P>
-          This does not mean governments can spend without limit. The real constraint is inflation:
-          if spending outpaces what the economy can actually produce, prices rise and the currency
-          loses value. That is a genuine constraint, not a fiction. But it is a completely different
-          constraint from &ldquo;there is no money.&rdquo; There is always money, for a government that
-          issues its own currency. The question is always what the spending will do to prices — and
-          whether that tradeoff is acceptable.
+          We established that the money was invented. Not found, not grown, not earned — decided.
+          It was not there, and then it was, because someone announced it. That capacity does not
+          disappear once the money exists. It can be run again. And it can be run in reverse.
+        </P>
+        <P>
+          Here is what happened next in Africa. The British announced: you owe us a hundred pounds
+          a year. And so the people worked. They earned the hundred pounds. They paid it. And when
+          that compliance started to look comfortable — when they had learned the system — the
+          announcement changed. The pound has lost value. Now you owe two hundred.
+        </P>
+        <P>
+          Nothing else changed. Not the work. Not the wage. What you could earn at the mine or on
+          the plantation stayed the same, or was cut, with the same word as the reason. But the
+          debt doubled. Which means the amount of your life you had to give away to clear it
+          doubled. You were less free than before, without anything in your actual life changing.
+          Someone moved a number.
+        </P>
+        <P>
+          Now come forward to the present. When the people who own land, houses, buildings announce
+          that those assets have increased in value, they are richer — on the books, in what they
+          can borrow against, in what they can charge. They did not build more. They did not acquire
+          more. They did not produce more. They said: it is worth more now. And because they own it
+          and you need it, you pay the new price. The rent goes up. The mortgage goes up. The price
+          of access to the thing you must have goes up.
+        </P>
+        <P>
+          They are richer. You are paying more. Nothing moved except a number.
+        </P>
+        <P>
+          And that movement gets a name. Not &ldquo;the landlord raised your rent because he wanted
+          more of your life.&rdquo; Inflation. A force. A process. Something the economy did, the
+          way the weather changes. Nobody chose it. Nobody is responsible. You cannot argue with it.
+        </P>
+        <P>
+          The word is doing exactly what every other word in this story has done. It takes a
+          decision made by specific people for specific reasons and converts it into a fact of
+          nature. It makes the crime invisible by giving it a name that sounds like physics.
         </P>
 
         <H3 id="tax-the-rich">Tax the Rich Makes No Sense</H3>
