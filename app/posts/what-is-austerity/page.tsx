@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Metadata } from 'next';
 import {
   ArticleLayout,
@@ -15,24 +14,24 @@ import type { TOCItem, FAQItem, FurtherReadingItem } from '@/components/article'
 
 export const metadata: Metadata = {
   title: "What Is Austerity? | Left Diary",
-  description: "Austerity is presented as fiscal responsibility — the grown-up response to debt. But the evidence used to justify it contained a spreadsheet error. The bailout money went to French and German banks. And the IMF later published papers saying the models were wrong.",
+  description: "In March 2020, the US government found $2.2 trillion in sixteen days. For years before that, the answer to healthcare and schools was: we can't afford it. So where did the money come from — and why does it keep going to banks?",
   keywords: [
     "what is austerity",
     "austerity explained",
-    "Greece austerity effects",
+    "student loan debt explained",
+    "medical debt US",
     "Reinhart Rogoff spreadsheet error",
-    "IMF fiscal multiplier Blanchard Leigh",
-    "UK austerity effects life expectancy",
-    "Greece bailout who benefited",
-    "fiscal consolidation explained",
+    "IMF fiscal multiplier",
     "austerity who benefits",
-    "austerity and inequality",
-    "what did austerity do to Greece",
-    "George Osborne austerity",
+    "public spending vs private debt",
+    "Greece bailout creditors",
+    "government can't afford it",
+    "austerity and inequality US",
+    "fiscal policy explained simply",
   ],
   openGraph: {
     title: "What Is Austerity?",
-    description: "The evidence used to justify it contained a spreadsheet error. The bailout money went to French and German banks. The IMF later published papers saying the models were wrong. Austerity is not fiscal responsibility. It is a hierarchy of obligations.",
+    description: "In March 2020, the US government found $2.2 trillion in sixteen days. For years before that, the answer to healthcare and schools was: we can't afford it. So where did the money come from?",
     images: [
       {
         url: 'https://leftdiary.com/images/cover_pages/what-is-austerity-cover.jpg',
@@ -46,14 +45,14 @@ export const metadata: Metadata = {
     modifiedTime: '2026-07-02',
     authors: ['https://leftdiary.com/about'],
     section: 'Economics',
-    tags: ['austerity', 'fiscal policy', 'Greece', 'IMF', 'UK', 'political economy', 'capitalism'],
+    tags: ['austerity', 'fiscal policy', 'student debt', 'medical debt', 'IMF', 'political economy'],
     siteName: 'Left Diary',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
     title: "What Is Austerity?",
-    description: "The evidence used to justify it was wrong. The money went to French and German banks. The IMF admitted the models were wrong. Austerity is not economics — it is a choice about whose obligations get honored first.",
+    description: "Student loan debt went from $100 billion to $1.7 trillion. Medical debt is the leading cause of bankruptcy. The public university used to be nearly free. None of this happened by accident.",
     site: '@leftdiary',
     creator: '@leftdiary',
     images: ['https://leftdiary.com/images/cover_pages/what-is-austerity-cover.jpg'],
@@ -77,7 +76,7 @@ const jsonLd = {
       '@type': 'Article',
       '@id': 'https://leftdiary.com/posts/what-is-austerity#article',
       'headline': 'What Is Austerity?',
-      'description': 'Austerity is presented as fiscal responsibility. But the evidence used to justify it contained a spreadsheet error, the bailout money went to French and German banks, and the IMF published papers admitting the models were wrong.',
+      'description': 'In March 2020, the US government found $2.2 trillion in sixteen days. For years before that, the answer to healthcare and schools was: we can\'t afford it. Austerity doesn\'t cut money — it converts public spending into private debt.',
       'image': [
         {
           '@type': 'ImageObject',
@@ -99,25 +98,23 @@ const jsonLd = {
         '@type': 'WebPage',
         '@id': 'https://leftdiary.com/posts/what-is-austerity'
       },
-      'keywords': 'what is austerity, austerity explained, Greece bailout 2010, Reinhart Rogoff spreadsheet error, Blanchard Leigh fiscal multiplier, UK austerity effects, IMF self-critique',
+      'keywords': 'austerity explained, student loan debt, medical debt US, Reinhart Rogoff error, IMF multiplier, public spending private debt',
       'articleSection': 'Economics',
-      'wordCount': 4200,
+      'wordCount': 4500,
       'inLanguage': 'en-US',
       'isAccessibleForFree': true,
       'about': [
         { '@type': 'Thing', 'name': 'Austerity' },
-        { '@type': 'Thing', 'name': 'Fiscal Policy' },
-        { '@type': 'Thing', 'name': 'Greece Financial Crisis' },
-        { '@type': 'Thing', 'name': 'IMF Structural Adjustment' }
+        { '@type': 'Thing', 'name': 'Student Loan Debt' },
+        { '@type': 'Thing', 'name': 'Medical Debt' },
+        { '@type': 'Thing', 'name': 'Fiscal Policy' }
       ],
       'mentions': [
-        { '@type': 'Person', 'name': 'George Osborne' },
-        { '@type': 'Person', 'name': 'David Cameron' },
         { '@type': 'Person', 'name': 'Carmen Reinhart' },
         { '@type': 'Person', 'name': 'Kenneth Rogoff' },
         { '@type': 'Person', 'name': 'Thomas Herndon' },
         { '@type': 'Person', 'name': 'Olivier Blanchard' },
-        { '@type': 'Person', 'name': 'Philip Alston' }
+        { '@type': 'Person', 'name': 'Paul Ryan' }
       ]
     },
     {
@@ -129,15 +126,15 @@ const jsonLd = {
           'name': 'What is austerity?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'Austerity refers to government policies that reduce public spending and increase taxes in order to reduce budget deficits and public debt. Proponents frame it as fiscal responsibility — necessary belt-tightening to restore confidence and sustainable growth. Critics argue that cutting government spending during a recession removes income from the private economy, deepening the downturn rather than resolving it. The IMF\'s own economists published papers in 2013 and 2016 finding that austerity programs produced greater economic damage than their models had assumed and that the costs fell disproportionately on lower-income populations.'
+            'text': 'Austerity refers to government spending cuts and tax increases meant to reduce budget deficits. Proponents frame it as fiscal responsibility — governments living within their means. But austerity doesn\'t actually cut money. Money can\'t be saved at the government level; it\'s created when governments spend and destroyed when they tax. What austerity does is convert public spending (which exists outside the market, free at the point of use) into private debt (bank loans, at interest). Student loan debt, medical debt, and housing debt all expanded dramatically as public funding for universities, hospitals, and housing was cut. The need didn\'t disappear — it was converted into a loan.'
           }
         },
         {
           '@type': 'Question',
-          'name': 'What did austerity do to Greece?',
+          'name': 'Why did student loan debt grow so much?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'Between 2008 and 2013, Greek GDP fell approximately 25% — the deepest peacetime economic contraction in any developed country since the 1930s. Unemployment rose from 7.7% in 2008 to 27.5% by September 2013, with youth unemployment reaching 60.1%. Average wages fell 25-30% in real terms. Healthcare budgets were cut by over 40%. Suicides rose 35% between 2010 and 2012. HIV infections among intravenous drug users in Athens rose 1,500% following the closure of needle exchange programs. Pensions were cut eleven times by 2015. A 2013 independent analysis found that approximately 77% of the bailout money disbursed to Greece went not to fund Greek public services but to refinance debts owed to private creditors — primarily French and German banks.'
+            'text': 'Total US student loan debt was approximately $100 billion in 1993. It reached $1.7 trillion by 2024. This is not primarily because Americans became irresponsible about borrowing. It is because public funding for universities was systematically cut: federal and state government funding fell from covering approximately 75% of university costs in 1975 to approximately 35% by 2020. The University of California system charged no tuition for California residents until 1970. The need for higher education grew. The public funding shrank. Banks filled the gap with loans, at interest. That is the mechanism.'
           }
         },
         {
@@ -145,31 +142,31 @@ const jsonLd = {
           'name': 'What was the Reinhart-Rogoff spreadsheet error?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'In 2010, Harvard economists Carmen Reinhart and Kenneth Rogoff published a paper claiming that when government debt exceeds 90% of GDP, average economic growth turns negative (-0.1%). This finding was cited by Paul Ryan, George Osborne, and Olli Rehn to justify austerity programs. In 2013, graduate student Thomas Herndon tried to replicate the results for a class assignment and found three errors, including an Excel spreadsheet formula that accidentally excluded Australia, Austria, Belgium, Canada, and Denmark from the analysis. When the errors were corrected, the -0.1% average growth figure became +2.2%. The 90% threshold effect that had driven the entire policy argument essentially disappeared.'
+            'text': 'In 2010, Harvard economists Carmen Reinhart and Kenneth Rogoff published a paper claiming that when government debt exceeds 90% of GDP, average economic growth turns negative (-0.1%). This finding was cited by Paul Ryan in his 2013 budget and used to justify austerity programs globally. In 2013, graduate student Thomas Herndon tried to replicate the results for a class assignment and found three errors, including an Excel formula that accidentally excluded Australia, Austria, Belgium, Canada, and Denmark from the analysis. When corrected, the -0.1% growth figure became +2.2%. The threshold that justified the cuts essentially disappeared.'
           }
         },
         {
           '@type': 'Question',
-          'name': 'What did Blanchard and Leigh find about fiscal multipliers?',
+          'name': 'Who benefited from the Greek bailout?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'IMF Working Paper WP/13/1, published January 2013 by Chief Economist Olivier Blanchard and Daniel Leigh, found that the fiscal multipliers used in the IMF\'s forecasting models were approximately 0.5 — meaning the IMF assumed each euro of government spending cuts would reduce GDP by 0.5 euros. Blanchard and Leigh found the actual multipliers during the 2010-2012 austerity period were approximately 1.5. This means every percentage point cut from the Greek or Spanish or Portuguese economy shrank it by 1.5 percentage points, not 0.5 — making debt-to-GDP ratios worse even as the cuts were designed to improve them.'
+            'text': 'A 2013 analysis by the European School of Management and Technology found that approximately 77% of the €207 billion lent to Greece went not to the Greek state but to refinance debts owed to private creditors — primarily French and German banks. BNP Paribas held approximately €5 billion in Greek government bonds; Crédit Agricole\'s total Greek exposure was over €27 billion; Deutsche Bank held €1.6 billion. The Greek population bore the cost: GDP fell 25%, youth unemployment hit 60%, suicides rose 35%, and pensions were cut eleven times by 2015. The official narrative was rescuing Greece. The money flow shows what was actually being rescued.'
           }
         },
         {
           '@type': 'Question',
-          'name': 'Who held Greek sovereign debt in 2010?',
+          'name': 'Where did the money come from for COVID relief?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'As of early 2010, French and German banks held the bulk of Greek sovereign debt. BNP Paribas held approximately €5 billion in Greek government bonds; Crédit Agricole had total Greek exposure estimated at over €27 billion including its Greek subsidiary Emporiki Bank; Deutsche Bank held approximately €1.6 billion; Commerzbank approximately €3 billion. The French banking sector\'s total Greek exposure was estimated at €50-75 billion by 2010 analysts. A 2013 analysis by the European School of Management and Technology found that approximately 77% of the €207 billion in loans disbursed to Greece through 2013 went to refinance maturing debt owed to private creditors — not to fund the Greek state.'
+            'text': 'The $2.2 trillion CARES Act was signed sixteen days after the WHO declared a pandemic. Total US COVID fiscal spending reached approximately $5-6 trillion over the following year. This money was not found in a vault. It was created — the way money is always created at the government level, by a currency-issuing government deciding to spend. The same mechanism was available before COVID, for healthcare or education or infrastructure. The question austerity has never answered is why that mechanism works perfectly well for banks in 2008 and corporations in 2020, but fails when the question is whether someone can afford their insulin.'
           }
         },
         {
           '@type': 'Question',
-          'name': 'What is a fiscal multiplier?',
+          'name': 'What did the IMF find about austerity\'s effects?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'A fiscal multiplier measures the effect of a change in government spending on overall economic output (GDP). A multiplier of 0.5 means that cutting €1 of government spending reduces GDP by €0.50. A multiplier of 1.5 means cutting €1 of government spending reduces GDP by €1.50. Multipliers are larger during recessions — because there is more slack in the economy and private sector demand cannot offset the reduction — and smaller during expansions. The IMF\'s pre-2012 forecasting models assumed multipliers of approximately 0.5. The institution\'s own economists later found that actual multipliers during the austerity period were approximately 1.5, meaning the economic damage of the cuts was three times what had been projected.'
+            'text': 'IMF Chief Economist Olivier Blanchard and Daniel Leigh published a working paper in January 2013 (WP/13/1) finding that the economic damage from austerity programs was approximately three times larger than their models had predicted. The models used a fiscal multiplier of 0.5; the actual multiplier was approximately 1.5. In 2016, senior IMF economists published an article in the IMF\'s own magazine titled "Neoliberalism: Oversold?" finding that austerity episodes were followed, on average, by drops in output rather than growth, and that a 1% of GDP fiscal consolidation increased long-term unemployment by 0.6 percentage points and raised inequality by 1.5% within five years. The institution that designed the programs later documented that the models were wrong.'
           }
         }
       ]
@@ -187,15 +184,14 @@ const jsonLd = {
 };
 
 const TOC_ITEMS: TOCItem[] = [
-  { id: 'we-have-to-live-within-our-means', text: 'The Household Budget Story', level: 2 },
-  { id: 'the-paper-that-justified-the-cuts', text: 'The Paper That Justified the Cuts', level: 2 },
-  { id: 'the-spreadsheet-error', text: 'The Spreadsheet Error', level: 3 },
-  { id: 'who-the-bailout-actually-bailed-out', text: 'Who the Bailout Actually Bailed Out', level: 2 },
-  { id: 'what-the-conditions-specified', text: 'What the Conditions Specified', level: 3 },
-  { id: 'who-held-the-debt', text: 'Who Held the Debt', level: 3 },
-  { id: 'what-the-conditions-did', text: 'What the Conditions Did', level: 2 },
-  { id: 'the-institution-admitted-the-models-were-wrong', text: 'The Institution That Admitted the Models Were Wrong', level: 2 },
-  { id: 'faq', text: 'Frequently Asked Questions', level: 2 },
+  { id: 'the-six-trillion-question', text: 'The $6 Trillion Question', level: 2 },
+  { id: 'the-answer-you-were-given', text: 'The Answer You Were Given', level: 2 },
+  { id: 'the-crack', text: 'The Paper, and the Graduate Student', level: 2 },
+  { id: 'follow-the-money', text: 'Follow the Money', level: 2 },
+  { id: 'what-it-looks-like-at-home', text: 'What It Looks Like at Home', level: 2 },
+  { id: 'what-this-actually-is', text: 'What This Actually Is', level: 2 },
+  { id: 'the-admission', text: 'The Admission', level: 2 },
+  { id: 'faq', text: 'Common Questions', level: 2 },
 ];
 
 const FAQ_ITEMS: FAQItem[] = [
@@ -203,28 +199,25 @@ const FAQ_ITEMS: FAQItem[] = [
     question: 'What is austerity?',
     answer: (
       <>
-        Austerity refers to government policies that reduce public spending and increase taxes to
-        reduce budget deficits and public debt. Proponents frame it as fiscal responsibility —
-        necessary belt-tightening to restore confidence and sustainable growth. The IMF&rsquo;s own
-        economists published papers in 2013 and 2016 finding that austerity programs produced
-        greater economic damage than their models had assumed and that the costs fell
-        disproportionately on lower-income populations.
+        Austerity refers to government spending cuts meant to reduce budget deficits. Proponents
+        frame it as fiscal responsibility. But austerity doesn&rsquo;t actually cut money —
+        it converts public spending (free at the point of use, outside the market) into private
+        debt (bank loans, at interest). Student loan debt, medical debt, and housing debt all
+        expanded as public funding was cut. The need didn&rsquo;t disappear — it was converted
+        into a loan.
       </>
     ),
   },
   {
-    question: 'What did austerity do to Greece?',
+    question: 'Why did student loan debt grow so much?',
     answer: (
       <>
-        Between 2008 and 2013, Greek GDP fell approximately 25% — the deepest peacetime economic
-        contraction in any developed country since the 1930s. Unemployment rose from 7.7% in 2008
-        to 27.5% by September 2013, with youth unemployment reaching 60.1%. Average wages fell
-        25–30% in real terms. Healthcare budgets were cut by over 40%. Suicides rose 35% between
-        2010 and 2012. HIV infections among intravenous drug users in Athens rose 1,500% following
-        the closure of needle exchange programs. Pensions were cut eleven times by 2015. A 2013
-        independent analysis found that approximately 77% of the bailout money went not to fund
-        Greek public services but to refinance debts owed to private creditors — primarily French
-        and German banks.
+        Total US student loan debt was approximately $100 billion in 1993 and reached $1.7
+        trillion by 2024. This is not because Americans became irresponsible. Public funding for
+        universities fell from covering approximately 75% of costs in 1975 to approximately 35%
+        by 2020. The University of California charged no tuition until 1970. The need for
+        education grew; the public funding shrank; banks filled the gap at interest.
+        That is the mechanism.
       </>
     ),
   },
@@ -232,58 +225,53 @@ const FAQ_ITEMS: FAQItem[] = [
     question: 'What was the Reinhart-Rogoff spreadsheet error?',
     answer: (
       <>
-        In 2010, Harvard economists Carmen Reinhart and Kenneth Rogoff published a paper claiming
-        that when government debt exceeds 90% of GDP, average economic growth turns negative
-        (−0.1%). This finding was cited by Paul Ryan, George Osborne, and EU Economic Commissioner
-        Olli Rehn to justify austerity programs. In 2013, a graduate student (Thomas Herndon) tried
-        to replicate the results for a class assignment and found three errors, including an Excel
-        formula that accidentally excluded Australia, Austria, Belgium, Canada, and Denmark from
-        the analysis. When corrected, the −0.1% average growth figure became +2.2%. The 90%
-        threshold effect that had driven the entire policy argument essentially disappeared.
+        In 2010, Harvard economists Reinhart and Rogoff published a paper claiming governments
+        with debt above 90% of GDP experienced negative growth (−0.1%). Paul Ryan cited it in
+        his 2013 budget. In 2013, graduate student Thomas Herndon tried to replicate it for a
+        class assignment and found an Excel formula that accidentally excluded Australia, Austria,
+        Belgium, Canada, and Denmark. When corrected, −0.1% became +2.2%. The threshold that
+        justified the cuts essentially disappeared.
       </>
     ),
   },
   {
-    question: 'What did Blanchard and Leigh find about fiscal multipliers?',
+    question: 'Who benefited from the Greek bailout?',
     answer: (
       <>
-        IMF Working Paper WP/13/1, published January 2013 by Chief Economist Olivier Blanchard
-        and Daniel Leigh, found that the IMF&rsquo;s forecasting models had assumed fiscal multipliers
-        of approximately 0.5 — meaning each unit of spending cuts would reduce GDP by 0.5 units.
-        The actual multipliers during the 2010–2012 austerity period were approximately 1.5.
-        This means every percentage point cut from the Greek, Spanish, or Portuguese economy
-        shrank it by 1.5 percentage points, not 0.5 — making debt-to-GDP ratios worse even as
-        the cuts were designed to improve them.
+        A 2013 analysis found approximately 77% of the €207 billion lent to Greece went to
+        refinance debts owed to private creditors — primarily French and German banks.
+        BNP Paribas held approximately €5 billion in Greek bonds; Crédit Agricole&rsquo;s total
+        Greek exposure exceeded €27 billion. The Greek population bore the cost: GDP fell 25%,
+        youth unemployment hit 60%, suicides rose 35%, pensions were cut eleven times. The
+        official narrative was rescuing Greece. The money flow shows what was actually
+        being rescued.
       </>
     ),
   },
   {
-    question: 'Who held Greek sovereign debt in 2010?',
+    question: 'Where did the money come from for COVID relief?',
     answer: (
       <>
-        French and German banks held the bulk of Greek sovereign debt. BNP Paribas held
-        approximately €5 billion in Greek government bonds; Crédit Agricole had total Greek
-        exposure estimated at over €27 billion including its Greek subsidiary Emporiki Bank;
-        Deutsche Bank held approximately €1.6 billion; Commerzbank approximately €3 billion.
-        Total French banking sector exposure was estimated at €50–75 billion. A 2013 European
-        School of Management and Technology analysis found that approximately 77% of the
-        €207 billion in loans disbursed to Greece went to refinance maturing debt owed to
-        private creditors — not to fund the Greek state.
+        The $2.2 trillion CARES Act was signed sixteen days after the WHO declared a pandemic.
+        Total US COVID fiscal spending reached approximately $5–6 trillion over the following
+        year. This money was not found in a vault. It was created — the way money is always
+        created at the government level, by a currency-issuing government deciding to spend.
+        The question austerity has never answered is why that mechanism works for banks in 2008
+        and corporations in 2020, but not when someone needs insulin.
       </>
     ),
   },
   {
-    question: 'What is a fiscal multiplier?',
+    question: "What did the IMF find about austerity's effects?",
     answer: (
       <>
-        A fiscal multiplier measures the effect of a change in government spending on overall
-        economic output. A multiplier of 0.5 means cutting €1 of government spending reduces
-        GDP by €0.50. A multiplier of 1.5 means cutting €1 of spending reduces GDP by €1.50.
-        Multipliers are larger during recessions because there is more slack in the economy and
-        private demand cannot offset the reduction. The IMF&rsquo;s pre-2012 models assumed
-        multipliers of 0.5. The institution&rsquo;s own economists later found actual multipliers
-        during the austerity period were approximately 1.5 — meaning the economic damage of
-        the cuts was three times what had been projected.
+        IMF Chief Economist Olivier Blanchard and Daniel Leigh published a working paper in
+        January 2013 finding the economic damage from austerity was approximately three times
+        larger than projected — actual fiscal multipliers were 1.5, not the assumed 0.5.
+        In 2016, senior IMF economists published an article in the IMF&rsquo;s own magazine
+        titled &ldquo;Neoliberalism: Oversold?&rdquo; finding austerity raised unemployment by
+        0.6 percentage points per 1% of GDP cut, and increased inequality within five years.
+        The institution that designed the programs later documented that the models were wrong.
       </>
     ),
   },
@@ -293,26 +281,30 @@ const FURTHER_READING: FurtherReadingItem[] = [
   {
     href: 'https://www.amazon.com/Austerity-History-Dangerous-Mark-Blyth/dp/0199828768',
     title: 'Austerity: The History of a Dangerous Idea — Mark Blyth (2013)',
-    description: 'Traces austerity from 18th-century liberal theory to 21st-century eurozone policy, finding no consistent historical evidence that cutting spending generates growth and documenting who the policy consistently protects.',
-    external: true,
-  },
-  {
-    href: 'https://www.amazon.com/Shock-Doctrine-Rise-Disaster-Capitalism/dp/0312427999',
-    title: 'The Shock Doctrine — Naomi Klein (2007)',
-    description: 'Documents how free-market restructuring has been systematically imposed on countries in the immediate aftermath of crises — coups, disasters, financial collapses — when populations are too disoriented to resist.',
+    description: 'Traces austerity from 18th-century liberal theory to the eurozone crisis, finding no consistent historical evidence that cutting spending generates growth — and documenting who the policy consistently protects.',
     external: true,
   },
   {
     href: 'https://www.imf.org/external/pubs/ft/wp/2013/wp1301.pdf',
-    title: '"Growth Forecast Errors and Fiscal Multipliers" — Blanchard and Leigh, IMF WP/13/1 (2013)',
-    description: 'The IMF\'s own chief economist finds that forecasters systematically underestimated the economic damage of fiscal consolidation by a factor of three.',
+    title: '"Growth Forecast Errors and Fiscal Multipliers" — Blanchard & Leigh, IMF (2013)',
+    description: 'The IMF\'s own chief economist documents that austerity programs caused three times the economic damage their models predicted.',
     external: true,
   },
   {
     href: 'https://www.imf.org/external/pubs/ft/fandd/2016/06/ostry.htm',
-    title: '"Neoliberalism: Oversold?" — Ostry, Loungani, Furceri, IMF Finance & Development (2016)',
-    description: 'Published in the IMF\'s own magazine: fiscal consolidation episodes are followed, on average, by drops rather than expansions in output, and increase inequality.',
+    title: '"Neoliberalism: Oversold?" — Ostry, Loungani & Furceri, IMF (2016)',
+    description: 'Published in the IMF\'s own magazine: austerity episodes are followed on average by drops in output and raise inequality significantly.',
     external: true,
+  },
+  {
+    href: '/posts/how-do-banks-create-money-out-of-nothing',
+    title: 'How Do Banks Create Money Out of Nothing?',
+    description: 'If banks create money at the moment of lending, the question is never whether money exists — only what it gets created for.',
+  },
+  {
+    href: '/posts/why-did-colonizers-tax-africans',
+    title: 'Why Did Colonizers Tax Africans?',
+    description: 'The hut tax manufactured dependency the same way austerity does: by converting something people had outside the market into something they had to earn colonial currency to access.',
   },
 ];
 
@@ -324,10 +316,10 @@ export default function WhatIsAusterityPage() {
         title="What Is Austerity?"
         lead={
           <>
-            Greece went through the worst peacetime economic contraction in any developed country
-            since the 1930s. Youth unemployment hit 60%. HIV infections rose 1,500% when they
-            closed the needle exchanges. And €110 billion was spent — enough to have funded the
-            Greek public sector for years. The question is where that money went.
+            In March 2020, the US government found $2.2 trillion in sixteen days. For most of
+            your life before that, the answer to healthcare, schools, and infrastructure was:
+            we can&rsquo;t afford it. So where did the money come from? And if it was always there,
+            what was actually happening when they said it wasn&rsquo;t?
           </>
         }
         date="July 2, 2026"
@@ -337,75 +329,72 @@ export default function WhatIsAusterityPage() {
 
       <ArticleTOC items={TOC_ITEMS} />
 
-      <ArticleSection>
-        <H2 id="we-have-to-live-within-our-means">The Household Budget Story</H2>
+      <ArticleSection id="the-six-trillion-question">
+        <H2 id="the-six-trillion-question">The $6 Trillion Question</H2>
         <P>
-          On April 26, 2009, David Cameron gave a speech that named what was coming. &ldquo;The age of
-          irresponsibility,&rdquo; he said, &ldquo;is giving way to the age of austerity.&rdquo; The money had run
-          out. The next government would have to make &ldquo;incredibly tough decisions on taxation,
-          spending, borrowing.&rdquo; One year later, his Chancellor, George Osborne, delivered an
-          emergency budget and explained the rationale with a metaphor:
-        </P>
-        <Blockquote
-          cite="George Osborne, Conservative Party Conference speech, October 4, 2010"
-        >
-          Britain has a £109bn a year structural deficit. Let me tell you what a structural deficit
-          is. It&rsquo;s the borrowing that doesn&rsquo;t go away as the economy grows, and we have £109bn of
-          it. It&rsquo;s like with a credit card. The longer you leave it, the worse it gets. You pay more
-          interest. You pay interest on the interest. You pay interest on the interest on the
-          interest.
-        </Blockquote>
-        <P>
-          The image is intuitive: a household that keeps borrowing falls deeper into debt. A
-          responsible household cuts back. The government must do the same. This framing drove the
-          Spending Review of October 20, 2010, which announced £81 billion in departmental cuts
-          over four years — what the Institute for Fiscal Studies described as &ldquo;the longest and
-          deepest sustained period of cuts to public service spending since at least the Second
-          World War.&rdquo;
+          On March 27, 2020 — sixteen days after the World Health Organization declared a
+          pandemic — President Trump signed the CARES Act into law. $2.2 trillion. Within
+          twelve months, total US COVID fiscal spending reached approximately $5–6 trillion.
         </P>
         <P>
-          The household budget analogy is a choice, not a description. A household that cuts its
-          spending reduces its own expenses — and reduces someone else&rsquo;s income. When that household
-          is the government, and government spending is private sector income — because every pound
-          the government spends on nurses&rsquo; wages, school heating, or road maintenance ends up in
-          someone&rsquo;s pocket — cutting that spending removes income from the private economy. Keynes
-          called this the paradox of thrift: what is rational for one household is destructive when
-          every household does it simultaneously.{' '}
-          <span className="text-sm text-gray-400 not-italic">(Keynes,{' '}
+          Think about what you were told before that. For years — decades, really — the answer
+          to almost any proposal involving public spending was some version of: we can&rsquo;t afford
+          it. The deficit. The debt. Living within our means. You heard it for single-payer
+          healthcare. You heard it for student debt relief. You heard it for crumbling bridges
+          and underfunded schools.
+        </P>
+        <P>
+          And then, in the space of a few weeks in spring 2020, six trillion dollars appeared.
+        </P>
+        <P>
+          That question doesn&rsquo;t go away. Where did it come from? Why was it available then
+          and not before? And why does the same pattern keep showing up — money appearing for
+          certain things, and not for others? In 2008, the Federal Reserve committed a total
+          of $7.77 trillion to rescue the financial system, according to a Bloomberg
+          investigation based on Fed data.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Bloomberg,{' '}
             <a
-              href="https://en.wikipedia.org/wiki/The_General_Theory_of_Employment,_Interest_and_Money"
+              href="https://www.bloomberg.com/news/articles/2011-11-28/secret-fed-loans-undisclosed-to-congress-gave-banks-13-billion-in-income"
               target="_blank"
               rel="noopener noreferrer"
               className="underline decoration-gray-400 hover:decoration-gray-600"
             >
-              <em>The General Theory of Employment, Interest and Money</em>
+              <em>&ldquo;Secret Fed Loans Gave Banks $13 Billion Undisclosed to Congress&rdquo;</em>
             </a>
-          , 1936)</span>
+          , November 2011)</span>{' '}
+          That&rsquo;s not a misprint. $7.77 trillion for the financial system, across various
+          emergency lending facilities, in roughly two years. Nobody asked whether we could
+          afford it.
         </P>
         <P>
-          The question is not whether Cameron and Osborne were unaware of this argument. The
-          question is what the household metaphor achieved. It made a specific political
-          choice — that the post-2008 deficit should be closed through spending cuts rather than
-          tax rises on wealth, through reductions in public services rather than losses for
-          creditors — look like the only responsible option available. It framed a hierarchy of
-          obligations as a fact of nature.
-        </P>
-        <P>
-          In June 2010, Osborne announced the ratio: 77% of the fiscal adjustment would come from
-          spending cuts, 23% from tax rises. By 2015–16, the Institute for Fiscal Studies
-          calculated the actual split had reached approximately 85% cuts to 15% tax rises. Local
-          government grant funding was cut by 40% in real terms over the decade. The most
-          deprived councils bore the largest cuts.
+          The article is going to follow that question.
         </P>
       </ArticleSection>
 
-      <ArticleSection>
-        <H2 id="the-paper-that-justified-the-cuts">The Paper That Justified the Cuts</H2>
+      <ArticleSection id="the-answer-you-were-given">
+        <H2 id="the-answer-you-were-given">The Answer You Were Given</H2>
         <P>
-          Austerity needed an intellectual foundation. It found one in a paper published in the
-          American Economic Review in May 2010 by Carmen Reinhart and Kenneth Rogoff, both of
-          Harvard. The paper was titled &ldquo;Growth in a Time of Debt.&rdquo; Its central claim appeared
-          in the abstract:{' '}
+          The answer you&rsquo;ve been given — the one that appears every time someone proposes
+          spending on something public — is the household budget story. The government is like
+          a family. You can&rsquo;t spend money you don&rsquo;t have. If you borrow too much, the debt
+          compounds and eventually swallows you. The responsible thing is to cut back, pay
+          down the debt, and live within your means.
+        </P>
+        <P>
+          This feels right. Most of us have experienced what happens when a household borrows
+          more than it can handle. It&rsquo;s intuitive.
+        </P>
+        <P>
+          It&rsquo;s also the logic that drove the Budget Control Act of 2011, which enforced $1.2
+          trillion in automatic spending cuts through &ldquo;sequestration.&rdquo; Air traffic controllers,
+          Head Start programs, food safety inspectors, housing assistance — all cut
+          automatically, across the board. The argument was that the US had run up too much
+          debt during the 2008 crisis and now had to be serious about it.
+        </P>
+        <P>
+          There was academic backing for this argument. In 2010, Harvard economists Carmen
+          Reinhart and Kenneth Rogoff published a paper in the American Economic Review. Its
+          central claim, from the abstract:{' '}
           <span className="text-sm text-gray-400 not-italic">(Reinhart and Rogoff,{' '}
             <a
               href="https://www.aeaweb.org/articles?id=10.1257/aer.100.2.573"
@@ -415,37 +404,39 @@ export default function WhatIsAusterityPage() {
             >
               <em>&ldquo;Growth in a Time of Debt&rdquo;</em>
             </a>
-          , American Economic Review, 2010)</span>
+          ,{' '}<em>American Economic Review</em>, 2010)</span>
         </P>
         <Blockquote cite="Reinhart and Rogoff, 'Growth in a Time of Debt,' American Economic Review, 2010">
-          The relationship between government debt and real GDP growth is weak for debt/GDP ratios
-          below a threshold of 90 percent of GDP. Above 90 percent, median growth rates fall by
-          one percent, and average growth falls considerably more.
+          The relationship between government debt and real GDP growth is weak for debt/GDP
+          ratios below a threshold of 90 percent of GDP. Above 90 percent, median growth rates
+          fall by one percent, and average growth falls considerably more.
         </Blockquote>
         <P>
-          The specific claim: for countries with debt-to-GDP above 90%, average GDP growth was
-          negative — minus 0.1%. Below that threshold, growth was strong. The implication was
-          clear: crossing 90% was an economic cliff edge. Governments approaching it needed to
-          cut immediately.
+          Above 90% debt-to-GDP: negative average growth. Below it: fine. The cliff edge was
+          real. The paper was downloaded over a million times. Paul Ryan, then chairman of the
+          House Budget Committee, cited it in his 2013 budget proposal:
         </P>
+        <Blockquote cite="Paul Ryan, 'The Path to Prosperity: A Responsible, Balanced Budget,' House Budget Committee, 2013">
+          A well-known study completed by economists Ken Rogoff and Carmen Reinhart confirms
+          this common-sense conclusion.
+        </Blockquote>
         <P>
-          The paper was downloaded from the National Bureau of Economic Research over a million
-          times. It circulated at the speed of a policy intervention because it confirmed what
-          powerful people already wanted to do. Paul Ryan&rsquo;s 2013 federal budget — &ldquo;The Path to
-          Prosperity&rdquo; — cited it explicitly: &ldquo;A well-known study completed by economists Ken
-          Rogoff and Carmen Reinhart confirms this common-sense conclusion.&rdquo; His budget used the
-          90% threshold as justification for rapid deficit reduction. Olli Rehn, the EU Commissioner
-          for Economic Affairs who oversaw eurozone austerity requirements, cited it in speeches
-          defending the conditions imposed on Greece, Ireland, Portugal, and Spain. George Osborne
-          referenced it in a 2010 speech on the dangers of high public debt.
+          This was the intellectual foundation. High debt causes low growth. Therefore: cut.
         </P>
+      </ArticleSection>
 
-        <H3 id="the-spreadsheet-error">The Spreadsheet Error</H3>
+      <ArticleSection id="the-crack">
+        <H2 id="the-crack">The Paper, and the Graduate Student</H2>
         <P>
-          In 2013, Thomas Herndon, a graduate student at the University of Massachusetts Amherst,
-          tried to replicate Reinhart and Rogoff&rsquo;s results as a class assignment. He could not.
-          With his professors Michael Ash and Robert Pollin, he wrote up what he found in a
-          working paper published by the Political Economy Research Institute in April 2013.{' '}
+          In 2013, a graduate student at the University of Massachusetts named Thomas Herndon
+          tried to replicate Reinhart and Rogoff&rsquo;s results for a class assignment.
+        </P>
+        <P>
+          He couldn&rsquo;t.
+        </P>
+        <P>
+          He went back through the original data and, with his professors Michael Ash and
+          Robert Pollin, identified three errors.{' '}
           <span className="text-sm text-gray-400 not-italic">(Herndon, Ash, and Pollin,{' '}
             <a
               href="https://peri.umass.edu/publication/does-high-public-debt-consistently-stifle-economic-growth-a-critique-of-reinhart-and-rogoff/"
@@ -458,117 +449,76 @@ export default function WhatIsAusterityPage() {
           , PERI Working Paper No. 322, 2013)</span>
         </P>
         <P>
-          There were three errors. The most consequential was a spreadsheet formula error: the
-          cell range in Reinhart and Rogoff&rsquo;s Excel calculation averaged rows 30 to 44 instead of
-          rows 30 to 49. This accidentally excluded five entire countries — Australia, Austria,
-          Belgium, Canada, and Denmark — from the computation of average growth in the high-debt
-          category. All five had high debt ratios and reasonable growth rates. Their exclusion
-          significantly reduced the estimated average.
+          The most consequential was an Excel spreadsheet formula that averaged the wrong
+          range of cells — accidentally excluding five entire countries from the high-debt
+          category: Australia, Austria, Belgium, Canada, and Denmark. All five had high debt
+          ratios. All five had positive growth. Their exclusion made the high-debt average
+          look dramatically worse than it actually was.
         </P>
         <P>
-          There was also selective exclusion of early postwar years for New Zealand and other
-          countries in which high debt coincided with strong growth, and an unconventional
-          weighting method that gave each country equal influence regardless of how many years of
-          data it provided — which gave outsized weight to small, unusual samples.
+          When the errors were corrected, the −0.1% average growth figure for high-debt
+          countries became +2.2%. The cliff edge — the specific threshold that had been cited
+          in budgets, speeches, and policy documents around the world — essentially
+          disappeared.
         </P>
         <P>
-          When the errors were corrected, the −0.1% average growth figure for high-debt countries
-          became +2.2%. The threshold effect — the cliff edge at 90% that had driven the entire
-          policy argument — essentially disappeared. Growth was somewhat lower for high-debt
-          countries than low-debt ones on the corrected data, but there was no dramatic negative
-          break. Countries could, in fact, carry high debt and grow.
+          Reinhart and Rogoff acknowledged the spreadsheet error. They disputed that the core
+          finding was affected. The paper had already been used to justify cuts across three
+          continents. The policies did not change.
         </P>
         <P>
-          Reinhart and Rogoff acknowledged the spreadsheet error. They disputed that it changed
-          their core finding. By then, the paper had been used to justify cuts across three
-          continents. The policies it had been cited to support did not change.
-        </P>
-      </ArticleSection>
-
-      <ArticleSection>
-        <H2 id="who-the-bailout-actually-bailed-out">Who the Bailout Actually Bailed Out</H2>
-        <P>
-          On May 2, 2010, the eurozone member states and the IMF agreed to lend Greece €110
-          billion. The stated purpose was to rescue Greece from insolvency. The requirement was
-          austerity: deep spending cuts, tax rises, privatization, and structural reforms embedded
-          in a Memorandum of Understanding that Greece had to sign and implement to receive each
-          tranche of funding.
-        </P>
-
-        <H3 id="what-the-conditions-specified">What the Conditions Specified</H3>
-        <P>
-          The 2010 Memorandum of Understanding, available on the European Commission&rsquo;s website,
-          required fiscal adjustment of approximately 11% of GDP over 2010–2013. In practice, this
-          meant:
-        </P>
-        <P>
-          The 13th and 14th month salary payments to public servants — standard in Greek employment
-          law — were abolished. Pensions were cut, then cut again; by 2015, they had been reduced
-          eleven times. VAT was raised from 19% to 23%. The minimum wage was cut by 22% for adult
-          workers and 32% for workers under 25. Collective bargaining was effectively suspended.
-          Healthcare budgets were cut by over 40% between 2008 and 2014. A privatization target
-          of €50 billion in state assets was set — a target that was never remotely met.
-        </P>
-        <P>
-          The 2012 Memorandum, signed as part of a second bailout of €130 billion (alongside a
-          €107 billion private sector debt restructuring, the largest sovereign debt restructuring
-          in history), deepened all these conditions and added further benchmarks on labor law,
-          deregulation, and fiscal governance. Greece signed. The conditions were implemented. The
-          economy contracted.
-        </P>
-
-        <H3 id="who-held-the-debt">Who Held the Debt</H3>
-        <P>
-          The bailout&rsquo;s stated purpose was preventing Greek insolvency. But insolvency is not an
-          abstract event — it is the non-payment of debts owed to specific creditors. To understand
-          what was being prevented, you have to ask who held Greek sovereign debt.
-        </P>
-        <P>
-          As of early 2010, based on Bank for International Settlements data and bank disclosures,
-          the picture was this: BNP Paribas held approximately €5 billion in Greek government
-          bonds. Société Générale held approximately €2.7 billion in Greek sovereign bonds.
-          Crédit Agricole&rsquo;s total Greek exposure was estimated at over €27 billion, including its
-          Greek subsidiary Emporiki Bank. Deutsche Bank held approximately €1.6 billion; Commerzbank
-          approximately €3 billion. Total French banking sector exposure to Greece was estimated at
-          €50–75 billion by analysts in 2010 — by far the largest of any major creditor nation.
-        </P>
-        <P>
-          A 2013 analysis by the European School of Management and Technology (ESMT) found that
-          approximately 77% of the €207 billion in loans disbursed to Greece through 2013 went to
-          refinance maturing debt owed to private creditors, not to fund the Greek state. The
-          European Central Bank had also purchased Greek bonds through its Securities Markets
-          Programme, transferring exposure from private banks to the ECB — and ultimately to
-          European taxpayers — before the 2012 private sector restructuring imposed losses on
-          remaining private holders.
-        </P>
-        <P>
-          The official narrative was rescuing Greece. The money flow shows what was actually being
-          rescued: the lending portfolios of French and German banks, moved through the Greek state
-          at the expense of Greek citizens. Those citizens did not borrow from BNP Paribas. The
-          Greek state did, on their behalf, to service earlier debts and run a budget that had been
-          built on optimistic projections and, in some cases, accounting that obscured the true
-          deficit. When that structure collapsed in 2010, the question was who would bear the cost.
-          The 2010 Memorandum answered it: Greek citizens first.
+          Hold that for a moment. The most-cited piece of academic evidence for austerity
+          contained a spreadsheet mistake. A graduate student found it trying to do a class
+          assignment. By the time he found it, the cuts had already happened — to Head Start,
+          to food safety inspection, to housing assistance, to all the things that had been
+          deemed unaffordable.
         </P>
       </ArticleSection>
 
-      <ArticleSection>
-        <H2 id="what-the-conditions-did">What the Conditions Did</H2>
+      <ArticleSection id="follow-the-money">
+        <H2 id="follow-the-money">Follow the Money</H2>
         <P>
-          Greek GDP fell approximately 25% between 2008 and 2013. No developed economy had
-          contracted by that margin in peacetime since the 1930s. The IMF&rsquo;s own ex-post analysis
-          later acknowledged the projections had been wrong.
+          Maybe the spreadsheet error doesn&rsquo;t matter. Maybe the government genuinely had to
+          make hard choices with limited resources, and the Reinhart-Rogoff paper was just
+          a convenient justification for something that needed to happen anyway. Let&rsquo;s follow
+          the money and see.
         </P>
         <P>
-          Unemployment stood at 7.7% in 2008. It reached 27.5% in September 2013. Youth
-          unemployment — workers under 25 — reached 60.1% in July 2013. Average wages fell
-          approximately 25–30% in real terms between 2009 and 2014.
+          In May 2010, the US, European governments, and the International Monetary Fund agreed
+          to lend Greece €110 billion. The official story: rescuing a country on the edge of
+          collapse. The condition: deep austerity. Greece would cut pensions, freeze wages,
+          raise taxes, and privatize state assets in exchange for each tranche of funding.
         </P>
         <P>
-          Healthcare budgets were cut by over 40%. Drug shortages became acute. When needle
-          exchange programs were closed, HIV infections among intravenous drug users in Athens rose
-          by 1,500% between 2010 and 2012, according to a study published in{' '}
-          <em>The Lancet</em> in 2014.{' '}
+          A 2013 analysis by the European School of Management and Technology found that
+          approximately 77% of the €207 billion in loans disbursed to Greece through 2013
+          went not to fund the Greek state, but to refinance debts owed to private
+          creditors.
+        </P>
+        <P>
+          Private creditors. Who?
+        </P>
+        <P>
+          French and German banks. BNP Paribas held approximately €5 billion in Greek
+          government bonds. Crédit Agricole&rsquo;s total Greek exposure was estimated at over
+          €27 billion, including its Greek subsidiary. Deutsche Bank held €1.6 billion.
+          Commerzbank €3 billion. The French banking sector&rsquo;s total Greek exposure was
+          estimated at €50–75 billion by 2010 analysts.
+        </P>
+        <P>
+          The Greek people did not borrow from BNP Paribas. The Greek state did. When it
+          couldn&rsquo;t pay, the &ldquo;bailout&rdquo; paid the bank. Seventy-seven cents of every
+          bailout euro flowed through Greece and back out to a private creditor. The Greek
+          population bore the cost of a restructuring that primarily protected French and
+          German bank balance sheets.
+        </P>
+        <P>
+          Greek GDP fell 25% between 2008 and 2013 — the deepest peacetime economic
+          contraction in any developed country since the 1930s. Youth unemployment hit 60.1%
+          in July 2013. Average wages fell 25–30% in real terms. Healthcare budgets were cut
+          by over 40%. Suicides rose 35% between 2010 and 2012. HIV infections among drug
+          users in Athens rose 1,500% after needle exchange programs were closed to save
+          money, according to a study published in <em>The Lancet</em>.{' '}
           <span className="text-sm text-gray-400 not-italic">(Kentikelenis et al.,{' '}
             <a
               href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(13)62291-X/fulltext"
@@ -579,85 +529,140 @@ export default function WhatIsAusterityPage() {
               <em>&ldquo;Greece&rsquo;s Health Crisis: From Austerity to Denialism&rdquo;</em>
             </a>
           ,{' '}<em>The Lancet</em>, 2014)</span>{' '}
-          Suicides rose 35% between 2010 and 2012. Infant mortality rose 21% between 2008 and
-          2011, linked to reduced antenatal care.
+          Pensions were cut eleven times by 2015.
         </P>
         <P>
-          The effects in the United Kingdom were less acute but documented across two decades. The
-          Trussell Trust — the largest food bank network in Britain — distributed 61,468 emergency
-          food parcels in 2010–11. By 2019–20 that figure was 1.9 million. The Marmot Review,
-          published in February 2020 by the Institute of Health Equity, found that for the first
-          time in at least 120 years, life expectancy in England had stalled. Women&rsquo;s life
-          expectancy in the most deprived 10% of areas had fallen between 2010–12 and 2016–18.{' '}
-          <span className="text-sm text-gray-400 not-italic">(Marmot et al.,{' '}
-            <a
-              href="https://www.instituteofhealthequity.org/resources-reports/marmot-review-10-years-on"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline decoration-gray-400 hover:decoration-gray-600"
-            >
-              <em>Health Equity in England: The Marmot Review 10 Years On</em>
-            </a>
-          , Institute of Health Equity, 2020)</span>
-        </P>
-        <P>
-          Philip Alston, UN Special Rapporteur on Extreme Poverty and Human Rights, visited the
-          United Kingdom in November 2018. His formal report, submitted to the UN Human Rights
-          Council in April 2019, stated:{' '}
-          <span className="text-sm text-gray-400 not-italic">(Alston,{' '}
-            <a
-              href="https://www.ohchr.org/en/documents/country-reports/ahrc4139add1-visit-united-kingdom-great-britain-and-northern-ireland"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline decoration-gray-400 hover:decoration-gray-600"
-            >
-              <em>Report of the Special Rapporteur on Extreme Poverty and Human Rights</em>
-            </a>
-          , United Nations, 2019)</span>
-        </P>
-        <Blockquote cite="Philip Alston, UN Special Rapporteur on Extreme Poverty and Human Rights, 2019">
-          The imposition of austerity was an ideological project designed to radically reshape the
-          relationship between the Government and the citizenry.
-        </Blockquote>
-        <P>
-          Fourteen million people, Alston found — one-fifth of the UK population — lived in
-          poverty. 1.5 million were destitute. Almost 60% of those in poverty were in families
-          where someone worked.
+          That is what the money protected. Those are the outcomes the conditions produced.
         </P>
       </ArticleSection>
 
-      <ArticleSection>
-        <H2 id="the-institution-admitted-the-models-were-wrong">The Institution That Admitted the Models Were Wrong</H2>
+      <ArticleSection id="what-it-looks-like-at-home">
+        <H2 id="what-it-looks-like-at-home">What It Looks Like at Home</H2>
         <P>
-          In October 2012, the IMF&rsquo;s World Economic Outlook included a box titled &ldquo;Are We
-          Underestimating Short-Term Fiscal Multipliers?&rdquo; The answer was yes. The forecasting
-          models used to project the effects of fiscal consolidation had assumed multipliers of
-          approximately 0.5 — meaning each unit of spending cuts was expected to reduce output by
-          0.5 units. The actual multipliers found were in the range of 0.9 to 1.7.
+          Greece feels distant. Here is what the same mechanism looks like in the United States.
         </P>
         <P>
-          In January 2013, IMF Working Paper WP/13/1 extended this finding. Chief Economist
-          Olivier Blanchard and Daniel Leigh analyzed forecasting errors across 28 advanced
-          economies and found that the underestimation was systematic:
+          The University of California system charged no tuition for California residents until
+          1970. The GI Bill made college accessible to an entire generation without debt. Then,
+          as governor, Ronald Reagan imposed the first tuition in 1970, arguing explicitly that
+          education shouldn&rsquo;t be &ldquo;free.&rdquo; Over the following decades, federal and state
+          funding for public universities fell from covering approximately 75% of costs in 1975
+          to approximately 35% by 2020.
+        </P>
+        <P>
+          The need for a degree didn&rsquo;t shrink. It grew. The money had to come from somewhere.
+        </P>
+        <P>
+          Total US student loan debt: approximately $100 billion in 1993. $1.7 trillion today.
+        </P>
+        <P>
+          That is not Americans getting irresponsible about borrowing. That is a public
+          good being converted into a financial product, one budget cut at a time. The public
+          university existed outside the market — you could get an education without going into
+          debt with a bank. Then public funding was cut. The need remained. Banks moved in
+          at interest. What was a public service is now a debt instrument.
+        </P>
+        <P>
+          Medical debt is the leading cause of personal bankruptcy in the United States.
+          Approximately 100 million Americans carry it. Countries with universal public
+          healthcare don&rsquo;t have medical debt as a category — it simply doesn&rsquo;t exist as a
+          social phenomenon, because the need is met outside the market. In the United States,
+          the market is mandatory. If you don&rsquo;t have insurance, or your insurance doesn&rsquo;t
+          cover something, or the bill arrives despite coverage because of how hospital billing
+          works, you pay. If you can&rsquo;t pay, you borrow. If you can&rsquo;t borrow, it goes to
+          collections. None of this is a law of nature. It is a set of choices about what
+          to fund publicly and what to leave to the market.
+        </P>
+        <P>
+          The US also has the most expensive housing market in its history, driven in part by
+          the systematic defunding of public and subsidized housing from the 1970s onward.
+          Public housing stock: deliberately reduced. Section 8 vouchers: chronically
+          underfunded, with waiting lists years long in most cities. The need for housing
+          didn&rsquo;t disappear. It was met with mortgages, and when mortgages became inaccessible,
+          with rents that have risen faster than wages for forty consecutive years.
+        </P>
+        <P>
+          In each case: the public thing was cut. The need remained. Banks filled the gap.
+          The territory where a bank stands between you and something you need got larger.
+        </P>
+      </ArticleSection>
+
+      <ArticleSection id="what-this-actually-is">
+        <H2 id="what-this-actually-is">What This Actually Is</H2>
+        <P>
+          Here is what nobody says plainly: austerity doesn&rsquo;t cut money.
+        </P>
+        <P>
+          Money can&rsquo;t be &ldquo;saved&rdquo; at the government level. A currency-issuing government
+          creates money when it spends and destroys money when it taxes. If the government
+          cuts spending, it is not setting aside the difference for later — it is simply
+          creating less money. The private sector has to make up for that destruction with
+          more borrowing, or the economy contracts.
+        </P>
+        <P>
+          What austerity actually does is replace one kind of money with another.
+        </P>
+        <P>
+          Public money — the money that funds hospitals, schools, and universities — doesn&rsquo;t
+          charge interest. It doesn&rsquo;t require you to be creditworthy. A student who attends
+          a publicly funded university for free doesn&rsquo;t need to ask a bank for permission.
+          A patient in a country with universal healthcare doesn&rsquo;t accumulate a debt load.
+          These things exist in a space where banks are not between you and what you need.
+        </P>
+        <P>
+          Private money — a bank loan — charges interest. It requires creditworthiness. It
+          requires you to go to a bank and ask, and to be approved, and to service the debt
+          indefinitely. If you don&rsquo;t qualify, you don&rsquo;t get the thing.
+        </P>
+        <P>
+          Austerity systematically expands the territory where the second kind replaces the
+          first. Cut public university funding: student loans expand. Cut public housing: rents
+          expand, then mortgages expand for those who can access them, then medical debt
+          expands for those who can&rsquo;t afford their deductibles. In each case, the thing
+          didn&rsquo;t disappear. You now borrow to get it. The bank profits from the interest.
+          What was a public service has become a revenue stream.
+        </P>
+        <P>
+          This is not accidental. This is the mechanism.
+        </P>
+      </ArticleSection>
+
+      <ArticleSection id="the-admission">
+        <H2 id="the-admission">The Admission</H2>
+        <P>
+          In January 2013 — after the Budget Control Act, after sequestration, after the
+          Greek cuts — the IMF published a working paper by its chief economist, Olivier
+          Blanchard, and his colleague Daniel Leigh. It found that the models used to design
+          the austerity programs had assumed fiscal multipliers of approximately 0.5. The
+          actual multipliers were approximately 1.5.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Blanchard and Leigh,{' '}
+            <a
+              href="https://www.imf.org/external/pubs/ft/wp/2013/wp1301.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-gray-400 hover:decoration-gray-600"
+            >
+              <em>&ldquo;Growth Forecast Errors and Fiscal Multipliers&rdquo;</em>
+            </a>
+          , IMF Working Paper WP/13/1, 2013)</span>
+        </P>
+        <P>
+          What that means in plain language: the IMF thought cutting $1 of government spending
+          would shrink the economy by $0.50. The actual shrinkage was $1.50. The models
+          were wrong by a factor of three. Every dollar cut from the Greek economy during
+          those years shrank it by $1.50, not $0.50 — which is why the debt-to-GDP ratio
+          kept getting worse even as the cuts were supposed to fix it.
         </P>
         <Blockquote cite="Blanchard and Leigh, IMF Working Paper WP/13/1, January 2013">
           A natural interpretation is that fiscal multipliers were substantially higher than
-          implicitly assumed by forecasters. Forecasters significantly underestimate the increase
-          in unemployment and the decline in domestic demand associated with fiscal consolidation.
+          implicitly assumed by forecasters. Forecasters significantly underestimate the
+          increase in unemployment and the decline in domestic demand associated with fiscal
+          consolidation.
         </Blockquote>
         <P>
-          The implication for Greece specifically: if the actual fiscal multiplier was 1.5 rather
-          than 0.5, then every percentage point of GDP removed through spending cuts shrank the
-          Greek economy by 1.5 percentage points. Because GDP was shrinking faster than the debt
-          was being reduced, the debt-to-GDP ratio — the ratio that was being &ldquo;fixed&rdquo; — was
-          getting worse, not better. The program was contractionary, and it was contractionary in
-          exactly the way the IMF&rsquo;s own model should have predicted if the multiplier had been
-          set correctly.
-        </P>
-        <P>
-          In June 2016, three senior IMF research economists — Jonathan Ostry, Prakash Loungani,
-          and Davide Furceri — published an article in the IMF&rsquo;s own magazine, <em>Finance &amp;
-          Development</em>, under the title &ldquo;Neoliberalism: Oversold?&rdquo;{' '}
+          Three years later, senior IMF economists published an article in the IMF&rsquo;s own
+          magazine, <em>Finance &amp; Development</em>, under a title that should give you
+          pause: &ldquo;Neoliberalism: Oversold?&rdquo;{' '}
           <span className="text-sm text-gray-400 not-italic">(Ostry, Loungani, and Furceri,{' '}
             <a
               href="https://www.imf.org/external/pubs/ft/fandd/2016/06/ostry.htm"
@@ -670,103 +675,83 @@ export default function WhatIsAusterityPage() {
           ,{' '}<em>Finance &amp; Development</em>, Vol. 53, No. 2, 2016)</span>
         </P>
         <Blockquote cite="Ostry, Loungani, and Furceri, 'Neoliberalism: Oversold?' IMF Finance & Development, June 2016">
-          Episodes of fiscal consolidation have been followed, on average, by drops rather than by
-          expansions in output. A consolidation of 1 percent of GDP increases the long-term
+          Episodes of fiscal consolidation have been followed, on average, by drops rather than
+          by expansions in output. A consolidation of 1 percent of GDP increases the long-term
           unemployment rate by 0.6 percentage point and raises by 1.5 percent within five years
           the Gini measure of income inequality.
         </Blockquote>
         <P>
-          The IMF&rsquo;s Independent Evaluation Office, reviewing the 2010–2012 programs for Greece,
-          Ireland, and Portugal in 2016, found that the 2010 Greek program had been approved
-          despite IMF staff projections showing debt unsustainability. The standard criteria for
-          exceptional access to IMF resources had been waived because of political pressure from
-          European member states. The institution that had designed the conditions, enforced them,
-          and collected debt service on them later documented in its own evaluation that the
-          program had been approved for political rather than technical reasons.
+          The institution that designed the programs published papers saying the models were
+          wrong. Both things came from the same place. That is not a contradiction — it is a
+          description of how the institution works. It serves the interests of its creditor
+          member states. When those interests conflict with the welfare of debtor populations,
+          the record shows which wins.
         </P>
         <P>
-          The economists who wrote those post-mortems were not renegades. They published in the
-          IMF&rsquo;s own working paper series and the IMF&rsquo;s own magazine. The institution produced
-          both the programs that caused the damage and the papers documenting that the models were
-          wrong. Both outputs came from the same place, under the same mandate, serving the same
-          member states. That is not a contradiction. It is a description of how the institution
-          works: it serves multiple interests simultaneously, and when the interests of powerful
-          creditor members diverge from the welfare of debtor populations, the record shows which
-          wins.
+          The graduate student who found the spreadsheet error is not a household name. The
+          economists whose paper contained the error are. The cuts happened. The admissions
+          came later. The damage did not reverse.
         </P>
       </ArticleSection>
 
-      <ArticleSection>
+      <ArticleSection id="faq">
         <H2 id="faq">Common Questions</H2>
         <ArticleFAQ items={FAQ_ITEMS} />
       </ArticleSection>
 
       <ArticleFurtherReading title="Go Deeper" items={FURTHER_READING} />
 
-      <ArticleCallout variant="dark" title="Responsible to Whom?">
+      <ArticleCallout variant="dark" title="Who Gets the Yes, and Who Gets the No">
         <p>
-          The phrase &ldquo;fiscal responsibility&rdquo; appears in almost every austerity argument. It frames
-          one particular hierarchy of obligations — pay creditors first, cut public services second —
-          as the mature, responsible, adult position. But a hierarchy of obligations is a
-          political choice, not an economic law.
+          In 2020, $6 trillion appeared in twelve months. In 2008, the Federal Reserve
+          committed $7.77 trillion to the financial system. The money was not found somewhere.
+          It was created — the way money is always created, by a government deciding to spend it.
         </p>
         <br />
         <p>
-          The evidence used to justify the cuts was wrong. The institution that designed the
-          programs published papers saying the models were wrong. Seventy-seven percent of the
-          Greek bailout money went to private creditors, not to Greek citizens. The human costs —
-          documented in Lancet studies, Marmot reviews, and UN rapporteur reports — fell on people
-          who had no say in either the original lending or the response.
+          What austerity has never explained is why that mechanism works when the beneficiary
+          is a bank, and stops working when the question is whether someone can afford their
+          insulin, their degree, or their rent.
         </p>
         <br />
         <p>
-          That breakdown does not end with austerity. It opens a question about every other concept
-          that works by the same structure. &ldquo;Sustainable spending.&rdquo; &ldquo;Fiscal prudence.&rdquo;
-          &ldquo;Structural reform.&rdquo; Each deploys the household budget metaphor to make a specific
-          choice about whose claims get honored — and whose services get cut to honor them — look
-          like the only responsible option available. The question to ask of each: responsible to
-          whom? Sustainable for whom? By whose definition of prudence?
+          Student loan debt went from $100 billion to $1.7 trillion. Medical debt is the leading
+          cause of personal bankruptcy. The public university that used to cost almost nothing
+          now costs $30,000 a year. Each of these is a public service that was cut, a need that
+          remained, and a bank that moved in to fill the gap — at interest, permanently.
+        </p>
+        <br />
+        <p>
+          Social Security is described as being in &ldquo;crisis.&rdquo; The proposed solution is partial
+          privatization — converting a guaranteed public pension into individual accounts managed
+          by financial firms. The script is familiar. The public thing gets cut. The need remains.
+          The market fills the gap. The question is the same one it always is: whose debt gets
+          honored, and whose service gets cut to honor it?
         </p>
       </ArticleCallout>
 
       <ArticleSources>
         <p>
-          <strong>Primary sources:</strong> George Osborne, Emergency Budget speech, House of Commons,
-          June 22, 2010; George Osborne, Conservative Party Conference speech, October 4, 2010;
-          David Cameron, Conservative Party Spring Forum speech, April 26, 2009; European Commission,
-          Memorandum of Understanding on Specific Economic Policy Conditionality, May 2010;
-          European Commission, Second Economic Adjustment Programme for Greece, March 2012;
-          Philip Alston, Report of the Special Rapporteur on Extreme Poverty and Human Rights
-          (Visit to the United Kingdom), UN Human Rights Council, A/HRC/41/39/Add.1, April 2019.
+          <strong>Primary sources:</strong> Paul Ryan, &ldquo;The Path to Prosperity: A Responsible,
+          Balanced Budget,&rdquo; House Budget Committee, March 2013; Carmen M. Reinhart and Kenneth
+          S. Rogoff, &ldquo;Growth in a Time of Debt,&rdquo; <em>American Economic Review</em>, Vol. 100,
+          No. 2, May 2010 (also NBER Working Paper No. 15639); Olivier Blanchard and Daniel Leigh,
+          &ldquo;Growth Forecast Errors and Fiscal Multipliers,&rdquo; IMF Working Paper WP/13/1, January
+          2013; Jonathan D. Ostry, Prakash Loungani, and Davide Furceri, &ldquo;Neoliberalism:
+          Oversold?&rdquo; <em>Finance &amp; Development</em>, Vol. 53, No. 2, June 2016.
         </p>
         <p>
-          <strong>Research and analysis:</strong> Carmen M. Reinhart and Kenneth S. Rogoff,
-          &ldquo;Growth in a Time of Debt,&rdquo; <em>American Economic Review</em>, Vol. 100, No. 2, May 2010
-          (also NBER Working Paper No. 15639); Thomas Herndon, Michael Ash, and Robert Pollin,
+          <strong>Research and data:</strong> Thomas Herndon, Michael Ash, and Robert Pollin,
           &ldquo;Does High Public Debt Consistently Stifle Economic Growth? A Critique of Reinhart
           and Rogoff,&rdquo; PERI Working Paper No. 322, University of Massachusetts Amherst, April
-          2013 (also <em>Cambridge Journal of Economics</em>, Vol. 38, No. 2, 2014); Olivier Blanchard and
-          Daniel Leigh, &ldquo;Growth Forecast Errors and Fiscal Multipliers,&rdquo; IMF Working Paper
-          WP/13/1, January 2013 (also <em>American Economic Review: Papers and Proceedings</em>, Vol.
-          103, No. 3, May 2013); Jonathan D. Ostry, Prakash Loungani, and Davide Furceri,
-          &ldquo;Neoliberalism: Oversold?&rdquo; <em>Finance &amp; Development</em>, Vol. 53, No. 2, June 2016;
-          IMF World Economic Outlook, October 2012, Box 1.1; IMF Independent Evaluation Office,
-          &ldquo;The IMF and the Crises in Greece, Ireland, and Portugal,&rdquo; 2016; European School of
-          Management and Technology (ESMT), analysis of Greek bailout fund flows, 2013; Alexander
-          Kentikelenis et al., &ldquo;Greece&rsquo;s Health Crisis: From Austerity to Denialism,&rdquo;
-          <em>The Lancet</em>, Vol. 383, No. 9918, February 2014; Michael Marmot et al.,
-          <em>Health Equity in England: The Marmot Review 10 Years On</em>, Institute of Health
-          Equity / Health Foundation, February 2020; Institute for Fiscal Studies, &ldquo;How Have
-          English Councils&rsquo; Funding and Spending Changed? 2010 to 2024&rdquo;;
-          Trussell Trust annual food bank statistics, 2010–2020; Bank for International Settlements,
-          Quarterly Review, 2010.
-        </p>
-        <p>
-          <strong>Further reading cited:</strong> John Maynard Keynes, <em>The General Theory of
-          Employment, Interest and Money</em> (Macmillan, 1936); Mark Blyth, <em>Austerity:
-          The History of a Dangerous Idea</em> (Oxford University Press, 2013); Naomi Klein,
-          <em>The Shock Doctrine</em> (Metropolitan Books, 2007); Joseph Stiglitz,
-          <em>Globalization and Its Discontents</em> (W.W. Norton, 2002).
+          2013; European School of Management and Technology (ESMT), analysis of Greek bailout
+          fund flows, 2013; Alexander Kentikelenis et al., &ldquo;Greece&rsquo;s Health Crisis: From
+          Austerity to Denialism,&rdquo; <em>The Lancet</em>, Vol. 383, No. 9918, February 2014;
+          Bloomberg, &ldquo;Secret Fed Loans Gave Banks $13 Billion Undisclosed to Congress,&rdquo;
+          November 28, 2011; Bank for International Settlements, Quarterly Review, 2010;
+          National Center for Education Statistics, Digest of Education Statistics; Federal
+          Reserve Bank of New York, Student Loan Data; Consumer Financial Protection Bureau,
+          Medical Debt data.
         </p>
       </ArticleSources>
     </ArticleLayout>
