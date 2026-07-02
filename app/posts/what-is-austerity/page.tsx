@@ -291,39 +291,28 @@ const FAQ_ITEMS: FAQItem[] = [
 
 const FURTHER_READING: FurtherReadingItem[] = [
   {
-    title: 'Austerity: The History of a Dangerous Idea',
-    author: 'Mark Blyth',
-    year: 2013,
-    description: 'A political economist at Brown University traces austerity from 18th-century liberal theory to 21st-century eurozone policy, finding no consistent historical evidence that cutting spending generates growth and documenting who the policy consistently protects.',
-    url: 'https://www.amazon.com/Austerity-History-Dangerous-Mark-Blyth/dp/0199828768',
+    href: 'https://www.amazon.com/Austerity-History-Dangerous-Mark-Blyth/dp/0199828768',
+    title: 'Austerity: The History of a Dangerous Idea — Mark Blyth (2013)',
+    description: 'Traces austerity from 18th-century liberal theory to 21st-century eurozone policy, finding no consistent historical evidence that cutting spending generates growth and documenting who the policy consistently protects.',
+    external: true,
   },
   {
-    title: 'The Shock Doctrine: The Rise of Disaster Capitalism',
-    author: 'Naomi Klein',
-    year: 2007,
+    href: 'https://www.amazon.com/Shock-Doctrine-Rise-Disaster-Capitalism/dp/0312427999',
+    title: 'The Shock Doctrine — Naomi Klein (2007)',
     description: 'Documents how free-market restructuring has been systematically imposed on countries in the immediate aftermath of crises — coups, disasters, financial collapses — when populations are too disoriented to resist.',
-    url: 'https://www.amazon.com/Shock-Doctrine-Rise-Disaster-Capitalism/dp/0312427999',
+    external: true,
   },
   {
-    title: 'Globalization and Its Discontents',
-    author: 'Joseph Stiglitz',
-    year: 2002,
-    description: 'The former World Bank Chief Economist documents how IMF conditionality was ideologically driven rather than evidence-based, and how it served the interests of creditor institutions rather than debtor populations.',
-    url: 'https://www.amazon.com/Globalization-Its-Discontents-Joseph-Stiglitz/dp/0393324397',
-  },
-  {
-    title: '"Growth Forecast Errors and Fiscal Multipliers" (IMF Working Paper WP/13/1)',
-    author: 'Olivier Blanchard and Daniel Leigh',
-    year: 2013,
+    href: 'https://www.imf.org/external/pubs/ft/wp/2013/wp1301.pdf',
+    title: '"Growth Forecast Errors and Fiscal Multipliers" — Blanchard and Leigh, IMF WP/13/1 (2013)',
     description: 'The IMF\'s own chief economist finds that forecasters systematically underestimated the economic damage of fiscal consolidation by a factor of three.',
-    url: 'https://www.imf.org/external/pubs/ft/wp/2013/wp1301.pdf',
+    external: true,
   },
   {
-    title: '"Neoliberalism: Oversold?" (IMF Finance & Development)',
-    author: 'Jonathan Ostry, Prakash Loungani, and Davide Furceri',
-    year: 2016,
+    href: 'https://www.imf.org/external/pubs/ft/fandd/2016/06/ostry.htm',
+    title: '"Neoliberalism: Oversold?" — Ostry, Loungani, Furceri, IMF Finance & Development (2016)',
     description: 'Published in the IMF\'s own magazine: fiscal consolidation episodes are followed, on average, by drops rather than expansions in output, and increase inequality.',
-    url: 'https://www.imf.org/external/pubs/ft/fandd/2016/06/ostry.htm',
+    external: true,
   },
 ];
 
@@ -331,14 +320,22 @@ export default function WhatIsAusterityPage() {
   return (
     <ArticleLayout jsonLd={jsonLd}>
       <ArticleHeader
+        categories={['Economics', 'Politics']}
         title="What Is Austerity?"
-        subtitle="The evidence used to justify it contained a spreadsheet error. The bailout money went to French and German banks. The institution that designed the programs later published papers saying the models were wrong. Austerity is not fiscal responsibility. It is a hierarchy of obligations."
-        publishedDate="July 2, 2026"
-        category="Economics"
-        categoryHref="/category/economics"
+        lead={
+          <>
+            Greece went through the worst peacetime economic contraction in any developed country
+            since the 1930s. Youth unemployment hit 60%. HIV infections rose 1,500% when they
+            closed the needle exchanges. And €110 billion was spent — enough to have funded the
+            Greek public sector for years. The question is where that money went.
+          </>
+        }
+        date="July 2, 2026"
+        dateTime="2026-07-02"
+        readingTime="16 min read"
       />
 
-      <ArticleTOC items={TOC_ITEMS} title="What Is Austerity?" />
+      <ArticleTOC items={TOC_ITEMS} />
 
       <ArticleSection>
         <H2 id="we-have-to-live-within-our-means">The Household Budget Story</H2>
@@ -704,7 +701,7 @@ export default function WhatIsAusterityPage() {
         <ArticleFAQ items={FAQ_ITEMS} />
       </ArticleSection>
 
-      <ArticleFurtherReading items={FURTHER_READING} />
+      <ArticleFurtherReading title="Go Deeper" items={FURTHER_READING} />
 
       <ArticleCallout variant="dark" title="Responsible to Whom?">
         <p>
