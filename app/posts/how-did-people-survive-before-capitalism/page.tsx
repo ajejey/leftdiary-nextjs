@@ -130,7 +130,7 @@ const TOC_ITEMS: TOCItem[] = [
   { id: 'the-enclosure-acts', text: 'The Enclosure Acts: 5,000 Laws to Take It Away', level: 2 },
   { id: 'the-invention-of-unemployment', text: 'The Invention of Unemployment', level: 2 },
   { id: 'the-workhouse', text: 'The Alternative to Wages: The Workhouse', level: 3 },
-  { id: 'polanyi-fictitious-commodities', text: 'Polanyi: Making Labor a Commodity', level: 2 },
+  { id: 'polanyi-fictitious-commodities', text: 'Fictitious Commodities', level: 2 },
   { id: 'federici-women-enclosure', text: 'What Enclosure Did to Women', level: 2 },
   { id: 'the-8-hour-day', text: 'The 8-Hour Day Was Fought For, Not Given', level: 2 },
   { id: 'global-enclosure', text: 'The Same Playbook, Applied Globally', level: 2 },
@@ -549,39 +549,9 @@ export default function HowDidPeopleSurviveBeforeCapitalism() {
       </ArticleSection>
 
       <ArticleSection>
-        <H2 id="polanyi-fictitious-commodities">Polanyi: Making Labor a Commodity</H2>
+        <H2 id="polanyi-fictitious-commodities">Fictitious Commodities</H2>
         <P>
-          In 1944, the Hungarian-British economist{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Karl_Polanyi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            Karl Polanyi
-          </a>{' '}
-          published{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/The_Great_Transformation_(book)"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            <em>The Great Transformation</em>
-          </a>
-          . We&apos;ve{' '}
-          <Link
-            href="/posts/why-is-housing-so-expensive"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            mentioned him in the housing article
-          </Link>{' '}
-          — his concept of land as a &ldquo;fictitious commodity.&rdquo; But his argument goes
-          deeper.
-        </P>
-        <P>
-          Polanyi identified three things that markets treat as commodities but that aren&apos;t
-          actually products made for sale:
+          Three things that markets treat as commodities were never actually produced for sale.
         </P>
         <P>
           <strong>Labor</strong> — human beings and their time. It can be sold on the market. But
@@ -606,18 +576,21 @@ export default function HowDidPeopleSurviveBeforeCapitalism() {
           — where new money goes primarily to those who already have collateral.
         </P>
 
-        <Blockquote cite="Karl Polanyi, The Great Transformation (1944)">
-          &ldquo;Labor, land, and money are obviously not commodities; the postulate that anything
-          that is bought and sold must have been produced for sale is emphatically untrue in regard
-          to them... But the fiction of their being so produced became the organizing principle of
-          society. Of the three, the fiction of labor was perhaps the most explosive.&rdquo;
-        </Blockquote>
-
         <P>
-          The key word: <em>fiction</em>. The market economy didn&apos;t discover that labor is a
-          commodity. It decided to treat it as one. And then built legal, physical, and social
-          structures to enforce that fiction — from enclosure acts to workhouses to vagrancy laws
-          that criminalized being poor without employment.
+          The market economy didn&apos;t discover that labor is a commodity. It decided to treat it
+          as one. And then built legal, physical, and social structures to enforce that fiction —
+          from enclosure acts to workhouses to vagrancy laws that criminalized being poor without
+          employment.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Polanyi,{' '}
+            <a
+              href="https://en.wikipedia.org/wiki/The_Great_Transformation_(book)"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-gray-400 hover:decoration-gray-600"
+            >
+              <em>The Great Transformation</em>
+            </a>
+          , 1944)</span>
         </P>
         <P>
           Treating labor as a commodity means that when there&apos;s no demand for your labor, you
@@ -629,25 +602,8 @@ export default function HowDidPeopleSurviveBeforeCapitalism() {
       <ArticleSection>
         <H2 id="federici-women-enclosure">What Enclosure Did to Women</H2>
         <P>
-          The standard history of enclosure focuses on men losing their farming rights. But{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Silvia_Federici"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            Silvia Federici
-          </a>
-          , in{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Caliban_and_the_Witch"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            <em>Caliban and the Witch</em>
-          </a>{' '}
-          (2004), shows that enclosure hit women differently — and more completely.
+          The standard history of enclosure focuses on men losing their farming rights. Enclosure
+          hit women differently — and more completely.
         </P>
         <P>
           In pre-enclosure England, women participated actively in the common economy. They grazed
@@ -667,16 +623,25 @@ export default function HowDidPeopleSurviveBeforeCapitalism() {
         <P>
           But this labor was not paid. It was not recognized as economic. It was reclassified as
           &ldquo;natural&rdquo; — something women did out of love, out of duty, out of their
-          nature as wives and mothers. Federici&apos;s argument: this wasn&apos;t a natural
-          development. It was the enclosure of women&apos;s labor — making it invisible and
-          unpaid so that the factory owners got an enormous subsidy. The workers in the factories
-          had to be fed, clothed, and cared for. The cost of that reproduction was transferred to
-          women and called &ldquo;love.&rdquo;
+          nature as wives and mothers. This wasn&apos;t a natural development. It was the enclosure
+          of women&apos;s labor — making it invisible and unpaid so that the factory owners got an
+          enormous subsidy. The workers in the factories had to be fed, clothed, and cared for.
+          The cost of that reproduction was transferred to women and called &ldquo;love.&rdquo;
         </P>
         <P>
           The housewife — as a specific social role, economically dependent on a husband&apos;s
           wage — was built by the same enclosure that built the factory system. It required
-          enclosing women out of the independent economy.
+          enclosing women out of the independent economy.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Federici,{' '}
+            <a
+              href="https://en.wikipedia.org/wiki/Caliban_and_the_Witch"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-gray-400 hover:decoration-gray-600"
+            >
+              <em>Caliban and the Witch</em>
+            </a>
+          , 2004)</span>
         </P>
       </ArticleSection>
 
@@ -824,29 +789,16 @@ export default function HowDidPeopleSurviveBeforeCapitalism() {
       <ArticleSection>
         <ArticleCallout variant="dark" title="And Because This Is True, Something Else Collapses">
           The commons was enclosed by legislation. The workhouses were legislated. The colonial
-          land seizures were legislated. At every step, political power was used to manufacture
-          economic dependency — to take away the alternatives so that selling your labor to someone
-          else became the only option.
+          land seizures were legislated. At every step, specific people — the landowners who sat
+          in Parliament, the colonial administrators who wrote the ordinances — used political
+          power to manufacture economic dependency. To take away the alternatives so that selling
+          your labor to someone else became the only option.
           <br />
           <br />
-          We&apos;ve now tracked the whole mechanism across five articles. Governments create money
-          first, then tax it back — and colonial powers used that exact mechanism to force people
-          into labor markets. Banks create money and direct it into property — inflating the
-          enclosure-era land grab into the 21st century. The wealthy use the returns from capital
-          to shape the political rules that keep capital returns high.
-          <br />
-          <br />
-          But there is one mechanism we haven&apos;t looked at yet. The mechanism that keeps
-          individuals disciplined even when they can see the whole picture. The mechanism that
-          personal enclosure — the one that operates not on your land, but on your future.
-          <br />
-          <br />
-          <Link
-            href="/posts/debt-as-social-control"
-            className="underline decoration-gray-200 hover:decoration-white"
-          >
-            Debt: The next article.
-          </Link>
+          The feeling that your survival is contingent on finding an employer is not a natural
+          feature of human existence. It is the residue of specific decisions made by specific
+          people who benefited from your dependency. It was built. And the distribution of land
+          those decisions created has never been reversed.
         </ArticleCallout>
       </ArticleSection>
 
