@@ -321,12 +321,12 @@ export default function WhoOwnsTheMedia() {
           when it is asked, the answer is quite boring, in the sense that it&apos;s not surprising
           at all once you look at it. The media is owned by the same class of people who own
           everything else. Large corporations, controlled by wealthy shareholders, governed by
-          boards drawn from the interlocking network we described{' '}
+          boards drawn from{' '}
           <Link
             href="/posts/what-is-the-ruling-class"
             className="underline decoration-gray-400 hover:decoration-gray-700"
           >
-            in the previous article
+            an interlocking network of schools, boards, and revolving-door careers
           </Link>
           .
         </P>
@@ -742,14 +742,14 @@ export default function WhoOwnsTheMedia() {
           systematically distorting than any individual editorial decision.
         </P>
 
-        <ArticleCallout variant="dark" title="What This Means Altogether">
-          We have now traced eight interlocking mechanisms. The foundational myths of economics
-          (barter, neutral money, banks-as-intermediaries, taxes-as-revenue). The enclosure of
-          land and commons. The manufacture of wage dependency. The channeling of new money
-          upward through bank credit. The mathematical concentration of wealth through r &gt; g.
-          The disciplinary function of debt at both personal and national scale. The interlocking
-          network of people who share schools, boards, and revolving-door careers. And the media
-          infrastructure that makes all of this feel normal, natural, and inevitable.
+        <ArticleCallout variant="dark" title="Eight Mechanisms, One Class">
+          The foundational myths of economics (barter, neutral money, banks-as-intermediaries,
+          taxes-as-revenue). The enclosure of land and commons. The manufacture of wage dependency.
+          The channeling of new money upward through bank credit. The mathematical concentration of
+          wealth through r &gt; g. The disciplinary function of debt at both personal and national
+          scale. The interlocking network of people who share schools, boards, and revolving-door
+          careers. And the media infrastructure that makes all of this feel normal, natural, and
+          inevitable.
           <br />
           <br />
           These are not eight separate problems. They are eight connected mechanisms, built,
@@ -761,16 +761,7 @@ export default function WhoOwnsTheMedia() {
           social media — even more concentrated, less accountable, algorithmically optimized to
           prevent the sustained attention that serious critique requires. The tools for
           determining what counts as serious, normal, and possible are, if anything, more
-          concentrated now than in 1988 when Herman and Chomsky described them.
-          <br />
-          <br />
-          The next article takes up the question of what has actually been tried:{' '}
-          <Link
-            href="/posts/what-happened-to-the-left"
-            className="underline decoration-gray-200 hover:decoration-white"
-          >
-            what happened to the left?
-          </Link>
+          concentrated now than in 1988 when Herman and Chomsky documented them.
         </ArticleCallout>
       </ArticleSection>
 
