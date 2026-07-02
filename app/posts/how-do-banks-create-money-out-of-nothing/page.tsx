@@ -501,8 +501,7 @@ export default function BanksCreateMoneyPage() {
           actually decide to lend.
         </P>
         <P>
-          <a href="https://en.wikipedia.org/wiki/Joseph_Schumpeter" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Joseph Schumpeter</a>, the Austrian economist who influenced both mainstream and heterodox
-          economics, understood all of this decades ago:
+          This was not a new insight when the Bank of England published it in 2014.
         </P>
         <Blockquote>
           &ldquo;It is much more realistic to say that the banks &lsquo;create credit&rsquo;, that is, that they
@@ -511,8 +510,9 @@ export default function BanksCreateMoneyPage() {
           <footer className="mt-2 text-base not-italic text-gray-500">— Joseph Schumpeter, <em>History of Economic Analysis</em>, 1954</footer>
         </Blockquote>
         <P>
-          He wrote that in 1954. For the 70 years since, most economics education has taught the
-          opposite.
+          That was in print in 1954. What economics textbooks taught in the following seventy
+          years was not a misunderstanding. Someone decided what students should believe about
+          where money comes from.
         </P>
       </ArticleSection>
 
@@ -554,11 +554,10 @@ export default function BanksCreateMoneyPage() {
           If banks create money, the next question is: what do they create it for?
         </P>
         <P>
-          The answer, across the last 40 years in most wealthy countries, is: property. <a href="https://en.wikipedia.org/wiki/Josh_Ryan-Collins" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Josh Ryan-Collins</a>,
-          Toby Lloyd, and Laurie Macfarlane documented this in{' '}
-          <a href="https://www.zedbooks.net/shop/book/rethinking-the-economics-of-land-and-housing/" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700"><em>Rethinking the Economics of Land and Housing</em></a> (2017):
-          in the UK, approximately 80% of bank lending has flowed into mortgages and real estate,
-          not into productive business investment, new manufacturing, or wages.
+          The answer, across the last 40 years in most wealthy countries, is: property. In the
+          UK, roughly 80% of bank lending has gone into mortgages and real estate — not into
+          productive business investment, new manufacturing, or wages.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Ryan-Collins, Lloyd &amp; Macfarlane, <a href="https://www.zedbooks.net/shop/book/rethinking-the-economics-of-land-and-housing/" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-600"><em>Rethinking the Economics of Land and Housing</em></a>, 2017)</span>
         </P>
         <P>
           This is the direct mechanism behind{' '}
@@ -633,14 +632,15 @@ export default function BanksCreateMoneyPage() {
 
       <ArticleFurtherReading title="Go Deeper" items={FURTHER_READING} />
 
-      <ArticleCallout variant="dark" title="Money Is Not What We Were Taught">
+      <ArticleCallout variant="dark" title="And Because This Is True, Something Else Collapses">
         <p>
-          This is the second article in Left Diary&apos;s series on the foundational myths of economics.
-          The first — on barter and the origin of money — showed that money was always a social
-          relationship, never a natural commodity. This one shows that the money supply itself is
-          not managed by governments but created, daily, by private banks making profit decisions.
-          The next asks: why do governments tax us if they can create money? The answer is not what
-          you&apos;d expect.
+          Private banks decide how much money exists. They make that decision based on what is
+          profitable to lend against — and for forty years the answer has been: land. Not wages.
+          Not hospitals. Not factories. Land. If you want to know why housing is unaffordable
+          and public services are underfunded while banks are consistently bailed out, you are
+          looking at the same mechanism. The question is not whether there is money. There is
+          always money. The question is who decides what it gets created for — and what happens
+          to the people who have no say in that decision.
         </p>
       </ArticleCallout>
 
