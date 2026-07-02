@@ -126,7 +126,7 @@ const jsonLd = {
 
 const TOC_ITEMS: TOCItem[] = [
   { id: 'the-term-that-sounds-extreme', text: "The Term That Sounds Extreme", level: 2 },
-  { id: 'mills-and-the-power-elite', text: 'C. Wright Mills and The Power Elite', level: 2 },
+  { id: 'mills-and-the-power-elite', text: 'The Interlocking Elites', level: 2 },
   { id: 'the-schools', text: 'The Schools', level: 2 },
   { id: 'uk-eton-pipeline', text: 'The UK: Eton to Everywhere', level: 3 },
   { id: 'us-ivy-league-pipeline', text: 'The US: Ivy League to Everything', level: 3 },
@@ -359,34 +359,15 @@ export default function WhatIsTheRulingClass() {
       </ArticleSection>
 
       <ArticleSection>
-        <H2 id="mills-and-the-power-elite">C. Wright Mills and The Power Elite</H2>
+        <H2 id="mills-and-the-power-elite">The Interlocking Elites</H2>
         <P>
-          In 1956,{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/C._Wright_Mills"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            C. Wright Mills
-          </a>
-          , a professor of sociology at Columbia University, published{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/The_Power_Elite"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            <em>The Power Elite</em>
-          </a>
-          . Mills was not a radical pamphleteer. He was a mainstream academic sociologist, and he
-          approached the question empirically: who actually makes major decisions in the United
-          States? Who runs the economy, the military, and the government?
+          Who actually makes the major decisions? Not in theory — in practice. Who runs the
+          economy, the military, and the government? When that question was studied empirically
+          in mid-20th century America, the finding was consistent.
         </P>
         <P>
-          His finding: three interlocking elites had, by the mid-20th century, formed something
-          like a unified command structure. Not through conspiracy. Through a structural reality
-          that had developed over decades:
+          Three interlocking elites had, by that point, formed something like a unified command
+          structure. Not through conspiracy. Through a convergence that had built over decades:
         </P>
         <P>
           <strong>The corporate elite</strong> — the boards and executives of the 200 or so
@@ -405,26 +386,22 @@ export default function WhatIsTheRulingClass() {
           agencies that executed policy.
         </P>
         <P>
-          What made these three elites a <em>power elite</em>, in Mills&apos;s analysis, was the
-          interlocking nature of their membership: the same individuals moved between corporate
-          boards, government positions, and defense contracts. Dwight Eisenhower — the president
-          who famously warned about the &ldquo;military-industrial complex&rdquo; in his farewell
-          address — was describing exactly what Mills had documented. The man who named it was the
-          man who had run it.
+          What made these three groups interconnected was the membership: the same individuals
+          moved between corporate boards, government positions, and defense contracts. Dwight
+          Eisenhower — the president who famously warned about the &ldquo;military-industrial
+          complex&rdquo; in his farewell address — was describing what he had personally operated.
+          The man who named it was the man who had run it.
         </P>
-
-        <Blockquote cite="C. Wright Mills, The Power Elite (1956)">
-          &ldquo;The elite are simply those who have the most of what there is to have, which is
-          generally held to include money, power, and prestige... They are in positions to make
-          decisions having major consequences. Whether they do or do not make such decisions is
-          less important than the fact that they do occupy such pivotal positions.&rdquo;
-        </Blockquote>
-
         <P>
-          Mills wasn&apos;t claiming the power elite coordinated secretly. He was making a more
-          boring and more durable claim: these people share backgrounds, share interests, and
-          rotate through the same positions. Coordination doesn&apos;t require a secret room. It
-          emerges from shared formation.
+          The claim is not that these people coordinate secretly. It is more boring than that,
+          and more durable: they share backgrounds, share interests, and rotate through the same
+          positions. Coordination doesn&apos;t require a secret room. It emerges from shared
+          formation.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Mills,{' '}
+            <a href="https://en.wikipedia.org/wiki/The_Power_Elite" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-600">
+              <em>The Power Elite</em>
+            </a>
+          , 1956)</span>
         </P>
       </ArticleSection>
 
@@ -666,18 +643,13 @@ export default function WhatIsTheRulingClass() {
           coordination isn&apos;t hidden. It&apos;s just called networking.
         </P>
 
-        <Blockquote cite="Marx and Engels, The German Ideology (1845)">
-          &ldquo;The ideas of the ruling class are in every epoch the ruling ideas, i.e. the class
-          which is the ruling material force of society, is at the same time its ruling
-          intellectual force.&rdquo;
-        </Blockquote>
-
         <P>
-          Marx in 1845. The same point the Sutton Trust data shows in 2019. The people who own
-          the major institutions — production, media, education, finance — find that their way
-          of seeing things is the one that gets taught, amplified, and treated as common sense.
-          Not because they hold secret meetings about it. Because when you own the newspaper and
-          fund the university and staff the government, your worldview is already in the room.
+          The people who own the major institutions — production, media, education, finance —
+          find that their way of seeing things is the one that gets taught, amplified, and
+          treated as common sense. Not because they hold secret meetings about it. Because when
+          you own the newspaper and fund the university and staff the government, your worldview
+          is already in the room.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Marx &amp; Engels, <em>The German Ideology</em>, 1845)</span>
         </P>
       </ArticleSection>
 
