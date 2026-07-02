@@ -492,26 +492,18 @@ export default function ColonizersTaxAfricansPage() {
         <P>
           The same resistance occurred, with varying degrees of organization, across the continent.
           In every case, colonial forces suppressed it. The tax stayed. And gradually, the
-          dependency it manufactured became structural — woven into economies that no longer had
-          the commons, the land, or the subsistence networks that might have allowed people to
-          exit again.
+          dependency it manufactured was woven into economies that no longer had the commons,
+          the land, or the subsistence networks that might have allowed people to exit again.
         </P>
       </ArticleSection>
 
       <ArticleSection id="chartalism">
         <H2 id="chartalism">Chartalism Explained Simply: Taxes Drive Money</H2>
         <P>
-          There is a name for what the colonial example reveals. It is called{' '}
-          <a href="https://en.wikipedia.org/wiki/Chartalism" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">chartalism</a>,
-          and it is one of those ideas that sounds technical until you grasp it, at which point it
-          seems obvious.
-        </P>
-        <P>
-          The word comes from the Latin <em>charta</em> — document, or legal instrument. The theory,
-          first stated systematically by the German economist{' '}
-          <a href="https://en.wikipedia.org/wiki/Georg_Friedrich_Knapp" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Georg Friedrich Knapp</a>{' '}
-          in 1905, is simple: money gets its value not from what it is made of, not from what backs
-          it, but from the fact that the state demands it in payment of taxes.
+          There is a name for what the colonial example reveals:{' '}
+          <a href="https://en.wikipedia.org/wiki/Chartalism" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">chartalism</a>.
+          Money gets its value not from what it is made of, not from what backs it, but from the
+          fact that the state demands it in payment of taxes.
         </P>
         <P>
           Here is why that matters. If you must pay taxes in pounds — and you will be fined, then
@@ -520,29 +512,10 @@ export default function ColonizersTaxAfricansPage() {
           GDP. Not the trust of markets. The obligation.
         </P>
         <P>
-          The colonial hut tax is the clearest possible demonstration of this mechanism in action.
-          British pounds had no inherent value in the Kenyan highlands. They had value there because
-          the colonial state said: you owe us pounds, and if you don&apos;t pay, we will take your
+          The colonial hut tax is the clearest possible demonstration of this in action. British
+          pounds had no inherent value in the Kenyan highlands. They had value there because the
+          colonial state said: you owe us pounds, and if you don&apos;t pay, we will take your
           property and your freedom. That threat created the demand. The demand created the value.
-        </P>
-        <Blockquote>
-          &ldquo;The money of a state is not what the state will take in payment of taxes; it is what
-          the state <em>demands</em> in payment of taxes.&rdquo;
-          <footer className="mt-2 text-base not-italic text-gray-500">— Paraphrase of <a href="https://en.wikipedia.org/wiki/Georg_Friedrich_Knapp" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Georg Friedrich Knapp</a>, <em>State Theory of Money</em>, 1905</footer>
-        </Blockquote>
-        <P>
-          John Maynard Keynes accepted this. The modern form — called{' '}
-          <a href="https://en.wikipedia.org/wiki/Modern_monetary_theory" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Modern Money Theory</a> —
-          was developed by economists including{' '}
-          <a href="https://en.wikipedia.org/wiki/Warren_Mosler" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Warren Mosler</a>,{' '}
-          <a href="https://en.wikipedia.org/wiki/L._Randall_Wray" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">L. Randall Wray</a>,
-          and <a href="https://en.wikipedia.org/wiki/Stephanie_Kelton" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Stephanie Kelton</a>,
-          whose book <a href="https://en.wikipedia.org/wiki/The_Deficit_Myth" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700"><em>The Deficit Myth</em></a> (2020)
-          brought it to a wide audience. Taxes, in this framework, do not fund government spending.
-          They create the demand for the currency that government spending creates. The money goes
-          out first. The taxes collect some of it back. And the whole thing works because the
-          obligation to pay taxes in the national currency means you must obtain the national
-          currency — which means government spending always finds buyers.
         </P>
       </ArticleSection>
 
@@ -585,10 +558,6 @@ export default function ColonizersTaxAfricansPage() {
       <ArticleSection id="what-this-means">
         <H2 id="what-this-means">What This Means Today</H2>
         <P>
-          This is the Act 4 moment — the point where understanding one thing causes several
-          others to collapse.
-        </P>
-        <P>
           If taxes drive money rather than fund government, and if the government that issues the
           currency cannot run out of it in the way a household can run out of money, then a
           number of things we are told with great confidence turn out to be either wrong or
@@ -621,7 +590,7 @@ export default function ColonizersTaxAfricansPage() {
           It had been a choice, dressed as a fact.
         </P>
 
-        <H3 id="tax-the-rich">Tax the Rich Makes No Sense</H3>
+        <H3 id="tax-the-rich">What &ldquo;Tax the Rich&rdquo; Actually Does</H3>
         <P>
           If governments don&apos;t need your money to spend — if they create it first and tax it
           back later — then &ldquo;tax the rich to pay for schools&rdquo; is wrong at both ends.
@@ -680,13 +649,12 @@ export default function ColonizersTaxAfricansPage() {
           them in dollars. The IMF had dollars. The conditionality was the price.
         </P>
         <P>
-          <a href="https://michael-hudson.com" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Michael Hudson</a> has
-          documented how this mechanism worked: the dollar dependency was not a natural feature
-          of global finance. It was an architectural choice, embedded in the Bretton Woods
-          system and maintained through the dominance of dollar-denominated commodity markets.
-          The result was a system in which former colonies remained dependent on a currency
-          they couldn&apos;t issue — just as their grandparents had been dependent on pounds they
-          couldn&apos;t issue — with predictable consequences for who benefited and who paid.
+          The dollar dependency was not a natural feature of global finance. It was a designed
+          outcome — embedded in the Bretton Woods agreements and maintained through the dominance
+          of dollar-denominated commodity markets. The result was a system in which former colonies
+          remained dependent on a currency they couldn&apos;t issue — just as their grandparents had
+          been dependent on pounds they couldn&apos;t issue — with predictable consequences for who
+          benefited and who paid.
         </P>
         <P>
           The hut tax forced Africans into a dependency on colonial currency. Dollar-denominated
