@@ -294,8 +294,8 @@ export default function WhatHappenedToTheLeft() {
             National Health Service, nationalized coal, steel, railways, and utilities, and created
             the modern welfare state. In 1984, Margaret Thatcher broke the miners&apos; strike
             in eleven months of pitched battle, and UK union membership entered a collapse that
-            hasn&apos;t stopped. Here is what happened between those two dates — and why the story
-            matters for what is possible now.
+            hasn&apos;t stopped. Here is what happened between those two dates — and how the
+            counter-movement was built to reverse it.
           </>
         }
         date="June 30, 2026"
@@ -379,15 +379,15 @@ export default function WhatHappenedToTheLeft() {
           it was possible and what had to be dismantled to end it.
         </P>
         <P>
-          The war had destroyed an enormous amount of inherited wealth — the capital that, as
-          Piketty documented, normally ensures that{' '}
+          The war had destroyed an enormous amount of inherited wealth — the capital that
+          normally ensures that{' '}
           <Link
             href="/posts/why-do-the-rich-keep-getting-richer"
             className="underline decoration-gray-400 hover:decoration-gray-700"
           >
             r consistently exceeds g
           </Link>
-          . The ruling class was weakened. The working class, which had fought and died in
+          {' '}<span className="text-sm text-gray-400 not-italic">(Piketty, <em>Capital in the Twenty-First Century</em>, 2013)</span>. The ruling class was weakened. The working class, which had fought and died in
           disproportionate numbers, emerged from the war with political demands and the
           organizational capacity to press them.
         </P>
@@ -830,14 +830,6 @@ export default function WhatHappenedToTheLeft() {
           was a direct product of Thatcher&apos;s deregulation agenda.
         </P>
         <P>
-          What was not lost: the NHS, Social Security, Medicare and Medicaid, public schooling,
-          and the basic infrastructure of the welfare state. These survived not because they were
-          economically untouchable — the ruling class had ideological objections to all of them —
-          but because they were politically untouchable. Too popular. Too embedded in how
-          ordinary people lived. Thatcher tried to privatize the NHS and was stopped. Reagan tried
-          to cut Social Security and was stopped.
-        </P>
-        <P>
           The political constraint is real: people protect what they have. The left&apos;s
           surviving institutional achievements are the most popular policies in most Western
           countries. The right has spent forty years trying to privatize or defund them and has
@@ -861,12 +853,11 @@ export default function WhatHappenedToTheLeft() {
           That is not the same thing as recovery. It is the beginning of a longer question.
         </P>
 
-        <ArticleCallout variant="dark" title="What This Series Has Established">
-          Over nine articles, we have traced a single argument: the economic world most people
-          inhabit is not natural, not inevitable, and not the product of neutral market forces.
-          It was built — through enclosure, through colonial taxation, through bank money directed
-          upward, through debt, through media ownership, through the defeat of organized labor —
-          by people who benefited from building it.
+        <ArticleCallout variant="dark" title="What the Record Shows">
+          The economic world most people inhabit is not natural, not inevitable, and not the
+          product of neutral market forces. It was built — through enclosure, through colonial
+          taxation, through bank money directed upward, through debt, through media ownership,
+          through the defeat of organized labor — by people who benefited from building it.
           <br />
           <br />
           And it has been contested, repeatedly, by people who recognized what was being done and
@@ -874,11 +865,10 @@ export default function WhatHappenedToTheLeft() {
           security. And then a counter-revolution dismantled much of what they had built.
           <br />
           <br />
-          The most important question — the one this whole series has been approaching — is what
-          comes next. Given what the record shows about how power actually works — who built it,
-          how they defended it, what it took to challenge it and what happened when people did —
-          what would it take to build something different? What has actually been tried? What
-          worked, where, and why? That&apos;s where the next articles go.
+          The counter-revolution succeeded for the same reason the labor movement had succeeded: it
+          was organized, patient, funded, and willing to act on a long timeline. The Powell Memo
+          was written in 1971. By 1980, the institutions it called for were in place. The labor
+          movement was not defeated by better arguments. It was defeated by a longer campaign.
         </ArticleCallout>
       </ArticleSection>
 
