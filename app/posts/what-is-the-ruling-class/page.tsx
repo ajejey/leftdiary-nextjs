@@ -310,7 +310,7 @@ export default function WhatIsTheRulingClass() {
           a rabbit hole.
         </P>
         <P>
-          But consider what we&apos;ve established across six articles:
+          The evidence is in the record:
         </P>
         <P>
           <Link
@@ -705,7 +705,7 @@ export default function WhatIsTheRulingClass() {
           describe a class that exercises substantial influence over the conditions of its own rule.
         </P>
 
-        <ArticleCallout variant="dark" title="And Because This Is True, Something Else Collapses">
+        <ArticleCallout variant="dark" title="What the Ruling Class Doesn't Need to Hide">
           There is a ruling class. It is documented. Named. Visible. Its continued power does not
           rest only on money and legislation and debt — though it rests on those. It rests on the
           majority of people not challenging it. Not because they are stupid. But because the ideas
@@ -717,16 +717,8 @@ export default function WhatIsTheRulingClass() {
           credible, never get amplified, never appear on the front page. The media that decides
           what counts as serious, what gets labeled &ldquo;extreme,&rdquo; and what is presented
           as the natural state of things is not neutral. It is owned by someone. Someone with
-          interests.
-          <br />
-          <br />
-          <Link
-            href="/posts/who-owns-the-media"
-            className="underline decoration-gray-200 hover:decoration-white"
-          >
-            The next article: who owns the media — and what does ownership actually do to what you
-            think?
-          </Link>
+          interests. Those interests are documented. They are the same interests that funded the
+          think tanks, staffed the regulatory agencies, and hired the former prime ministers.
         </ArticleCallout>
       </ArticleSection>
 
