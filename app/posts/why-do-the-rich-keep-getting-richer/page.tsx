@@ -253,14 +253,7 @@ export default function WhyDoTheRichKeepGettingRicher() {
         title="Why Do the Rich Keep Getting Richer?"
         lead={
           <>
-            The{' '}
-            <Link
-              href="/posts/why-did-colonizers-tax-africans"
-              className="underline decoration-gray-400 hover:decoration-gray-700"
-            >
-              last article left a question hanging
-            </Link>
-            : who keeps choosing austerity? Who runs the institutions that say &ldquo;we can&apos;t
+            Who keeps choosing austerity? Who runs the institutions that say &ldquo;we can&apos;t
             afford hospitals&rdquo; while creating money for bank bailouts? The answer is
             uncomfortable. The people making those decisions are the same people getting richer while
             everyone else isn&apos;t. And there&apos;s a mechanism for it. A mathematical one.
@@ -327,38 +320,22 @@ export default function WhyDoTheRichKeepGettingRicher() {
       <ArticleSection>
         <H2 id="the-number-nobody-taught-you">The Number Nobody Taught You in School</H2>
         <P>
-          In 2013, a French economist named{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Thomas_Piketty"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            Thomas Piketty
-          </a>{' '}
-          published{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Capital_in_the_Twenty-First_Century"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            <em>Capital in the Twenty-First Century</em>
-          </a>
-          . He spent fifteen years collecting tax records from twenty countries going back to the
-          1700s. It&apos;s 700 pages. But the core finding fits in one line:
+          Two hundred years of tax records across twenty countries point to the same thing: when
+          the rate of return on capital outpaces the rate of economic growth, wealth concentrates
+          in the hands of whoever already owns capital.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Piketty,{' '}
+            <a
+              href="https://en.wikipedia.org/wiki/Capital_in_the_Twenty-First_Century"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-gray-400 hover:decoration-gray-600"
+            >
+              <em>Capital in the Twenty-First Century</em>
+            </a>
+          , 2013)</span>
         </P>
-
-        <Blockquote cite="Thomas Piketty, Capital in the Twenty-First Century (2013)">
-          &ldquo;When the rate of return on capital exceeds the rate of growth of output and income,
-          as it did in the nineteenth century and seems quite likely to do again in the
-          twenty-first, capitalism automatically generates arbitrary and unsustainable inequalities
-          that radically undermine the meritocratic values on which democratic societies are
-          based.&rdquo;
-        </Blockquote>
-
         <P>
-          He writes it as an equation: <strong>r &gt; g</strong>.
+          Written as an equation: <strong>r &gt; g</strong>.
         </P>
         <P>
           <em>r</em> is the annual return on capital — the percentage a stock portfolio or property
@@ -374,7 +351,7 @@ export default function WhyDoTheRichKeepGettingRicher() {
           returns outpace everything else.
         </P>
         <P>
-          Piketty found this was true for most of the past 300 years. The single exception was
+          This was true for most of the past 300 years. The single exception was
           roughly 1945 to 1975 — when wars had destroyed a huge portion of inherited wealth, unions
           were strong, and top marginal tax rates in the United States reached 91%. During those
           thirty years, inequality actually fell. Then came{' '}
@@ -572,17 +549,16 @@ export default function WhyDoTheRichKeepGettingRicher() {
           with who owned capital and who didn&apos;t.
         </P>
         <P>
-          This connects directly to what{' '}
+          When new money is created, where does it go?{' '}
           <Link
             href="/posts/how-do-banks-create-money-out-of-nothing"
             className="underline decoration-gray-400 hover:decoration-gray-700"
           >
-            we covered in the banks article
-          </Link>
-          : when new money is created, where does it go? Banks create it and send 80% of it into
-          property and financial markets — the same assets that already generate returns for capital
-          owners. New money inflates the assets. Asset owners get wealthier. Wage earners see
-          prices rise without wages rising to match.
+            Banks create it and direct 80% of it into property and financial markets
+          </Link>{' '}
+          — the same assets that already generate returns for capital owners. New money inflates
+          the assets. Asset owners get wealthier. Wage earners see prices rise without wages
+          rising to match.
         </P>
         <P>
           It&apos;s the same mechanism every time. The direction of new money determines who gets
@@ -626,18 +602,18 @@ export default function WhyDoTheRichKeepGettingRicher() {
           institutions, making decisions that reliably benefit the same class of owners.
         </P>
         <P>
-          The wealth concentration Piketty documented didn&apos;t just happen because r &gt; g in
-          some abstract mathematical sense. It happened because the people who own capital used that
+          The wealth gap didn&apos;t widen simply because r &gt; g plays out in some abstract
+          mathematical sense. It happened because the people who own capital used that
           capital to shape the tax code, the lending rules, the zoning laws — all the legal
           structures that determine where money flows.
         </P>
         <P>
-          We covered a version of this already:{' '}
+          The same pattern runs through{' '}
           <Link
             href="/posts/why-is-housing-so-expensive"
             className="underline decoration-gray-400 hover:decoration-gray-700"
           >
-            housing didn&apos;t get expensive by accident
+            housing
           </Link>
           . Planning restrictions, the mortgage interest deduction, the financialization of
           property — each required specific policy choices. Each was made by people who owned
@@ -649,7 +625,7 @@ export default function WhyDoTheRichKeepGettingRicher() {
       <ArticleSection>
         <H2 id="what-would-actually-change-it">The One Time It Was Different — and What Ended It</H2>
         <P>
-          Piketty&apos;s data shows one period when the gap narrowed: 1945 to 1975. Three things
+          The data shows one period when the gap narrowed: 1945 to 1975. Three things
           were different.
         </P>
         <P>
@@ -692,21 +668,10 @@ export default function WhyDoTheRichKeepGettingRicher() {
           Told by the people on top.
           <br />
           <br />
-          But there&apos;s a question this still doesn&apos;t answer. How did ordinary people end
-          up in a position where they needed to sell their labor to someone else just to survive?
-          Before wage labor was universal, most people had direct access to land and resources
-          they needed to live. They didn&apos;t need an employer. Something had to happen to take
-          that away — specifically, 5,000 Acts of Parliament passed by landowners, taking the
-          commons from the people who had used them for centuries.
-          <br />
-          <br />
-          That&apos;s the next article:{' '}
-          <Link
-            href="/posts/how-did-people-survive-before-capitalism"
-            className="underline decoration-gray-200 hover:decoration-white"
-          >
-            how did ordinary people survive before wage labor — and what was done to end that?
-          </Link>
+          The one period when the gap narrowed — 1945 to 1975 — ended not because r &gt; g was
+          disproved but because the political conditions that contained it were systematically
+          dismantled. The gap returned precisely when unions were broken and taxes on capital were
+          cut. The data shows not just the mechanism but who operates it and how.
         </ArticleCallout>
       </ArticleSection>
 
