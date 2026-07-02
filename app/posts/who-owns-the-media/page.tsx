@@ -131,7 +131,7 @@ const TOC_ITEMS: TOCItem[] = [
   { id: 'uk-three-men', text: 'The UK: Three Men and the National Press', level: 2 },
   { id: 'murdoch-as-case-study', text: 'Murdoch as Case Study', level: 3 },
   { id: 'how-it-works-without-censorship', text: 'How It Works Without Censorship', level: 2 },
-  { id: 'five-filters', text: 'The Five Filters: Manufacturing Consent', level: 3 },
+  { id: 'five-filters', text: 'The Five Filters', level: 3 },
   { id: 'gramsci-hegemony', text: 'When One Class Owns the Room', level: 2 },
   { id: 'what-gets-left-out', text: 'What Gets Left Out', level: 2 },
   { id: 'social-media-new-gatekeepers', text: 'Social Media: New Gatekeepers, Same Class', level: 2 },
@@ -398,19 +398,15 @@ export default function WhoOwnsTheMedia() {
           </a>
           , which loosened restrictions on how many outlets a single company could own in a single
           market. The act was lobbied for heavily by the companies that benefited from it. It was
-          written in close collaboration with industry. It passed.
-        </P>
-        <P>
-          The 1996 Telecommunications Act was written in close collaboration with the industry it
-          was supposed to regulate. The same companies that lobbied for it benefited from it.{' '}
+          written in close collaboration with the industry it was supposed to regulate. The outcome:
+          an industry with fewer owners, more concentrated power, and more capacity to influence
+          what 330 million Americans consider the natural state of the world.{' '}
           <Link
             href="/posts/why-do-the-rich-keep-getting-richer"
             className="underline decoration-gray-400 hover:decoration-gray-700"
           >
             The same pattern played out with financial deregulation.
-          </Link>{' '}
-          The outcome: an industry that has fewer owners, more concentrated power, and more capacity
-          to influence what 330 million Americans consider the natural state of the world.
+          </Link>
         </P>
       </ArticleSection>
 
@@ -547,38 +543,10 @@ export default function WhoOwnsTheMedia() {
           institution are the ones who understood what that institution selects for.
         </P>
 
-        <H3 id="five-filters">The Five Filters: Manufacturing Consent</H3>
+        <H3 id="five-filters">The Five Filters</H3>
         <P>
-          In 1988,{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Edward_S._Herman"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            Edward Herman
-          </a>{' '}
-          and{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Noam_Chomsky"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            Noam Chomsky
-          </a>{' '}
-          published{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Manufacturing_Consent"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            <em>Manufacturing Consent: The Political Economy of the Mass Media</em>
-          </a>
-          . They proposed a &ldquo;propaganda model&rdquo; — not propaganda in the sense of an
-          active state program, but structural propaganda: the filters that any story must pass
-          through to become news.
+          Five structural filters shape what becomes news. Each is observable. None require
+          conspiracy or direct instruction.
         </P>
         <P>
           <strong>Filter 1: Ownership.</strong> Media outlets owned by large profit-seeking
@@ -617,11 +585,16 @@ export default function WhoOwnsTheMedia() {
           &ldquo;outside the mainstream.&rdquo;
         </P>
         <P>
-          The model doesn&apos;t require every journalist to be corrupt or every editor to take
-          orders. It just requires that the people who rise within these institutions are the ones
-          who worked naturally within these filters. Most journalists sincerely believe they&apos;re
-          covering the truth. The model says they&apos;re covering the truth as it appears through
-          five filters that consistently favour certain kinds of stories over others.
+          None of this requires every journalist to be corrupt or every editor to take orders. It
+          requires only that the people who rise within these institutions are the ones who worked
+          naturally within these filters. Most journalists sincerely believe they&apos;re covering
+          the truth. They are — the truth as it appears through five filters that consistently
+          favour certain kinds of stories over others.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Herman &amp; Chomsky,{' '}
+            <a href="https://en.wikipedia.org/wiki/Manufacturing_Consent" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-600">
+              <em>Manufacturing Consent</em>
+            </a>
+          , 1988)</span>
         </P>
       </ArticleSection>
 
@@ -644,23 +617,9 @@ export default function WhoOwnsTheMedia() {
           funded by the same financial interests her government served. The journalists who rose
           to prominence understood the editorial culture. The newspapers were owned by people in
           her class. She didn&apos;t need to control the message — the message was already in the
-          room.
-        </P>
-
-        <Blockquote cite="Antonio Gramsci, Prison Notebooks (written 1929–1935)">
-          &ldquo;The intellectuals are the dominant group&apos;s deputies exercising the
-          subaltern functions of social hegemony and political government. These comprise: the
-          spontaneous consent given by the great masses of the population to the general direction
-          imposed on social life by the dominant fundamental group.&rdquo;
-        </Blockquote>
-
-        <P>
-          Gramsci, writing from a Fascist prison in 1929, named the same pattern.
-          &ldquo;Spontaneous consent&rdquo; — not coerced, not deceived in any single act. Just:
-          the ruling class&apos;s way of seeing things slowly becomes common sense, through
-          saturation of the cultural institutions they control. You don&apos;t need a censor when
-          the alternative ideas never feel credible enough to publish, never get the front page,
-          never get called serious.
+          room. You don&apos;t need a censor when the alternative ideas never feel credible enough
+          to publish, never get the front page, never get called serious.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Gramsci, <em>Prison Notebooks</em>, 1929–35)</span>
         </P>
         <P>
           The circle: the media that defines what&apos;s serious is owned by the same class of
