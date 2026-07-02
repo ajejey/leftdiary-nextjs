@@ -185,7 +185,7 @@ const jsonLd = {
 };
 
 const TOC_ITEMS: TOCItem[] = [
-  { id: 'unanswered-question', text: 'The Question the Last Article Left Open', level: 2 },
+  { id: 'unanswered-question', text: 'If Banks Create Money, Why Is There Never Money for Hospitals?', level: 2 },
   { id: 'what-taxes-supposed-to-do', text: 'What Taxes Are Supposed to Do', level: 2 },
   { id: 'baker-problem', text: 'The Baker Problem: If Governments Create Money, Why Collect It Back?', level: 2 },
   { id: 'why-did-colonizers-tax-africans', text: 'Why Did Colonizers Tax Africans?', level: 2 },
@@ -292,7 +292,7 @@ const FURTHER_READING: FurtherReadingItem[] = [
   {
     href: '/posts/how-do-banks-create-money-out-of-nothing',
     title: 'How Do Banks Create Money Out of Nothing?',
-    description: 'the article this one continues — if banks create money, why is there never money for hospitals?',
+    description: 'how banks create new money at the moment of lending — and where that money actually goes',
   },
   {
     href: '/posts/why-is-housing-so-expensive',
@@ -335,13 +335,9 @@ export default function ColonizersTaxAfricansPage() {
       <ArticleTOC items={TOC_ITEMS} />
 
       <ArticleSection id="unanswered-question">
-        <H2 id="unanswered-question">The Question the Last Article Left Open</H2>
+        <H2 id="unanswered-question">If Banks Create Money, Why Is There Never Money for Hospitals?</H2>
         <P>
-          The <Link href="/posts/how-do-banks-create-money-out-of-nothing" className="underline decoration-gray-400 hover:decoration-gray-700">previous article in this series</Link> arrived
-          somewhere surprising. Banks, it turns out, don&apos;t lend out your deposits — they create
-          new money when they make loans. The Bank of England confirmed this in plain language in
-          2014. And once you know that, a question forms that the banking article deliberately
-          left unanswered:
+          Banks don&apos;t lend out your deposits — they create new money when they make loans. The Bank of England confirmed this in plain language in 2014. And once you know that, a question forms:
         </P>
         <P>
           If Barclays can create £300,000 on a Thursday afternoon by approving a mortgage — if that
@@ -462,10 +458,7 @@ export default function ColonizersTaxAfricansPage() {
           by making money obligatory.
         </P>
         <P>
-          This is enclosure by another mechanism. We have already seen how the{' '}
-          <Link href="/posts/why-is-housing-so-expensive#enclosures" className="underline decoration-gray-400 hover:decoration-gray-700">English Enclosure Acts</Link>{' '}
-          worked: take away the commons, destroy the exit option, make people dependent on wages
-          by making the alternative impossible. The hut tax did the same thing without needing to
+          This is enclosure by another mechanism. The <Link href="/posts/why-is-housing-so-expensive#enclosures" className="underline decoration-gray-400 hover:decoration-gray-700">English Enclosure Acts</Link> worked the same way: take away the commons, destroy the exit option, make people dependent on wages by making the alternative impossible. The hut tax did the same thing without needing to
           physically remove anyone from their land. It manufactured the dependency directly, through
           a monetary obligation that only wages could satisfy.
         </P>
@@ -540,16 +533,14 @@ export default function ColonizersTaxAfricansPage() {
           soldiers, administrators, and contractors — and then taxed it back.
         </P>
         <P>
-          David Graeber documents in <Link href="/posts/did-humans-ever-barter-before-money" className="underline decoration-gray-400 hover:decoration-gray-700"><em>Debt: The First 5,000 Years</em></Link> that
-          this is almost certainly how coinage appeared in history. Coins were not invented to
+          This is almost certainly how coinage appeared in history. Coins were not invented to
           make barter more convenient. They were invented as a form of tax obligation, stamped
-          with the image of the sovereign who demanded them. The markets that subsequently
+          with the image of the sovereign who demanded them. <span className="text-sm text-gray-400 not-italic">(Graeber, <em>Debt: The First 5,000 Years</em>, 2011)</span> The markets that subsequently
           developed around coin-based exchange were a consequence of the tax obligation — not its
           cause.
         </P>
         <P>
-          The barter story has it precisely backward — as we explored in{' '}
-          <Link href="/posts/did-humans-ever-barter-before-money" className="underline decoration-gray-400 hover:decoration-gray-700">the first article in this series</Link>.
+          The barter story has it precisely backward: <Link href="/posts/did-humans-ever-barter-before-money" className="underline decoration-gray-400 hover:decoration-gray-700">no barter economy has ever been documented in the archaeological or anthropological record</Link>.
           Money did not emerge from trade. Tax obligations created the demand for money, and
           markets emerged in the space that demand created.
         </P>
@@ -668,14 +659,15 @@ export default function ColonizersTaxAfricansPage() {
 
       <ArticleFurtherReading title="Go Deeper" items={FURTHER_READING} />
 
-      <ArticleCallout variant="dark" title="And Because This Is True, Something Else Collapses">
+      <ArticleCallout variant="dark" title="The Choice Dressed as a Constraint">
         <p>
           If taxes drive money rather than fund government, and if the government can always
           create the currency it needs — then the story of why some people are getting
           dramatically richer while most people&apos;s wages stagnate cannot be explained by
           &ldquo;the economy&rdquo; as a neutral force. Someone is making decisions. Someone is choosing
-          what to fund, what to tax, and what to call unaffordable. The next question is:
-          who? And why do they keep winning?
+          what to fund, what to tax, and what to call unaffordable. Those decisions are not
+          hidden. They are written into the budgets, the loan conditions, and the structural
+          adjustment programs of the last fifty years.
         </p>
       </ArticleCallout>
 
