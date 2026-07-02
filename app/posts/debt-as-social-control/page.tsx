@@ -126,7 +126,7 @@ const jsonLd = {
 };
 
 const TOC_ITEMS: TOCItem[] = [
-  { id: 'the-mechanism-left-out', text: 'The Mechanism the Last Articles Left Out', level: 2 },
+  { id: 'the-mechanism-left-out', text: 'Debt as Discipline', level: 2 },
   { id: 'debt-is-older-than-money', text: 'Debt Is Older Than Money', level: 2 },
   { id: 'the-debt-jubilee', text: 'Why Ancient Kings Cancelled Debt', level: 3 },
   { id: 'what-debt-does-to-people', text: 'What Debt Actually Does to People', level: 2 },
@@ -320,29 +320,24 @@ export default function DebtAsSocialControl() {
       <ArticleTOC items={TOC_ITEMS} />
 
       <ArticleSection>
-        <H2 id="the-mechanism-left-out">The Mechanism the Last Articles Left Out</H2>
+        <H2 id="the-mechanism-left-out">Debt as Discipline</H2>
         <P>
-          We have traced, across five articles, how wealth flows upward. Commons enclosed by
-          Parliament. Colonial land seized and replaced with wage dependency.{' '}
+          The mechanisms that explain wealth concentration — enclosure,{' '}
           <Link
             href="/posts/how-do-banks-create-money-out-of-nothing"
             className="underline decoration-gray-400 hover:decoration-gray-700"
           >
-            Bank-created money flowing into property and financial assets.
-          </Link>{' '}
-          Capital returns mathematically outpacing wages.{' '}
+            bank-created money directed into property
+          </Link>
+          ,{' '}
           <Link
             href="/posts/why-is-housing-so-expensive"
             className="underline decoration-gray-400 hover:decoration-gray-700"
           >
-            Housing financialized
+            housing turned into an asset class
           </Link>{' '}
-          into an asset class.
-        </P>
-        <P>
-          But there&apos;s a gap in the story. All of these mechanisms work at a structural level.
-          They explain why wealth concentrates in the aggregate. They don&apos;t fully explain why
-          individuals, knowing this, don&apos;t do more to change it.
+          — work at scale. They explain why wealth accumulates in the aggregate. They don&apos;t
+          fully explain why individuals, knowing this, don&apos;t do more to change it.
         </P>
         <P>
           The answer is older than wage labor. It&apos;s older than money. It might be the oldest
@@ -374,16 +369,16 @@ export default function DebtAsSocialControl() {
       <ArticleSection>
         <H2 id="debt-is-older-than-money">Debt Is Older Than Money</H2>
         <P>
-          In the{' '}
+          The standard story about money has it backwards — barter did not come first, money
+          second, and credit third. Credit came first. The{' '}
           <Link
             href="/posts/did-humans-ever-barter-before-money"
             className="underline decoration-gray-400 hover:decoration-gray-700"
           >
-            barter article we established
+            oldest written records in human history
           </Link>
-          : the standard story — barter comes first, then money, then credit — is backwards.
-          Credit comes first. The oldest written records we have, from ancient Mesopotamia around
-          3200 BCE, are debt records. Clay tablets listing who owes whom, what, and when.
+          , from ancient Mesopotamia around 3200 BCE, are debt records. Clay tablets listing who
+          owes whom, what, and when.
         </P>
         <P>
           Coins came much later — around 600 BCE, in Lydia (modern Turkey). For almost 2,500 years
@@ -393,26 +388,18 @@ export default function DebtAsSocialControl() {
           money was.
         </P>
         <P>
-          This matters because it means{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/David_Graeber"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            David Graeber
-          </a>
-          &apos;s core finding in{' '}
-          <a
-            href="https://en.wikipedia.org/wiki/Debt:_The_First_5000_Years"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            <em>Debt: The First 5,000 Years</em>
-          </a>{' '}
-          (2011) isn&apos;t a surprise. Debt as coercion isn&apos;t a modern innovation. It
-          preceded every financial institution we have. It preceded the concept of money itself.
+          Debt as coercion isn&apos;t a modern innovation. It preceded every financial institution
+          we have. It preceded the concept of money itself.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Graeber,{' '}
+            <a
+              href="https://en.wikipedia.org/wiki/Debt:_The_First_5000_Years"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-gray-400 hover:decoration-gray-600"
+            >
+              <em>Debt: The First 5,000 Years</em>
+            </a>
+          , 2011)</span>
         </P>
         <P>
           And from the beginning, it produced the same problem: compound interest.
@@ -483,15 +470,18 @@ export default function DebtAsSocialControl() {
           Debt slaves freed. Agricultural land left fallow. These weren&apos;t acts of charity.
           They were built into law because the societies that issued them understood: without
           periodic cancellation, debt accumulation was not a bug to be fixed but an inherent
-          feature of compound interest. It always eventually enslaved everyone.
+          feature of compound interest. It always eventually enslaved everyone.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Graeber,{' '}
+            <a
+              href="https://en.wikipedia.org/wiki/Debt:_The_First_5000_Years"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-gray-400 hover:decoration-gray-600"
+            >
+              <em>Debt: The First 5,000 Years</em>
+            </a>
+          , 2011)</span>
         </P>
-
-        <Blockquote cite="Graeber, Debt: The First 5,000 Years (2011)">
-          &ldquo;For thousands of years, the struggle between rich and poor has largely taken the
-          form of conflicts between creditors and debtors — of arguments about the rights and
-          wrongs of interest payments, debt bondage, and finally debt cancellation. And these were
-          not just economic conflicts. They were also moral conflicts.&rdquo;
-        </Blockquote>
       </ArticleSection>
 
       <ArticleSection>
@@ -799,11 +789,20 @@ export default function DebtAsSocialControl() {
           be irresponsible.
         </P>
         <P>
-          Graeber pointed out that in every period of history where debtors had some power —
-          peasant revolts, early modern debt rebellions, the Jubilee traditions — the question
-          of whether specific debts were legitimate was treated as an open question. In our
-          period, it is treated as settled in advance. Of course debts must be paid. The only
-          question is how.
+          In every period when debtors had power — peasant revolts, early modern debt rebellions,
+          the Jubilee traditions — the legitimacy of specific debts was treated as an open
+          question. In our period, it is treated as settled in advance. Of course debts must be
+          paid. The only question is how.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Graeber,{' '}
+            <a
+              href="https://en.wikipedia.org/wiki/Debt:_The_First_5000_Years"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-gray-400 hover:decoration-gray-600"
+            >
+              <em>Debt: The First 5,000 Years</em>
+            </a>
+          , 2011)</span>
         </P>
         <P>
           That settlement was not a moral development. It was a political one. The people who
@@ -813,33 +812,16 @@ export default function DebtAsSocialControl() {
         </P>
 
         <ArticleCallout variant="dark" title="And Because This Is True, Something Else Collapses">
-          We have now tracked six interlocking mechanisms. The commons was enclosed to manufacture
-          wage dependency. Colonial taxation manufactured wage dependency globally. Banks create
-          money as debt and direct it upward. Capital returns outpace wages mathematically.
-          Wealthy people use capital to shape the rules that keep capital returns high. And
-          personal and sovereign debt disciplines individuals and nations into compliance.
+          Babylon cancelled debt periodically because the math made it necessary — compound
+          interest always produces more debt than real economies can bear. The Jubilee year was
+          law because the societies that wrote it understood this. What we have instead is
+          interest rate policy: central banks designed in consultation with bondholders, staffed
+          by people from the financial industry, moving immediately to stop the inflation that
+          would have reduced the real value of debts.
           <br />
           <br />
-          Each mechanism is real. Each is documented. Enclosure took the land and manufactured
-          wage dependency. Colonial taxation did the same globally. Banks create money and direct
-          it upward. Returns on ownership outpace wages, mathematically, every year. Personal
-          and national debt chains people and countries to whoever holds the note. And the
-          language of morality makes it your fault.
-          <br />
-          <br />
-          None of this happened by accident. Every piece of it was built. Specific laws passed
-          by specific people. Specific institutions funded by specific interests. Which raises
-          the question the evidence is pointing toward: who built it? Who is still building it?
-          Is there a group of people who know each other, benefit from the same things, and
-          act in ways that keep those things in place? And if so — can we name them?
-          <br />
-          <br />
-          <Link
-            href="/posts/what-is-the-ruling-class"
-            className="underline decoration-gray-200 hover:decoration-white"
-          >
-            The next article asks: what is the ruling class?
-          </Link>
+          Jubilee used to happen by decree. Now it is prevented by policy. The people who write
+          that policy are the people who hold the debt.
         </ArticleCallout>
       </ArticleSection>
 
