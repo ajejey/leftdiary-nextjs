@@ -215,7 +215,7 @@ const TOC_ITEMS: TOCItem[] = [
   { id: 'mainstream-framing', text: 'Why the Supply and Demand Explanation Falls Short', level: 2 },
   { id: 'land-commodity', text: 'How Did Land Become a Commodity?', level: 2 },
   { id: 'enclosures', text: 'The Enclosures: Land Theft by Parliamentary Act', level: 3 },
-  { id: 'polanyi', text: 'Karl Polanyi and the Great Transformation', level: 2 },
+  { id: 'polanyi', text: 'Land as a Fictitious Commodity', level: 2 },
   { id: 'financialization', text: 'How Housing Became a Financial Asset', level: 2 },
   { id: 'mortgage-deregulation', text: 'Mortgage Deregulation and the Finance Flood', level: 3 },
   { id: 'tax-subsidies', text: 'The Tax Subsidies That Made It Worse', level: 3 },
@@ -367,10 +367,7 @@ export default function HousingPage() {
           of some of the most deliberate, violent, and politically contested decisions in human
           history. Understanding it doesn&apos;t just explain why housing is so expensive. It explains
           how money and markets came to feel like nature — because the same logic that made land
-          ownership seem inevitable is what made markets seem inevitable. We examine that in full in{' '}
-          <Link href="/posts/did-humans-ever-barter-before-money" className="underline decoration-gray-400 hover:decoration-gray-700">
-            Did Humans Ever Barter Before Money?
-          </Link>
+          ownership seem inevitable is what made markets seem inevitable.
         </P>
       </ArticleSection>
 
@@ -411,13 +408,18 @@ export default function HousingPage() {
           nothing to sell but their labor. Which was, of course, the point.
         </P>
         <P>
-          <a href="https://en.wikipedia.org/wiki/Silvia_Federici" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Silvia Federici</a>, in <a href="https://en.wikipedia.org/wiki/Caliban_and_the_Witch" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700"><em>Caliban and the Witch</em></a>, documents how enclosure was not just an
-          economic policy but a project of social discipline. Common land gave people an exit option.
-          If you could grow food, gather wood, and graze animals on the commons, you were not
-          entirely dependent on wages. Enclosure destroyed that independence. It created a class
-          of people who had no choice but to work for whoever owned the means of production —
-          because the alternative was starvation. The wage labor system that we now treat as natural
-          was constructed, violently, through the expropriation of the commons.
+          Enclosure was not just an economic policy. It was a project of social discipline.
+          Common land gave people an exit option. If you could grow food, gather wood, and graze
+          animals on the commons, you were not entirely dependent on wages. Enclosure destroyed
+          that independence. It created a class of people who had no choice but to work for
+          whoever owned the means of production — because the alternative was starvation. The
+          wage labor system that we now treat as natural was constructed, violently, through the
+          expropriation of the commons.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Federici,{' '}
+            <a href="https://en.wikipedia.org/wiki/Caliban_and_the_Witch" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-600">
+              <em>Caliban and the Witch</em>
+            </a>
+          , 2004)</span>
         </P>
         <P>
           Contemporary observers were clear about what was happening. <a href="https://en.wikipedia.org/wiki/Thomas_More" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Thomas More</a>, writing in
@@ -429,12 +431,17 @@ export default function HousingPage() {
       </ArticleSection>
 
       <ArticleSection id="polanyi">
-        <H2 id="polanyi">Karl Polanyi and the Great Transformation</H2>
+        <H2 id="polanyi">Land as a Fictitious Commodity</H2>
         <P>
-          The Hungarian economic historian <a href="https://en.wikipedia.org/wiki/Karl_Polanyi" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Karl Polanyi</a> gave this process its most rigorous analysis
-          in <a href="https://en.wikipedia.org/wiki/The_Great_Transformation_(book)" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700"><em>The Great Transformation</em></a> (1944). Polanyi identified what he called the &ldquo;<a href="https://en.wikipedia.org/wiki/Fictitious_commodities" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">fictitious
-          commodities</a>&rdquo; — things treated as market commodities that fundamentally were not: land,
-          labor, and money.
+          Land, labor, and money are not ordinary commodities. None of them were manufactured for
+          sale — land is not made, labor is human life, money is a social institution. Yet the
+          market system treats them as if they were, subjecting them to price, supply, and demand
+          like any other product.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Polanyi,{' '}
+            <a href="https://en.wikipedia.org/wiki/The_Great_Transformation_(book)" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-600">
+              <em>The Great Transformation</em>
+            </a>
+          , 1944)</span>
         </P>
         <P>
           These things are not produced for sale. Land is not manufactured. Labor is human life —
@@ -450,17 +457,9 @@ export default function HousingPage() {
           maximum rent, leaving it idle if that produced better returns — required dismantling
           centuries of social obligation and replacing them with the single logic of price.
         </P>
-        <Blockquote>
-          &ldquo;A revolution of the rich against the poor.&rdquo; — Karl Polanyi on the Enclosure movement,
-          <em> The Great Transformation</em> (1944)
-        </Blockquote>
         <P>
-          He was describing England in the 18th century. He might as well have been describing
-          London, Sydney, Toronto, or San Francisco today. The same argument — that money and
-          markets are social constructions, not natural facts — runs through our piece on{' '}
-          <Link href="/posts/did-humans-ever-barter-before-money#politics" className="underline decoration-gray-400 hover:decoration-gray-700">
-            why the barter myth exists
-          </Link>.
+          Enclosure was a revolution of the rich against the poor. That description fit England in
+          the 18th century. It fits London, Sydney, Toronto, and San Francisco today.
         </P>
       </ArticleSection>
 
@@ -492,15 +491,9 @@ export default function HousingPage() {
           would pay more for it in the future.
         </P>
         <P>
-          This was not a slow drift. It was a series of decisions. In 1986, the UK deregulated
-          financial markets — the &ldquo;Big Bang&rdquo; — removing restrictions on what banks could
-          lend for and how much. Mortgage credit expanded. In 1980, the US <a href="https://en.wikipedia.org/wiki/Depository_Institutions_Deregulation_and_Monetary_Control_Act" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Depository Institutions
-          Deregulation Act</a> and then the <a href="https://en.wikipedia.org/wiki/Garn%E2%80%93St._Germain_Depository_Institutions_Act" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Garn-St. Germain Act of 1982</a> deregulated
-          savings institutions and expanded mortgage lending. In both countries, the effect
-          was the same: more money, created by banks as loans, flowing into property. Property
-          prices rose. People who owned property before the deregulation became wealthier.
-          People who didn&apos;t, paid for it — in rent, and in the higher prices they eventually
-          had to borrow to meet.
+          This was not a slow drift. It was a series of decisions. Property prices rose. People
+          who owned property before the deregulation became wealthier. People who didn&apos;t,
+          paid for it — in rent, and in the higher prices they eventually had to borrow to meet.
         </P>
 
         <H3 id="tax-subsidies">The Tax Subsidies That Made It Worse</H3>
@@ -528,10 +521,8 @@ export default function HousingPage() {
       <ArticleSection id="henry-george">
         <H2 id="henry-george">Henry George and the Road Not Taken</H2>
         <P>
-          In 1879, the American journalist and theorist <a href="https://en.wikipedia.org/wiki/Henry_George" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Henry George</a> published <a href="https://en.wikipedia.org/wiki/Progress_and_Poverty" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700"><em>Progress and Poverty</em></a>.
-          It became one of the bestselling books in the English-speaking world — read by Leo Tolstoy,
-          George Bernard Shaw, Albert Einstein, and Winston Churchill. Its central argument is still
-          one of the most radical and most honest analyses of land ownership ever written.
+          In 1879, <a href="https://en.wikipedia.org/wiki/Henry_George" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Henry George</a> published <a href="https://en.wikipedia.org/wiki/Progress_and_Poverty" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700"><em>Progress and Poverty</em></a>. The argument
+          at its centre was both simple and devastating.
         </P>
         <P>
           George noticed a paradox: as societies became richer through industrial progress, poverty
@@ -645,12 +636,7 @@ export default function HousingPage() {
           The <a href="https://en.wikipedia.org/wiki/Hut_tax" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">hut tax</a> — imposed across British Africa in the late 19th and early 20th centuries —
           was a precise mechanism for this: tax people in cash for the right to live in their own
           homes, then force them to seek wage labor when they couldn&apos;t pay. Land enclosure and
-          labor coercion were not separate policies. They were two sides of the same coin. We trace
-          the full argument about how{' '}
-          <Link href="/posts/did-humans-ever-barter-before-money#colonial" className="underline decoration-gray-400 hover:decoration-gray-700">
-            colonial taxes forced people into the cash economy
-          </Link>{' '}
-          in our piece on the barter myth.
+          labor coercion were not separate policies. They were two sides of the same coin.
         </P>
       </ArticleSection>
 
@@ -739,8 +725,9 @@ export default function HousingPage() {
           done by specific people with names, at specific moments that can be dated.
         </p>
         <p>
-          If it was built, it can be taken apart. But the first step is refusing to be told
-          it&apos;s just the way things are.
+          The barrier to reversing it is not technical or intellectual. It is the same barrier
+          that prevented the commons from being restored after enclosure: the people who benefit
+          from the taking are in charge of deciding whether to give it back.
         </p>
       </ArticleCallout>
 
