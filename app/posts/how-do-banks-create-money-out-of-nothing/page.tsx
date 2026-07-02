@@ -392,13 +392,10 @@ export default function BanksCreateMoneyPage() {
           need to find new money before expanding. The expansion itself created the money.
         </P>
         <P>
-          This is not a trick or a loophole. It is simply how banking works. <a href="https://en.wikipedia.org/wiki/Richard_Werner" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Richard Werner</a>,
-          a German economist, was so frustrated that economists kept arguing about this in theory that
-          he ran an actual experiment in 2014. He borrowed money from a small German cooperative bank —
-          <a href="https://www.sciencedirect.com/science/article/pii/S1057521914001070" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700"> Raiffeisenbank Wildenberg eG</a> — and, with the bank&apos;s cooperation,
-          monitored their internal accounts throughout the process. He confirmed exactly what the
-          theory predicted: the bank did not transfer funds from anywhere. It created the loan by
-          crediting his account — and the money did not exist before it did so.
+          This is not a trick or a loophole. It is simply how banking works. In 2014, <a href="https://en.wikipedia.org/wiki/Richard_Werner" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Richard Werner</a> ran an actual experiment: he borrowed money from a small German cooperative bank —
+          <a href="https://www.sciencedirect.com/science/article/pii/S1057521914001070" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Raiffeisenbank Wildenberg eG</a> — and, with the bank&apos;s cooperation,
+          monitored their internal accounts throughout the process. The bank did not transfer funds from anywhere. It created the loan by
+          crediting his account — and the money did not exist before it did so. <span className="text-sm text-gray-400 not-italic">(Werner, &ldquo;Can Banks Individually Create Money Out of Nothing?&rdquo; <em>International Review of Financial Analysis</em>, 2014)</span>
         </P>
 
         <H3 id="loans-create-deposits">Loans Create Deposits, Not the Other Way Around</H3>
@@ -501,18 +498,7 @@ export default function BanksCreateMoneyPage() {
           actually decide to lend.
         </P>
         <P>
-          This was not a new insight when the Bank of England published it in 2014.
-        </P>
-        <Blockquote>
-          &ldquo;It is much more realistic to say that the banks &lsquo;create credit&rsquo;, that is, that they
-          create deposits in the act of lending, than to say that they lend the deposits that
-          have been entrusted to them.&rdquo;
-          <footer className="mt-2 text-base not-italic text-gray-500">— Joseph Schumpeter, <em>History of Economic Analysis</em>, 1954</footer>
-        </Blockquote>
-        <P>
-          That was in print in 1954. What economics textbooks taught in the following seventy
-          years was not a misunderstanding. Someone decided what students should believe about
-          where money comes from.
+          This was not a new insight when the Bank of England published it in 2014. In 1954, Joseph Schumpeter wrote that it is &ldquo;much more realistic to say that banks &lsquo;create credit&rsquo; — that they create deposits in the act of lending — than to say that they lend the deposits that have been entrusted to them.&rdquo; <span className="text-sm text-gray-400 not-italic">(Schumpeter, <em>History of Economic Analysis</em>, 1954)</span> What economics textbooks taught in the following seventy years was not a misunderstanding. Someone decided what students should believe about where money comes from.
         </P>
       </ArticleSection>
 
@@ -632,7 +618,7 @@ export default function BanksCreateMoneyPage() {
 
       <ArticleFurtherReading title="Go Deeper" items={FURTHER_READING} />
 
-      <ArticleCallout variant="dark" title="And Because This Is True, Something Else Collapses">
+      <ArticleCallout variant="dark" title="Private Banks Decide What Gets Funded">
         <p>
           Private banks decide how much money exists. They make that decision based on what is
           profitable to lend against — and for forty years the answer has been: land. Not wages.
