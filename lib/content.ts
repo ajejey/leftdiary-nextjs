@@ -250,102 +250,118 @@ export const samplePosts: Post[] = [
     description: 'A comprehensive summary of David Graeber\'s influential book on meaningless work and its impact on society.',
     image: 'bullshit-jobs.jpg',
     contentType: 'post'
+  },
+  {
+    slug: 'did-humans-ever-barter-before-money',
+    title: 'Did Humans Ever Barter Before Money?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'History', 'Capitalism'],
+    description: 'Did humans ever barter before money was invented? David Graeber spent years looking for a single documented example of a barter economy. He found none. Here is what the archaeological record actually shows came before money — and why the myth exists.',
+    image: 'barter-myth-cover.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'why-is-housing-so-expensive',
+    title: 'Why Is Housing So Expensive?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'Housing', 'History'],
+    description: 'Housing didn\'t get expensive by accident. Land enclosure, financialization, and deliberate policy choices turned shelter into an asset class. The real history of why you can\'t afford to live — and who decided it would be this way.',
+    image: 'housing-financialization-cover.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'how-do-banks-create-money-out-of-nothing',
+    title: 'How Do Banks Create Money Out of Nothing?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'Banking', 'Money'],
+    description: 'When a bank approves your mortgage, it doesn\'t move existing money — it creates new money on the spot. The Bank of England confirmed this in 2014. Here is how money is actually created, and what it means for debt, housing, and public spending.',
+    image: 'banks-create-money-cover.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'why-did-colonizers-tax-africans',
+    title: 'Why Did Colonizers Tax Africans?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'History', 'Colonialism'],
+    description: 'If governments can create money, why do they collect taxes? Colonizers accidentally answered this question. The hut tax didn\'t raise revenue — it forced Africans into wage labor. That same logic explains modern austerity, the IMF, and why the government says it "can\'t afford" hospitals.',
+    image: 'colonizers-tax-africans-cover.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'why-do-the-rich-keep-getting-richer',
+    title: 'Why Do the Rich Keep Getting Richer?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'Inequality', 'Capitalism'],
+    description: 'Warren Buffett\'s secretary pays a higher tax rate than he does. He said it himself. Jeff Bezos paid $0 in federal income tax in 2007. Piketty\'s r > g explains why wealth concentration is a mathematical guarantee — and why the tax system was built to keep it that way.',
+    image: 'wealth-inequality-cover.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'how-did-people-survive-before-capitalism',
+    title: 'How Did People Survive Before Capitalism?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'History', 'Capitalism'],
+    description: 'Before the enclosure acts, most people in England had the commons — land they could graze, fish, and farm without paying rent to anyone. Parliament, controlled by landowners, passed 5,000 laws to take it away. Unemployment didn\'t exist before that. Here\'s what they destroyed to make the wage system inevitable.',
+    image: 'enclosure-commons-cover.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'debt-as-social-control',
+    title: 'How Does Debt Keep People In Line?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'Debt', 'History'],
+    description: 'Ancient Babylon cancelled debt every 30 years — not out of charity, but because compound interest always produces more debt than can be repaid. Haiti paid France for 122 years for winning the Haitian Revolution. Here\'s how debt became the mechanism that keeps individuals, nations, and whole economies from getting free.',
+    image: 'debt-social-control-cover.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'what-is-the-ruling-class',
+    title: 'Is There a Ruling Class?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Politics', 'Power', 'Class'],
+    description: "The term sounds like a conspiracy theory. It isn't. C. Wright Mills asked it as a sociologist in 1956, backed it with data, and named it 'The Power Elite.' 65% of British senior judges went to private school. Every US Secretary of State since 1953 has been a Council on Foreign Relations member except one. Here's the documented answer.",
+    image: 'ruling-class-cover.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'who-owns-the-media',
+    title: 'Who Owns the Media?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Media', 'Politics', 'Power'],
+    description: "Six companies control roughly 90% of US media. In the UK, three men own most of the national press. Noam Chomsky called it Manufacturing Consent. Here's how media ownership shapes what you think is possible — not through censorship, but through what never gets framed as a serious idea.",
+    image: 'media-ownership-cover.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'what-happened-to-the-left',
+    title: 'What Happened to the Left?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Politics', 'History', 'Labor'],
+    description: "In 1945, Labour won the most decisive election victory in British history and built the NHS. In 1981, Reagan fired 11,000 striking air traffic controllers — and union membership began a collapse that hasn't stopped. Here's how the most powerful labor movement in history was defeated, and what was used to defeat it.",
+    image: 'left-history-cover.jpg',
+    contentType: 'post'
   }
 ];
 
-// Fetch news articles from API
-export async function getNewsArticles(page = 1, limit = 50): Promise<NewsArticlesResponse> {
-  try {
-    const apiUrl = process.env.NEWS_AGENT_API_URL || 'http://localhost:5000';
-    // console.log(`Fetching news articles from ${apiUrl}`);
-    const res = await fetch(`${apiUrl}/api/articles?page=${page}&limit=${limit}`, {
-      cache: 'no-store', // No caching for immediate updates
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-    // console.log('API response:', res);
-    
-    if (!res.ok) {
-      console.error(`API error: ${res.status} ${res.statusText}`);
-      // Return empty response instead of throwing for static generation
-      return {
-        articles: [],
-        totalPages: 0,
-        currentPage: page,
-        totalArticles: 0
-      };
-    }
-    
-    const data = await res.json();
-    // console.log('API response data:', data);
-    return data;
-  } catch (error) {
-    console.error('Failed to fetch news articles:', error);
-    // Return empty response for static generation compatibility
-    return {
-      articles: [],
-      totalPages: 0,
-      currentPage: page,
-      totalArticles: 0
-    };
-  }
+export async function getNewsArticles(page = 1, _limit = 50): Promise<NewsArticlesResponse> {
+  return { articles: [], totalPages: 0, currentPage: page, totalArticles: 0 };
 }
 
-// Convert a NewsArticle to the unified BaseContent format
-export function adaptNewsArticle(article: NewsArticle): NewsContentAdapter {
-  // Get the first image or use a placeholder
-  const imageUrl = article.images && article.images.length > 0 
-    ? article.images[0].url 
-    : '/images/placeholder.jpg';
-  
-  // Format the date with fallback for invalid date
-  const formattedDate = article.publishedAt ? 
-    new Date(article.publishedAt).toISOString().split('T')[0] : 
-    new Date().toISOString().split('T')[0];
-  
-  return {
-    slug: article.slug,
-    title: article.title,
-    date: formattedDate,
-    author: article.originalNewsSource?.title || 'Left Diary',
-    categories: article.categories,
-    description: article.summary,
-    image: imageUrl,
-    contentType: 'news',
-    originalArticle: article
-  };
-}
-
-// Get combined content (posts and news) for the home page
-export async function getCombinedContent(newsLimit: number = 100): Promise<BaseContent[]> {
-  let newsContent: NewsContentAdapter[] = [];
-  
-  try {
-    // Get news articles with proper error handling
-    const { articles } = await getNewsArticles(1, newsLimit);
-    // console.log(`Fetched ${articles.length} news articles `, articles);
-    
-    // Convert news articles to the unified format
-    newsContent = articles.map(adaptNewsArticle);
-  } catch (error) {
-    console.error('Failed to fetch news for combined content:', error);
-    // Continue without news articles if API is unavailable
-    newsContent = [];
-  }
-  
-  // Combine posts and news
-  const combinedContent: BaseContent[] = [
-    ...newsContent,
-    ...samplePosts,
-  ];
-  
-  // Sort by date (newest first) with proper date handling
-  return combinedContent.sort((a, b) => {
-    const dateA = new Date(a.date).getTime();
-    const dateB = new Date(b.date).getTime();
-    return dateB - dateA;
-  });
+// Get combined content for the home page — posts only
+export function getCombinedContent(): BaseContent[] {
+  return [...samplePosts].sort((a, b) =>
+    new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 }
 
 // Get all posts for sitemap
@@ -353,30 +369,6 @@ export function getAllPosts(): Post[] {
   return samplePosts;
 }
 
-// Get all published news articles for sitemap
 export async function getAllPublishedNewsArticles(): Promise<NewsArticle[]> {
-  try {
-    const apiUrl = process.env.NEWS_AGENT_API_URL || 'http://localhost:5000';
-    const fullUrl = `${apiUrl}/api/articles?status=published&limit=1000`;
-    
-    const res = await fetch(fullUrl, {
-      cache: 'no-store', // No caching for immediate updates
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-    
-    if (!res.ok) {
-      console.error(`getAllPublishedNewsArticles: API error: ${res.status} ${res.statusText}`);
-      return [];
-    }
-    
-    const data = await res.json();
-    console.log(`getAllPublishedNewsArticles: Found ${data.articles?.length || 0} published articles`);
-    
-    return data.articles || [];
-  } catch (error) {
-    console.error('getAllPublishedNewsArticles: Failed to fetch published news articles for sitemap:', error);
-    return [];
-  }
+  return [];
 }
