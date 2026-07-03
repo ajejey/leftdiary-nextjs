@@ -369,11 +369,13 @@ export default function HowDidEverythingComeToCostMoneyPage() {
           everything they needed had no reason to enter a mine.
         </P>
         <P>
-          The first move: create a requirement. Each household was made to owe a fixed sum
-          in British pounds every year. British pounds were available from exactly one
-          source: British employers. So people went to work long enough to obtain the required
-          sum and returned to their lives. A partial obligation, but not yet control. The exit
-          still existed. The land, the water, the community — all still there.
+          The first move: create a requirement. The British imposed what they called a hut
+          tax: a fixed annual sum, owed by every household, denominated in British pounds.
+          British pounds were available from exactly one source: British employers. To meet
+          the requirement, you had to work for the people collecting it. So people went to
+          work, obtained what was owed, and returned to their lives. A partial obligation,
+          but not yet control. The exit still existed. The land, the water, the community
+          — all still there.
         </P>
         <P>
           So the second move: close the exit.
@@ -405,9 +407,10 @@ export default function HowDidEverythingComeToCostMoneyPage() {
         </P>
         <P>
           This is where the industrial labor force came from. Not from people who chose factory
-          work. From people who no longer had an alternative. The factory could set whatever
-          conditions it wanted (hours, wages, safety) because the alternative to the factory
-          was not a life on common land. It was nothing.
+          work. From people who no longer had an alternative. To eat, you needed wages. Wages
+          came from whoever owned the factory or the land. That person could set whatever
+          conditions they wanted: hours, wages, safety. Because the alternative to accepting
+          those conditions was not a life on common land. It was nothing.
         </P>
         <P>
           Two moves. First: create a requirement that can only be met one way. Second: remove
@@ -483,34 +486,34 @@ export default function HowDidEverythingComeToCostMoneyPage() {
           Here is what all of this adds up to.
         </P>
         <P>
-          Every cost that doesn&rsquo;t feel like it should be there is not a mystery. There is a specific
-          legal act. A specific set of interests that lobbied for it. A specific date it
-          legal act. A specific set of interests that lobbied for it. A specific date it
-          took effect. A specific set of interests it served.
+          Every cost that doesn&rsquo;t feel like it should be there is not a mystery. There is a
+          specific legal act. A specific set of interests that lobbied for it. A specific date
+          it took effect.
         </P>
         <P>
-          The water that runs through your pipes was a river or aquifer nobody owned. The seed
+          The water running through your pipes was a river or aquifer nobody owned. The seed
           in the packet was someone&rsquo;s harvest. The certification your job requires represents
-          knowledge that circulated in communities. The childcare you hire represents care that
-          was once the work of a neighborhood. None of it became a transaction because of some
-          law of nature. Each had a commons. The commons was enclosed: converted from something
+          knowledge that circulated freely. The childcare you hire was once the work of a
+          neighborhood. Each had a commons. The commons was enclosed: converted from something
           people had together into something held by an entity that could grant or deny access.
-          The need stayed. The direct access was removed. What replaced it was the requirement.
-        </P>
-        <P>
-          And the mechanism was always the same two moves: first, create a requirement that
-          can only be met one way; second, remove every alternative way of meeting your needs.
-          After both moves, whoever controls the requirement is between you and everything.
+          The need stayed. The direct access was removed. What replaced it was a requirement.
+          And the requirement is always the same thing: money. Money requires employment.
+          Employment requires someone to decide you are worth employing. Whoever controls that
+          one channel is between you and everything.
         </P>
         <P>
           <Link href="/posts/what-is-austerity" className="underline decoration-gray-400 hover:decoration-gray-600">
             The same two moves are being made right now
           </Link>
           {' '}in every budget that eliminates a public service and leaves the need intact.
-          The public university is defunded; the need for education remains; a bank moves
-          between you and it, with terms. The hospital is privatized; the need for care
-          remains; an insurance company moves between you and it, with terms. The enclosure
-          did not end. It changed instruments.
+          The public university is defunded; the need for education remains; the requirement
+          is now a loan: dollars to a bank, at interest. The hospital is privatized; the need
+          for care remains; the requirement is now a premium: dollars to an insurer, monthly.
+          The need didn&rsquo;t change. The commons was enclosed and the requirement stayed.
+        </P>
+        <P>
+          The enclosure didn&rsquo;t end. It just got better at looking like the way things
+          have always been.
         </P>
       </ArticleSection>
 
