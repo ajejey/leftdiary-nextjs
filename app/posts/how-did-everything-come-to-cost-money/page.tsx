@@ -429,12 +429,16 @@ export default function HowDidEverythingComeToCostMoneyPage() {
           years), a farmer&rsquo;s harvest included what they would plant the following year. You
           kept the seeds. You planted them. You shared them with neighbors. No third party
           involved. Then, through a series of expansions to patent law across the 20th century,
-          corporations gained the ability to hold legal claims over specific plant varieties.
-          A farmer who saved seeds from a patented crop and replanted them was now infringing
-          on a legal claim. The practice that had sustained agriculture for all of human history
-          became, for the covered varieties, a legal liability. To plant: obtain seeds from
+          corporations claimed ownership over specific plant varieties through patent law.
+          A farmer who saved seeds from a patented crop and replanted them was now a
+          defendant. Ten thousand years of practice became, by specific legal acts,
+          infringement. To plant: obtain seeds from
           the corporation. Every year. The ancient alternative was not seized by force. It was
-          converted into infringement by law.
+          converted into infringement by law. And the only way to obtain those seeds now is
+          through money — created out of thin air by private banks, only available if you work
+          for the corporations that now hold the patent on what you used to grow yourself. The
+          same entities that took the seeds now control the only instrument through which you
+          can buy them back.
         </P>
         <P>
           <strong>Healing knowledge.</strong> Knowledge about which plants addressed which
@@ -449,8 +453,11 @@ export default function HowDidEverythingComeToCostMoneyPage() {
           within a generation. The knowledge itself was not destroyed. What changed was who
           was legally permitted to use it. The midwife, the herbalist, the community healer
           — all became, by law, people you were not permitted to consult for medical care.
-          The alternative was closed. The licensed practitioner became the only legal access
-          point to what had been common knowledge.
+          The alternative was closed. The licensed practitioner became the gatekeeper.
+          The visit is billable. And the only way to make that visit is through money —
+          created out of thin air by private banks, only available if you work for an employer
+          who now owns what used to circulate freely. The same class of entities that enclosed
+          the knowledge controls the only instrument through which you can access it.
         </P>
         <P>
           <strong>Water.</strong> Water that falls from the sky, runs through rivers, sits in
@@ -463,7 +470,10 @@ export default function HowDidEverythingComeToCostMoneyPage() {
           killed. Two days later, the government cancelled the contract. The mechanism the
           city had just lived through: establish the legal claim, remove the alternatives.
           This is not unique to Bolivia. In some US states today, collecting rainwater that falls
-          on your own roof requires a permit.
+          on your own roof requires a permit — and permits cost money. Money created out of
+          thin air by private banks, only available if you work for an employer who owns what
+          used to be yours to drink from. Water that falls from the sky now requires a token
+          produced by the same class of entities that decided water should be a market.
         </P>
         <P>
           <strong>Care.</strong> Communities raised children. Extended families, neighbors,
@@ -476,7 +486,11 @@ export default function HowDidEverythingComeToCostMoneyPage() {
           into either unpaid labor extracted from women, or a service you hired, which
           required tokens, which required employment. The need for care didn&rsquo;t change.
           The commons that had met it was made structurally impossible. What replaced it
-          was the market.
+          was the market. And the market runs on money — created out of thin air by private
+          banks, only available if you work for the same employers whose schedules dismantled
+          the community that used to do this work for free. The same entities that made
+          mutual care impossible now control the only instrument through which care can
+          be obtained.
         </P>
       </ArticleSection>
 
@@ -497,19 +511,20 @@ export default function HowDidEverythingComeToCostMoneyPage() {
           neighborhood. Each had a commons. The commons was enclosed: converted from something
           people had together into something held by an entity that could grant or deny access.
           The need stayed. The direct access was removed. What replaced it was a requirement.
-          And the requirement is always the same thing: money. Money requires employment.
-          Employment requires someone to decide you are worth employing. Whoever controls that
-          one channel is between you and everything.
+          And the token required to meet it is one you cannot produce yourself — produced out
+          of thin air by banks, distributed by elites, controlled by the same class of entities
+          that converted the commons into the thing you now need the token to access.
         </P>
         <P>
           <Link href="/posts/what-is-austerity" className="underline decoration-gray-400 hover:decoration-gray-600">
             The same two moves are being made right now
           </Link>
           {' '}in every budget that eliminates a public service and leaves the need intact.
-          The public university is defunded; the need for education remains; the requirement
-          is now a loan: dollars to a bank, at interest. The hospital is privatized; the need
-          for care remains; the requirement is now a premium: dollars to an insurer, monthly.
-          The need didn&rsquo;t change. The commons was enclosed and the requirement stayed.
+          The public university is defunded; the need for education remains; a bank creates a
+          loan and collects interest on the need you always had. The hospital is privatized;
+          the need for care remains; an insurer collects premiums on the need you always had.
+          The need didn&rsquo;t change. The commons was enclosed. And now someone is collecting
+          on the gap where the commons used to be.
         </P>
         <P>
           The enclosure didn&rsquo;t end. It just got better at looking like the way things
@@ -532,7 +547,7 @@ export default function HowDidEverythingComeToCostMoneyPage() {
         <p>
           Academic knowledge, research produced at universities and often funded by public money,
           is held behind journal paywalls. To read the results of publicly funded research,
-          you must give something to a private publisher. The knowledge was produced in common.
+          you must pay a publisher who produced none of it. The knowledge was produced in common.
           The access was enclosed.
         </p>
         <br />
