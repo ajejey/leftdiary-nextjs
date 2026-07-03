@@ -183,8 +183,8 @@ const FAQ_ITEMS: FAQItem[] = [
     question: 'What is a "commons"?',
     answer: (
       <>
-        A commons is anything a community uses together without anyone owning it individually
-        — land that a village farmed collectively, rivers anyone drank from, healing knowledge
+        A commons is anything a community uses together without anyone owning it individually:
+        land that a village farmed collectively, rivers anyone drank from, healing knowledge
         that circulated between people, seeds saved from one harvest and shared for the next.
         Not a political ideology. Just: things people had direct access to, without needing
         anyone&rsquo;s permission, without going through a third party. Most of what humans needed
@@ -210,7 +210,7 @@ const FAQ_ITEMS: FAQItem[] = [
     answer: (
       <>
         Farmers saved seeds from their own harvest for replanting for the entire history of
-        agriculture — roughly ten thousand years. Modern plant patent laws, introduced in the
+        agriculture (roughly ten thousand years). Modern plant patent laws, introduced in the
         US with the Plant Patent Act of 1930 and significantly expanded through subsequent
         legislation and court decisions across the 20th century, gave corporations legal claims
         over specific plant varieties. A farmer who saved seeds from a patented crop and
@@ -228,7 +228,7 @@ const FAQ_ITEMS: FAQItem[] = [
         healing knowledge is put behind a licensing regime, licensed practitioners collect from
         people who used to get care from community knowledge. When seeds are patented, the
         patent holder collects from farmers who used to save their own. The mechanism
-        consistently moves a stream of income — from the people who need the thing — to
+        consistently moves a stream of income from the people who need the thing to
         whoever now holds the legal claim over access to it.
       </>
     ),
@@ -287,9 +287,9 @@ export default function HowDidEverythingComeToCostMoneyPage() {
         lead={
           <>
             Every cost that doesn&rsquo;t feel like it should be there has a specific origin. A
-            specific law. A specific date when something people had directly — land, water,
-            seeds, the knowledge to heal — was converted into something that required going
-            through a third party. The need didn&rsquo;t change. The direct access was removed.
+            specific law. A specific date when something people had directly was converted into
+            something that required going through a third party. Land, water, seeds, the
+            knowledge to heal. The need didn&rsquo;t change. The direct access was removed.
           </>
         }
         date="July 3, 2026"
@@ -305,18 +305,18 @@ export default function HowDidEverythingComeToCostMoneyPage() {
           &ldquo;How did everything come to cost money?&rdquo;
         </P>
         <P>
-          It sounds like a child&rsquo;s question. The kind that gets a vague answer — &ldquo;that&rsquo;s
-          just how things work&rdquo; — because the adult being asked has stopped wondering about
-          it themselves. But it&rsquo;s not childish. It&rsquo;s the right question. And it has a
-          specific answer.
+          It sounds like a child&rsquo;s question. The kind that gets a vague answer
+          (&ldquo;that&rsquo;s just how things work&rdquo;) because the adult being asked has stopped wondering
+          about it themselves. But it&rsquo;s not childish. It&rsquo;s the right question. And it has
+          a specific answer.
         </P>
         <P>
-          Everything that requires going through a third party today — water running through
-          a pipe, a seed planted in the ground, the knowledge to heal a person, the care of
-          a child — was available directly, without going through anyone, for most of human
-          history. Each one stopped being available that way on a specific date, through a
-          specific legal act, to serve a specific set of interests. None of it was inevitable.
-          None of it was natural. Each one was a decision.
+          Water running through a pipe, a seed planted in the ground, the knowledge to heal
+          a person, the care of a child: all of these require going through a third party
+          today. All of them were available directly, without going through anyone, for most
+          of human history. Each one stopped being available that way on a specific date,
+          through a specific legal act, to serve a specific set of interests. None of it was
+          inevitable. None of it was natural. Each one was a decision.
         </P>
         <P>
           Here is how that decision kept getting made.
@@ -332,8 +332,8 @@ export default function HowDidEverythingComeToCostMoneyPage() {
         <P>
           Land was used collectively. Communities farmed it, grazed animals on it, gathered
           from it. No individual owned it in the sense we mean now. Rivers and aquifers were
-          used directly — you went to them. Healing knowledge — which plants addressed which
-          conditions, how to assist a birth, how to set a bone — was held by people within
+          used directly; you went to them. Healing knowledge about which plants addressed which
+          conditions, how to assist a birth, how to set a bone, was held by people within
           communities and passed between them. Seeds from this year&rsquo;s harvest became next
           year&rsquo;s crop. Children were raised by the people who happened to be around: neighbors,
           extended family, the community itself.
@@ -362,15 +362,15 @@ export default function HowDidEverythingComeToCostMoneyPage() {
           the 19th century.{' '}
           <Link href="/posts/why-did-colonizers-tax-africans" className="underline decoration-gray-400 hover:decoration-gray-600">
             Communities with land that fed them, water they used directly, knowledge and
-            structures that sustained them — everything required to live without entering
+            structures that sustained them. Everything required to live without entering
             any exchange with the British at all.
           </Link>{' '}
           The British needed bodies in mines and on farms. The problem: people who had
           everything they needed had no reason to enter a mine.
         </P>
         <P>
-          The first move: create a requirement. Each household was made to owe a fixed sum —
-          in British pounds — every year. British pounds were available from exactly one
+          The first move: create a requirement. Each household was made to owe a fixed sum
+          in British pounds every year. British pounds were available from exactly one
           source: British employers. So people went to work long enough to obtain the required
           sum and returned to their lives. A partial obligation, but not yet control. The exit
           still existed. The land, the water, the community — all still there.
@@ -379,11 +379,11 @@ export default function HowDidEverythingComeToCostMoneyPage() {
           So the second move: close the exit.
         </P>
         <P>
-          Through a series of legal acts, most land was reclassified as Crown Land — belonging
+          Through a series of legal acts, most land was reclassified as Crown Land, belonging
           to the colonial government, available to white settlers. Africans were moved into
           designated areas called reserves, deliberately sized too small to grow a family&rsquo;s
-          food on. The thing that had made the first move manageable — the life you could
-          return to — was removed by law. Not through violence alone, though violence was
+          food on. The thing that had made the first move manageable, the life you could
+          return to, was removed by law. Not through violence alone, though violence was
           present. Through the reclassification of what belonged to whom.
         </P>
         <P>
@@ -396,7 +396,7 @@ export default function HowDidEverythingComeToCostMoneyPage() {
         </P>
         <P>
           Beginning in the 16th century, the English Parliament passed hundreds of individual
-          Enclosure Acts — each one converting a specific piece of common land into private
+          Enclosure Acts, each one converting a specific piece of common land into private
           property. The people who had farmed and grazed and gathered from it for generations
           had no legal recourse. They were not offered a trade. The access was simply removed.
           By the time the wave of enclosures had finished in the early 19th century, roughly
@@ -406,7 +406,7 @@ export default function HowDidEverythingComeToCostMoneyPage() {
         <P>
           This is where the industrial labor force came from. Not from people who chose factory
           work. From people who no longer had an alternative. The factory could set whatever
-          conditions it wanted — hours, wages, safety — because the alternative to the factory
+          conditions it wanted (hours, wages, safety) because the alternative to the factory
           was not a life on common land. It was nothing.
         </P>
         <P>
@@ -422,8 +422,8 @@ export default function HowDidEverythingComeToCostMoneyPage() {
           Once you see the sequence, you see it everywhere.
         </P>
         <P>
-          <strong>Seeds.</strong> For the entire history of agriculture — roughly ten thousand
-          years — a farmer&rsquo;s harvest included what they would plant the following year. You
+          <strong>Seeds.</strong> For the entire history of agriculture (roughly ten thousand
+          years), a farmer&rsquo;s harvest included what they would plant the following year. You
           kept the seeds. You planted them. You shared them with neighbors. No third party
           involved. Then, through a series of expansions to patent law across the 20th century,
           corporations gained the ability to hold legal claims over specific plant varieties.
@@ -435,12 +435,12 @@ export default function HowDidEverythingComeToCostMoneyPage() {
         </P>
         <P>
           <strong>Healing knowledge.</strong> Knowledge about which plants addressed which
-          conditions, how to assist a difficult birth, how to treat a wound — circulated in
+          conditions, how to assist a difficult birth, how to treat a wound, circulated in
           communities for most of human history, primarily among women. It was not owned. It
           was not behind a credential. You learned it from someone who knew it. In the late
           19th and early 20th centuries, state licensing laws were introduced requiring formal
           certification to practice medicine. Then a 1910 report backed by the American
-          Medical Association recommended closing the majority of medical schools — within a
+          Medical Association recommended closing the majority of medical schools, and within a
           decade, roughly half had closed, along with nearly every school of midwifery.
           Midwife-attended births fell from about half of all US births to about one in seven
           within a generation. The knowledge itself was not destroyed. What changed was who
@@ -451,26 +451,26 @@ export default function HowDidEverythingComeToCostMoneyPage() {
         </P>
         <P>
           <strong>Water.</strong> Water that falls from the sky, runs through rivers, sits in
-          aquifers — humans used it directly for the entire existence of the species. In 2000,
+          aquifers; humans used it directly for the entire existence of the species. In 2000,
           in Cochabamba, Bolivia, a US-backed corporation was granted exclusive rights to the
-          city&rsquo;s water supply — including water in community wells that communities had
-          built themselves — and raised rates until families earning around $100 a month were
+          city&rsquo;s water supply, including water in community wells that communities had
+          built themselves, and raised rates until families earning around $100 a month were
           spending a fifth of their income on water alone. The city rose up. On April 8, a
           seventeen-year-old named Victor Hugo Daza was shot in the face by a soldier and
           killed. Two days later, the government cancelled the contract. The mechanism the
-          city had just lived through — establish the legal claim, remove the alternatives —
-          is not unique to Bolivia. In some US states today, collecting rainwater that falls
+          city had just lived through: establish the legal claim, remove the alternatives.
+          This is not unique to Bolivia. In some US states today, collecting rainwater that falls
           on your own roof requires a permit.
         </P>
         <P>
           <strong>Care.</strong> Communities raised children. Extended families, neighbors,
-          the web of people around a family — this was not supplemental to child-rearing, it
+          the web of people around a family: this was not supplemental to child-rearing, it
           was child-rearing. That web was not dismantled by a single law. It was dismantled
           by the accumulation of all the other enclosures: land enclosure forced people into
           cities and away from communities they had grown up in; industrial work schedules
           made mutual care between neighbors impossible; the conversion of the household into
           a unit that needed to obtain tokens to survive turned care from a community function
-          into either unpaid labor extracted from women, or a service you hired — which
+          into either unpaid labor extracted from women, or a service you hired, which
           required tokens, which required employment. The need for care didn&rsquo;t change.
           The commons that had met it was made structurally impossible. What replaced it
           was the market.
@@ -483,8 +483,8 @@ export default function HowDidEverythingComeToCostMoneyPage() {
           Here is what all of this adds up to.
         </P>
         <P>
-          Every cost that doesn&rsquo;t feel like it should be there — every moment of &ldquo;why does
-          this require me to give something to get it?&rdquo; — is not a mystery. There is a specific
+          Every cost that doesn&rsquo;t feel like it should be there is not a mystery. There is a specific
+          legal act. A specific set of interests that lobbied for it. A specific date it
           legal act. A specific set of interests that lobbied for it. A specific date it
           took effect. A specific set of interests it served.
         </P>
@@ -493,7 +493,7 @@ export default function HowDidEverythingComeToCostMoneyPage() {
           in the packet was someone&rsquo;s harvest. The certification your job requires represents
           knowledge that circulated in communities. The childcare you hire represents care that
           was once the work of a neighborhood. None of it became a transaction because of some
-          law of nature. Each had a commons. The commons was enclosed — converted from something
+          law of nature. Each had a commons. The commons was enclosed: converted from something
           people had together into something held by an entity that could grant or deny access.
           The need stayed. The direct access was removed. What replaced it was the requirement.
         </P>
@@ -527,23 +527,23 @@ export default function HowDidEverythingComeToCostMoneyPage() {
         </p>
         <br />
         <p>
-          Academic knowledge — research produced at universities, often funded by public money
-          — is held behind journal paywalls. To read the results of publicly funded research,
+          Academic knowledge, research produced at universities and often funded by public money,
+          is held behind journal paywalls. To read the results of publicly funded research,
           you must give something to a private publisher. The knowledge was produced in common.
           The access was enclosed.
         </p>
         <br />
         <p>
           The town square, the community notice board, the public place where people gathered
-          and shared information — that was a commons. The platform that now mediates most
+          and shared information: that was a commons. The platform that now mediates most
           of public communication is privately owned. What you see is determined by what
           serves the owner&rsquo;s interests. The commons of public conversation was enclosed.
           What replaced it is an algorithm.
         </p>
         <br />
         <p>
-          Genetic sequences — which no corporation created, which existed long before
-          corporations did — are being converted into legal claims that can be held and
+          Genetic sequences, which no corporation created and which existed long before
+          corporations did, are being converted into legal claims that can be held and
           enforced. The alternative: accessing information about your own biology through
           open channels. That alternative is being foreclosed.
         </p>
