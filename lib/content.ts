@@ -350,6 +350,26 @@ export const samplePosts: Post[] = [
     description: "In 1945, Labour won the most decisive election victory in British history and built the NHS. In 1981, Reagan fired 11,000 striking air traffic controllers — and union membership began a collapse that hasn't stopped. Here's how the most powerful labor movement in history was defeated, and what was used to defeat it.",
     image: 'left-history-cover.jpg',
     contentType: 'post'
+  },
+  {
+    slug: 'how-did-everything-come-to-cost-money',
+    title: 'How Did Everything Come to Cost Money?',
+    date: '2026-07-03',
+    author: 'Left Diary',
+    categories: ['Economics', 'History'],
+    description: "Every cost that doesn't feel like it should be there has a specific origin. A specific law. A specific date when something people had directly — land, seeds, healing knowledge, water — was converted into something that required going through a third party. The need didn't change. The direct access was removed.",
+    image: 'how-did-everything-come-to-cost-money-cover.jpg',
+    contentType: 'post'
+  },
+  {
+    slug: 'what-is-austerity',
+    title: 'What Is Austerity?',
+    date: '2026-07-03',
+    author: 'Left Diary',
+    categories: ['Economics', 'Politics'],
+    description: "Austerity is not a budget decision. It is the same two moves that enclosed the commons — applied right now, to public services. The public university is defunded; the need for education remains; a bank moves between you and it. The hospital is privatized; the need for care remains; an insurer moves between you and it. The enclosure didn't end. It changed instruments.",
+    image: 'what-is-austerity-cover.jpg',
+    contentType: 'post'
   }
 ];
 
