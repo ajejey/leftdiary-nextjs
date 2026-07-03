@@ -438,25 +438,29 @@ export default function HowDidEverythingComeToCostMoneyPage() {
           conditions, how to assist a difficult birth, how to treat a wound — circulated in
           communities for most of human history, primarily among women. It was not owned. It
           was not behind a credential. You learned it from someone who knew it. In the late
-          19th and early 20th centuries, medical licensing laws were systematically introduced
-          across the United States. To use this knowledge legally — to practice medicine —
-          you required certification from an accredited institution. The knowledge itself was
-          not destroyed. What changed was who was legally permitted to use it. The midwife,
-          the herbalist, the community healer — all became, by law, people you were not
-          permitted to consult for medical care. The alternative was closed. The licensed
-          practitioner became the only legal access point to what had been common knowledge.
+          19th and early 20th centuries, state licensing laws were introduced requiring formal
+          certification to practice medicine. Then a 1910 report backed by the American
+          Medical Association recommended closing the majority of medical schools — within a
+          decade, roughly half had closed, along with nearly every school of midwifery.
+          Midwife-attended births fell from about half of all US births to about one in seven
+          within a generation. The knowledge itself was not destroyed. What changed was who
+          was legally permitted to use it. The midwife, the herbalist, the community healer
+          — all became, by law, people you were not permitted to consult for medical care.
+          The alternative was closed. The licensed practitioner became the only legal access
+          point to what had been common knowledge.
         </P>
         <P>
           <strong>Water.</strong> Water that falls from the sky, runs through rivers, sits in
-          aquifers — humans used it directly for the entire existence of the species. The
-          conversion of water into something requiring a third party is incomplete but ongoing.
-          In 2000, in Cochabamba, Bolivia, a corporation was granted exclusive rights to the
-          city&rsquo;s water supply — including water in community wells that had existed for
-          generations — and raised rates until residents who had nothing else could not obtain
-          enough to survive. The city rose up. The contract was eventually cancelled. But the
-          attempt shows exactly what the two moves look like applied to water: establish the
-          legal claim, remove the alternatives. In some US states today, collecting rainwater
-          that falls on your own roof requires a permit.
+          aquifers — humans used it directly for the entire existence of the species. In 2000,
+          in Cochabamba, Bolivia, a US-backed corporation was granted exclusive rights to the
+          city&rsquo;s water supply — including water in community wells that communities had
+          built themselves — and raised rates until families earning around $100 a month were
+          spending a fifth of their income on water alone. The city rose up. On April 8, a
+          seventeen-year-old named Victor Hugo Daza was shot in the face by a soldier and
+          killed. Two days later, the government cancelled the contract. The mechanism the
+          city had just lived through — establish the legal claim, remove the alternatives —
+          is not unique to Bolivia. In some US states today, collecting rainwater that falls
+          on your own roof requires a permit.
         </P>
         <P>
           <strong>Care.</strong> Communities raised children. Extended families, neighbors,
@@ -552,44 +556,69 @@ export default function HowDidEverythingComeToCostMoneyPage() {
 
       <ArticleSources>
         <p>
-          <strong>On the English Enclosure Acts:</strong> J.L. and Barbara Hammond,
-          <em> The Village Labourer, 1760–1832</em> (1911); E.P. Thompson,{' '}
-          <em>The Making of the English Working Class</em> (1963); Robert C. Allen,{' '}
-          <em>Enclosure and the Yeoman</em> (1992). On scale: roughly 5,200 individual
-          Enclosure Acts passed by Parliament between 1604 and 1914, enclosing approximately
-          6.8 million acres.
+          <strong>On the English Enclosure Acts:</strong> Over 5,200 individual Enclosure
+          Acts were passed by Parliament between 1604 and 1914, enclosing approximately
+          6.8 million acres — roughly one-fifth of England&rsquo;s land area. The definitive
+          catalog: W.E. Tate (ed. Michael Turner), <em>A Domesday of English Enclosure Acts
+          and Awards</em> (University of Reading, 1978). On social costs: J.M. Neeson,{' '}
+          <em>Commoners: Common Right, Enclosure and Social Change in England, 1700–1820</em>
+          (Cambridge University Press, 1993). On who benefited: Robert C. Allen,{' '}
+          <em>Enclosure and the Yeoman</em> (Oxford: Clarendon Press, 1992) — argues
+          enclosures enriched landowners without benefiting consumers, workers, or
+          small farmers.
         </p>
         <p>
-          <strong>On colonial land enclosure in Africa:</strong> Mahmood Mamdani,{' '}
-          <em>Citizen and Subject: Contemporary Africa and the Legacy of Late Colonialism</em>{' '}
-          (1996); Brett Shadle, <em>The Souls of White Folk: White Settlers in Kenya,
-          1900s–1920s</em> (2015); on Southern Rhodesia specifically, the Land Apportionment
-          Act of 1930 reserved 49% of land for white settlers (then roughly 50,000 people)
-          while confining the African population (then roughly 1 million) to Native Reserves.
+          <strong>On colonial land enclosure in Southern Rhodesia:</strong> The Land
+          Apportionment Act of 1930 allocated approximately 49 million acres — just over
+          half the colony&rsquo;s total land — to roughly 50,000 white settlers, while
+          designating approximately 30% of the land to an African population of over one
+          million, much of it in ecologically marginal zones. Mahmood Mamdani,{' '}
+          <em>Citizen and Subject: Contemporary Africa and the Legacy of Late Colonialism</em>
+          (Princeton University Press, 1996). On Kenya: Brett Shadle,{' '}
+          <em>The Souls of White Folk: White Settlers in Kenya, 1900s–1920s</em>
+          (Manchester University Press, 2015).
         </p>
         <p>
-          <strong>On plant patents:</strong> Plant Patent Act, US, 1930; Plant Variety
-          Protection Act, US, 1970; <em>Diamond v. Chakrabarty</em>, US Supreme Court, 1980
-          (living organisms can be patented); <em>J.E.M. Ag Supply v. Pioneer Hi-Bred</em>,
-          US Supreme Court, 2001 (utility patents apply to plant varieties). Jack Kloppenburg,{' '}
-          <em>First the Seed: The Political Economy of Plant Biotechnology</em> (1988, 2nd ed.
-          2004).
+          <strong>On plant patents:</strong> Plant Patent Act (US, 1930) — asexually
+          reproduced plants only. Plant Variety Protection Act (US, 1970) — extended to
+          seed-bearing varieties, but included a farmer&rsquo;s exemption for on-farm seed saving.{' '}
+          <em>Diamond v. Chakrabarty</em>, 447 U.S. 303 (1980) — living organisms are
+          patentable subject matter.{' '}
+          <em>J.E.M. Ag Supply, Inc. v. Pioneer Hi-Bred International, Inc.</em>, 534 U.S.
+          124 (2001) — full utility patents, with no farmer&rsquo;s exemption, apply to seeds.
+          Each decision closed a gap the previous one left open. Jack Kloppenburg,{' '}
+          <em>First the Seed: The Political Economy of Plant Biotechnology</em>
+          (University of Wisconsin Press, 2nd ed. 2004).
         </p>
         <p>
-          <strong>On medical licensing:</strong> Paul Starr,{' '}
-          <em>The Social Transformation of American Medicine</em> (1982) — documents the
-          AMA&rsquo;s role in lobbying for licensing requirements from the 1900s onward, the closure
-          of competing schools of healing, and the conversion of medicine from a distributed
-          practice to a credentialed profession. Barbara Ehrenreich and Deirdre English,{' '}
-          <em>Witches, Midwives, and Nurses: A History of Women Healers</em> (1973).
+          <strong>On medical licensing and midwifery:</strong> State licensing laws began
+          with Texas (1873) and Illinois (1877); by 1900, virtually every US state had a
+          licensing requirement. Constitutional authority:{' '}
+          <em>Dent v. West Virginia</em>, 129 U.S. 114 (1889). The 1910 Flexner Report
+          (Abraham Flexner, <em>Medical Education in the United States and Canada</em>,
+          Carnegie Foundation), backed by the AMA, recommended closing the majority of
+          medical schools; within a decade roughly half had closed. Midwife-attended births
+          fell from approximately 50% of US births in 1900 to approximately 15% by 1930.
+          Paul Starr,{' '}
+          <em>The Social Transformation of American Medicine</em> (Basic Books, 1982);
+          Barbara Ehrenreich and Deirdre English,{' '}
+          <em>Witches, Midwives, and Nurses: A History of Women Healers</em>
+          (Feminist Press, 1973).
         </p>
         <p>
-          <strong>On the Cochabamba water war:</strong> Jim Schultz and Melissa Draper (eds.),{' '}
-          <em>Dignity and Defiance: Stories from Bolivia&rsquo;s Challenge to Globalization</em>{' '}
-          (2008); Oscar Olivera, <em>Cochabamba! Water War in Bolivia</em> (2004). The
-          corporation involved was Aguas del Tunari, a subsidiary of the Bechtel Corporation.
-          The Bolivian government cancelled the contract in April 2000 following mass protests
-          in which at least one person was killed by security forces.
+          <strong>On the Cochabamba water war:</strong> In 1999, the Bolivian government
+          granted Aguas del Tunari — a consortium in which Bechtel Enterprises held a
+          controlling indirect stake — an exclusive 40-year concession over Cochabamba&rsquo;s
+          entire water supply, including existing community wells, under Bolivian Law 2029.
+          Rate increases averaged 35–50%, with some households reporting increases over
+          100% on monthly incomes of approximately $100. Victor Hugo Daza, 17, was shot
+          and killed by security forces on April 8, 2000; the concession was cancelled two
+          days later. Bechtel subsequently filed a $50 million international arbitration
+          claim against Bolivia, withdrawn in 2006 for a symbolic payment of approximately
+          $0.30. Jim Shultz and Melissa Draper (eds.),{' '}
+          <em>Dignity and Defiance: Stories from Bolivia&rsquo;s Challenge to Globalization</em>
+          (University of California Press, 2008); Oscar Olivera,{' '}
+          <em>Cochabamba! Water War in Bolivia</em> (South End Press, 2004).
         </p>
       </ArticleSources>
     </ArticleLayout>
