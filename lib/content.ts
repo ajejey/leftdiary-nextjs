@@ -396,6 +396,16 @@ export const samplePosts: Post[] = [
     contentType: 'post',
     series: 'how-money-actually-works',
     seriesOrder: 12
+  },
+  {
+    slug: 'why-didnt-people-just-refuse-to-use-money',
+    title: "Why Didn't People Just Refuse to Use Money?",
+    date: '2026-07-04',
+    author: 'Left Diary',
+    categories: ['Economics', 'History', 'Money'],
+    description: "The king's tax was once a year, in a fixed amount. So why couldn't people just earn that much and go back to living as before? Because over the next three hundred years, every other way of surviving was made illegal, one law at a time — the commons enclosed, gleaning outlawed, standing still criminalized, the last independent women destroyed as witches.",
+    image: 'why-didnt-people-just-refuse-to-use-money-cover.jpg',
+    contentType: 'post'
   }
 ];
 
