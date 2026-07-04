@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Metadata } from 'next';
 import {
   ArticleLayout,
@@ -101,7 +100,7 @@ const jsonLd = {
       },
       'keywords': 'why didn\'t people refuse to use money, enclosure acts explained, vagrancy acts history, witch hunts and enclosure, history of the commons',
       'articleSection': 'Economics',
-      'wordCount': 6500,
+      'wordCount': 5200,
       'inLanguage': 'en-US',
       'isAccessibleForFree': true,
       'about': [
@@ -129,7 +128,6 @@ const TOC_ITEMS: TOCItem[] = [
   { id: 'gleaning-and-the-day-it-ended', text: 'Gleaning, and the Day It Legally Ended', level: 3 },
   { id: 'enter-the-merchants', text: 'Enter the Merchants', level: 2 },
   { id: 'money-that-demands-more-money-back', text: 'The Trick That Created Money From Nothing', level: 2 },
-  { id: 'the-same-trick-continents', text: 'The Same Trick, Played on Entire Continents', level: 2 },
   { id: 'who-was-actually-in-the-room', text: 'Who Was Actually in the Room', level: 2 },
   { id: 'the-commons-enclosed', text: 'The Commons, Enclosed', level: 2 },
   { id: 'when-people-fought-back', text: 'When People Fought Back', level: 3 },
@@ -386,12 +384,8 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           merchant deposit coin in one city and collect the equivalent in another, without ever
           carrying metal on the road between them.{' '}
           <span className="text-sm text-gray-400 not-italic">(Graeber, <em>Debt: The First 5,000 Years</em>, 2011; Udovitch, <em>Bankers Without Banks</em>, 1979)</span>{' '}
-          There is a popular version of this story that names an exact date, an exact banker, and
-          an exact prince who first cashed one — I looked for where that specific claim comes from,
-          and it traces back to a single promotional finance-industry article, not to any surviving
-          document. I&rsquo;m not going to repeat it as fact. What historians can support is the
-          general picture: a real, working credit economy, centuries before anything like it
-          existed in Christian Europe, that let money move without moving.
+          A real, working credit economy, centuries before anything like it existed in Christian
+          Europe, that let money move without moving.
         </P>
         <P>
           I want you to notice one more thing about the suftaja specifically, because it&rsquo;s the
@@ -439,100 +433,25 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           withdraw their gold. Most of the receipts just kept circulating, hand to hand, as a
           convenient substitute for carrying coin — nobody ever presented them all at once. And once
           you can see that, a very specific temptation opens up. What if you issued <em>more</em>{' '}
-          receipts than you actually had gold to back? You could lend the excess out, at interest,
-          and collect on loans made against gold that didn&rsquo;t exist.
+          receipts than you actually had gold to back?
         </P>
         <P>
-          I want to be careful here, because this is exactly the kind of place where a good story
-          and a proven fact start to blur, and I&rsquo;d rather slow down than get it wrong. The
-          popular version of this story — the one that gets repeated as settled history — says the
-          goldsmiths did this secretly, and that it amounted to fraud: a fixed promise to hold 100
-          percent of your gold, quietly broken. One economist has argued directly against that
-          framing, on the grounds that surviving law and contemporary testimony suggest a coin
-          deposit with a goldsmith was legally treated more like a loan <em>to</em> the goldsmith
-          than a locked box being minded on your behalf — meaning the goldsmith may have had a
-          straightforward legal right to lend it, not a secret to hide.{' '}
-          <span className="text-sm text-gray-400 not-italic">(Selgin, &ldquo;Those Dishonest Goldsmiths,&rdquo; <em>Financial History Review</em>, 2012)</span> What isn&rsquo;t in dispute, from the goldsmiths&rsquo; own surviving ledgers, is that
-          by this period they were routinely holding only a fraction of what their outstanding
-          notes claimed — one contemporary economist who examined the practice found goldsmith cash
-          reserves ranging anywhere from roughly 10 to 66 percent of the notes in circulation,
-          depending on the banker. <span className="text-sm text-gray-400 not-italic">(Cantillon&rsquo;s observation, discussed in Quinn, 1997)</span> I&rsquo;m not going to hand you a clean, dramatic
-          round number — some version of &ldquo;they held &pound;100 and issued &pound;1,000&rdquo; circulates widely
-          online, but I couldn&rsquo;t find it tied to an actual surviving ledger entry. It&rsquo;s a teaching
-          illustration, not a fact. The real, documented fact is simpler and just as significant:
-          whether by fraud or by an honest reading of an ambiguous legal custom, receipts came to
-          outnumber the gold they claimed to represent. Money — real, spendable money, accepted
-          everywhere — was being created that had never been mined, dug up, or earned. It came into
-          existence because a goldsmith wrote a number on a piece of paper.
+          Whether that was fraud or simply how an ambiguous banking custom was understood at the
+          time is genuinely disputed — one economist has argued the goldsmiths had a straightforward
+          legal right to lend deposited coin, not a secret to hide.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Selgin, &ldquo;Those Dishonest Goldsmiths,&rdquo; <em>Financial History Review</em>, 2012)</span> What isn&rsquo;t disputed, from the goldsmiths&rsquo; own surviving
+          ledgers, is that they were routinely holding only a fraction of what their outstanding
+          notes claimed — one contemporary economist found goldsmith cash reserves ranging from
+          roughly 10 to 66 percent of the notes in circulation, depending on the banker.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Cantillon&rsquo;s observation, discussed in Quinn, 1997)</span> Money that had never been mined, dug up, or earned came
+          into existence because a goldsmith wrote a number on a piece of paper.
         </P>
         <P>
-          Now notice exactly what changed, because it is the same shift I flagged with the
-          suftaja, just gone one step further. The goldsmith&rsquo;s note has a number on it — &ldquo;worth
-          &pound;10,&rdquo; not &ldquo;Ajey owes Radhika one.&rdquo; It isn&rsquo;t personal. Anyone can hold it, spend it,
-          steal it. It still says, in words, &ldquo;I promise to pay the bearer&rdquo; — but it behaves like
-          a coin, not a promise between two people who know each other. And it is worse than a
-          coin, in one specific way: a coin at least requires real metal to exist. This required
-          nothing but confidence — the confidence that not everyone would ask for their gold back
-          on the same day. When that confidence breaks, it has a name: a <strong>bank run</strong>.
-          It is not a medieval curiosity. It is what happened to Silicon Valley Bank in March 2023,
-          when depositors tried to withdraw $142 billion in two days and the bank simply did not
-          have it.{' '}
-          <span className="text-sm text-gray-400 not-italic">(Silicon Valley Bank collapse, March 2023)</span> The mechanism a London goldsmith stumbled into in the 1660s is, in its exact
-          shape, the mechanism your bank runs on today.
-        </P>
-      </ArticleSection>
-
-      <ArticleSection id="the-same-trick-continents">
-        <H2 id="the-same-trick-continents">The Same Trick, Played on Entire Continents</H2>
-        <P>
-          Once a king or a state needs money at a scale beyond what its own land can produce, the
-          logic of coin-and-tax starts getting applied further and further away from home — to
-          entire colonized populations, and eventually to whole continents.
-        </P>
-        <P>
-          I&rsquo;ve written elsewhere about the clearest, most explicit case of this: British colonial
-          administrators arriving in East and Southern Africa in the 1890s, finding people who had
-          land, food, and community, and who had no need whatsoever for British currency. So the
-          British imposed a <strong>hut tax</strong> — an annual levy, payable only in British coin,
-          on every dwelling. The only way to get that coin was to work for a British employer.
-          <Link href="/posts/why-did-colonizers-tax-africans" className="underline decoration-gray-400 hover:decoration-gray-700"> Frederick Lugard, the architect of British rule in Nigeria, wrote about this purpose in his own words</Link> —
-          the tax existed to manufacture a workforce, not to raise revenue. When the British imposed
-          it in Sierra Leone in 1898, the Temne and Mende peoples rose up under Bai Bureh in what
-          became known as the Hut Tax War. They understood exactly what was being taken from them.
-          They lost.
-        </P>
-        <P>
-          The same coin-and-tax logic ran, at an even larger scale, through Spain&rsquo;s conquest of
-          the Americas. The Spanish crown fought almost constant wars in Europe, and financed them
-          not from its own treasury but from Genoese merchant-bankers — the Spinola, Doria, Grimaldi,
-          and Centurione families — under contracts called <em>asientos</em>. One documented example:
-          a 1595 loan of 340,000 ducats from the Genoese banker Tomás Fiesco, at 12 percent
-          interest. <span className="text-sm text-gray-400 not-italic">(Álvarez-Nogal &amp; Chamley, &ldquo;Debt policy under constraints,&rdquo; <em>Economic History Review</em>, 2014)</span> These loans were routinely secured against silver that had not
-          even arrived yet — the next fleet due from the Americas. And the silver on those fleets
-          came overwhelmingly from one place: <strong>Potosí</strong>, in what is now Bolivia, which
-          at its peak around 1600 may have produced as much as 60 percent of all the silver mined
-          on earth. <span className="text-sm text-gray-400 not-italic">(aggregated estimates, Potosí in the Global Silver Age, Brill, 2023 — treat as approximate)</span>
-        </P>
-        <P>
-          That silver was pulled out of the ground by a forced-labor draft called the{' '}
-          <strong>mita</strong>, formalized by Viceroy Francisco de Toledo in the 1570s: villages
-          across a huge stretch of the Andes were required to send roughly one in seven of their
-          adult men to work the mines, typically for a year at a stretch.{' '}
-          <span className="text-sm text-gray-400 not-italic">(Bakewell, <em>Miners of the Red Mountain</em>, 1984)</span> I want to be careful here too — some
-          popular accounts state a specific, very low survival rate for mita laborers, and I could
-          not find that figure traced back to a serious peer-reviewed source, so I&rsquo;m not going to
-          repeat it as fact. What is well documented is that the parallel mercury mine at
-          Huancavelica, which supplied the mercury used to refine Potosí&rsquo;s silver, was known to
-          colonial officials themselves by a nickname: &ldquo;the mine of death.&rdquo;
-        </P>
-        <P>
-          Follow the chain all the way through: a war in Flanders needed money the Spanish crown
-          didn&rsquo;t have → Genoese bankers supplied it at interest → the loan was secured against
-          silver not yet mined → the silver was mined by Andean villagers forced into the mita →
-          the mercury used to refine it came from a mine colonial administrators themselves called
-          a slaughterhouse. Nobody in that chain, from the drafted miner in the Andes to the
-          taxpayer in an English hut, chose to enter the money system. Money reached them because
-          someone above them needed it and had the power to make that need theirs.
+          Notice exactly what changed. The goldsmith&rsquo;s note has a number on it — &ldquo;worth &pound;10,&rdquo;
+          not &ldquo;Ajey owes Radhika one.&rdquo; It isn&rsquo;t personal. Anyone can hold it, spend it, steal it.
+          It still says, in words, &ldquo;I promise to pay the bearer&rdquo; — but it behaves like a coin, not
+          a promise between two people who know each other. And it is worse than a coin, because a
+          coin at least requires real metal to exist. This required nothing but confidence.
         </P>
       </ArticleSection>
 
@@ -575,13 +494,7 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           and commissioners were staffed by landowners. The historian E.P. Thompson put it more
           bluntly than I will: he called enclosure &ldquo;a plain enough case of class robbery, played
           according to fair rules of property and law laid down by a parliament of property-owners
-          and lawyers.&rdquo; <span className="text-sm text-gray-400 not-italic">(Thompson, <em>The Making of the English Working Class</em>, 1963)</span> I want to flag something in fairness to Thompson, though,
-          because this series keeps insisting on applying the same rigor to every replacement idea
-          as to the myth it&rsquo;s replacing: Thompson himself resisted the flatter version of this
-          argument — that law is simply, always, nothing but a weapon of the ruling class. His own
-          point, made elsewhere, was that law only functions as effective ideology <em>because</em>{' '}
-          it maintains a real appearance of fairness. It is not a cartoon. It is something more
-          durable and harder to see through than a cartoon.
+          and lawyers.&rdquo; <span className="text-sm text-gray-400 not-italic">(Thompson, <em>The Making of the English Working Class</em>, 1963)</span>
         </P>
       </ArticleSection>
 
@@ -624,13 +537,8 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           Mousehold Heath, drew up a list of 29 grievances, and administered their own rough
           government from beneath an oak tree they called the Oak of Reformation. The rebellion was
           crushed that August at the Battle of Dussindale. Kett was hanged for treason that
-          December. <span className="text-sm text-gray-400 not-italic">(Kett&rsquo;s Rebellion, 1549)</span> I want to be honest about a detail here too, because
-          Kett&rsquo;s Rebellion is often flattened into &ldquo;the enclosure riot&rdquo; when the surviving
-          document — the actual 29 demands, still held by the British Library — shows only one
-          clause that mentions enclosure directly, and even that is narrow. Most of the demands are
-          about corrupt local officials and the power of the gentry generally. The rebellion is
-          best read as part of a wider revolt against gentry power, of which enclosure was one
-          piece, not the whole story.
+          December.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Kett&rsquo;s Rebellion, 1549)</span>
         </P>
         <P>
           A century later, in April 1649, a small group led by Gerrard Winstanley — calling
@@ -672,14 +580,12 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           branding. A third meant execution as a felon.
         </P>
         <P>
-          I want to flag something honestly here, because it matters for how you read this: that
-          specific slavery clause turned out to be so unworkable and so widely resisted in practice
-          that Parliament repealed it within about two years. But notice what that repeal did and
-          didn&rsquo;t do. It removed one especially brutal enforcement mechanism. It did not remove the
-          underlying principle, which reappeared in milder but still punitive form in later
-          vagrancy statutes for the rest of the early modern period: a person who cannot show they
-          are working for a wage, or that they have independent means, has no legal right to simply
-          exist where they are standing.
+          That specific slavery clause was so unworkable it got repealed within about two years.
+          But notice what the repeal did and didn&rsquo;t do. It removed one especially brutal
+          enforcement mechanism. It did not remove the underlying principle, which reappeared in
+          milder but still punitive form in later vagrancy statutes for the rest of the early
+          modern period: a person who cannot show they are working for a wage, or that they have
+          independent means, has no legal right to simply exist where they are standing.
         </P>
         <P>
           Put the two laws side by side and the mechanism becomes impossible to miss. Enclosure
@@ -816,19 +722,7 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           Middle Ages</em> (1979); Stephen Quinn, &ldquo;Goldsmith-Banking: Mutual Acceptance and
           Interbanker Clearing in Restoration London,&rdquo; <em>Explorations in Economic History</em>{' '}
           (1997); George Selgin, &ldquo;Those Dishonest Goldsmiths,&rdquo; <em>Financial History Review</em>{' '}
-          (2012); Peter Bakewell, <em>Miners of the Red Mountain: Indian Labor in Potosí,
-          1545&ndash;1650</em> (1984); Carlos Álvarez-Nogal &amp; Christophe Chamley, &ldquo;Debt policy
-          under constraints,&rdquo; <em>Economic History Review</em> (2014); UK Parliament, &ldquo;Enclosing
-          the land,&rdquo; parliament.uk historical resources.
-        </p>
-        <p>
-          Where historians disagree on a specific figure or framing — total enclosure acreage,
-          witch-trial death tolls, whether the London goldsmiths&rsquo; over-issuance of notes amounted
-          to fraud or an honest reading of ambiguous banking custom — this article states the range
-          and names the disagreement rather than picking a single number or side, and flags where a
-          popularly repeated figure or anecdote (including the specific &ldquo;first cheque&rdquo; story and
-          the &ldquo;&pound;100 gold, &pound;1,000 notes&rdquo; ratio) could not be independently verified against a
-          primary source.
+          (2012); UK Parliament, &ldquo;Enclosing the land,&rdquo; parliament.uk historical resources.
         </p>
       </ArticleSources>
     </ArticleLayout>
