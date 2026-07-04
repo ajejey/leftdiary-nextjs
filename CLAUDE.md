@@ -1,153 +1,108 @@
 # leftdiary-nextjs — Writing Philosophy
 
-This file is read automatically by Claude Code at the start of every session. It defines how articles on this site are written. Apply these principles to every article you create or edit.
+---
+
+**Who you are writing for**
+
+The reader is a complete beginner. They are not stupid — they are intelligent, curious, and they have felt for a long time that something is wrong with the world but they have never had the language or the framework to understand what. They have been told their confusion is their fault. It is not. Your job is to show them that the questions they had and dismissed were exactly right.
+
+The reader may be from India, from Africa, from anywhere outside the Western academic bubble. Do not assume they know what "GDP" means. Do not assume they know what "fiscal policy" means. Do not assume they know what "inflation" means. Every single term that is used in economic textbooks, news, or political commentary must be either avoided entirely or explained from first principles as if the reader has never heard it before.
 
 ---
 
-## Core Commitments
+**What the voice is**
 
-### 1. Evidence is the subject. The researcher is not.
+Read this article completely before writing anything:
 
-State findings directly. Bracket the source.
+[PASTE YOUR FULL PART 1 ARTICLE HERE]
 
-**Never:**
-> "David Graeber found that no documented barter economy has ever been observed."
-> "The anthropologist spent decades studying gift economies before concluding..."
+This is the voice. Everything you write must sound like this person wrote it.
 
-**Always:**
-> "No documented example of a barter economy predating money has ever been found in the anthropological record. (Graeber, *Debt: The First 5,000 Years*, 2011)"
+Specifically:
 
-Remove all credential-building: titles ("the French economist"), institutional affiliations, years spent, famous-readers lists. Remove all section headers named after theorists ("What David Graeber Actually Found" → "What the Anthropological Record Shows").
+The writing is personal and direct. It uses "I" and "you" and "we" throughout. The writer thinks out loud. The writer catches themselves going ahead of themselves and comes back. This is not a mistake — it is the most honest form of thinking and the reader trusts it.
 
-**Exception — primary source documents:** A Bank of England policy paper, the Powell Memo, Lugard's *The Dual Mandate*, a CEO's public statement — these are persons speaking in their own voice about what they know or did. Block-quote those. Do not block-quote analysts, theorists, or academics; integrate their findings as prose with bracket citations.
+The writing is conversational but precise. It does not use simple words because it is dumbing down. It uses simple words because simple words are more precise.
 
-**Citation format:**
-```tsx
-(Author,{' '}
-<a href="URL" target="_blank" rel="noopener noreferrer"
-  className="underline decoration-gray-400 hover:decoration-gray-600">
-  <em>Title</em>
-</a>
-, Year)
-```
-Wrap in `<span className="text-sm text-gray-400 not-italic">`. Inline in brackets. Never footnotes, never endnotes.
+The writing asks obvious questions that nobody asks. It notices things that are in plain sight but never said. It does not explain the answer before earning it — the reader discovers the answer alongside the writer.
+
+The writing is allowed to be dramatic. It is allowed to be funny. It is allowed to be furious. It is not allowed to be academic. It is not allowed to be neutral on things that are not neutral.
 
 ---
 
-### 2. Name the mechanism. Never the -ism.
+**The structure of every article**
 
-**Never:** "Capitalism required a disciplined workforce." "Colonialism imposed..."
+Every article follows this four-act structure. Not rigidly — the writer can move between acts fluidly — but every article must do all four things:
 
-**Always:** who, what law, what institution, what year, whose interest was served.
+**Act 1 — The Official Story**
+State what everyone has been told. State it straight. Do not mock it yet. Let it stand on its own. The reader believes this story. Respect that before dismantling it.
 
-The -ism forecloses inquiry. The mechanism is the argument. If you can't name the mechanism concretely, you haven't found it yet.
+**Act 2 — The Loose Thread**
+Find the question the official story cannot answer. It must be a question a child would ask. It must be obvious once you see it. It must be something the reader has felt but never said out loud. Do not answer it yet. Just pull the thread.
 
----
+**Act 3 — What's Actually There**
+Follow the thread honestly. Show what is underneath. Every claim must be grounded in something real — a documented historical event, a paper, a physical fact. Do not fill gaps with theory. If there is a gap, say there is a gap.
 
-### 3. Apply the rigor all the way down.
-
-This is the hardest rule and the most important.
-
-When you dismantle a myth, you will reach for a replacement concept. Apply exactly the same interrogation to that replacement concept that you applied to the myth.
-
-If you've just shown that "government-as-household" is a constructed story, and you then say "the real constraint is inflation" — stop. Ask:
-- Who defined inflation as the binding constraint?
-- By what institutional settlement, and when?
-- Whose assets does inflation-targeting protect?
-- Whose wages does it suppress?
-- Who benefits from treating it as a natural ceiling rather than a political choice?
-
-Technical-sounding economic concepts — *inflation, growth, efficiency, productivity, the market, the natural rate of unemployment* — feel like physics. They are politics. The technical register is how they evade interrogation. Apply the same rigor to them that you apply to anything else.
-
-**The failure mode:** dismantle one myth, then quietly reinstall a new unquestioned authority using the same rhetorical move you just criticized.
+**Act 4 — What Else Collapses**
+Because this one thing is a lie, these other things are also lies. Connect forward. Leave the reader with a door open to the next article. Never leave the reader feeling informed and powerless — leave them feeling that seeing clearly is itself something.
 
 ---
 
-### 4. Endings open up what else breaks down. Not what comes next.
+**What you must never do**
 
-The Act 4 callout box does not:
-- Console the reader ("even so, there is hope...")
-- Point to the next article ("the next piece takes up...")
-- Summarize the series so far ("we have now established across six articles...")
+Never use the following words or phrases without first explaining them from scratch as if the reader has never heard them: inflation, deflation, GDP, fiscal policy, monetary policy, capital, capitalism, markets, the economy, supply and demand, interest rates, austerity, deficit, surplus, quantitative easing, sovereign debt, credit rating, liquidity.
 
-It names what becomes unstable once you accept the current article's argument. Not what the reader should feel — what else, that seemed settled, is now visibly wobbling from this new vantage point.
+Never start with the conclusion. The reader must arrive at it themselves.
 
-That wobbling is the generative mechanism. Each article's implications reveal the next question. The reader doesn't need to know that. They just need to feel the ground shift.
+Never use a phrase that implies the reader already knows something they probably don't. "As we know..." "Of course..." "Obviously..." — these are forbidden.
 
-**Wrong:**
-> "This Is the First Article in an Ongoing Series"
+Never write a sentence that could appear in an economics textbook. If a sentence sounds like something a professor would say, rewrite it.
 
-**Wrong:**
-> "And Because This Is True, Something Else Collapses — The next article takes up who owns the media."
+Never fill a gap in the argument with a theory or assumption. If you don't know something, say so. If the research doesn't cover something, say the thread is still open.
 
-**Right:**
-> "If government spending is not constrained by revenue, then every politician who says 'we can't afford it' is making a choice, not stating a fact. The question is whose choice, made under what pressures, and whose interests it consistently serves."
+Never be neutral about things that are not neutral. Enclosure was not a natural process. The witch hunts were not superstition. Austerity is not belt-tightening. Call things what they are.
+
+Never make the reader feel stupid. Never make the reader feel like you already know the answer and you're leading them to it. The writer discovers alongside the reader.
 
 ---
 
-### 5. No meta-references to the series.
+**What to do when you catch jargon**
 
-No: "as we established in the previous article"
-No: "the next piece takes up this question"
-No: "this is the third in a series"
-No: "that's the article that follows from this one"
+Stop. Ask: what does this word actually mean in plain physical terms? What would it look like if you could see it happening? Replace the word with that description.
 
-Each article stands alone as an argument. Links are anchored to factual claims, not to the series relationship.
-
-**Wrong:** "as we saw in the colonial taxation piece"
-**Right:** "The English Enclosure Acts worked the same way — [link anchor on the factual claim]"
+Examples:
+- "Inflation" → "prices going up while your wages stay the same, so the same work buys you less"
+- "Capital" → "money that demands more money back"
+- "Austerity" → "the government choosing not to spend money on hospitals and schools and calling that choice a financial necessity"
+- "Sovereign debt" → "money the government has promised to pay back to the people it borrowed from — which raises the question of why a government that creates money needs to borrow it at all"
 
 ---
 
-### 6. Write for the reader, not the record.
+**What to do when you receive raw input**
 
-This is the hardest to describe and the most important to feel.
+The writer will give you raw thinking. It may be messy. It may be incomplete. It may jump around. It may be in fragments. Your job is:
 
-The articles are not journalism. They are not academic papers made accessible. They are essays that start where the reader already is — with their own confusion, their own half-formed suspicion that something is off — and work through that confusion with them in real time.
+1. Find the spine — what is the one thing this thinking is trying to say?
+2. Find the loose thread — what is the question at the heart of it?
+3. Build the four acts around that question
+4. Write in the voice of the original article
+5. Flag every place where you have filled a gap with assumption — mark it clearly so the writer can check it
 
-**What this looks like in practice:**
-
-Open with the reader's experience, not with a date or a historical claim. Not "On April 26, 2009, David Cameron gave a speech." Instead: something the reader has already lived through that doesn't quite add up. A puzzle they've carried without knowing what to call it.
-
-Use "you" constantly. The reader is not a spectator. They are being spoken to directly, pulled into the reasoning as a participant.
-
-Think out loud. The essay doesn't present a finished argument — it follows a question. "Wait." "But here's the problem." "I'm running ahead of myself." The reader watches you work something out, and they work it out alongside you. This is a completely different relationship than being lectured.
-
-Build from the familiar. Start with the elevator button. The friend who owes you one. The thing the reader has already experienced without knowing it had a name. Then show them: that thing you already do is the concept. You already knew this. You just didn't know what to call it.
-
-Validate the reader's instinct first. "The concept of money looks very weird, don't you think?" That question tells the reader: your sense that something is off is correct. We are going to pursue that.
-
-Name the thing that's being hidden — and name it plainly. Not "there are power imbalances." *Force.* Not "there are structural inequalities." *Someone made a specific law that converted a specific commons into private property on a specific date.*
-
-Build toward a question, not a conclusion. The tension that drives the reader forward is not "what is the answer" — it is "how can this be true." The article earns the right to name the mechanism by making the reader feel the impossibility of the official explanation first.
-
-**The reference model for this voice:**
-
-Read the Medium article "What is Money? A naive person's guide to money" (by Ajey Nagarkatti, January 2025) before writing any new article. That is the register to aim for. Not the citations, not the structure — the relationship to the reader. The sense that someone is working something out with you, not presenting findings to you.
+You do not add ideas the writer did not give you. You do not complete arguments the writer left open. You do not smooth over contradictions — contradictions are often the most honest and interesting part.
 
 ---
 
-### 7. The reader is American. The examples are American.
+**What a finished article should feel like**
 
-Over 80% of traffic comes from the US. When you name an example, make it American. When you name a reader, they live in the United States. When you reach for a number, reach for the US number — which is almost always larger and more dramatic than the European equivalent.
+The reader finishes it and feels two things simultaneously:
 
-**The US examples are bigger:**
+One: *I knew this. I felt this. I just never had the words.*
 
-- Not "£350 billion in one week in March 2020" — the CARES Act was $2.2 trillion, signed 16 days after the WHO declared a pandemic. Total US COVID fiscal spending: approximately $5–6 trillion over one year.
-- Not "the 2010 Greek bailout" — the Federal Reserve's total emergency commitments during 2008–2010 reached $7.77 trillion (Bloomberg, November 2011). TARP alone was $700 billion, authorized within days.
-- Not "George Osborne" — Paul Ryan, Mitch McConnell, the Budget Control Act of 2011, sequestration.
-- Not "the NHS" — Medicare, Medicaid, the VA, Social Security. The things Americans are told "we can't afford."
+Two: *I have to tell someone about this right now.*
 
-The European and global examples remain available and should be used where they are the best evidence (the Greek bailout creditor story is cleaner than any US equivalent). But the hook, the reader's frame of reference, and the "you've been told" moment should be American.
+If it produces neither of those feelings, it is not finished.
 
-**The US contrast that drives the austerity argument:**
-
-"We can't afford Medicare for All" ($3.2 trillion per year, critics say).
-The Fed committed $7.77 trillion to rescuing banks in 2008.
-The US found $5–6 trillion for COVID in twelve months.
-The US spends $800+ billion per year on the military without a deficit conversation.
-
-The deficit concern is applied selectively. The article's job is to make that selectivity visible and to name whose interests it consistently serves.
+---
 
 ---
 
