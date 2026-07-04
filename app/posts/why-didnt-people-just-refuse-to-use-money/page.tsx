@@ -128,7 +128,7 @@ const TOC_ITEMS: TOCItem[] = [
   { id: 'what-people-actually-had', text: 'What People Actually Had', level: 2 },
   { id: 'gleaning-and-the-day-it-ended', text: 'Gleaning, and the Day It Legally Ended', level: 3 },
   { id: 'enter-the-merchants', text: 'Enter the Merchants', level: 2 },
-  { id: 'money-that-demands-more-money-back', text: 'Money That Demands More Money Back', level: 2 },
+  { id: 'money-that-demands-more-money-back', text: 'The Trick That Created Money From Nothing', level: 2 },
   { id: 'the-same-trick-continents', text: 'The Same Trick, Played on Entire Continents', level: 2 },
   { id: 'who-was-actually-in-the-room', text: 'Who Was Actually in the Room', level: 2 },
   { id: 'the-commons-enclosed', text: 'The Commons, Enclosed', level: 2 },
@@ -357,92 +357,128 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
       <ArticleSection id="enter-the-merchants">
         <H2 id="enter-the-merchants">Enter the Merchants</H2>
         <P>
-          Now I need to bring in a second character, because the king was not the only one who
-          figured out how to make people need money. While English villages ran on stinting and
-          estovers and gleaning, something different was being built in the trading cities of
-          Italy — Florence, Venice, Genoa. And what was built there is, in a very direct way, the
-          ancestor of the bank that approves your mortgage today.
+          Before I show you what the merchants built, let&rsquo;s go back to something from the first
+          part of this story, because it matters more than it seemed to at the time: credit — the
+          oldest system, the &ldquo;I owe you one&rdquo; — worked because the two people involved knew each
+          other. There was a relationship. If I never returned your favor, I didn&rsquo;t just owe you
+          something. I lost you. That&rsquo;s what made it self-enforcing, without anyone needing to
+          write anything down or measure anything in numbers.
         </P>
         <P>
-          An ordinary merchant sells wool in one city and buys silk in another. That is trade. What
-          the Italian merchant-bankers built was something else: a way to move the <em>promise</em>{' '}
-          of money between cities without moving any actual coin. A merchant in Bruges who owed
-          money to a merchant in Barcelona didn&rsquo;t need to ship gold across the sea. He wrote a{' '}
-          <strong>bill of exchange</strong> — a letter instructing his bank&rsquo;s agent in Barcelona to
-          pay the Barcelona merchant, in Barcelona&rsquo;s own currency, on a fixed future date. There
-          is a documented example of exactly this, from the Florentine Orlandini-Benizi company: in
-          January 1400, a bill for 600 écus was drawn in Bruges on an agent in Barcelona, accepted,
-          and paid out a month later by a simple transfer between bank accounts — no coin ever
-          crossed the sea at all.{' '}
-          <span className="text-sm text-gray-400 not-italic">(de Roover, as summarized in Munro, &ldquo;The Medieval Bill of Exchange,&rdquo; University of Toronto)</span>
+          Notice what that system cannot do. It cannot feed a king&rsquo;s army. A soldier posted three
+          hundred kilometers from where he grew up, in a village whose people have never met him
+          and owe him nothing, cannot survive on &ldquo;I owe you one.&rdquo; There is no relationship there
+          to enforce the debt. That&rsquo;s the actual reason coin exists at all — not because barter
+          was inefficient, but because credit doesn&rsquo;t scale to strangers, and an empire is
+          mostly strangers.
         </P>
         <P>
-          This mattered enormously, because it meant a small number of banking families — the
-          Bardi, the Peruzzi, and later the Medici — could hold and move sums of money far larger
-          than any single kingdom&rsquo;s physical stock of gold and silver. And kings noticed. When
-          Edward III of England needed money to fight France in the 1340s, he didn&rsquo;t dig a new
-          silver mine. He borrowed from the Bardi and Peruzzi banks. When he later defaulted, a
-          contemporary Florentine chronicler claimed it wiped out both companies to the tune of
-          900,000 and 600,000 gold florins.{' '}
-          <span className="text-sm text-gray-400 not-italic">(Villani, contemporary chronicle, 14th century)</span>{' '}
-          I want to be honest with you about this one, because it is exactly the kind of thing this
-          series keeps warning you about: a dramatic number, repeated for six hundred years,
-          that turns out to be shakier than it looks. A modern historian who went back through the
-          Peruzzi&rsquo;s own surviving account books found nothing close to that scale of lending to
-          Edward III, and argues the real losses were closer to a tenth of that, with the
-          companies&rsquo; collapse driven by several other problems at once, not one royal default.{' '}
-          <span className="text-sm text-gray-400 not-italic">(Hunt, <em>The Medieval Super-Companies</em>, 1994)</span> Whichever number is closer to true, the shape of the event is not in
-          dispute: a king borrowed at a scale beyond his own capacity to repay, from bankers whose
-          only product was other people&rsquo;s need for money. That is the beginning of the merchant
-          class becoming a power the king himself depends on — which is a thread I&rsquo;ll come back to.
+          But coin creates a new, very physical problem the moment trade grows past your own
+          village: a merchant carrying a bag of silver from one city to the next is carrying
+          something every bandit on the road can see the point of stealing. So a solution appeared,
+          and it appeared first and most fully in the trading world of the Abbasid Caliphate,
+          centered on Baghdad, from around the ninth century onward. Merchants and bankers there
+          — the money-changers were called <em>sarraf</em>, and the caliph&rsquo;s own treasury bankers{' '}
+          <em>jahabidha</em> — used written instruments called <strong>sakk</strong> (often cited as
+          the root of our word &ldquo;cheque,&rdquo; though mainstream etymology actually traces the English
+          word through an unrelated chess term, so treat that connection as folk history, not
+          settled linguistics) and <strong>suftaja</strong>, a kind of letter of credit that let a
+          merchant deposit coin in one city and collect the equivalent in another, without ever
+          carrying metal on the road between them.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Graeber, <em>Debt: The First 5,000 Years</em>, 2011; Udovitch, <em>Bankers Without Banks</em>, 1979)</span>{' '}
+          There is a popular version of this story that names an exact date, an exact banker, and
+          an exact prince who first cashed one — I looked for where that specific claim comes from,
+          and it traces back to a single promotional finance-industry article, not to any surviving
+          document. I&rsquo;m not going to repeat it as fact. What historians can support is the
+          general picture: a real, working credit economy, centuries before anything like it
+          existed in Christian Europe, that let money move without moving.
+        </P>
+        <P>
+          I want you to notice one more thing about the suftaja specifically, because it&rsquo;s the
+          detail that makes the next part of this story land. Islamic law banned <em>riba</em> —
+          interest — just as strictly as the Christian Church banned usury. So the suftaja had a
+          built-in rule: whatever you deposited had to be paid back in the <em>same</em> currency,
+          not converted into another one. That rule existed specifically so nobody could hide a
+          profit inside a currency-exchange spread. In other words: this note was honest. It
+          represented real coin that genuinely existed somewhere, waiting to be collected. It was
+          a receipt, nothing more.
         </P>
       </ArticleSection>
 
       <ArticleSection id="money-that-demands-more-money-back">
-        <H2 id="money-that-demands-more-money-back">Money That Demands More Money Back</H2>
+        <H2 id="money-that-demands-more-money-back">The Trick That Created Money From Nothing</H2>
         <P>
-          Here is the part I actually want you to sit with, because it is the real invention, and
-          it is still, today, the thing that makes your loan cost more than you borrowed.
+          Now I want to take you to London, six hundred years later, because this is the moment
+          that note stopped being honest — and I think it is the single most important moment in
+          this entire story, because it is the first time anyone, anywhere, created money that had
+          nothing real behind it at all.
         </P>
         <P>
-          The Catholic Church, for most of the medieval period, banned charging interest on a
-          loan outright. It was called usury, and it was a sin. So how did banking families get
-          rich lending money, in a Europe where lending money for profit was supposed to be
-          forbidden?
+          In 1640, Charles I did something that broke a specific kind of trust: he seized roughly
+          &pound;200,000 in gold that London merchants had deposited at the Royal Mint, in the Tower
+          of London, for safekeeping — money he wanted for his own spending. He eventually gave
+          most of it back, under pressure, but the damage was done: merchants had just learned that
+          the King&rsquo;s own mint was not a safe place to store their coin.{' '}
+          <span className="text-sm text-gray-400 not-italic">(1640 seizure of merchants&rsquo; bullion, Tower of London Mint)</span> Over the following two
+          decades — through the chaos of the Civil War and into the 1660s — merchants shifted to
+          storing their gold instead with private goldsmiths, men whose actual trade was working
+          metal, not banking. By the 1670s there were something like forty-four of these
+          goldsmith-bankers operating in London, with names like Edward Backwell, Robert Vyner, and
+          Francis Child now well documented in surviving ledgers.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Quinn, &ldquo;Goldsmith-Banking,&rdquo; <em>Explorations in Economic History</em>, 1997)</span>
         </P>
         <P>
-          They used the fact that a bill of exchange involved <em>two different currencies in two
-          different cities</em>. Suppose a Florentine bank in Venice buys a bill payable in Bruges,
-          at one exchange rate. Two months later, instead of collecting the money in cash, the
-          Bruges branch immediately uses it to buy a <em>return</em> bill payable back in Venice —
-          at a slightly different exchange rate. There was no single moment where anyone
-          &ldquo;charged interest.&rdquo; There were just two currency exchanges, months apart, at two
-          slightly different rates. But the gap between those rates was the profit. It was a loan,
-          wearing the costume of a foreign-exchange transaction. Historians have gone back through
-          real surviving transactions and calculated what this actually worked out to in annual
-          terms: commonly somewhere in the range of 9 to 16 percent a year — a real, calculable
-          interest rate, collected by a route that let everyone involved say, with a straight face,
-          that no loan had taken place. <span className="text-sm text-gray-400 not-italic">(Bell, Brooks &amp; Moore, &ldquo;Cambium non est mutuum,&rdquo; <em>Economic History Review</em>, 2017)</span>
+          Here is exactly what a goldsmith did. A merchant handed over a bag of gold coin. The
+          goldsmith wrote out a receipt certifying how much he&rsquo;d received and promising to pay it
+          back on demand. That receipt is the same idea as the suftaja: an honest note, representing
+          real coin sitting in a vault.
         </P>
         <P>
-          Some bankers pushed this further still, into something called <strong>dry exchange</strong> —
-          a bill drawn on a foreign city with no real trade happening at all, sometimes on an agent
-          who barely existed, purely to manufacture the appearance of a currency transaction around
-          what was, underneath, a plain loan to a local borrower who needed cash now. The Church
-          eventually caught up: in 1571, Pope Pius V issued a bull specifically condemning &ldquo;dry and
-          fictitious exchange&rdquo; as disguised usury, while still allowing genuine, trade-linked
-          currency exchange to continue. <span className="text-sm text-gray-400 not-italic">(<em>In Eam</em>, Pope Pius V, 1571)</span> Notice what that ruling actually concedes: the
-          Church wasn&rsquo;t objecting to money making more money. It was only objecting to doing it{' '}
-          <em>too obviously</em>.
+          But a goldsmith holding hundreds of these deposits could see something a single merchant
+          never could: on any given day, only a small fraction of depositors actually showed up to
+          withdraw their gold. Most of the receipts just kept circulating, hand to hand, as a
+          convenient substitute for carrying coin — nobody ever presented them all at once. And once
+          you can see that, a very specific temptation opens up. What if you issued <em>more</em>{' '}
+          receipts than you actually had gold to back? You could lend the excess out, at interest,
+          and collect on loans made against gold that didn&rsquo;t exist.
         </P>
         <P>
-          This is what I mean when I say money that demands more money back. A coin, on its own,
-          just sits there — it is not a promise, it does not grow. What the merchant bankers built
-          was a way to turn a sum of money into a claim on a <em>larger</em> future sum, dressed up
-          in enough technical machinery that it could dodge a direct ban on doing exactly that.
-          Once that trick exists, whoever controls it has a permanent, compounding claim on
-          everyone who ever has to borrow — which, as you&rsquo;ll see, is a widening circle of people,
-          because their other options are being closed off at the same time.
+          I want to be careful here, because this is exactly the kind of place where a good story
+          and a proven fact start to blur, and I&rsquo;d rather slow down than get it wrong. The
+          popular version of this story — the one that gets repeated as settled history — says the
+          goldsmiths did this secretly, and that it amounted to fraud: a fixed promise to hold 100
+          percent of your gold, quietly broken. One economist has argued directly against that
+          framing, on the grounds that surviving law and contemporary testimony suggest a coin
+          deposit with a goldsmith was legally treated more like a loan <em>to</em> the goldsmith
+          than a locked box being minded on your behalf — meaning the goldsmith may have had a
+          straightforward legal right to lend it, not a secret to hide.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Selgin, &ldquo;Those Dishonest Goldsmiths,&rdquo; <em>Financial History Review</em>, 2012)</span> What isn&rsquo;t in dispute, from the goldsmiths&rsquo; own surviving ledgers, is that
+          by this period they were routinely holding only a fraction of what their outstanding
+          notes claimed — one contemporary economist who examined the practice found goldsmith cash
+          reserves ranging anywhere from roughly 10 to 66 percent of the notes in circulation,
+          depending on the banker. <span className="text-sm text-gray-400 not-italic">(Cantillon&rsquo;s observation, discussed in Quinn, 1997)</span> I&rsquo;m not going to hand you a clean, dramatic
+          round number — some version of &ldquo;they held &pound;100 and issued &pound;1,000&rdquo; circulates widely
+          online, but I couldn&rsquo;t find it tied to an actual surviving ledger entry. It&rsquo;s a teaching
+          illustration, not a fact. The real, documented fact is simpler and just as significant:
+          whether by fraud or by an honest reading of an ambiguous legal custom, receipts came to
+          outnumber the gold they claimed to represent. Money — real, spendable money, accepted
+          everywhere — was being created that had never been mined, dug up, or earned. It came into
+          existence because a goldsmith wrote a number on a piece of paper.
+        </P>
+        <P>
+          Now notice exactly what changed, because it is the same shift I flagged with the
+          suftaja, just gone one step further. The goldsmith&rsquo;s note has a number on it — &ldquo;worth
+          &pound;10,&rdquo; not &ldquo;Ajey owes Radhika one.&rdquo; It isn&rsquo;t personal. Anyone can hold it, spend it,
+          steal it. It still says, in words, &ldquo;I promise to pay the bearer&rdquo; — but it behaves like
+          a coin, not a promise between two people who know each other. And it is worse than a
+          coin, in one specific way: a coin at least requires real metal to exist. This required
+          nothing but confidence — the confidence that not everyone would ask for their gold back
+          on the same day. When that confidence breaks, it has a name: a <strong>bank run</strong>.
+          It is not a medieval curiosity. It is what happened to Silicon Valley Bank in March 2023,
+          when depositors tried to withdraw $142 billion in two days and the bank simply did not
+          have it.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Silicon Valley Bank collapse, March 2023)</span> The mechanism a London goldsmith stumbled into in the 1660s is, in its exact
+          shape, the mechanism your bank runs on today.
         </P>
       </ArticleSection>
 
@@ -762,7 +798,7 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           <strong>Primary and archival sources:</strong> Charter of the Forest (1217); Property
           Qualification Act (1711); Vagabonds Act 1547; <em>Steel v Houghton</em>, 1 H Bl 51, 126 ER
           32 (1788); the 29 demands of Kett&rsquo;s Rebellion (1549, digitized by the British Library);
-          Giovanni Villani, contemporary Florentine chronicle (14th century).
+          the 1640 seizure of merchants&rsquo; bullion at the Tower of London Mint.
         </p>
         <p>
           <strong>Secondary sources:</strong> Karl Marx, <em>Capital</em>, Vol. 1, chs. 27&ndash;28
@@ -774,21 +810,25 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           <em>Commoners: Common Right, Enclosure and Social Change in England, 1700&ndash;1820</em>{' '}
           (1993); J.R. Wordie, &ldquo;The Chronology of English Enclosure, 1500&ndash;1914,&rdquo;{' '}
           <em>Economic History Review</em> (1983); Peter King, &ldquo;Customary Rights and Women&rsquo;s
-          Earnings,&rdquo; <em>Economic History Review</em> (1991); Edwin S. Hunt,{' '}
-          <em>The Medieval Super-Companies</em> (1994); Raymond de Roover,{' '}
-          <em>The Rise and Decline of the Medici Bank, 1397&ndash;1494</em> (1963); Adrian Bell,
-          Chris Brooks &amp; Tony Moore, &ldquo;Cambium non est mutuum,&rdquo;{' '}
-          <em>Economic History Review</em> (2017); Peter Bakewell,{' '}
-          <em>Miners of the Red Mountain: Indian Labor in Potosí, 1545&ndash;1650</em> (1984);
-          Carlos Álvarez-Nogal &amp; Christophe Chamley, &ldquo;Debt policy under constraints,&rdquo;{' '}
-          <em>Economic History Review</em> (2014); UK Parliament, &ldquo;Enclosing the land,&rdquo;
-          parliament.uk historical resources.
+          Earnings,&rdquo; <em>Economic History Review</em> (1991); David Graeber,{' '}
+          <em>Debt: The First 5,000 Years</em> (2011); Abraham L. Udovitch,{' '}
+          <em>Bankers Without Banks: Commerce, Banking, and Society in the Islamic World of the
+          Middle Ages</em> (1979); Stephen Quinn, &ldquo;Goldsmith-Banking: Mutual Acceptance and
+          Interbanker Clearing in Restoration London,&rdquo; <em>Explorations in Economic History</em>{' '}
+          (1997); George Selgin, &ldquo;Those Dishonest Goldsmiths,&rdquo; <em>Financial History Review</em>{' '}
+          (2012); Peter Bakewell, <em>Miners of the Red Mountain: Indian Labor in Potosí,
+          1545&ndash;1650</em> (1984); Carlos Álvarez-Nogal &amp; Christophe Chamley, &ldquo;Debt policy
+          under constraints,&rdquo; <em>Economic History Review</em> (2014); UK Parliament, &ldquo;Enclosing
+          the land,&rdquo; parliament.uk historical resources.
         </p>
         <p>
-          Where historians disagree on a specific figure — total enclosure acreage, witch-trial
-          death tolls, the scale of the Bardi/Peruzzi losses to Edward III — this article states the
-          range and names the disagreement rather than picking a single number, and flags where a
-          popularly repeated figure could not be independently verified against its original source.
+          Where historians disagree on a specific figure or framing — total enclosure acreage,
+          witch-trial death tolls, whether the London goldsmiths&rsquo; over-issuance of notes amounted
+          to fraud or an honest reading of ambiguous banking custom — this article states the range
+          and names the disagreement rather than picking a single number or side, and flags where a
+          popularly repeated figure or anecdote (including the specific &ldquo;first cheque&rdquo; story and
+          the &ldquo;&pound;100 gold, &pound;1,000 notes&rdquo; ratio) could not be independently verified against a
+          primary source.
         </p>
       </ArticleSources>
     </ArticleLayout>
