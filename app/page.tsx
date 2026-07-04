@@ -1,13 +1,14 @@
-import { getCombinedContent } from '@/lib/content';
+import { getCombinedContent, samplePosts } from '@/lib/content';
+import { allSeries, getSeriesArticles } from '@/lib/series';
 import { Suspense } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import PostCard from '@/components/blog/PostCard';
 
-// Enhanced loading component for the responsive grid
 function LoadingGrid() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-      {[...Array(12)].map((_, i) => (
+      {[...Array(8)].map((_, i) => (
         <div key={i} className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 animate-pulse">
           <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600" />
           <div className="p-6 space-y-3">
@@ -27,11 +28,9 @@ function LoadingGrid() {
   );
 }
 
-// Hero Section Component
 function HeroSection() {
   return (
     <div className="relative bg-gradient-to-br from-gray-50 via-white to-stone-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 overflow-hidden">
-      {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10 dark:opacity-5">
         <svg className="w-full h-full" viewBox="0 0 100 100" fill="none">
           <defs>
@@ -42,7 +41,7 @@ function HeroSection() {
           <rect width="100" height="100" fill="url(#grid)" />
         </svg>
       </div>
-      
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
@@ -51,24 +50,24 @@ function HeroSection() {
               & Leftist Insights
             </span>
           </h1>
-          
+
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            In-depth progressive analysis of current events, leftist book summaries, and radical political commentary. 
+            In-depth progressive analysis of current events, leftist book summaries, and radical political commentary.
             Challenging mainstream narratives with anarchist and anti-capitalist perspectives.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link 
-              href="#articles"
+            <Link
+              href="#series"
               className="inline-flex items-center px-8 py-3 bg-gray-800 hover:bg-gray-900 text-white font-semibold rounded-full transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
-              Explore Articles
+              Explore the Series
               <svg className="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
               </svg>
             </Link>
-            
-            <Link 
+
+            <Link
               href="/about"
               className="inline-flex items-center px-8 py-3 border-2 border-gray-400 dark:border-gray-600 hover:border-gray-600 dark:hover:border-gray-400 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 font-semibold rounded-full transition-all duration-200 hover:-translate-y-1"
             >
@@ -81,29 +80,94 @@ function HeroSection() {
   );
 }
 
-// Stats Section Component
-function StatsSection({ totalArticles }: { totalArticles: number }) {
-  const stats = [
-    { label: 'Articles Published', value: totalArticles },
-    { label: 'Categories Covered', value: '15+' },
-    { label: 'Years Active', value: '4+' },
-    { label: 'Books Reviewed', value: '50+' }
-  ];
-
+function SeriesSection() {
   return (
-    <div className="bg-white dark:bg-gray-800 py-16">
+    <div id="series" className="bg-gray-900 dark:bg-black py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-gray-800 dark:text-gray-300 mb-2">
-                {stat.value}
+        <div className="mb-12">
+          <span className="text-xs font-semibold uppercase tracking-widest text-gray-500 border border-gray-700 px-3 py-1 rounded-full">
+            Series
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mt-4 mb-4">
+            Follow the Argument
+          </h2>
+          <p className="text-lg text-gray-400 max-w-2xl">
+            These articles are designed to be read in order. Each one establishes something the next one builds on.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {allSeries.map((series) => {
+            const articles = getSeriesArticles(series);
+            const previewArticles = articles.slice(0, 4);
+
+            return (
+              <div
+                key={series.slug}
+                className="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:border-gray-500 transition-colors duration-300"
+              >
+                {/* Series card header */}
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-white mb-2">{series.title}</h3>
+                  <p className="text-gray-400 italic text-sm mb-4">{series.subtitle}</p>
+                  <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                    {series.description}
+                  </p>
+                  <Link
+                    href={`/series/${series.slug}`}
+                    className="inline-flex items-center text-sm font-semibold text-white hover:text-gray-300 transition-colors"
+                  >
+                    View full series ({series.steps.length} articles)
+                    <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </Link>
+                </div>
+
+                {/* Preview articles */}
+                <div className="border-t border-gray-700">
+                  {previewArticles.map((article, idx) => (
+                    <Link
+                      key={article.slug}
+                      href={`/posts/${article.slug}`}
+                      className="flex items-center gap-4 px-6 py-4 hover:bg-gray-700/50 transition-colors border-b border-gray-700/50 last:border-b-0 group"
+                    >
+                      <span className="flex-shrink-0 w-7 h-7 rounded-full bg-gray-700 group-hover:bg-gray-600 text-gray-400 group-hover:text-white text-xs font-bold flex items-center justify-center transition-colors">
+                        {idx + 1}
+                      </span>
+                      <div className="flex-shrink-0 w-12 h-12 relative rounded-lg overflow-hidden">
+                        <Image
+                          src={`/images/cover_pages/${article.image}`}
+                          alt={article.title}
+                          fill
+                          sizes="48px"
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-sm font-medium text-gray-200 group-hover:text-white transition-colors truncate">
+                          {article.title}
+                        </p>
+                        {idx === 0 && (
+                          <span className="text-xs text-gray-500 group-hover:text-gray-400">
+                            Start here
+                          </span>
+                        )}
+                      </div>
+                    </Link>
+                  ))}
+                  {articles.length > 4 && (
+                    <Link
+                      href={`/series/${series.slug}`}
+                      className="flex items-center justify-center gap-2 px-6 py-4 text-sm text-gray-500 hover:text-gray-300 transition-colors"
+                    >
+                      +{articles.length - 4} more articles
+                    </Link>
+                  )}
+                </div>
               </div>
-              <div className="text-sm lg:text-base text-gray-600 dark:text-gray-400">
-                {stat.label}
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
@@ -112,17 +176,19 @@ function StatsSection({ totalArticles }: { totalArticles: number }) {
 
 export default function Home() {
   const combinedContent = getCombinedContent();
-  // console.log("combinedContent ", combinedContent)
-  
+  const seriesArticleSlugs = new Set(
+    allSeries.flatMap((s) => s.steps.map((step) => step.articleSlug))
+  );
+  const standaloneArticles = combinedContent.filter(
+    (post) => !seriesArticleSlugs.has(post.slug)
+  );
+
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Hero Section */}
       <HeroSection />
-      
-      {/* Stats Section */}
-      {/* <StatsSection totalArticles={combinedContent.length} /> */}
-      
-      {/* Articles Section */}
+      <SeriesSection />
+
+      {/* All Articles Section */}
       <div className="py-16" id="articles">
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -130,16 +196,15 @@ export default function Home() {
               Latest Articles & Analysis
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Discover our latest progressive analysis, book reviews, and political commentary. 
-              Filter by category to find content that interests you most.
+              Book summaries, political analysis, and more. Browse everything we have published.
             </p>
           </div>
-          
+
           <Suspense fallback={<LoadingGrid />}>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {combinedContent.map((post) => (
-                <PostCard 
-                  key={post.slug} 
+                <PostCard
+                  key={post.slug}
                   post={post}
                   className="h-full flex flex-col"
                 />
@@ -148,7 +213,7 @@ export default function Home() {
           </Suspense>
         </div>
       </div>
-      
+
       {/* Newsletter Section */}
       <div className="bg-gradient-to-r from-gray-800 to-gray-700 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -173,4 +238,3 @@ export default function Home() {
     </div>
   );
 }
-

@@ -15,6 +15,8 @@ export interface BaseContent {
 // Interface for hardcoded blog posts
 export interface Post extends BaseContent {
   contentType: 'post';
+  series?: string; // series slug this article belongs to
+  seriesOrder?: number; // position within the series (1-indexed)
 }
 
 // Types for news articles from API
@@ -259,17 +261,9 @@ export const samplePosts: Post[] = [
     categories: ['Economics', 'History', 'Capitalism'],
     description: 'Did humans ever barter before money was invented? David Graeber spent years looking for a single documented example of a barter economy. He found none. Here is what the archaeological record actually shows came before money — and why the myth exists.',
     image: 'barter-myth-cover.jpg',
-    contentType: 'post'
-  },
-  {
-    slug: 'why-is-housing-so-expensive',
-    title: 'Why Is Housing So Expensive?',
-    date: '2026-06-30',
-    author: 'Left Diary',
-    categories: ['Economics', 'Housing', 'History'],
-    description: 'Housing didn\'t get expensive by accident. Land enclosure, financialization, and deliberate policy choices turned shelter into an asset class. The real history of why you can\'t afford to live — and who decided it would be this way.',
-    image: 'housing-financialization-cover.jpg',
-    contentType: 'post'
+    contentType: 'post',
+    series: 'how-money-actually-works',
+    seriesOrder: 1
   },
   {
     slug: 'how-do-banks-create-money-out-of-nothing',
@@ -279,7 +273,9 @@ export const samplePosts: Post[] = [
     categories: ['Economics', 'Banking', 'Money'],
     description: 'When a bank approves your mortgage, it doesn\'t move existing money — it creates new money on the spot. The Bank of England confirmed this in 2014. Here is how money is actually created, and what it means for debt, housing, and public spending.',
     image: 'banks-create-money-cover.jpg',
-    contentType: 'post'
+    contentType: 'post',
+    series: 'how-money-actually-works',
+    seriesOrder: 2
   },
   {
     slug: 'why-did-colonizers-tax-africans',
@@ -289,17 +285,33 @@ export const samplePosts: Post[] = [
     categories: ['Economics', 'History', 'Colonialism'],
     description: 'If governments can create money, why do they collect taxes? Colonizers accidentally answered this question. The hut tax didn\'t raise revenue — it forced Africans into wage labor. That same logic explains modern austerity, the IMF, and why the government says it "can\'t afford" hospitals.',
     image: 'colonizers-tax-africans-cover.jpg',
-    contentType: 'post'
+    contentType: 'post',
+    series: 'how-money-actually-works',
+    seriesOrder: 3
   },
   {
-    slug: 'why-do-the-rich-keep-getting-richer',
-    title: 'Why Do the Rich Keep Getting Richer?',
-    date: '2026-06-30',
+    slug: 'how-did-everything-come-to-cost-money',
+    title: 'How Did Everything Come to Cost Money?',
+    date: '2026-07-03',
     author: 'Left Diary',
-    categories: ['Economics', 'Inequality', 'Capitalism'],
-    description: 'Warren Buffett\'s secretary pays a higher tax rate than he does. He said it himself. Jeff Bezos paid $0 in federal income tax in 2007. Piketty\'s r > g explains why wealth concentration is a mathematical guarantee — and why the tax system was built to keep it that way.',
-    image: 'wealth-inequality-cover.jpg',
-    contentType: 'post'
+    categories: ['Economics', 'History'],
+    description: "Every cost that doesn't feel like it should be there has a specific origin. A specific law. A specific date when something people had directly — land, seeds, healing knowledge, water — was converted into something that required going through a third party. The need didn't change. The direct access was removed.",
+    image: 'how-did-everything-come-to-cost-money-cover.jpg',
+    contentType: 'post',
+    series: 'how-money-actually-works',
+    seriesOrder: 4
+  },
+  {
+    slug: 'what-is-austerity',
+    title: 'What Is Austerity?',
+    date: '2026-07-03',
+    author: 'Left Diary',
+    categories: ['Economics', 'Politics'],
+    description: "Austerity is not a budget decision. It is the same two moves that enclosed the commons — applied right now, to public services. The public university is defunded; the need for education remains; a bank moves between you and it. The hospital is privatized; the need for care remains; an insurer moves between you and it. The enclosure didn't end. It changed instruments.",
+    image: 'what-is-austerity-cover.jpg',
+    contentType: 'post',
+    series: 'how-money-actually-works',
+    seriesOrder: 5
   },
   {
     slug: 'how-did-people-survive-before-capitalism',
@@ -309,7 +321,21 @@ export const samplePosts: Post[] = [
     categories: ['Economics', 'History', 'Capitalism'],
     description: 'Before the enclosure acts, most people in England had the commons — land they could graze, fish, and farm without paying rent to anyone. Parliament, controlled by landowners, passed 5,000 laws to take it away. Unemployment didn\'t exist before that. Here\'s what they destroyed to make the wage system inevitable.',
     image: 'enclosure-commons-cover.jpg',
-    contentType: 'post'
+    contentType: 'post',
+    series: 'how-money-actually-works',
+    seriesOrder: 6
+  },
+  {
+    slug: 'why-is-housing-so-expensive',
+    title: 'Why Is Housing So Expensive?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'Housing', 'History'],
+    description: 'Housing didn\'t get expensive by accident. Land enclosure, financialization, and deliberate policy choices turned shelter into an asset class. The real history of why you can\'t afford to live — and who decided it would be this way.',
+    image: 'housing-financialization-cover.jpg',
+    contentType: 'post',
+    series: 'how-money-actually-works',
+    seriesOrder: 7
   },
   {
     slug: 'debt-as-social-control',
@@ -319,7 +345,21 @@ export const samplePosts: Post[] = [
     categories: ['Economics', 'Debt', 'History'],
     description: 'Ancient Babylon cancelled debt every 30 years — not out of charity, but because compound interest always produces more debt than can be repaid. Haiti paid France for 122 years for winning the Haitian Revolution. Here\'s how debt became the mechanism that keeps individuals, nations, and whole economies from getting free.',
     image: 'debt-social-control-cover.jpg',
-    contentType: 'post'
+    contentType: 'post',
+    series: 'how-money-actually-works',
+    seriesOrder: 8
+  },
+  {
+    slug: 'why-do-the-rich-keep-getting-richer',
+    title: 'Why Do the Rich Keep Getting Richer?',
+    date: '2026-06-30',
+    author: 'Left Diary',
+    categories: ['Economics', 'Inequality', 'Capitalism'],
+    description: 'Warren Buffett\'s secretary pays a higher tax rate than he does. He said it himself. Jeff Bezos paid $0 in federal income tax in 2007. Piketty\'s r > g explains why wealth concentration is a mathematical guarantee — and why the tax system was built to keep it that way.',
+    image: 'wealth-inequality-cover.jpg',
+    contentType: 'post',
+    series: 'how-money-actually-works',
+    seriesOrder: 9
   },
   {
     slug: 'what-is-the-ruling-class',
@@ -329,7 +369,9 @@ export const samplePosts: Post[] = [
     categories: ['Politics', 'Power', 'Class'],
     description: "The term sounds like a conspiracy theory. It isn't. C. Wright Mills asked it as a sociologist in 1956, backed it with data, and named it 'The Power Elite.' 65% of British senior judges went to private school. Every US Secretary of State since 1953 has been a Council on Foreign Relations member except one. Here's the documented answer.",
     image: 'ruling-class-cover.jpg',
-    contentType: 'post'
+    contentType: 'post',
+    series: 'how-money-actually-works',
+    seriesOrder: 10
   },
   {
     slug: 'who-owns-the-media',
@@ -339,7 +381,9 @@ export const samplePosts: Post[] = [
     categories: ['Media', 'Politics', 'Power'],
     description: "Six companies control roughly 90% of US media. In the UK, three men own most of the national press. Noam Chomsky called it Manufacturing Consent. Here's how media ownership shapes what you think is possible — not through censorship, but through what never gets framed as a serious idea.",
     image: 'media-ownership-cover.jpg',
-    contentType: 'post'
+    contentType: 'post',
+    series: 'how-money-actually-works',
+    seriesOrder: 11
   },
   {
     slug: 'what-happened-to-the-left',
@@ -349,6 +393,18 @@ export const samplePosts: Post[] = [
     categories: ['Politics', 'History', 'Labor'],
     description: "In 1945, Labour won the most decisive election victory in British history and built the NHS. In 1981, Reagan fired 11,000 striking air traffic controllers — and union membership began a collapse that hasn't stopped. Here's how the most powerful labor movement in history was defeated, and what was used to defeat it.",
     image: 'left-history-cover.jpg',
+    contentType: 'post',
+    series: 'how-money-actually-works',
+    seriesOrder: 12
+  },
+  {
+    slug: 'why-didnt-people-just-refuse-to-use-money',
+    title: "Why Didn't People Just Refuse to Use Money?",
+    date: '2026-07-04',
+    author: 'Left Diary',
+    categories: ['Economics', 'History', 'Money'],
+    description: "The king's tax was once a year, in a fixed amount. So why couldn't people just earn that much and go back to living as before? Because over the next three hundred years, every other way of surviving was made illegal, one law at a time — the commons enclosed, gleaning outlawed, standing still criminalized, the last independent women destroyed as witches.",
+    image: 'why-didnt-people-just-refuse-to-use-money-cover.jpg',
     contentType: 'post'
   }
 ];
