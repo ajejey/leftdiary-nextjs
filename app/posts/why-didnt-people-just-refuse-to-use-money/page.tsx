@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Metadata } from 'next';
 import {
   ArticleLayout,
@@ -623,13 +624,31 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           time, until the wage was the only door left standing.
         </P>
         <P>
-          And once that is true — once you can see, specifically, that the market for your labor
-          was not something you or your ancestors ever walked into voluntarily, but something built
-          by closing every other exit — a much bigger question opens up. Because someone still had
-          to build the actual money you&rsquo;d be paid in. The king who started this whole story by
-          minting coin and demanding it back as tax does not, today, mint the money you use.
-          Somewhere between his coin and your salary, he lost that power, and somebody else took it.
-          Who, and how, is next.
+          This has a name outside England too. Karl Polanyi, writing about exactly this kind of
+          engineered dependency, put the English case next to a colonial one: &ldquo;The colonists may
+          decide to cut the breadfruit trees down in order to create an artificial food scarcity or
+          may impose a hut tax on the native to force him to barter away his labor. In either case
+          the effect is similar to that of Tudor enclosures with their wake of vagrant hordes.&rdquo;{' '}
+          <span className="text-sm text-gray-400 not-italic">(Polanyi, <em>The Great Transformation</em>, ch. 14, 1944)</span> Notice exactly what he&rsquo;s saying: not that these were the same tool, but
+          that they were built by people who wanted the identical thing.{' '}
+          <Link href="/posts/why-did-colonizers-tax-africans" className="underline decoration-gray-400 hover:decoration-gray-700">I&rsquo;ve written separately about the hut tax</Link>{' '}
+          Britain imposed on colonial Africa in the 1890s — a cash levy that reached people
+          regardless of what land they had, forcing self-sufficient communities into wage labor by
+          a completely different legal route, in living memory, not ancient history. A fence in one
+          place. A tax bill payable only in the ruler&rsquo;s currency in another. Two different
+          machines, built at different times, by different people, for the same purpose: a
+          population with nothing left to sell but its own labor.
+        </P>
+        <P>
+          And once you can see, specifically, that the market for your labor was not something you
+          or your ancestors ever walked into voluntarily, but something built by closing every other
+          exit — notice that this is only half of what I&rsquo;ve told you. The other half happened in
+          London, in these same centuries: a handful of goldsmiths discovering they could create
+          money that had never existed. Two separate developments, in two separate rooms, that had
+          not yet found each other. The king who started this whole story by minting coin and
+          demanding it back as tax does not, today, mint the money you use. Somewhere between his
+          coin and your salary, he lost that power — and the people who took it are about to meet
+          the people who own the fences. Who, and how, is next.
         </P>
       </ArticleSection>
 
