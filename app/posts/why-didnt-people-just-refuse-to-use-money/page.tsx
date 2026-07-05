@@ -101,7 +101,7 @@ const jsonLd = {
       },
       'keywords': 'why didn\'t people refuse to use money, enclosure acts explained, vagrancy acts history, witch hunts and enclosure, history of the commons',
       'articleSection': 'Economics',
-      'wordCount': 6500,
+      'wordCount': 2900,
       'inLanguage': 'en-US',
       'isAccessibleForFree': true,
       'about': [
@@ -128,11 +128,8 @@ const TOC_ITEMS: TOCItem[] = [
   { id: 'what-people-actually-had', text: 'What People Actually Had', level: 2 },
   { id: 'gleaning-and-the-day-it-ended', text: 'Gleaning, and the Day It Legally Ended', level: 3 },
   { id: 'enter-the-merchants', text: 'Enter the Merchants', level: 2 },
-  { id: 'money-that-demands-more-money-back', text: 'Money That Demands More Money Back', level: 2 },
-  { id: 'the-same-trick-continents', text: 'The Same Trick, Played on Entire Continents', level: 2 },
+  { id: 'money-that-demands-more-money-back', text: 'The Trick That Created Money From Nothing', level: 2 },
   { id: 'who-was-actually-in-the-room', text: 'Who Was Actually in the Room', level: 2 },
-  { id: 'the-commons-enclosed', text: 'The Commons, Enclosed', level: 2 },
-  { id: 'when-people-fought-back', text: 'When People Fought Back', level: 3 },
   { id: 'standing-still-became-a-crime', text: 'Standing Still Became a Crime', level: 2 },
   { id: 'the-last-door', text: 'The Last Door', level: 2 },
   { id: 'nobody-chose-this', text: 'Nobody Chose This', level: 2 },
@@ -263,7 +260,7 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
         }
         date="July 4, 2026"
         dateTime="2026-07-04"
-        readingTime="24 min read"
+        readingTime="14 min read"
       />
 
       <ArticleTOC items={TOC_ITEMS} />
@@ -304,7 +301,14 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           land, enforced in specific courts.
         </P>
         <P>
-          If you lived in an English village before enclosure, you likely had a right called{' '}
+          And &ldquo;taken away&rdquo; has a specific name and a specific physical shape: <strong>enclosure</strong>.
+          A fence went up, or a hedge got planted, around land that used to be open to everyone who
+          held a right to it. Once that fence was up, one person owned everything inside it. Every
+          right anyone else had held there simply stopped existing. That is the whole mechanism.
+          Almost everything in this piece is some version of that fence going up.
+        </P>
+        <P>
+          If you lived in an English village before that happened, you likely had a right called{' '}
           <strong>estovers</strong> — the right to take wood from the common land for fuel and
           repairs. It was split into named categories: <em>housebote</em> for repairing your
           dwelling, <em>hedgebote</em> for repairing your fences, <em>firebote</em> for fuel. You had{' '}
@@ -357,155 +361,107 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
       <ArticleSection id="enter-the-merchants">
         <H2 id="enter-the-merchants">Enter the Merchants</H2>
         <P>
-          Now I need to bring in a second character, because the king was not the only one who
-          figured out how to make people need money. While English villages ran on stinting and
-          estovers and gleaning, something different was being built in the trading cities of
-          Italy — Florence, Venice, Genoa. And what was built there is, in a very direct way, the
-          ancestor of the bank that approves your mortgage today.
+          Before I show you what the merchants built, let&rsquo;s go back to something from the first
+          part of this story, because it matters more than it seemed to at the time: credit — the
+          oldest system, the &ldquo;I owe you one&rdquo; — worked because the two people involved knew each
+          other. There was a relationship. If I never returned your favor, I didn&rsquo;t just owe you
+          something. I lost you. That&rsquo;s what made it self-enforcing, without anyone needing to
+          write anything down or measure anything in numbers.
         </P>
         <P>
-          An ordinary merchant sells wool in one city and buys silk in another. That is trade. What
-          the Italian merchant-bankers built was something else: a way to move the <em>promise</em>{' '}
-          of money between cities without moving any actual coin. A merchant in Bruges who owed
-          money to a merchant in Barcelona didn&rsquo;t need to ship gold across the sea. He wrote a{' '}
-          <strong>bill of exchange</strong> — a letter instructing his bank&rsquo;s agent in Barcelona to
-          pay the Barcelona merchant, in Barcelona&rsquo;s own currency, on a fixed future date. There
-          is a documented example of exactly this, from the Florentine Orlandini-Benizi company: in
-          January 1400, a bill for 600 écus was drawn in Bruges on an agent in Barcelona, accepted,
-          and paid out a month later by a simple transfer between bank accounts — no coin ever
-          crossed the sea at all.{' '}
-          <span className="text-sm text-gray-400 not-italic">(de Roover, as summarized in Munro, &ldquo;The Medieval Bill of Exchange,&rdquo; University of Toronto)</span>
+          Notice what that system cannot do. It cannot feed a king&rsquo;s army. A soldier posted three
+          hundred kilometers from where he grew up, in a village whose people have never met him
+          and owe him nothing, cannot survive on &ldquo;I owe you one.&rdquo; There is no relationship there
+          to enforce the debt. That&rsquo;s the actual reason coin exists at all — not because barter
+          was inefficient, but because credit doesn&rsquo;t scale to strangers, and an empire is
+          mostly strangers.
         </P>
         <P>
-          This mattered enormously, because it meant a small number of banking families — the
-          Bardi, the Peruzzi, and later the Medici — could hold and move sums of money far larger
-          than any single kingdom&rsquo;s physical stock of gold and silver. And kings noticed. When
-          Edward III of England needed money to fight France in the 1340s, he didn&rsquo;t dig a new
-          silver mine. He borrowed from the Bardi and Peruzzi banks. When he later defaulted, a
-          contemporary Florentine chronicler claimed it wiped out both companies to the tune of
-          900,000 and 600,000 gold florins.{' '}
-          <span className="text-sm text-gray-400 not-italic">(Villani, contemporary chronicle, 14th century)</span>{' '}
-          I want to be honest with you about this one, because it is exactly the kind of thing this
-          series keeps warning you about: a dramatic number, repeated for six hundred years,
-          that turns out to be shakier than it looks. A modern historian who went back through the
-          Peruzzi&rsquo;s own surviving account books found nothing close to that scale of lending to
-          Edward III, and argues the real losses were closer to a tenth of that, with the
-          companies&rsquo; collapse driven by several other problems at once, not one royal default.{' '}
-          <span className="text-sm text-gray-400 not-italic">(Hunt, <em>The Medieval Super-Companies</em>, 1994)</span> Whichever number is closer to true, the shape of the event is not in
-          dispute: a king borrowed at a scale beyond his own capacity to repay, from bankers whose
-          only product was other people&rsquo;s need for money. That is the beginning of the merchant
-          class becoming a power the king himself depends on — which is a thread I&rsquo;ll come back to.
+          But coin creates a new, very physical problem the moment trade grows past your own
+          village: a merchant carrying a bag of silver from one city to the next is carrying
+          something every bandit on the road can see the point of stealing. So a solution appeared,
+          and it appeared first and most fully in the trading world of the Abbasid Caliphate,
+          centered on Baghdad, from around the ninth century onward. Merchants and bankers there
+          — the money-changers were called <em>sarraf</em>, and the caliph&rsquo;s own treasury bankers{' '}
+          <em>jahabidha</em> — used written instruments called <strong>sakk</strong> and{' '}
+          <strong>suftaja</strong>, a kind of letter of credit that let a merchant deposit coin in
+          one city and collect the equivalent in another, without ever carrying metal on the road
+          between them.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Graeber, <em>Debt: The First 5,000 Years</em>, 2011; Udovitch, <em>Bankers Without Banks</em>, 1979)</span>{' '}
+          A real, working credit economy, centuries before anything like it existed in Christian
+          Europe, that let money move without moving.
+        </P>
+        <P>
+          I want you to notice one more thing about the suftaja specifically, because it&rsquo;s the
+          detail that makes the next part of this story land. Islamic law banned <em>riba</em> —
+          interest — just as strictly as the Christian Church banned usury. So the suftaja had a
+          built-in rule: whatever you deposited had to be paid back in the <em>same</em> currency,
+          not converted into another one. That rule existed specifically so nobody could hide a
+          profit inside a currency-exchange spread. In other words: this note was honest. It
+          represented real coin that genuinely existed somewhere, waiting to be collected. It was
+          a receipt, nothing more.
         </P>
       </ArticleSection>
 
       <ArticleSection id="money-that-demands-more-money-back">
-        <H2 id="money-that-demands-more-money-back">Money That Demands More Money Back</H2>
+        <H2 id="money-that-demands-more-money-back">The Trick That Created Money From Nothing</H2>
         <P>
-          Here is the part I actually want you to sit with, because it is the real invention, and
-          it is still, today, the thing that makes your loan cost more than you borrowed.
+          Now I want to take you to London, six hundred years later, because this is the moment
+          that note stopped being honest — and I think it is the single most important moment in
+          this entire story, because it is the first time anyone, anywhere, created money that had
+          nothing real behind it at all.
         </P>
         <P>
-          The Catholic Church, for most of the medieval period, banned charging interest on a
-          loan outright. It was called usury, and it was a sin. So how did banking families get
-          rich lending money, in a Europe where lending money for profit was supposed to be
-          forbidden?
+          In 1640, Charles I did something that broke a specific kind of trust: he seized roughly
+          &pound;200,000 in gold that London merchants had deposited at the Royal Mint, in the Tower
+          of London, for safekeeping — money he wanted for his own spending. He eventually gave
+          most of it back, under pressure, but the damage was done: merchants had just learned that
+          the King&rsquo;s own mint was not a safe place to store their coin.{' '}
+          <span className="text-sm text-gray-400 not-italic">(1640 seizure of merchants&rsquo; bullion, Tower of London Mint)</span> Over the following two
+          decades — through the chaos of the Civil War and into the 1660s — merchants shifted to
+          storing their gold instead with private goldsmiths, men whose actual trade was working
+          metal, not banking. By the 1670s there were something like forty-four of these
+          goldsmith-bankers operating in London, with names like Edward Backwell, Robert Vyner, and
+          Francis Child now well documented in surviving ledgers.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Quinn, &ldquo;Goldsmith-Banking,&rdquo; <em>Explorations in Economic History</em>, 1997)</span>
         </P>
         <P>
-          They used the fact that a bill of exchange involved <em>two different currencies in two
-          different cities</em>. Suppose a Florentine bank in Venice buys a bill payable in Bruges,
-          at one exchange rate. Two months later, instead of collecting the money in cash, the
-          Bruges branch immediately uses it to buy a <em>return</em> bill payable back in Venice —
-          at a slightly different exchange rate. There was no single moment where anyone
-          &ldquo;charged interest.&rdquo; There were just two currency exchanges, months apart, at two
-          slightly different rates. But the gap between those rates was the profit. It was a loan,
-          wearing the costume of a foreign-exchange transaction. Historians have gone back through
-          real surviving transactions and calculated what this actually worked out to in annual
-          terms: commonly somewhere in the range of 9 to 16 percent a year — a real, calculable
-          interest rate, collected by a route that let everyone involved say, with a straight face,
-          that no loan had taken place. <span className="text-sm text-gray-400 not-italic">(Bell, Brooks &amp; Moore, &ldquo;Cambium non est mutuum,&rdquo; <em>Economic History Review</em>, 2017)</span>
+          Here is exactly what a goldsmith did. A merchant handed over a bag of gold coin. The
+          goldsmith wrote out a receipt certifying how much he&rsquo;d received and promising to pay it
+          back on demand. That receipt is the same idea as the suftaja: an honest note, representing
+          real coin sitting in a vault.
         </P>
         <P>
-          Some bankers pushed this further still, into something called <strong>dry exchange</strong> —
-          a bill drawn on a foreign city with no real trade happening at all, sometimes on an agent
-          who barely existed, purely to manufacture the appearance of a currency transaction around
-          what was, underneath, a plain loan to a local borrower who needed cash now. The Church
-          eventually caught up: in 1571, Pope Pius V issued a bull specifically condemning &ldquo;dry and
-          fictitious exchange&rdquo; as disguised usury, while still allowing genuine, trade-linked
-          currency exchange to continue. <span className="text-sm text-gray-400 not-italic">(<em>In Eam</em>, Pope Pius V, 1571)</span> Notice what that ruling actually concedes: the
-          Church wasn&rsquo;t objecting to money making more money. It was only objecting to doing it{' '}
-          <em>too obviously</em>.
+          But a goldsmith holding hundreds of these deposits could see something a single merchant
+          never could: on any given day, only a small fraction of depositors actually showed up to
+          withdraw their gold. Most of the receipts just kept circulating, hand to hand, as a
+          convenient substitute for carrying coin — nobody ever presented them all at once. And once
+          you can see that, a very specific temptation opens up. What if you issued <em>more</em>{' '}
+          receipts than you actually had gold to back?
         </P>
         <P>
-          This is what I mean when I say money that demands more money back. A coin, on its own,
-          just sits there — it is not a promise, it does not grow. What the merchant bankers built
-          was a way to turn a sum of money into a claim on a <em>larger</em> future sum, dressed up
-          in enough technical machinery that it could dodge a direct ban on doing exactly that.
-          Once that trick exists, whoever controls it has a permanent, compounding claim on
-          everyone who ever has to borrow — which, as you&rsquo;ll see, is a widening circle of people,
-          because their other options are being closed off at the same time.
-        </P>
-      </ArticleSection>
-
-      <ArticleSection id="the-same-trick-continents">
-        <H2 id="the-same-trick-continents">The Same Trick, Played on Entire Continents</H2>
-        <P>
-          Once a king or a state needs money at a scale beyond what its own land can produce, the
-          logic of coin-and-tax starts getting applied further and further away from home — to
-          entire colonized populations, and eventually to whole continents.
+          Their own surviving ledgers confirm it: goldsmiths routinely held only a fraction of
+          what their outstanding notes claimed &mdash; cash reserves as low as 10 percent of the
+          notes in circulation, depending on the banker.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Cantillon&rsquo;s observation, discussed in Quinn, 1997)</span> Money that had never been mined, dug up, or earned
+          came into existence because a goldsmith wrote a number on a piece of paper.
         </P>
         <P>
-          I&rsquo;ve written elsewhere about the clearest, most explicit case of this: British colonial
-          administrators arriving in East and Southern Africa in the 1890s, finding people who had
-          land, food, and community, and who had no need whatsoever for British currency. So the
-          British imposed a <strong>hut tax</strong> — an annual levy, payable only in British coin,
-          on every dwelling. The only way to get that coin was to work for a British employer.
-          <Link href="/posts/why-did-colonizers-tax-africans" className="underline decoration-gray-400 hover:decoration-gray-700"> Frederick Lugard, the architect of British rule in Nigeria, wrote about this purpose in his own words</Link> —
-          the tax existed to manufacture a workforce, not to raise revenue. When the British imposed
-          it in Sierra Leone in 1898, the Temne and Mende peoples rose up under Bai Bureh in what
-          became known as the Hut Tax War. They understood exactly what was being taken from them.
-          They lost.
+          Notice exactly what changed. The goldsmith&rsquo;s note has a number on it — &ldquo;worth &pound;10,&rdquo;
+          not &ldquo;Ajey owes Radhika one.&rdquo; It isn&rsquo;t personal. Anyone can hold it, spend it, steal it.
+          It still says, in words, &ldquo;I promise to pay the bearer&rdquo; — but it behaves like a coin, not
+          a promise between two people who know each other. And it is worse than a coin, because a
+          coin at least requires real metal to exist. This required nothing but confidence.
         </P>
         <P>
-          The same coin-and-tax logic ran, at an even larger scale, through Spain&rsquo;s conquest of
-          the Americas. The Spanish crown fought almost constant wars in Europe, and financed them
-          not from its own treasury but from Genoese merchant-bankers — the Spinola, Doria, Grimaldi,
-          and Centurione families — under contracts called <em>asientos</em>. One documented example:
-          a 1595 loan of 340,000 ducats from the Genoese banker Tomás Fiesco, at 12 percent
-          interest. <span className="text-sm text-gray-400 not-italic">(Álvarez-Nogal &amp; Chamley, &ldquo;Debt policy under constraints,&rdquo; <em>Economic History Review</em>, 2014)</span> These loans were routinely secured against silver that had not
-          even arrived yet — the next fleet due from the Americas. And the silver on those fleets
-          came overwhelmingly from one place: <strong>Potosí</strong>, in what is now Bolivia, which
-          at its peak around 1600 may have produced as much as 60 percent of all the silver mined
-          on earth. <span className="text-sm text-gray-400 not-italic">(aggregated estimates, Potosí in the Global Silver Age, Brill, 2023 — treat as approximate)</span>
-        </P>
-        <P>
-          That silver was pulled out of the ground by a forced-labor draft called the{' '}
-          <strong>mita</strong>, formalized by Viceroy Francisco de Toledo in the 1570s: villages
-          across a huge stretch of the Andes were required to send roughly one in seven of their
-          adult men to work the mines, typically for a year at a stretch.{' '}
-          <span className="text-sm text-gray-400 not-italic">(Bakewell, <em>Miners of the Red Mountain</em>, 1984)</span> I want to be careful here too — some
-          popular accounts state a specific, very low survival rate for mita laborers, and I could
-          not find that figure traced back to a serious peer-reviewed source, so I&rsquo;m not going to
-          repeat it as fact. What is well documented is that the parallel mercury mine at
-          Huancavelica, which supplied the mercury used to refine Potosí&rsquo;s silver, was known to
-          colonial officials themselves by a nickname: &ldquo;the mine of death.&rdquo;
-        </P>
-        <P>
-          Follow the chain all the way through: a war in Flanders needed money the Spanish crown
-          didn&rsquo;t have → Genoese bankers supplied it at interest → the loan was secured against
-          silver not yet mined → the silver was mined by Andean villagers forced into the mita →
-          the mercury used to refine it came from a mine colonial administrators themselves called
-          a slaughterhouse. Nobody in that chain, from the drafted miner in the Andes to the
-          taxpayer in an English hut, chose to enter the money system. Money reached them because
-          someone above them needed it and had the power to make that need theirs.
+          That&rsquo;s one half of how everyone ended up dependent on money — money itself became a
+          thing a private few could simply create. The other half happened on English soil, in
+          plain daylight, written into the law.
         </P>
       </ArticleSection>
 
       <ArticleSection id="who-was-actually-in-the-room">
         <H2 id="who-was-actually-in-the-room">Who Was Actually in the Room</H2>
-        <P>
-          So let&rsquo;s come back to England, and to the actual mechanism that finally closed the door
-          on people living outside the money system entirely: the Enclosure Acts.
-        </P>
         <P>
           Here is the part that is almost never said out loud, even though it is not a matter of
           opinion — it is written directly into the law. In 1711, Parliament passed the{' '}
@@ -515,102 +471,45 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           in their own words — &ldquo;the land interest would be the prevailing consideration in all
           their consultations.&rdquo; <span className="text-sm text-gray-400 not-italic">(Property Qualification Act, 1711)</span> Parliament legally engineered itself, on purpose, to be a
           body of landowners. As late as 1818, close to 70 percent of MPs either owned a landed
-          estate or came from a family that did. Add to that the &ldquo;rotten boroughs&rdquo; and &ldquo;pocket
-          boroughs&rdquo; — more than 140 of 658 Commons seats, right up until the Reform Act of 1832,
-          were tiny or empty constituencies effectively owned outright by a single aristocratic
-          patron.
+          estate or came from a family that did.
         </P>
         <P>
-          Now here is how an actual Enclosure Act got passed. A group of local landowners petitioned
-          Parliament to enclose their parish&rsquo;s common land. The threshold for that petition to
-          proceed was, in practice, assent from owners holding somewhere around three-quarters of
-          the land <em>by value</em> — not a vote of the people who lived there, a vote weighted by
-          how much land you already owned. Public notice was a notice pinned to the parish church
-          door for three Sundays. The petition then went to a Parliamentary committee — made up of
-          the same class of men who owned the land in question, or land just like it — which
-          approved the bill, appointed commissioners (usually chosen by the petitioning landowners
-          themselves) to survey the parish and allocate the newly enclosed plots.
-          <span className="text-sm text-gray-400 not-italic"> (UK Parliament, &ldquo;Enclosing the land,&rdquo; parliament.uk)</span>
+          Local landowners petitioned Parliament to enclose their parish&rsquo;s common land. Assent
+          was counted by land value, not by people — so
+          a handful of large landowners could out-vote everyone else. The petition went to a
+          Parliamentary committee of the same class of men who owned land just like it, which
+          approved the bill and appointed commissioners — usually chosen by the petitioning
+          landowners themselves — to survey the parish and hand out the newly enclosed plots.{' '}
+          <span className="text-sm text-gray-400 not-italic">(UK Parliament, &ldquo;Enclosing the land,&rdquo; parliament.uk)</span> Land that people without formal title had used for
+          generations, taken by a vote of the people who wanted it taken. The historian E.P.
+          Thompson called it &ldquo;a plain enough case of class robbery, played according to fair rules
+          of property and law laid down by a parliament of property-owners and lawyers.&rdquo;{' '}
+          <span className="text-sm text-gray-400 not-italic">(Thompson, <em>The Making of the English Working Class</em>, 1963)</span>
         </P>
         <P>
-          So walk through what actually happened: landowners petitioned a Parliament composed of
-          landowners, elected in many cases by other landowners, to approve the taking of land that
-          people without formal title had used for generations, using a process whose committees
-          and commissioners were staffed by landowners. The historian E.P. Thompson put it more
-          bluntly than I will: he called enclosure &ldquo;a plain enough case of class robbery, played
-          according to fair rules of property and law laid down by a parliament of property-owners
-          and lawyers.&rdquo; <span className="text-sm text-gray-400 not-italic">(Thompson, <em>The Making of the English Working Class</em>, 1963)</span> I want to flag something in fairness to Thompson, though,
-          because this series keeps insisting on applying the same rigor to every replacement idea
-          as to the myth it&rsquo;s replacing: Thompson himself resisted the flatter version of this
-          argument — that law is simply, always, nothing but a weapon of the ruling class. His own
-          point, made elsewhere, was that law only functions as effective ideology <em>because</em>{' '}
-          it maintains a real appearance of fairness. It is not a cartoon. It is something more
-          durable and harder to see through than a cartoon.
-        </P>
-      </ArticleSection>
-
-      <ArticleSection id="the-commons-enclosed">
-        <H2 id="the-commons-enclosed">The Commons, Enclosed</H2>
-        <P>
-          By Parliament&rsquo;s own historical account, between 1604 and 1914 it passed{' '}
-          <strong>over 5,200</strong> separate enclosure Acts, converting roughly{' '}
-          <strong>6.8 million acres</strong> — about a fifth of the total land area of England —
-          from common or open land into private property.{' '}
-          <span className="text-sm text-gray-400 not-italic">(UK Parliament, &ldquo;Enclosing the land&rdquo;)</span> Other historians, measuring differently
-          — England and Wales together, or counting the informal enclosures that predated the
-          Parliamentary process — arrive at figures as high as 8 million acres, and one influential
-          study argues England was already something like three-quarters enclosed by 1760, well
-          before most of the famous Parliamentary Acts were even passed.{' '}
-          <span className="text-sm text-gray-400 not-italic">(Wordie, &ldquo;The Chronology of English Enclosure, 1500&ndash;1914,&rdquo; <em>Economic History Review</em>, 1983)</span> The exact number is genuinely debated among
-          historians. That it was a lot of land, taken through a specific, repeatable legal
-          mechanism, over roughly three centuries, is not.
+          Between 1604 and 1914, that process produced <strong>over 5,200</strong> separate
+          enclosure Acts, converting roughly <strong>6.8 million acres</strong> — about a fifth of
+          England&rsquo;s total land — from common land into private property.{' '}
+          <span className="text-sm text-gray-400 not-italic">(UK Parliament, &ldquo;Enclosing the land&rdquo;)</span> In Wollaston, Northamptonshire, one Act in 1788 dropped
+          the number of separate landowners in the village from 108 to 18. The other ninety didn&rsquo;t
+          vanish, but something in how they lived changed completely. Before, if you spent the day
+          tending your own strip or grazing your own cow, what came of it went straight into your
+          own house. Now there was no strip, no cow, no wood to gather from. The only thing left to
+          offer anyone was your own body&rsquo;s effort, hour by hour — and whoever bought those hours
+          owned what your hands made, not you. That specific relationship, your own effort bought
+          and sold by the hour, barely existed at this scale before the fences went up. It has a
+          name: <strong>wage labor</strong>. Not a new way of getting paid for what you&rsquo;d always
+          done. The one thing left to sell, once everything else had been fenced off.
         </P>
         <P>
-          A single village makes this concrete in a way a national number can&rsquo;t. In Wollaston,
-          Northamptonshire, the open fields and commons were enclosed by Act of Parliament in
-          1788. The number of separate landowners in the village fell from 108 to just 18.{' '}
-          <span className="text-sm text-gray-400 not-italic">(local historical record — treat as needing independent confirmation)</span> A hundred and eight households, most of them
-          probably smallholders with common rights attached to their land, became eighteen. The
-          other ninety did not vanish. They became something else: people with no land, and
-          therefore, for the first time, no way to eat except by selling their labor.
-        </P>
-
-        <H3 id="when-people-fought-back">When People Fought Back</H3>
-        <P>
-          People understood exactly what enclosure was doing to them, and they resisted it,
-          repeatedly, for centuries — not passively, but in organized, sometimes armed, always
-          documented ways.
-        </P>
-        <P>
-          In 1549, in Norfolk, a yeoman farmer named Robert Kett watched a crowd tear down the
-          enclosure fences on his own land near Wymondham — and instead of calling for their
-          arrest, he agreed with them and led them. Some 16,000 people camped outside Norwich at
-          Mousehold Heath, drew up a list of 29 grievances, and administered their own rough
-          government from beneath an oak tree they called the Oak of Reformation. The rebellion was
-          crushed that August at the Battle of Dussindale. Kett was hanged for treason that
-          December. <span className="text-sm text-gray-400 not-italic">(Kett&rsquo;s Rebellion, 1549)</span> I want to be honest about a detail here too, because
-          Kett&rsquo;s Rebellion is often flattened into &ldquo;the enclosure riot&rdquo; when the surviving
-          document — the actual 29 demands, still held by the British Library — shows only one
-          clause that mentions enclosure directly, and even that is narrow. Most of the demands are
-          about corrupt local officials and the power of the gentry generally. The rebellion is
-          best read as part of a wider revolt against gentry power, of which enclosure was one
-          piece, not the whole story.
-        </P>
-        <P>
-          A century later, in April 1649, a small group led by Gerrard Winstanley — calling
-          themselves the True Levellers, though history remembers them as the Diggers — began
-          digging and planting vegetables on common land at St George&rsquo;s Hill in Surrey, declaring
-          the earth &ldquo;a common treasury of relief for all, both beasts and men.&rdquo; About fifty people
-          joined them. Local landowners had their shelters burned and crops destroyed within about
-          a year. <span className="text-sm text-gray-400 not-italic">(St George&rsquo;s Hill Diggers, 1649&ndash;1650)</span>
-        </P>
-        <P>
-          And in Northamptonshire in 1765, at West Haddon, villagers advertised a football match in
-          the local newspaper — a cover story to legally assemble a crowd — and used the gathering
-          to tear down and burn the fences from a fresh, 2,000-acre enclosure, causing around
-          &pound;1,500 in damage. <span className="text-sm text-gray-400 not-italic">(West Haddon enclosure riot, 1765; discussed in Neeson, <em>Commoners</em>, 1993)</span> The enclosure went ahead anyway. It almost
-          always did. Parliament did not need to win the argument. It only needed to win the vote,
-          and it had already arranged, by its own property qualification, who got to hold one.
+          People fought this every generation, for three centuries — Robert Kett leading 16,000
+          people against enclosure at Norwich in 1549; Gerrard Winstanley&rsquo;s Diggers planting
+          vegetables on common land at St George&rsquo;s Hill in 1649; villagers at West Haddon burning
+          a fresh 2,000-acre enclosure&rsquo;s fences in 1765, under cover of a football match they&rsquo;d
+          advertised in the local paper.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Kett&rsquo;s Rebellion, 1549; St George&rsquo;s Hill Diggers, 1649&ndash;1650; West Haddon riot, 1765, discussed in Neeson, <em>Commoners</em>, 1993)</span> Almost every enclosure went ahead anyway. Parliament
+          never needed to win the argument. It only needed to win the vote, and it had already
+          arranged, by its own property qualification, who got to hold one.
         </P>
       </ArticleSection>
 
@@ -636,14 +535,12 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           branding. A third meant execution as a felon.
         </P>
         <P>
-          I want to flag something honestly here, because it matters for how you read this: that
-          specific slavery clause turned out to be so unworkable and so widely resisted in practice
-          that Parliament repealed it within about two years. But notice what that repeal did and
-          didn&rsquo;t do. It removed one especially brutal enforcement mechanism. It did not remove the
-          underlying principle, which reappeared in milder but still punitive form in later
-          vagrancy statutes for the rest of the early modern period: a person who cannot show they
-          are working for a wage, or that they have independent means, has no legal right to simply
-          exist where they are standing.
+          That specific slavery clause was so unworkable it got repealed within about two years.
+          But notice what the repeal did and didn&rsquo;t do. It removed one especially brutal
+          enforcement mechanism. It did not remove the underlying principle, which reappeared in
+          milder but still punitive form in later vagrancy statutes for the rest of the early
+          modern period: a person who cannot show they are working for a wage, or that they have
+          independent means, has no legal right to simply exist where they are standing.
         </P>
         <P>
           Put the two laws side by side and the mechanism becomes impossible to miss. Enclosure
@@ -657,14 +554,12 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
         <H2 id="the-last-door">The Last Door</H2>
         <P>
           There is one more piece of this, and it is the one I find hardest to write about plainly,
-          because it involves real people burned alive, and because the exact numbers are genuinely
-          contested — I am not going to pretend otherwise.
+          because it involves real people burned alive.
         </P>
         <P>
-          Historians estimate somewhere between roughly 40,000 and over 100,000 people were
-          executed for witchcraft across Europe, concentrated between about 1450 and 1750, and the
-          overwhelming majority — commonly cited around 75 to 80 percent — were women.{' '}
-          <span className="text-sm text-gray-400 not-italic">(range synthesized from Levack, Barstow, Hutton, and Sharpe; historians disagree by roughly a factor of two on the total)</span> The historian{' '}
+          Tens of thousands of people were executed for witchcraft across Europe, concentrated
+          between about 1450 and 1750, and the overwhelming majority were women.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Levack, Barstow, Hutton, Sharpe)</span> The historian{' '}
           <a href="https://en.wikipedia.org/wiki/Silvia_Federici" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Silvia Federici</a>{' '}
           makes an argument in{' '}
           <em>Caliban and the Witch</em>{' '}
@@ -729,13 +624,31 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           time, until the wage was the only door left standing.
         </P>
         <P>
-          And once that is true — once you can see, specifically, that the market for your labor
-          was not something you or your ancestors ever walked into voluntarily, but something built
-          by closing every other exit — a much bigger question opens up. Because someone still had
-          to build the actual money you&rsquo;d be paid in. The king who started this whole story by
-          minting coin and demanding it back as tax does not, today, mint the money you use.
-          Somewhere between his coin and your salary, he lost that power, and somebody else took it.
-          Who, and how, is next.
+          This has a name outside England too. Karl Polanyi, writing about exactly this kind of
+          engineered dependency, put the English case next to a colonial one: &ldquo;The colonists may
+          decide to cut the breadfruit trees down in order to create an artificial food scarcity or
+          may impose a hut tax on the native to force him to barter away his labor. In either case
+          the effect is similar to that of Tudor enclosures with their wake of vagrant hordes.&rdquo;{' '}
+          <span className="text-sm text-gray-400 not-italic">(Polanyi, <em>The Great Transformation</em>, ch. 14, 1944)</span> Notice exactly what he&rsquo;s saying: not that these were the same tool, but
+          that they were built by people who wanted the identical thing.{' '}
+          <Link href="/posts/why-did-colonizers-tax-africans" className="underline decoration-gray-400 hover:decoration-gray-700">I&rsquo;ve written separately about the hut tax</Link>{' '}
+          Britain imposed on colonial Africa in the 1890s — a cash levy that reached people
+          regardless of what land they had, forcing self-sufficient communities into wage labor by
+          a completely different legal route, in living memory, not ancient history. A fence in one
+          place. A tax bill payable only in the ruler&rsquo;s currency in another. Two different
+          machines, built at different times, by different people, for the same purpose: a
+          population with nothing left to sell but its own labor.
+        </P>
+        <P>
+          And once you can see, specifically, that the market for your labor was not something you
+          or your ancestors ever walked into voluntarily, but something built by closing every other
+          exit — notice that this is only half of what I&rsquo;ve told you. The other half happened in
+          London, in these same centuries: a handful of goldsmiths discovering they could create
+          money that had never existed. Two separate developments, in two separate rooms, that had
+          not yet found each other. The king who started this whole story by minting coin and
+          demanding it back as tax does not, today, mint the money you use. Somewhere between his
+          coin and your salary, he lost that power — and the people who took it are about to meet
+          the people who own the fences. Who, and how, is next.
         </P>
       </ArticleSection>
 
@@ -762,7 +675,7 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           <strong>Primary and archival sources:</strong> Charter of the Forest (1217); Property
           Qualification Act (1711); Vagabonds Act 1547; <em>Steel v Houghton</em>, 1 H Bl 51, 126 ER
           32 (1788); the 29 demands of Kett&rsquo;s Rebellion (1549, digitized by the British Library);
-          Giovanni Villani, contemporary Florentine chronicle (14th century).
+          the 1640 seizure of merchants&rsquo; bullion at the Tower of London Mint.
         </p>
         <p>
           <strong>Secondary sources:</strong> Karl Marx, <em>Capital</em>, Vol. 1, chs. 27&ndash;28
@@ -774,21 +687,23 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           <em>Commoners: Common Right, Enclosure and Social Change in England, 1700&ndash;1820</em>{' '}
           (1993); J.R. Wordie, &ldquo;The Chronology of English Enclosure, 1500&ndash;1914,&rdquo;{' '}
           <em>Economic History Review</em> (1983); Peter King, &ldquo;Customary Rights and Women&rsquo;s
-          Earnings,&rdquo; <em>Economic History Review</em> (1991); Edwin S. Hunt,{' '}
-          <em>The Medieval Super-Companies</em> (1994); Raymond de Roover,{' '}
-          <em>The Rise and Decline of the Medici Bank, 1397&ndash;1494</em> (1963); Adrian Bell,
-          Chris Brooks &amp; Tony Moore, &ldquo;Cambium non est mutuum,&rdquo;{' '}
-          <em>Economic History Review</em> (2017); Peter Bakewell,{' '}
-          <em>Miners of the Red Mountain: Indian Labor in Potosí, 1545&ndash;1650</em> (1984);
-          Carlos Álvarez-Nogal &amp; Christophe Chamley, &ldquo;Debt policy under constraints,&rdquo;{' '}
-          <em>Economic History Review</em> (2014); UK Parliament, &ldquo;Enclosing the land,&rdquo;
-          parliament.uk historical resources.
+          Earnings,&rdquo; <em>Economic History Review</em> (1991); David Graeber,{' '}
+          <em>Debt: The First 5,000 Years</em> (2011); Abraham L. Udovitch,{' '}
+          <em>Bankers Without Banks: Commerce, Banking, and Society in the Islamic World of the
+          Middle Ages</em> (1979); Stephen Quinn, &ldquo;Goldsmith-Banking: Mutual Acceptance and
+          Interbanker Clearing in Restoration London,&rdquo; <em>Explorations in Economic History</em>{' '}
+          (1997); George Selgin, &ldquo;Those Dishonest Goldsmiths,&rdquo; <em>Financial History Review</em>{' '}
+          (2012); UK Parliament, &ldquo;Enclosing the land,&rdquo; parliament.uk historical resources.
         </p>
         <p>
-          Where historians disagree on a specific figure — total enclosure acreage, witch-trial
-          death tolls, the scale of the Bardi/Peruzzi losses to Edward III — this article states the
-          range and names the disagreement rather than picking a single number, and flags where a
-          popularly repeated figure could not be independently verified against its original source.
+          <strong>Notes on disputed figures:</strong> Total enclosure acreage is Parliament&rsquo;s own
+          count (over 5,200 Acts, ~6.8 million acres, 1604&ndash;1914); other historians measuring
+          differently put it as high as 8 million acres, and Wordie (1983) argues England was
+          already roughly three-quarters enclosed by 1760, before most of these Acts passed.
+          Witch-trial death tolls across Europe are estimated anywhere from 40,000 to over
+          100,000 depending on the historian. Whether the London goldsmiths&rsquo; over-issuance of
+          notes was fraud or a legally ambiguous but not dishonest banking custom is disputed —
+          Selgin (2012) argues the latter against the more common telling.
         </p>
       </ArticleSources>
     </ArticleLayout>
