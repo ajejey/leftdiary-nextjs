@@ -100,7 +100,7 @@ const jsonLd = {
       },
       'keywords': 'why didn\'t people refuse to use money, enclosure acts explained, vagrancy acts history, witch hunts and enclosure, history of the commons',
       'articleSection': 'Economics',
-      'wordCount': 5200,
+      'wordCount': 2900,
       'inLanguage': 'en-US',
       'isAccessibleForFree': true,
       'about': [
@@ -129,8 +129,6 @@ const TOC_ITEMS: TOCItem[] = [
   { id: 'enter-the-merchants', text: 'Enter the Merchants', level: 2 },
   { id: 'money-that-demands-more-money-back', text: 'The Trick That Created Money From Nothing', level: 2 },
   { id: 'who-was-actually-in-the-room', text: 'Who Was Actually in the Room', level: 2 },
-  { id: 'the-commons-enclosed', text: 'The Commons, Enclosed', level: 2 },
-  { id: 'when-people-fought-back', text: 'When People Fought Back', level: 3 },
   { id: 'standing-still-became-a-crime', text: 'Standing Still Became a Crime', level: 2 },
   { id: 'the-last-door', text: 'The Last Door', level: 2 },
   { id: 'nobody-chose-this', text: 'Nobody Chose This', level: 2 },
@@ -261,7 +259,7 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
         }
         date="July 4, 2026"
         dateTime="2026-07-04"
-        readingTime="24 min read"
+        readingTime="14 min read"
       />
 
       <ArticleTOC items={TOC_ITEMS} />
@@ -377,12 +375,10 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           and it appeared first and most fully in the trading world of the Abbasid Caliphate,
           centered on Baghdad, from around the ninth century onward. Merchants and bankers there
           — the money-changers were called <em>sarraf</em>, and the caliph&rsquo;s own treasury bankers{' '}
-          <em>jahabidha</em> — used written instruments called <strong>sakk</strong> (often cited as
-          the root of our word &ldquo;cheque,&rdquo; though mainstream etymology actually traces the English
-          word through an unrelated chess term, so treat that connection as folk history, not
-          settled linguistics) and <strong>suftaja</strong>, a kind of letter of credit that let a
-          merchant deposit coin in one city and collect the equivalent in another, without ever
-          carrying metal on the road between them.{' '}
+          <em>jahabidha</em> — used written instruments called <strong>sakk</strong> and{' '}
+          <strong>suftaja</strong>, a kind of letter of credit that let a merchant deposit coin in
+          one city and collect the equivalent in another, without ever carrying metal on the road
+          between them.{' '}
           <span className="text-sm text-gray-400 not-italic">(Graeber, <em>Debt: The First 5,000 Years</em>, 2011; Udovitch, <em>Bankers Without Banks</em>, 1979)</span>{' '}
           A real, working credit economy, centuries before anything like it existed in Christian
           Europe, that let money move without moving.
@@ -436,15 +432,11 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           receipts than you actually had gold to back?
         </P>
         <P>
-          Whether that was fraud or simply how an ambiguous banking custom was understood at the
-          time is genuinely disputed — one economist has argued the goldsmiths had a straightforward
-          legal right to lend deposited coin, not a secret to hide.{' '}
-          <span className="text-sm text-gray-400 not-italic">(Selgin, &ldquo;Those Dishonest Goldsmiths,&rdquo; <em>Financial History Review</em>, 2012)</span> What isn&rsquo;t disputed, from the goldsmiths&rsquo; own surviving
-          ledgers, is that they were routinely holding only a fraction of what their outstanding
-          notes claimed — one contemporary economist found goldsmith cash reserves ranging from
-          roughly 10 to 66 percent of the notes in circulation, depending on the banker.{' '}
-          <span className="text-sm text-gray-400 not-italic">(Cantillon&rsquo;s observation, discussed in Quinn, 1997)</span> Money that had never been mined, dug up, or earned came
-          into existence because a goldsmith wrote a number on a piece of paper.
+          Their own surviving ledgers confirm it: goldsmiths routinely held only a fraction of
+          what their outstanding notes claimed &mdash; cash reserves as low as 10 percent of the
+          notes in circulation, depending on the banker.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Cantillon&rsquo;s observation, discussed in Quinn, 1997)</span> Money that had never been mined, dug up, or earned
+          came into existence because a goldsmith wrote a number on a piece of paper.
         </P>
         <P>
           Notice exactly what changed. The goldsmith&rsquo;s note has a number on it — &ldquo;worth &pound;10,&rdquo;
@@ -453,14 +445,15 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           a promise between two people who know each other. And it is worse than a coin, because a
           coin at least requires real metal to exist. This required nothing but confidence.
         </P>
+        <P>
+          That&rsquo;s one half of how everyone ended up dependent on money — money itself became a
+          thing a private few could simply create. The other half happened on English soil, in
+          plain daylight, written into the law.
+        </P>
       </ArticleSection>
 
       <ArticleSection id="who-was-actually-in-the-room">
         <H2 id="who-was-actually-in-the-room">Who Was Actually in the Room</H2>
-        <P>
-          So let&rsquo;s come back to England, and to the actual mechanism that finally closed the door
-          on people living outside the money system entirely: the Enclosure Acts.
-        </P>
         <P>
           Here is the part that is almost never said out loud, even though it is not a matter of
           opinion — it is written directly into the law. In 1711, Parliament passed the{' '}
@@ -470,91 +463,39 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           in their own words — &ldquo;the land interest would be the prevailing consideration in all
           their consultations.&rdquo; <span className="text-sm text-gray-400 not-italic">(Property Qualification Act, 1711)</span> Parliament legally engineered itself, on purpose, to be a
           body of landowners. As late as 1818, close to 70 percent of MPs either owned a landed
-          estate or came from a family that did. Add to that the &ldquo;rotten boroughs&rdquo; and &ldquo;pocket
-          boroughs&rdquo; — more than 140 of 658 Commons seats, right up until the Reform Act of 1832,
-          were tiny or empty constituencies effectively owned outright by a single aristocratic
-          patron.
+          estate or came from a family that did.
         </P>
         <P>
-          Now here is how an actual Enclosure Act got passed. A group of local landowners petitioned
-          Parliament to enclose their parish&rsquo;s common land. The threshold for that petition to
-          proceed was, in practice, assent from owners holding somewhere around three-quarters of
-          the land <em>by value</em> — not a vote of the people who lived there, a vote weighted by
-          how much land you already owned. Public notice was a notice pinned to the parish church
-          door for three Sundays. The petition then went to a Parliamentary committee — made up of
-          the same class of men who owned the land in question, or land just like it — which
-          approved the bill, appointed commissioners (usually chosen by the petitioning landowners
-          themselves) to survey the parish and allocate the newly enclosed plots.
-          <span className="text-sm text-gray-400 not-italic"> (UK Parliament, &ldquo;Enclosing the land,&rdquo; parliament.uk)</span>
+          Here is how an actual Enclosure Act got passed. Local landowners petitioned Parliament to
+          enclose their parish&rsquo;s common land. Assent was counted by land value, not by people — so
+          a handful of large landowners could out-vote everyone else. The petition went to a
+          Parliamentary committee of the same class of men who owned land just like it, which
+          approved the bill and appointed commissioners — usually chosen by the petitioning
+          landowners themselves — to survey the parish and hand out the newly enclosed plots.{' '}
+          <span className="text-sm text-gray-400 not-italic">(UK Parliament, &ldquo;Enclosing the land,&rdquo; parliament.uk)</span> Land that people without formal title had used for
+          generations, taken by a vote of the people who wanted it taken. The historian E.P.
+          Thompson called it &ldquo;a plain enough case of class robbery, played according to fair rules
+          of property and law laid down by a parliament of property-owners and lawyers.&rdquo;{' '}
+          <span className="text-sm text-gray-400 not-italic">(Thompson, <em>The Making of the English Working Class</em>, 1963)</span>
         </P>
         <P>
-          So walk through what actually happened: landowners petitioned a Parliament composed of
-          landowners, elected in many cases by other landowners, to approve the taking of land that
-          people without formal title had used for generations, using a process whose committees
-          and commissioners were staffed by landowners. The historian E.P. Thompson put it more
-          bluntly than I will: he called enclosure &ldquo;a plain enough case of class robbery, played
-          according to fair rules of property and law laid down by a parliament of property-owners
-          and lawyers.&rdquo; <span className="text-sm text-gray-400 not-italic">(Thompson, <em>The Making of the English Working Class</em>, 1963)</span>
-        </P>
-      </ArticleSection>
-
-      <ArticleSection id="the-commons-enclosed">
-        <H2 id="the-commons-enclosed">The Commons, Enclosed</H2>
-        <P>
-          By Parliament&rsquo;s own historical account, between 1604 and 1914 it passed{' '}
-          <strong>over 5,200</strong> separate enclosure Acts, converting roughly{' '}
-          <strong>6.8 million acres</strong> — about a fifth of the total land area of England —
-          from common or open land into private property.{' '}
-          <span className="text-sm text-gray-400 not-italic">(UK Parliament, &ldquo;Enclosing the land&rdquo;)</span> Other historians, measuring differently
-          — England and Wales together, or counting the informal enclosures that predated the
-          Parliamentary process — arrive at figures as high as 8 million acres, and one influential
-          study argues England was already something like three-quarters enclosed by 1760, well
-          before most of the famous Parliamentary Acts were even passed.{' '}
-          <span className="text-sm text-gray-400 not-italic">(Wordie, &ldquo;The Chronology of English Enclosure, 1500&ndash;1914,&rdquo; <em>Economic History Review</em>, 1983)</span> The exact number is genuinely debated among
-          historians. That it was a lot of land, taken through a specific, repeatable legal
-          mechanism, over roughly three centuries, is not.
+          Between 1604 and 1914, that process produced <strong>over 5,200</strong> separate
+          enclosure Acts, converting roughly <strong>6.8 million acres</strong> — about a fifth of
+          England&rsquo;s total land — from common land into private property.{' '}
+          <span className="text-sm text-gray-400 not-italic">(UK Parliament, &ldquo;Enclosing the land&rdquo;)</span> In Wollaston, Northamptonshire, one Act in 1788 dropped
+          the number of separate landowners in the village from 108 to 18. The other ninety didn&rsquo;t
+          vanish. They became people with no land, and for the first time, no way to eat except by
+          selling their labor.
         </P>
         <P>
-          A single village makes this concrete in a way a national number can&rsquo;t. In Wollaston,
-          Northamptonshire, the open fields and commons were enclosed by Act of Parliament in
-          1788. The number of separate landowners in the village fell from 108 to just 18.{' '}
-          <span className="text-sm text-gray-400 not-italic">(local historical record — treat as needing independent confirmation)</span> A hundred and eight households, most of them
-          probably smallholders with common rights attached to their land, became eighteen. The
-          other ninety did not vanish. They became something else: people with no land, and
-          therefore, for the first time, no way to eat except by selling their labor.
-        </P>
-
-        <H3 id="when-people-fought-back">When People Fought Back</H3>
-        <P>
-          People understood exactly what enclosure was doing to them, and they resisted it,
-          repeatedly, for centuries — not passively, but in organized, sometimes armed, always
-          documented ways.
-        </P>
-        <P>
-          In 1549, in Norfolk, a yeoman farmer named Robert Kett watched a crowd tear down the
-          enclosure fences on his own land near Wymondham — and instead of calling for their
-          arrest, he agreed with them and led them. Some 16,000 people camped outside Norwich at
-          Mousehold Heath, drew up a list of 29 grievances, and administered their own rough
-          government from beneath an oak tree they called the Oak of Reformation. The rebellion was
-          crushed that August at the Battle of Dussindale. Kett was hanged for treason that
-          December.{' '}
-          <span className="text-sm text-gray-400 not-italic">(Kett&rsquo;s Rebellion, 1549)</span>
-        </P>
-        <P>
-          A century later, in April 1649, a small group led by Gerrard Winstanley — calling
-          themselves the True Levellers, though history remembers them as the Diggers — began
-          digging and planting vegetables on common land at St George&rsquo;s Hill in Surrey, declaring
-          the earth &ldquo;a common treasury of relief for all, both beasts and men.&rdquo; About fifty people
-          joined them. Local landowners had their shelters burned and crops destroyed within about
-          a year. <span className="text-sm text-gray-400 not-italic">(St George&rsquo;s Hill Diggers, 1649&ndash;1650)</span>
-        </P>
-        <P>
-          And in Northamptonshire in 1765, at West Haddon, villagers advertised a football match in
-          the local newspaper — a cover story to legally assemble a crowd — and used the gathering
-          to tear down and burn the fences from a fresh, 2,000-acre enclosure, causing around
-          &pound;1,500 in damage. <span className="text-sm text-gray-400 not-italic">(West Haddon enclosure riot, 1765; discussed in Neeson, <em>Commoners</em>, 1993)</span> The enclosure went ahead anyway. It almost
-          always did. Parliament did not need to win the argument. It only needed to win the vote,
-          and it had already arranged, by its own property qualification, who got to hold one.
+          People fought this every generation, for three centuries — Robert Kett leading 16,000
+          people against enclosure at Norwich in 1549; Gerrard Winstanley&rsquo;s Diggers planting
+          vegetables on common land at St George&rsquo;s Hill in 1649; villagers at West Haddon burning
+          a fresh 2,000-acre enclosure&rsquo;s fences in 1765, under cover of a football match they&rsquo;d
+          advertised in the local paper.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Kett&rsquo;s Rebellion, 1549; St George&rsquo;s Hill Diggers, 1649&ndash;1650; West Haddon riot, 1765, discussed in Neeson, <em>Commoners</em>, 1993)</span> Almost every enclosure went ahead anyway. Parliament
+          never needed to win the argument. It only needed to win the vote, and it had already
+          arranged, by its own property qualification, who got to hold one.
         </P>
       </ArticleSection>
 
@@ -599,14 +540,12 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
         <H2 id="the-last-door">The Last Door</H2>
         <P>
           There is one more piece of this, and it is the one I find hardest to write about plainly,
-          because it involves real people burned alive, and because the exact numbers are genuinely
-          contested — I am not going to pretend otherwise.
+          because it involves real people burned alive.
         </P>
         <P>
-          Historians estimate somewhere between roughly 40,000 and over 100,000 people were
-          executed for witchcraft across Europe, concentrated between about 1450 and 1750, and the
-          overwhelming majority — commonly cited around 75 to 80 percent — were women.{' '}
-          <span className="text-sm text-gray-400 not-italic">(range synthesized from Levack, Barstow, Hutton, and Sharpe; historians disagree by roughly a factor of two on the total)</span> The historian{' '}
+          Tens of thousands of people were executed for witchcraft across Europe, concentrated
+          between about 1450 and 1750, and the overwhelming majority were women.{' '}
+          <span className="text-sm text-gray-400 not-italic">(Levack, Barstow, Hutton, Sharpe)</span> The historian{' '}
           <a href="https://en.wikipedia.org/wiki/Silvia_Federici" target="_blank" rel="noopener noreferrer" className="underline decoration-gray-400 hover:decoration-gray-700">Silvia Federici</a>{' '}
           makes an argument in{' '}
           <em>Caliban and the Witch</em>{' '}
@@ -723,6 +662,16 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           Interbanker Clearing in Restoration London,&rdquo; <em>Explorations in Economic History</em>{' '}
           (1997); George Selgin, &ldquo;Those Dishonest Goldsmiths,&rdquo; <em>Financial History Review</em>{' '}
           (2012); UK Parliament, &ldquo;Enclosing the land,&rdquo; parliament.uk historical resources.
+        </p>
+        <p>
+          <strong>Notes on disputed figures:</strong> Total enclosure acreage is Parliament&rsquo;s own
+          count (over 5,200 Acts, ~6.8 million acres, 1604&ndash;1914); other historians measuring
+          differently put it as high as 8 million acres, and Wordie (1983) argues England was
+          already roughly three-quarters enclosed by 1760, before most of these Acts passed.
+          Witch-trial death tolls across Europe are estimated anywhere from 40,000 to over
+          100,000 depending on the historian. Whether the London goldsmiths&rsquo; over-issuance of
+          notes was fraud or a legally ambiguous but not dishonest banking custom is disputed —
+          Selgin (2012) argues the latter against the more common telling.
         </p>
       </ArticleSources>
     </ArticleLayout>
