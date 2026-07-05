@@ -491,8 +491,14 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           England&rsquo;s total land — from common land into private property.{' '}
           <span className="text-sm text-gray-400 not-italic">(UK Parliament, &ldquo;Enclosing the land&rdquo;)</span> In Wollaston, Northamptonshire, one Act in 1788 dropped
           the number of separate landowners in the village from 108 to 18. The other ninety didn&rsquo;t
-          vanish. They became people with no land, and for the first time, no way to eat except by
-          selling their labor.
+          vanish, but something in how they lived changed completely. Before, if you spent the day
+          tending your own strip or grazing your own cow, what came of it went straight into your
+          own house. Now there was no strip, no cow, no wood to gather from. The only thing left to
+          offer anyone was your own body&rsquo;s effort, hour by hour — and whoever bought those hours
+          owned what your hands made, not you. That specific relationship, your own effort bought
+          and sold by the hour, barely existed at this scale before the fences went up. It has a
+          name: <strong>wage labor</strong>. Not a new way of getting paid for what you&rsquo;d always
+          done. The one thing left to sell, once everything else had been fenced off.
         </P>
         <P>
           People fought this every generation, for three centuries — Robert Kett leading 16,000
