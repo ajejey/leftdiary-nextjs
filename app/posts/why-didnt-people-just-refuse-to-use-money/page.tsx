@@ -300,7 +300,14 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           land, enforced in specific courts.
         </P>
         <P>
-          If you lived in an English village before enclosure, you likely had a right called{' '}
+          And &ldquo;taken away&rdquo; has a specific name and a specific physical shape: <strong>enclosure</strong>.
+          A fence went up, or a hedge got planted, around land that used to be open to everyone who
+          held a right to it. Once that fence was up, one person owned everything inside it. Every
+          right anyone else had held there simply stopped existing. That is the whole mechanism.
+          Almost everything in this piece is some version of that fence going up.
+        </P>
+        <P>
+          If you lived in an English village before that happened, you likely had a right called{' '}
           <strong>estovers</strong> — the right to take wood from the common land for fuel and
           repairs. It was split into named categories: <em>housebote</em> for repairing your
           dwelling, <em>hedgebote</em> for repairing your fences, <em>firebote</em> for fuel. You had{' '}
@@ -466,8 +473,8 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           estate or came from a family that did.
         </P>
         <P>
-          Here is how an actual Enclosure Act got passed. Local landowners petitioned Parliament to
-          enclose their parish&rsquo;s common land. Assent was counted by land value, not by people — so
+          Local landowners petitioned Parliament to enclose their parish&rsquo;s common land. Assent
+          was counted by land value, not by people — so
           a handful of large landowners could out-vote everyone else. The petition went to a
           Parliamentary committee of the same class of men who owned land just like it, which
           approved the bill and appointed commissioners — usually chosen by the petitioning
