@@ -97,7 +97,7 @@ const PostCard = ({ post, className = '' }: PostCardProps) => {
       {/* Enhanced Content Section */}
       <div className="p-6 flex-grow flex flex-col">
         {/* Categories and Date */}
-        <div className="flex flex-wrap items-center gap-3 mb-4">
+        <div className="flex flex-wrap items-center gap-3 mb-2">
           <div className="flex flex-wrap gap-2">
             {post.categories.slice(0, 2).map((category, index) => (
               <Link 
