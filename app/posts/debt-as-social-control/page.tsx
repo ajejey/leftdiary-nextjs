@@ -55,7 +55,7 @@ const jsonLd = {
       headline: 'How Does Debt Keep People In Line?',
       description:
         "Ancient Babylon cancelled debt every 30 years because compound interest always produces more debt than can be repaid. Haiti paid France for 122 years for winning the Haitian Revolution. Here's how debt became the mechanism of control.",
-      image: 'https://leftdiary.com/images/debt-social-control-cover.jpg',
+      image: 'https://leftdiary.com/posts/debt-as-social-control/opengraph-image',
       datePublished: '2026-06-30T00:00:00Z',
       dateModified: '2026-06-30T00:00:00Z',
       author: { '@type': 'Organization', name: 'Left Diary', url: 'https://leftdiary.com' },

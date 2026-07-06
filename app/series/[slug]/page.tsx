@@ -6,6 +6,7 @@ import {
   getSeriesBySlug,
   getSeriesArticles,
 } from '@/lib/series';
+import { GeneratedCover } from '@/components/blog/GeneratedCover';
 import { Metadata } from 'next';
 
 export async function generateStaticParams() {
@@ -136,13 +137,24 @@ export default async function SeriesPage({
                     <div className="flex gap-4 items-start">
                       {article && (
                         <div className="flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 relative rounded-xl overflow-hidden">
-                          <Image
-                            src={`/images/cover_pages/${article.image}`}
-                            alt={article.title}
-                            fill
-                            sizes="96px"
-                            className="object-cover group-hover:scale-105 transition-transform duration-300"
-                          />
+                          {article.image ? (
+                            <Image
+                              src={`/images/cover_pages/${article.image}`}
+                              alt={article.title}
+                              fill
+                              sizes="96px"
+                              className="object-cover group-hover:scale-105 transition-transform duration-300"
+                            />
+                          ) : (
+                            <GeneratedCover
+                              title={article.title}
+                              categories={article.categories}
+                              icon={article.coverIcon}
+                              tone={article.coverTone}
+                              compact
+                              className="group-hover:scale-105 transition-transform duration-300"
+                            />
+                          )}
                         </div>
                       )}
 

@@ -54,7 +54,7 @@ const jsonLd = {
       headline: 'How Did People Survive Before Capitalism?',
       description:
         "Before the enclosure acts, most people in England had the commons — land they could use without paying rent. Parliament passed 5,000 laws to take it away. Unemployment didn't exist before that. This is how the wage system was manufactured.",
-      image: 'https://leftdiary.com/images/enclosure-commons-cover.jpg',
+      image: 'https://leftdiary.com/posts/how-did-people-survive-before-capitalism/opengraph-image',
       datePublished: '2026-06-30T00:00:00Z',
       dateModified: '2026-06-30T00:00:00Z',
       author: { '@type': 'Organization', name: 'Left Diary', url: 'https://leftdiary.com' },

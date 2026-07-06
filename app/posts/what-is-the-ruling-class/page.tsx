@@ -54,7 +54,7 @@ const jsonLd = {
       headline: 'Is There a Ruling Class?',
       description:
         "C. Wright Mills asked this as a sociologist in 1956, backed it with data, and named it The Power Elite. 65% of British senior judges went to private school. Every US Secretary of State since 1953 has been a CFR member except one. Here's the documented answer.",
-      image: 'https://leftdiary.com/images/ruling-class-cover.jpg',
+      image: 'https://leftdiary.com/posts/what-is-the-ruling-class/opengraph-image',
       datePublished: '2026-06-30T00:00:00Z',
       dateModified: '2026-06-30T00:00:00Z',
       author: { '@type': 'Organization', name: 'Left Diary', url: 'https://leftdiary.com' },

@@ -1,5 +1,7 @@
 // Unified content types for both posts and news articles
 
+import type { CoverIcon, CoverTone } from '@/components/blog/coverIcons';
+
 // Base content interface that both posts and news will implement
 export interface BaseContent {
   slug: string;
@@ -8,7 +10,13 @@ export interface BaseContent {
   author: string;
   categories: string[];
   description: string;
-  image: string;
+  image?: string; // omit to use the generated typographic cover instead of a real image
+  // Curated cover text/icon for the generated typographic cover, used only
+  // when `image` is omitted. Falls back to a title-derived hook, the
+  // default coin icon, and brass tone when not set.
+  coverHook?: string;
+  coverIcon?: CoverIcon;
+  coverTone?: CoverTone;
   contentType: 'post' | 'news'; // To distinguish between post and news
 }
 
@@ -260,7 +268,8 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Economics', 'History', 'Capitalism'],
     description: 'Did humans ever barter before money was invented? David Graeber spent years looking for a single documented example of a barter economy. He found none. Here is what the archaeological record actually shows came before money — and why the myth exists.',
-    image: 'barter-myth-cover.jpg',
+    coverHook: 'YOUR TEXTBOOK LIED',
+    coverIcon: 'trade',
     contentType: 'post',
     series: 'how-money-actually-works',
     seriesOrder: 1
@@ -272,7 +281,8 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Economics', 'Banking', 'Money'],
     description: 'When a bank approves your mortgage, it doesn\'t move existing money — it creates new money on the spot. The Bank of England confirmed this in 2014. Here is how money is actually created, and what it means for debt, housing, and public spending.',
-    image: 'banks-create-money-cover.jpg',
+    coverHook: 'MADE UP MONEY',
+    coverIcon: 'bank',
     contentType: 'post',
     series: 'how-money-actually-works',
     seriesOrder: 2
@@ -284,7 +294,9 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Economics', 'History', 'Colonialism'],
     description: 'If governments can create money, why do they collect taxes? Colonizers accidentally answered this question. The hut tax didn\'t raise revenue — it forced Africans into wage labor. That same logic explains modern austerity, the IMF, and why the government says it "can\'t afford" hospitals.',
-    image: 'colonizers-tax-africans-cover.jpg',
+    coverHook: 'PAY OR STARVE',
+    coverIcon: 'ship',
+    coverTone: 'red',
     contentType: 'post',
     series: 'how-money-actually-works',
     seriesOrder: 3
@@ -296,7 +308,8 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Economics', 'History'],
     description: "Every cost that doesn't feel like it should be there has a specific origin. A specific law. A specific date when something people had directly — land, seeds, healing knowledge, water — was converted into something that required going through a third party. The need didn't change. The direct access was removed.",
-    image: 'how-did-everything-come-to-cost-money-cover.jpg',
+    coverHook: 'IT USED TO BE FREE',
+    coverIcon: 'fence',
     contentType: 'post',
     series: 'how-money-actually-works',
     seriesOrder: 4
@@ -308,7 +321,8 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Economics', 'Politics'],
     description: "Austerity is not a budget decision. It is the same two moves that enclosed the commons — applied right now, to public services. The public university is defunded; the need for education remains; a bank moves between you and it. The hospital is privatized; the need for care remains; an insurer moves between you and it. The enclosure didn't end. It changed instruments.",
-    image: 'what-is-austerity-cover.jpg',
+    coverHook: '"WE CAN\'T AFFORD IT"',
+    coverIcon: 'scale',
     contentType: 'post',
     series: 'how-money-actually-works',
     seriesOrder: 5
@@ -320,7 +334,8 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Economics', 'History', 'Capitalism'],
     description: 'Before the enclosure acts, most people in England had the commons — land they could graze, fish, and farm without paying rent to anyone. Parliament, controlled by landowners, passed 5,000 laws to take it away. Unemployment didn\'t exist before that. Here\'s what they destroyed to make the wage system inevitable.',
-    image: 'enclosure-commons-cover.jpg',
+    coverHook: '5,200 ACTS',
+    coverIcon: 'fence',
     contentType: 'post',
     series: 'how-money-actually-works',
     seriesOrder: 6
@@ -332,7 +347,9 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Economics', 'Housing', 'History'],
     description: 'Housing didn\'t get expensive by accident. Land enclosure, financialization, and deliberate policy choices turned shelter into an asset class. The real history of why you can\'t afford to live — and who decided it would be this way.',
-    image: 'housing-financialization-cover.jpg',
+    coverHook: "CAN'T AFFORD A HOUSE",
+    coverIcon: 'house',
+    coverTone: 'red',
     contentType: 'post',
     series: 'how-money-actually-works',
     seriesOrder: 7
@@ -344,7 +361,9 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Economics', 'Debt', 'History'],
     description: 'Ancient Babylon cancelled debt every 30 years — not out of charity, but because compound interest always produces more debt than can be repaid. Haiti paid France for 122 years for winning the Haitian Revolution. Here\'s how debt became the mechanism that keeps individuals, nations, and whole economies from getting free.',
-    image: 'debt-social-control-cover.jpg',
+    coverHook: 'PUNISHED FOR WINNING',
+    coverIcon: 'chain',
+    coverTone: 'red',
     contentType: 'post',
     series: 'how-money-actually-works',
     seriesOrder: 8
@@ -356,7 +375,9 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Economics', 'Inequality', 'Capitalism'],
     description: 'Warren Buffett\'s secretary pays a higher tax rate than he does. He said it himself. Jeff Bezos paid $0 in federal income tax in 2007. Piketty\'s r > g explains why wealth concentration is a mathematical guarantee — and why the tax system was built to keep it that way.',
-    image: 'wealth-inequality-cover.jpg',
+    coverHook: '$0 IN TAXES',
+    coverIcon: 'scale',
+    coverTone: 'red',
     contentType: 'post',
     series: 'how-money-actually-works',
     seriesOrder: 9
@@ -368,7 +389,8 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Politics', 'Power', 'Class'],
     description: "The term sounds like a conspiracy theory. It isn't. C. Wright Mills asked it as a sociologist in 1956, backed it with data, and named it 'The Power Elite.' 65% of British senior judges went to private school. Every US Secretary of State since 1953 has been a Council on Foreign Relations member except one. Here's the documented answer.",
-    image: 'ruling-class-cover.jpg',
+    coverHook: 'ITS NOT DEMOCRACY',
+    coverIcon: 'crown',
     contentType: 'post',
     series: 'how-money-actually-works',
     seriesOrder: 10
@@ -380,7 +402,8 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Media', 'Politics', 'Power'],
     description: "Six companies control roughly 90% of US media. In the UK, three men own most of the national press. Noam Chomsky called it Manufacturing Consent. Here's how media ownership shapes what you think is possible — not through censorship, but through what never gets framed as a serious idea.",
-    image: 'media-ownership-cover.jpg',
+    coverHook: 'FAKE NEWS',
+    coverIcon: 'megaphone',
     contentType: 'post',
     series: 'how-money-actually-works',
     seriesOrder: 11
@@ -392,7 +415,8 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Politics', 'History', 'Labor'],
     description: "In 1945, Labour won the most decisive election victory in British history and built the NHS. In 1981, Reagan fired 11,000 striking air traffic controllers — and union membership began a collapse that hasn't stopped. Here's how the most powerful labor movement in history was defeated, and what was used to defeat it.",
-    image: 'left-history-cover.jpg',
+    coverHook: '11,000 FIRED',
+    coverIcon: 'hammer',
     contentType: 'post',
     series: 'how-money-actually-works',
     seriesOrder: 12
@@ -404,7 +428,8 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Economics', 'History', 'Money'],
     description: "The king's tax was once a year, in a fixed amount. So why couldn't people just earn that much and go back to living as before? Because over the next three hundred years, every other way of surviving was made illegal, one law at a time — the commons enclosed, gleaning outlawed, standing still criminalized, the last independent women destroyed as witches.",
-    image: 'why-didnt-people-just-refuse-to-use-money-cover.jpg',
+    coverHook: 'WHY CANT I JUST LIVE',
+    coverIcon: 'coin',
     contentType: 'post'
   }
 ];

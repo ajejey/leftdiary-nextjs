@@ -53,7 +53,7 @@ const jsonLd = {
       headline: 'Why Do the Rich Keep Getting Richer?',
       description:
         "Warren Buffett's secretary pays a higher tax rate than he does. He said it himself. Piketty's r > g explains why wealth concentration is a mathematical guarantee under current rules.",
-      image: 'https://leftdiary.com/images/wealth-inequality-cover.jpg',
+      image: 'https://leftdiary.com/posts/why-do-the-rich-keep-getting-richer/opengraph-image',
       datePublished: '2026-06-30T00:00:00Z',
       dateModified: '2026-06-30T00:00:00Z',
       author: { '@type': 'Organization', name: 'Left Diary', url: 'https://leftdiary.com' },

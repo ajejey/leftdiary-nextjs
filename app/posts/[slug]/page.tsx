@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import ArticleRenderer from '@/components/blog/ArticleRenderer';
 import ArticleJsonLd from '@/components/blog/ArticleJsonLd';
+import { GeneratedCover } from '@/components/blog/GeneratedCover';
 // Import necessary components and utilities
 import { getContentBySlug } from '@/lib/contentUtils';
 import { getGoogleDiscoverImageAttributes, validateImageForGoogleDiscover, generateBlurDataURL } from '@/utils/imageOptimization';
@@ -80,13 +81,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
           width: 1200,
           height: 675,
           type: 'image/jpeg'
-        })) : [{
+        })) : content.image ? [{
           url: content.image,
           alt: content.title,
           width: 1200,
           height: 675,
           type: 'image/jpeg'
-        }]
+        }] : []
       },
       twitter: {
         card: 'summary_large_image',
@@ -94,7 +95,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         description: newsArticle?.seoMetadata?.metaDescription || content.description,
         creator: '@leftdiary', // Add your Twitter handle
         site: '@leftdiary',
-        images: newsArticle?.images?.length > 0 ? [newsArticle.images[0].url] : [content.image]
+        images: newsArticle?.images?.length > 0 ? [newsArticle.images[0].url] : content.image ? [content.image] : []
       },
       alternates: {
         canonical: `https://leftdiary.com/posts/${content.slug}`,
@@ -147,13 +148,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       publishedTime: content.date,
       authors: [content.author || 'Left Diary'],
       section: content.categories[0] || 'Blog',
-      images: [{
-        url: `https://leftdiary.com/images/cover_pages/${content.image}`,
-        alt: content.title,
-        width: 1200,
-        height: 675,
-        type: 'image/jpeg'
-      }]
+      ...(content.image ? {
+        images: [{
+          url: `https://leftdiary.com/images/cover_pages/${content.image}`,
+          alt: content.title,
+          width: 1200,
+          height: 675,
+          type: 'image/jpeg'
+        }]
+      } : {})
     },
     twitter: {
       card: 'summary_large_image',
@@ -161,7 +164,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: content.description,
       creator: '@leftdiary',
       site: '@leftdiary',
-      images: [`https://leftdiary.com/images/cover_pages/${content.image}`]
+      ...(content.image ? {
+        images: [`https://leftdiary.com/images/cover_pages/${content.image}`]
+      } : {})
     },
     alternates: {
       canonical: `https://leftdiary.com/posts/${content.slug}`
@@ -251,7 +256,7 @@ export default async function ContentPage({ params }: { params: Promise<{ slug: 
       title: content.title,
       description: content.description,
       content: fullContent,
-      images: newsArticle.images || [{ url: content.image }],
+      images: newsArticle.images || [{ url: content.image ?? '' }],
       keywords: newsArticle.keywords
     }) : null;
   
@@ -265,7 +270,7 @@ export default async function ContentPage({ params }: { params: Promise<{ slug: 
   const canonicalUrl = `https://leftdiary.com/posts/${content.slug}`;
   
   // Get image data for structured data
-  const images = newsArticle?.images || [{ url: content.image, alt: content.title }];
+  const images = newsArticle?.images || [{ url: content.image ?? '', alt: content.title }];
   
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
@@ -296,12 +301,22 @@ export default async function ContentPage({ params }: { params: Promise<{ slug: 
       {/* Featured Image */}
       <div className="mb-8 relative">
         <div className="relative h-96 w-full">
-          <Image
-            src={content.image}
-            alt={content.title}
-            fill
-            {...getGoogleDiscoverImageAttributes()}
-          />
+          {content.image ? (
+            <Image
+              src={content.image}
+              alt={content.title}
+              fill
+              {...getGoogleDiscoverImageAttributes()}
+            />
+          ) : (
+            <GeneratedCover
+              title={content.title}
+              categories={content.categories}
+              hook={content.coverHook}
+              icon={content.coverIcon}
+              tone={content.coverTone}
+            />
+          )}
         </div>
         {/* Image Caption - Only for news articles with caption */}
         {contentType === 'news' && newsArticle?.images && newsArticle.images[0]?.caption && (
