@@ -96,12 +96,24 @@ const PostCard = ({ post, className = '' }: PostCardProps) => {
 
       {/* Enhanced Content Section */}
       <div className="p-6 flex-grow flex flex-col">
+        {/* Title */}
+        <h2 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors duration-200 leading-tight">
+          <Link href={`/posts/${post.slug}`} className="hover:underline">
+            {post.title}
+          </Link>
+        </h2>
+
+        {/* Description */}
+        <div className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">
+          <p>{truncateText(post.description, 160)}</p>
+        </div>
+
         {/* Categories and Date */}
-        <div className="flex flex-wrap items-center gap-3 mb-2">
+        <div className="flex flex-wrap items-center gap-3 mb-4">
           <div className="flex flex-wrap gap-2">
             {post.categories.slice(0, 2).map((category, index) => (
-              <Link 
-                key={index} 
+              <Link
+                key={index}
                 href={`/category/${category.toLowerCase().replace(/\s+/g, '-')}`}
                 className="text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-gray-800 dark:hover:text-gray-200 transition-all duration-200"
               >
@@ -115,18 +127,6 @@ const PostCard = ({ post, className = '' }: PostCardProps) => {
             </svg>
             <time dateTime={post.date}>{formattedDate}</time>
           </div>
-        </div>
-
-        {/* Title */}
-        <h2 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors duration-200 leading-tight">
-          <Link href={`/posts/${post.slug}`} className="hover:underline">
-            {post.title}
-          </Link>
-        </h2>
-
-        {/* Description */}
-        <div className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">
-          <p>{truncateText(post.description, 160)}</p>
         </div>
 
         {/* Enhanced Footer with Social Actions */}
