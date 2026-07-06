@@ -4,6 +4,7 @@ import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import PostCard from '@/components/blog/PostCard';
+import { GeneratedCover } from '@/components/blog/GeneratedCover';
 
 function LoadingGrid() {
   return (
@@ -136,13 +137,17 @@ function SeriesSection() {
                         {idx + 1}
                       </span>
                       <div className="flex-shrink-0 w-12 h-12 relative rounded-lg overflow-hidden">
-                        <Image
-                          src={`/images/cover_pages/${article.image}`}
-                          alt={article.title}
-                          fill
-                          sizes="48px"
-                          className="object-cover"
-                        />
+                        {article.image ? (
+                          <Image
+                            src={`/images/cover_pages/${article.image}`}
+                            alt={article.title}
+                            fill
+                            sizes="48px"
+                            className="object-cover"
+                          />
+                        ) : (
+                          <GeneratedCover title={article.title} categories={article.categories} compact />
+                        )}
                       </div>
                       <div className="min-w-0">
                         <p className="text-sm font-medium text-gray-200 group-hover:text-white transition-colors truncate">
