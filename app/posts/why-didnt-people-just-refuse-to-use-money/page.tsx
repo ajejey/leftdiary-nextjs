@@ -210,6 +210,12 @@ const FAQ_ITEMS: FAQItem[] = [
 
 const FURTHER_READING: FurtherReadingItem[] = [
   {
+    href: 'https://medium.com/@ajejey/what-is-money-a-naive-persons-guide-to-money-3a13f7aad5b4',
+    title: 'What Is Money? A Naive Person\'s Guide to Money — Part 1',
+    description: 'where this series started: the king, the coin, and the tax that invented the market',
+    external: true,
+  },
+  {
     href: '/posts/why-did-colonizers-tax-africans',
     title: 'Why Did Colonizers Tax Africans?',
     description: 'the hut tax as the same coin-and-tax trick, applied to an entire continent in living memory',
@@ -241,7 +247,15 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
         title="Why Didn't People Just Refuse to Use Money?"
         lead={
           <>
-            Last time, I ran ahead of myself and left you with a question I hadn&rsquo;t answered.
+            <a
+              href="https://medium.com/@ajejey/what-is-money-a-naive-persons-guide-to-money-3a13f7aad5b4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-gray-400 hover:decoration-gray-700"
+            >
+              Last time
+            </a>
+            , I ran ahead of myself and left you with a question I hadn&rsquo;t answered.
             The king&rsquo;s tax was once a year, in a fixed amount of coin. So why didn&rsquo;t people just
             earn that much, hand it over, and go back to living exactly as they had before? Why
             does every single thing in your life today (your food, your water, your rent, your
@@ -259,7 +273,15 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
       <ArticleSection id="the-question-i-left-you-with">
         <H2 id="the-question-i-left-you-with">The Question I Left You With</H2>
         <P>
-          I told you the King invents coin and tax together. He mints the coins, gives them to his
+          <a
+            href="https://medium.com/@ajejey/what-is-money-a-naive-persons-guide-to-money-3a13f7aad5b4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-gray-400 hover:decoration-gray-700"
+          >
+            I told you
+          </a>{' '}
+          the King invents coin and tax together. He mints the coins, gives them to his
           soldiers, and then demands them back from everyone else as tax. In that single move he
           has forced an entire population to need his coin and created the market where his
           soldiers spend it. That part, I stand by.
@@ -270,7 +292,16 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           small thing. You could work a short stretch, earn what you owed, pay it, and spend the
           rest of the year exactly as your grandparents had: grazing your animals on the common,
           gathering your fuel from the common wood, fishing the shared stream, trading favors with
-          your neighbors the way I described with the elevator button. The king&rsquo;s tax explains
+          your neighbors{' '}
+          <a
+            href="https://medium.com/@ajejey/what-is-money-a-naive-persons-guide-to-money-3a13f7aad5b4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-gray-400 hover:decoration-gray-700"
+          >
+            the way I described with the elevator button
+          </a>
+          . The king&rsquo;s tax explains
           why coin has <em>some</em> value. It does not explain why, today, you cannot get through a
           single day of your life without it.
         </P>
@@ -352,8 +383,16 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
       <ArticleSection id="enter-the-merchants">
         <H2 id="enter-the-merchants">Enter the Merchants</H2>
         <P>
-          Before I show you what the merchants built, let&rsquo;s go back to something from the first
-          part of this story, because it matters more than it seemed to at the time: credit, the
+          Before I show you what the merchants built, let&rsquo;s go back to something from{' '}
+          <a
+            href="https://medium.com/@ajejey/what-is-money-a-naive-persons-guide-to-money-3a13f7aad5b4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-gray-400 hover:decoration-gray-700"
+          >
+            the first part of this story
+          </a>
+          , because it matters more than it seemed to at the time: credit, the
           oldest system, the &ldquo;I owe you one.&rdquo; It worked because the two people involved knew each
           other. There was a relationship. If I never returned your favor, I didn&rsquo;t just owe you
           something. I lost you. That&rsquo;s what made it self-enforcing, without anyone needing to
