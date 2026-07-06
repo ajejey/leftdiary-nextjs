@@ -149,6 +149,8 @@ export default async function SeriesPage({
                             <GeneratedCover
                               title={article.title}
                               categories={article.categories}
+                              icon={article.coverIcon}
+                              tone={article.coverTone}
                               compact
                               className="group-hover:scale-105 transition-transform duration-300"
                             />

@@ -309,7 +309,13 @@ export default async function ContentPage({ params }: { params: Promise<{ slug: 
               {...getGoogleDiscoverImageAttributes()}
             />
           ) : (
-            <GeneratedCover title={content.title} categories={content.categories} />
+            <GeneratedCover
+              title={content.title}
+              categories={content.categories}
+              hook={content.coverHook}
+              icon={content.coverIcon}
+              tone={content.coverTone}
+            />
           )}
         </div>
         {/* Image Caption - Only for news articles with caption */}

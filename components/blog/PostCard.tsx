@@ -51,7 +51,7 @@ const PostCard = ({ post, className = '' }: PostCardProps) => {
       {/* Enhanced Image Section with Overlay */}
       <div className="relative overflow-hidden">
         <Link href={`/posts/${post.slug}`} className="block">
-          <div className="aspect-[4/3] relative overflow-hidden">
+          <div className="aspect-video relative overflow-hidden">
             {post.image ? (
               <Image
                 src={getContentImagePath(post.image, post.contentType)}
@@ -64,6 +64,9 @@ const PostCard = ({ post, className = '' }: PostCardProps) => {
               <GeneratedCover
                 title={post.title}
                 categories={post.categories}
+                hook={post.coverHook}
+                icon={post.coverIcon}
+                tone={post.coverTone}
                 className="transition-transform duration-700 group-hover:scale-110"
               />
             )}

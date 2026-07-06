@@ -146,7 +146,13 @@ function SeriesSection() {
                             className="object-cover"
                           />
                         ) : (
-                          <GeneratedCover title={article.title} categories={article.categories} compact />
+                          <GeneratedCover
+                            title={article.title}
+                            categories={article.categories}
+                            icon={article.coverIcon}
+                            tone={article.coverTone}
+                            compact
+                          />
                         )}
                       </div>
                       <div className="min-w-0">
