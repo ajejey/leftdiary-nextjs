@@ -55,7 +55,7 @@ const jsonLd = {
       headline: 'Who Owns the Media?',
       description:
         "Six companies control roughly 90% of US media. In the UK, three men own most of the national press. Chomsky called it Manufacturing Consent. Here's how media ownership shapes what you're allowed to think is possible.",
-      image: 'https://leftdiary.com/images/media-ownership-cover.jpg',
+      image: 'https://leftdiary.com/posts/who-owns-the-media/opengraph-image',
       datePublished: '2026-06-30T00:00:00Z',
       dateModified: '2026-06-30T00:00:00Z',
       author: { '@type': 'Organization', name: 'Left Diary', url: 'https://leftdiary.com' },

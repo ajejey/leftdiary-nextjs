@@ -1,6 +1,6 @@
 // Unified content types for both posts and news articles
 
-import type { CoverIcon, CoverTone } from '@/components/blog/GeneratedCover';
+import type { CoverIcon, CoverTone } from '@/components/blog/coverIcons';
 
 // Base content interface that both posts and news will implement
 export interface BaseContent {

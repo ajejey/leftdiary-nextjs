@@ -33,14 +33,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Why Did Colonizers Tax Africans?",
     description: "The hut tax wasn't about revenue. It was about forcing people into the wage economy. And understanding this changes everything about what taxes actually do — and why governments claim they can't afford things.",
-    images: [
-      {
-        url: 'https://leftdiary.com/images/cover_pages/colonizers-tax-africans-cover.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Why Did Colonizers Tax Africans — Left Diary'
-      }
-    ],
     type: 'article',
     publishedTime: '2026-06-30',
     modifiedTime: '2026-06-30',
@@ -56,7 +48,6 @@ export const metadata: Metadata = {
     description: "The hut tax wasn't about revenue. It was about forcing free people into wage labor. Understanding this breaks the story we're told about what taxes are for.",
     site: '@leftdiary',
     creator: '@leftdiary',
-    images: ['https://leftdiary.com/images/cover_pages/colonizers-tax-africans-cover.jpg'],
   },
   alternates: {
     canonical: 'https://leftdiary.com/posts/why-did-colonizers-tax-africans'
@@ -81,7 +72,7 @@ const jsonLd = {
       'image': [
         {
           '@type': 'ImageObject',
-          'url': 'https://leftdiary.com/images/cover_pages/colonizers-tax-africans-cover.jpg',
+          'url': 'https://leftdiary.com/posts/why-did-colonizers-tax-africans/opengraph-image',
           'width': 1200,
           'height': 630
         }

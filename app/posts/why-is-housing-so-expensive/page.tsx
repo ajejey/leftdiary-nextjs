@@ -36,14 +36,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Why Is Housing So Expensive?",
     description: "Why is housing so expensive? Not because of supply and demand — because land enclosure, financialization, and deliberate policy choices turned shelter into an asset class. The real political history.",
-    images: [
-      {
-        url: 'https://leftdiary.com/images/cover_pages/housing-financialization-cover.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Why Is Housing So Expensive — Left Diary'
-      }
-    ],
     type: 'article',
     publishedTime: '2026-06-30',
     modifiedTime: '2026-06-30',
@@ -59,7 +51,6 @@ export const metadata: Metadata = {
     description: "Why is housing so expensive? Not supply and demand — land enclosure and financialization turned shelter into an asset class. The real political history.",
     site: '@leftdiary',
     creator: '@leftdiary',
-    images: ['https://leftdiary.com/images/cover_pages/housing-financialization-cover.jpg'],
   },
   alternates: {
     canonical: 'https://leftdiary.com/posts/why-is-housing-so-expensive'
@@ -84,7 +75,7 @@ const jsonLd = {
       'image': [
         {
           '@type': 'ImageObject',
-          'url': 'https://leftdiary.com/images/cover_pages/housing-financialization-cover.jpg',
+          'url': 'https://leftdiary.com/posts/why-is-housing-so-expensive/opengraph-image',
           'width': 1200,
           'height': 630
         }

@@ -55,7 +55,7 @@ const jsonLd = {
       headline: 'What Happened to the Left?',
       description:
         "In 1945, Labour won a landslide and built the NHS. In 1981, Reagan fired 11,000 striking workers and union power began to collapse. Here's the deliberate counter-revolution that dismantled the postwar left.",
-      image: 'https://leftdiary.com/images/left-history-cover.jpg',
+      image: 'https://leftdiary.com/posts/what-happened-to-the-left/opengraph-image',
       datePublished: '2026-06-30T00:00:00Z',
       dateModified: '2026-06-30T00:00:00Z',
       author: { '@type': 'Organization', name: 'Left Diary', url: 'https://leftdiary.com' },

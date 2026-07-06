@@ -33,14 +33,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "How Do Banks Create Money Out of Nothing?",
     description: "When a bank approves your mortgage, it doesn't move existing money — it creates new money. The Bank of England confirmed this in 2014. Here is how money creation actually works.",
-    images: [
-      {
-        url: 'https://leftdiary.com/images/cover_pages/banks-create-money-cover.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'How Do Banks Create Money Out of Nothing — Left Diary'
-      }
-    ],
     type: 'article',
     publishedTime: '2026-06-30',
     modifiedTime: '2026-06-30',
@@ -56,7 +48,6 @@ export const metadata: Metadata = {
     description: "Banks don't lend out your deposits. When they approve a loan, they create the money. The Bank of England said so in 2014. Here is what that means.",
     site: '@leftdiary',
     creator: '@leftdiary',
-    images: ['https://leftdiary.com/images/cover_pages/banks-create-money-cover.jpg'],
   },
   alternates: {
     canonical: 'https://leftdiary.com/posts/how-do-banks-create-money-out-of-nothing'
@@ -81,7 +72,7 @@ const jsonLd = {
       'image': [
         {
           '@type': 'ImageObject',
-          'url': 'https://leftdiary.com/images/cover_pages/banks-create-money-cover.jpg',
+          'url': 'https://leftdiary.com/posts/how-do-banks-create-money-out-of-nothing/opengraph-image',
           'width': 1200,
           'height': 630
         }

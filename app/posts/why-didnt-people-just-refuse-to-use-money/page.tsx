@@ -33,14 +33,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Why Didn't People Just Refuse to Use Money?",
     description: "The tax was once a year. People could have earned it and gone back to their old lives. Something else happened first, and it happened by law, one act at a time.",
-    images: [
-      {
-        url: 'https://leftdiary.com/images/cover_pages/why-didnt-people-just-refuse-to-use-money-cover.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Why Didn\'t People Just Refuse to Use Money — Left Diary'
-      }
-    ],
     type: 'article',
     publishedTime: '2026-07-04',
     modifiedTime: '2026-07-04',
@@ -56,7 +48,6 @@ export const metadata: Metadata = {
     description: "The tax was once a year, in a fixed amount. So why does every single thing you do today require money? Something happened in between.",
     site: '@leftdiary',
     creator: '@leftdiary',
-    images: ['https://leftdiary.com/images/cover_pages/why-didnt-people-just-refuse-to-use-money-cover.jpg'],
   },
   alternates: {
     canonical: 'https://leftdiary.com/posts/why-didnt-people-just-refuse-to-use-money'
@@ -81,7 +72,7 @@ const jsonLd = {
       'image': [
         {
           '@type': 'ImageObject',
-          'url': 'https://leftdiary.com/images/cover_pages/why-didnt-people-just-refuse-to-use-money-cover.jpg',
+          'url': 'https://leftdiary.com/posts/why-didnt-people-just-refuse-to-use-money/opengraph-image',
           'width': 1200,
           'height': 630
         }

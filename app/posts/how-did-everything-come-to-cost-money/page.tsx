@@ -33,14 +33,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "How Did Everything Come to Cost Money?",
     description: "Every cost that doesn't feel like it should be there has a specific origin — a specific law, a specific lobby, a specific date. The need didn't change. The direct access was removed.",
-    images: [
-      {
-        url: 'https://leftdiary.com/images/cover_pages/how-did-everything-come-to-cost-money-cover.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'How Did Everything Come to Cost Money — Left Diary'
-      }
-    ],
     type: 'article',
     publishedTime: '2026-07-03',
     modifiedTime: '2026-07-03',
@@ -56,7 +48,6 @@ export const metadata: Metadata = {
     description: "Water. Seeds. Healing knowledge. The care of children. Each one had a commons. The commons was enclosed. The need stayed. What replaced the direct access was a price.",
     site: '@leftdiary',
     creator: '@leftdiary',
-    images: ['https://leftdiary.com/images/cover_pages/how-did-everything-come-to-cost-money-cover.jpg'],
   },
   alternates: {
     canonical: 'https://leftdiary.com/posts/how-did-everything-come-to-cost-money'
@@ -81,7 +72,7 @@ const jsonLd = {
       'image': [
         {
           '@type': 'ImageObject',
-          'url': 'https://leftdiary.com/images/cover_pages/how-did-everything-come-to-cost-money-cover.jpg',
+          'url': 'https://leftdiary.com/posts/how-did-everything-come-to-cost-money/opengraph-image',
           'width': 1200,
           'height': 630
         }

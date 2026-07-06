@@ -33,14 +33,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "What Is Austerity?",
     description: "Austerity doesn't cut money. It converts things you could have without asking anyone's permission into things you have to borrow. The need doesn't disappear. The bank moves in.",
-    images: [
-      {
-        url: 'https://leftdiary.com/images/cover_pages/what-is-austerity-cover.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'What Is Austerity — Left Diary'
-      }
-    ],
     type: 'article',
     publishedTime: '2026-07-02',
     modifiedTime: '2026-07-02',
@@ -56,7 +48,6 @@ export const metadata: Metadata = {
     description: "Austerity doesn't cut money. It converts things you could have without asking anyone's permission into things you have to borrow. The need doesn't disappear. The bank moves in.",
     site: '@leftdiary',
     creator: '@leftdiary',
-    images: ['https://leftdiary.com/images/cover_pages/what-is-austerity-cover.jpg'],
   },
   alternates: {
     canonical: 'https://leftdiary.com/posts/what-is-austerity'
@@ -81,7 +72,7 @@ const jsonLd = {
       'image': [
         {
           '@type': 'ImageObject',
-          'url': 'https://leftdiary.com/images/cover_pages/what-is-austerity-cover.jpg',
+          'url': 'https://leftdiary.com/posts/what-is-austerity/opengraph-image',
           'width': 1200,
           'height': 630
         }
