@@ -8,7 +8,7 @@ export const alt = "Why Didn't People Just Refuse to Use Money? — Left Diary";
 export default async function Image() {
   return renderCoverImage({
     title: "Why Didn't People Just Refuse to Use Money?",
-    hook: '1660s LONDON',
+    hook: 'WHY CANT I JUST LIVE',
     icon: 'coin',
   });
 }

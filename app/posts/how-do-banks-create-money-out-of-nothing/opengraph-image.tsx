@@ -8,7 +8,7 @@ export const alt = 'How Do Banks Create Money Out of Nothing? — Left Diary';
 export default async function Image() {
   return renderCoverImage({
     title: 'How Do Banks Create Money Out of Nothing?',
-    hook: 'OUT OF THIN AIR',
+    hook: 'MADE UP MONEY',
     icon: 'bank',
   });
 }

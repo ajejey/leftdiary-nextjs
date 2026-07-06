@@ -8,7 +8,7 @@ export const alt = 'Why Is Housing So Expensive? — Left Diary';
 export default async function Image() {
   return renderCoverImage({
     title: 'Why Is Housing So Expensive?',
-    hook: 'BY DESIGN',
+    hook: "CAN'T AFFORD A HOUSE",
     icon: 'house',
     tone: 'red',
   });

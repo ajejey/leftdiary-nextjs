@@ -8,7 +8,7 @@ export const alt = 'How Did Everything Come to Cost Money? — Left Diary';
 export default async function Image() {
   return renderCoverImage({
     title: 'How Did Everything Come to Cost Money?',
-    hook: 'ONE LAW AT A TIME',
+    hook: 'IT USED TO BE FREE',
     icon: 'fence',
   });
 }

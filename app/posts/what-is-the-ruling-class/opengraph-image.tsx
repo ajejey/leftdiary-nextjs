@@ -8,7 +8,7 @@ export const alt = 'Is There a Ruling Class? — Left Diary';
 export default async function Image() {
   return renderCoverImage({
     title: 'Is There a Ruling Class?',
-    hook: 'THE POWER ELITE',
+    hook: 'ITS NOT DEMOCRACY',
     icon: 'crown',
   });
 }

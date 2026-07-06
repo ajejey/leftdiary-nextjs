@@ -8,7 +8,7 @@ export const alt = 'Did Humans Ever Barter Before Money? — Left Diary';
 export default async function Image() {
   return renderCoverImage({
     title: 'Did Humans Ever Barter Before Money?',
-    hook: 'ZERO EVIDENCE',
+    hook: 'YOUR TEXTBOOK LIED',
     icon: 'trade',
   });
 }

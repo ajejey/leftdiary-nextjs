@@ -8,7 +8,7 @@ export const alt = 'How Does Debt Keep People In Line? — Left Diary';
 export default async function Image() {
   return renderCoverImage({
     title: 'How Does Debt Keep People In Line?',
-    hook: '122 YEARS',
+    hook: 'PUNISHED FOR WINNING',
     icon: 'chain',
     tone: 'red',
   });

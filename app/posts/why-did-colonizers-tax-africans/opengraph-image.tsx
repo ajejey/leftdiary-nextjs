@@ -8,7 +8,7 @@ export const alt = 'Why Did Colonizers Tax Africans? — Left Diary';
 export default async function Image() {
   return renderCoverImage({
     title: 'Why Did Colonizers Tax Africans?',
-    hook: 'THE HUT TAX',
+    hook: 'PAY OR STARVE',
     icon: 'ship',
     tone: 'red',
   });

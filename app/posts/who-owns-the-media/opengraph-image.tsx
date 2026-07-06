@@ -8,7 +8,7 @@ export const alt = 'Who Owns the Media? — Left Diary';
 export default async function Image() {
   return renderCoverImage({
     title: 'Who Owns the Media?',
-    hook: 'SIX COMPANIES',
+    hook: 'FAKE NEWS',
     icon: 'megaphone',
   });
 }

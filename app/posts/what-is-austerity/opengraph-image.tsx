@@ -8,7 +8,7 @@ export const alt = 'What Is Austerity? — Left Diary';
 export default async function Image() {
   return renderCoverImage({
     title: 'What Is Austerity?',
-    hook: 'SAME TWO MOVES',
+    hook: '"WE CAN\'T AFFORD IT"',
     icon: 'scale',
   });
 }
