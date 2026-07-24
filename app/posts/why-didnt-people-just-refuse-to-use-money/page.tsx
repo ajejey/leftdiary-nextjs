@@ -216,6 +216,11 @@ const FURTHER_READING: FurtherReadingItem[] = [
     external: true,
   },
   {
+    href: '/posts/how-did-the-king-lose-the-power-to-make-money',
+    title: 'How Did the King Lose the Power to Make Money? — Part 3',
+    description: 'the 1694 deal that permanently separated the Crown from the power to create its own money',
+  },
+  {
     href: '/posts/why-did-colonizers-tax-africans',
     title: 'Why Did Colonizers Tax Africans?',
     description: 'the hut tax as the same coin-and-tax trick, applied to an entire continent in living memory',
@@ -678,7 +683,13 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
           rooms, that had not yet found each other. The king who started this whole story by
           minting coin and demanding it back as tax does not, today, mint the money you use.
           Somewhere between his coin and your salary, he lost that power. And the people who took
-          it are about to meet the people who own the fences. Who, and how, is next.
+          it are about to meet the people who own the fences.{' '}
+          <Link
+            href="/posts/how-did-the-king-lose-the-power-to-make-money"
+            className="underline decoration-gray-400 hover:decoration-gray-700"
+          >
+            Who, and how, is next.
+          </Link>
         </P>
       </ArticleSection>
 

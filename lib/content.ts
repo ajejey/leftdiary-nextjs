@@ -431,6 +431,18 @@ export const samplePosts: Post[] = [
     coverHook: 'WHY CANT I JUST LIVE',
     coverIcon: 'coin',
     contentType: 'post'
+  },
+  {
+    slug: 'how-did-the-king-lose-the-power-to-make-money',
+    title: 'How Did the King Lose the Power to Make Money?',
+    date: '2026-07-18',
+    author: 'Left Diary',
+    categories: ['Economics', 'History', 'Money'],
+    description: "The King minted his own coin and could make as much of it as he wanted. So why, by 1694, was he borrowing money from private merchants and paying back more than he borrowed? One transaction, on one date, permanently separated the power to create money from the Crown that had held it since the whole story began.",
+    coverHook: '£1.2 MILLION',
+    coverIcon: 'bank',
+    coverTone: 'red',
+    contentType: 'post'
   }
 ];
 
