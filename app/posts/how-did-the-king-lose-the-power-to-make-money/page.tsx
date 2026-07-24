@@ -91,7 +91,7 @@ const jsonLd = {
       },
       'keywords': 'national debt history, Bank of England 1694, stop of the exchequer, great debasement, excise tax history',
       'articleSection': 'Economics',
-      'wordCount': 2950,
+      'wordCount': 2650,
       'inLanguage': 'en-US',
       'isAccessibleForFree': true,
       'about': [
@@ -119,7 +119,6 @@ const TOC_ITEMS: TOCItem[] = [
   { id: 'the-merchants-had-something-faster', text: 'The Merchants Had Something Faster', level: 2 },
   { id: 'the-day-the-king-said-he-couldnt-pay', text: "The Day the King Said He Couldn't Pay", level: 2 },
   { id: 'one-deal-one-date', text: 'One Deal, One Date', level: 2 },
-  { id: 'what-the-word-debt-is-hiding', text: 'What the Word "Debt" Is Hiding', level: 2 },
   { id: 'who-actually-paid-the-interest', text: 'Who Actually Paid the Interest', level: 2 },
   { id: 'two-fences-built-by-the-same-hands', text: 'Two Fences, Built by the Same Hands', level: 2 },
   { id: 'faq', text: 'Frequently Asked Questions', level: 2 },
@@ -248,32 +247,21 @@ export default function HowDidTheKingLoseThePowerToMakeMoneyPage() {
       <ArticleSection id="the-question-i-left-you-with">
         <H2 id="the-question-i-left-you-with">The Question I Left You With</H2>
         <P>
-          I want to make sure you actually feel this question before I try to answer it, because
-          if you don&rsquo;t feel it, everything I&rsquo;m about to tell you will sound like a boring
-          technicality instead of what it actually is.
-        </P>
-        <P>
           The King mints the coin. Every coin that exists in his kingdom exists because he,
           personally, authorized it to be stamped. And once a year, he demands some of those same
-          coins back from his own subjects, calling it tax. Now ask the obvious question, the one
-          a child would ask: why would that man ever need to <em>borrow</em> money? He is the
-          source of it. He can make as much as he wants, whenever he wants. A person who owns the
-          only well in the village does not go begging his neighbors for water.
+          coins back from his own subjects, calling it tax. So ask the obvious question, the one a
+          child would ask: why would that man ever need to <em>borrow</em> money? He is the source
+          of it. He can make as much as he wants, whenever he wants. A person who owns the only
+          well in the village does not go begging his neighbors for water.
         </P>
         <P>
           But that is exactly what happened. By the end of the seventeenth century, the King of
-          England was not just borrowing money. He was borrowing it from private citizens, on
-          terms they set, and handing back more than he&rsquo;d borrowed to get it. Within a few
-          decades, that borrowing stopped being a personal arrangement between a king and his
-          lenders and became something permanent, something we now call{' '}
-          <strong>the national debt</strong>, treated today as an unavoidable, natural feature of
-          how a country runs its finances, the way weather is a feature of how a country runs its
-          farms.
-        </P>
-        <P>
-          It isn&rsquo;t. I can show you the exact date it was invented, the exact people in the room,
-          and the exact war it paid for. Once you see how deliberately it was built, it gets much
-          harder to hear a politician say &ldquo;we can&rsquo;t afford it&rdquo; the same way again.
+          England was borrowing money from private citizens, on terms they set, and handing back
+          more than he&rsquo;d borrowed to get it. And that borrowing didn&rsquo;t stay a one-off, personal
+          arrangement between a king and a few lenders. It became permanent, on one specific
+          afternoon, in a room I can name the people in. Everything that follows from that
+          afternoon, including what a government means today when it says it &ldquo;can&rsquo;t afford&rdquo;
+          something, runs straight back to it.
         </P>
       </ArticleSection>
 
@@ -430,36 +418,15 @@ export default function HowDidTheKingLoseThePowerToMakeMoneyPage() {
           Crown that had held it since the whole story began with a king minting coin and demanding
           it back as tax.
         </P>
-      </ArticleSection>
-
-      <ArticleSection id="what-the-word-debt-is-hiding">
-        <H2 id="what-the-word-debt-is-hiding">What the Word &ldquo;Debt&rdquo; Is Hiding</H2>
         <P>
-          Now say the words &ldquo;national debt&rdquo; out loud and notice what picture your mind reaches
-          for. Almost certainly it&rsquo;s a household one: a family that spent beyond its means, that
-          now has to tighten its belt, work harder, cut back, until the debt is paid off and they
-          can breathe again. That picture is doing a huge amount of quiet work, because it makes
-          debt sound like a temporary mistake, something responsible behavior eventually fixes.
-        </P>
-        <P>
-          The debt created in 1694 was never that kind of debt. It wasn&rsquo;t a king overspending who
-          would, someday, pay it back and be free of it. It was a permanent, structural condition,
-          built into the deal on day one: the lenders weren&rsquo;t repaid and sent away, they were
-          given an ongoing institution, one whose entire purpose was to keep managing that debt and
-          the government&rsquo;s money together, indefinitely. There was never a version of this
-          arrangement where the debt reaches zero and the Bank of England quietly closes its doors,
-          mission accomplished. The debt was the point of the deal, not an accident of it.
-        </P>
-        <P>
-          That&rsquo;s the part the household comparison hides completely. You can pay off a mortgage.
-          Nobody, not the king in 1694, not any government since, has ever been trying to pay this
-          off in that sense, because the entire modern relationship between a government and its
-          currency runs through this same kind of ongoing arrangement. When a government says it
-          has to cut a hospital&rsquo;s budget because of the national debt, it is reaching for the
-          household picture, the one where debt is a moral failure needing discipline, and quietly
-          skipping over the fact that this specific debt was manufactured, on purpose, as a
-          permanent feature, by the same class of merchants who were, in these same decades,
-          enclosing the commons.
+          And notice exactly what kind of debt got created, because the word hides it. Say
+          &ldquo;national debt&rdquo; and you probably picture a household: a family that spent beyond its
+          means, tightening its belt until the debt is paid off and they can breathe again. That
+          was never this. The merchants of 1694 weren&rsquo;t repaid and sent home. They were handed a
+          permanent institution, one whose entire job was managing this exact debt and the
+          government&rsquo;s money together, forever. There was no version of the deal where the debt
+          reaches zero and the Bank of England quietly closes its doors, mission accomplished. The
+          debt wasn&rsquo;t an accident of the arrangement. It was the arrangement.
         </P>
       </ArticleSection>
 
