@@ -14,7 +14,7 @@ import {
 import type { TOCItem, FAQItem, FurtherReadingItem } from '@/components/article';
 
 export const metadata: Metadata = {
-  title: "Why Didn't People Just Refuse to Use Money? | Left Diary",
+  title: 'What Is Money: Part 2 | Left Diary',
   description: "The king's tax was once a year, in a fixed amount. So why couldn't people just earn that much and go back to living as before? Because over the next three hundred years, every other way of surviving was made illegal, one law at a time.",
   keywords: [
     "why didn't people refuse to use money",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "history of interest and usury"
   ],
   openGraph: {
-    title: "Why Didn't People Just Refuse to Use Money?",
+    title: 'What Is Money: Part 2',
     description: "The tax was once a year. People could have earned it and gone back to their old lives. Something else happened first, and it happened by law, one act at a time.",
     type: 'article',
     publishedTime: '2026-07-04',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Why Didn't People Just Refuse to Use Money?",
+    title: 'What Is Money: Part 2',
     description: "The tax was once a year, in a fixed amount. So why does every single thing you do today require money? Something happened in between.",
     site: '@leftdiary',
     creator: '@leftdiary',
@@ -67,7 +67,7 @@ const jsonLd = {
     {
       '@type': 'Article',
       '@id': 'https://leftdiary.com/posts/why-didnt-people-just-refuse-to-use-money#article',
-      'headline': "Why Didn't People Just Refuse to Use Money?",
+      'headline': 'What Is Money: Part 2',
       'description': 'The king\'s tax was once a year, in a fixed amount. So why couldn\'t people earn that much and go back to living as before? Because over the next three hundred years, every other way of surviving was made illegal, one law at a time: the commons enclosed, gleaning outlawed, standing still criminalized, the last independent women destroyed as witches.',
       'image': [
         {
@@ -108,7 +108,7 @@ const jsonLd = {
       'itemListElement': [
         { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://leftdiary.com' },
         { '@type': 'ListItem', 'position': 2, 'name': 'Posts', 'item': 'https://leftdiary.com/posts' },
-        { '@type': 'ListItem', 'position': 3, 'name': "Why Didn't People Just Refuse to Use Money?", 'item': 'https://leftdiary.com/posts/why-didnt-people-just-refuse-to-use-money' }
+        { '@type': 'ListItem', 'position': 3, 'name': 'What Is Money: Part 2', 'item': 'https://leftdiary.com/posts/why-didnt-people-just-refuse-to-use-money' }
       ]
     }
   ]
@@ -217,7 +217,7 @@ const FURTHER_READING: FurtherReadingItem[] = [
   },
   {
     href: '/posts/how-did-the-king-lose-the-power-to-make-money',
-    title: 'How Did the King Lose the Power to Make Money? — Part 3',
+    title: 'What Is Money: Part 3',
     description: 'the 1694 deal that permanently separated the Crown from the power to create its own money',
   },
   {
@@ -249,7 +249,7 @@ export default function WhyDidntPeopleJustRefuseToUseMoneyPage() {
     <ArticleLayout jsonLd={jsonLd}>
       <ArticleHeader
         categories={['Economics', 'History', 'Money']}
-        title="Why Didn't People Just Refuse to Use Money?"
+        title="What Is Money: Part 2"
         lead={
           <>
             <a

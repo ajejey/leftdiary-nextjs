@@ -14,7 +14,7 @@ import {
 import type { TOCItem, FAQItem, FurtherReadingItem } from '@/components/article';
 
 export const metadata: Metadata = {
-  title: 'How Did the King Lose the Power to Make Money? | Left Diary',
+  title: 'What Is Money: Part 3 | Left Diary',
   description: "The King minted his own coin and could make as much of it as he wanted. So why, by 1694, was he borrowing money from private merchants and paying back more than he borrowed? One transaction, on one date, permanently separated the power to create money from the Crown that had held it since the whole story began.",
   keywords: [
     'how was the Bank of England founded',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'history of money part 3'
   ],
   openGraph: {
-    title: 'How Did the King Lose the Power to Make Money?',
+    title: 'What Is Money: Part 3',
     description: "The King could mint as much money as he wanted. So why did he end up borrowing it, and paying back more than he borrowed? One deal, on one date, answers it.",
     type: 'article',
     publishedTime: '2026-07-18',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How Did the King Lose the Power to Make Money?',
+    title: 'What Is Money: Part 3',
     description: "The King minted his own coin. So why did he end up borrowing money, and paying back more than he borrowed? One deal, on one date, in exchange for one war.",
     site: '@leftdiary',
     creator: '@leftdiary',
@@ -66,7 +66,7 @@ const jsonLd = {
     {
       '@type': 'Article',
       '@id': 'https://leftdiary.com/posts/how-did-the-king-lose-the-power-to-make-money#article',
-      'headline': 'How Did the King Lose the Power to Make Money?',
+      'headline': 'What Is Money: Part 3',
       'description': "The King minted his own coin and could make as much of it as he wanted. So why, by 1694, was he borrowing money from private merchants and paying back more than he borrowed? One transaction, on one date, permanently separated the power to create money from the Crown that had held it since the whole story began.",
       'image': [
         {
@@ -107,7 +107,7 @@ const jsonLd = {
       'itemListElement': [
         { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://leftdiary.com' },
         { '@type': 'ListItem', 'position': 2, 'name': 'Posts', 'item': 'https://leftdiary.com/posts' },
-        { '@type': 'ListItem', 'position': 3, 'name': 'How Did the King Lose the Power to Make Money?', 'item': 'https://leftdiary.com/posts/how-did-the-king-lose-the-power-to-make-money' }
+        { '@type': 'ListItem', 'position': 3, 'name': 'What Is Money: Part 3', 'item': 'https://leftdiary.com/posts/how-did-the-king-lose-the-power-to-make-money' }
       ]
     }
   ]
@@ -199,7 +199,7 @@ const FURTHER_READING: FurtherReadingItem[] = [
   },
   {
     href: '/posts/why-didnt-people-just-refuse-to-use-money',
-    title: "Why Didn't People Just Refuse to Use Money? — Part 2",
+    title: 'What Is Money: Part 2',
     description: 'the commons enclosed, and the goldsmiths who first created money from nothing',
   },
   {
@@ -220,7 +220,7 @@ export default function HowDidTheKingLoseThePowerToMakeMoneyPage() {
     <ArticleLayout jsonLd={jsonLd}>
       <ArticleHeader
         categories={['Economics', 'History', 'Money']}
-        title="How Did the King Lose the Power to Make Money?"
+        title="What Is Money: Part 3"
         lead={
           <>
             <Link
@@ -229,12 +229,11 @@ export default function HowDidTheKingLoseThePowerToMakeMoneyPage() {
             >
               Last time
             </Link>
-            , I left you with a question and told you the people who took the King&rsquo;s power
-            were about to meet the people who owned the fences. The King mints the coin. He owns
-            the mines. He owns the mint. So why, within a few generations, was he borrowing money
-            from private citizens, on their terms, and paying back more than he borrowed to get
-            it? I can show you the exact date that borrowing became permanent, the exact people in
-            the room, and the exact war it paid for.
+            , I told you about two things that hadn&rsquo;t yet found each other: a King who still,
+            in theory, held the only legal power to create money in his own kingdom, and a handful
+            of London goldsmiths who had just worked out how to create money too, with nothing but
+            a pen. I told you they were about to collide, and that the King would come out of it
+            having lost the power this entire story started with. This is where that happens.
           </>
         }
         date="July 18, 2026"
@@ -247,21 +246,21 @@ export default function HowDidTheKingLoseThePowerToMakeMoneyPage() {
       <ArticleSection id="the-question-i-left-you-with">
         <H2 id="the-question-i-left-you-with">The Question I Left You With</H2>
         <P>
-          The King mints the coin. Every coin that exists in his kingdom exists because he,
-          personally, authorized it to be stamped. And once a year, he demands some of those same
-          coins back from his own subjects, calling it tax. So ask the obvious question, the one a
-          child would ask: why would that man ever need to <em>borrow</em> money? He is the source
-          of it. He can make as much as he wants, whenever he wants. A person who owns the only
-          well in the village does not go begging his neighbors for water.
+          Last time ended with two threads that hadn&rsquo;t yet met: a King who still, in theory,
+          held the only legal power to create money in his own kingdom, and a handful of London
+          goldsmiths who&rsquo;d just discovered they could create money too, with nothing but a pen
+          and a promise. I told you these two threads were about to collide. This is that
+          collision, and by the end of it, the King has lost the power the whole story started
+          with.
         </P>
         <P>
-          But that is exactly what happened. By the end of the seventeenth century, the King of
-          England was borrowing money from private citizens, on terms they set, and handing back
-          more than he&rsquo;d borrowed to get it. And that borrowing didn&rsquo;t stay a one-off, personal
-          arrangement between a king and a few lenders. It became permanent, on one specific
-          afternoon, in a room I can name the people in. Everything that follows from that
-          afternoon, including what a government means today when it says it &ldquo;can&rsquo;t afford&rdquo;
-          something, runs straight back to it.
+          Here is how it happened, and it did happen: on a specific afternoon, to specific
+          people, for a specific war, not as some slow, inevitable drift of history. By the end
+          of the seventeenth century, the King of England was borrowing money from private
+          citizens, on terms they set, and handing back more than he&rsquo;d borrowed to get it. That
+          borrowing didn&rsquo;t stay a one-off arrangement between a king and a few lenders. It became
+          permanent. Everything that follows from that, including what a government means today
+          when it says it &ldquo;can&rsquo;t afford&rdquo; something, runs straight back to it.
         </P>
       </ArticleSection>
 

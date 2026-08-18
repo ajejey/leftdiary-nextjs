@@ -423,7 +423,7 @@ export const samplePosts: Post[] = [
   },
   {
     slug: 'why-didnt-people-just-refuse-to-use-money',
-    title: "Why Didn't People Just Refuse to Use Money?",
+    title: 'What Is Money: Part 2',
     date: '2026-07-04',
     author: 'Left Diary',
     categories: ['Economics', 'History', 'Money'],
@@ -434,7 +434,7 @@ export const samplePosts: Post[] = [
   },
   {
     slug: 'how-did-the-king-lose-the-power-to-make-money',
-    title: 'How Did the King Lose the Power to Make Money?',
+    title: 'What Is Money: Part 3',
     date: '2026-07-18',
     author: 'Left Diary',
     categories: ['Economics', 'History', 'Money'],
