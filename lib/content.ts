@@ -443,6 +443,18 @@ export const samplePosts: Post[] = [
     coverIcon: 'bank',
     coverTone: 'red',
     contentType: 'post'
+  },
+  {
+    slug: 'how-did-interest-lead-to-the-conquest-of-bengal',
+    title: 'What Is Money: Part 4',
+    date: '2026-08-01',
+    author: 'Left Diary',
+    categories: ['Economics', 'History', 'Colonialism', 'Money'],
+    description: "The charter that created the Bank of England didn't just let merchants manage a King's debt. It gave them money that demands more money back, permanently, at national scale — and money like that cannot sit still. Within a lifetime, the same financial engine that fenced English commons had fenced an entire subcontinent.",
+    coverHook: 'BRIBED, NOT BEATEN',
+    coverIcon: 'ship',
+    coverTone: 'red',
+    contentType: 'post'
   }
 ];
 

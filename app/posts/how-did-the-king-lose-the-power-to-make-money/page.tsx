@@ -203,6 +203,11 @@ const FURTHER_READING: FurtherReadingItem[] = [
     description: 'the commons enclosed, and the goldsmiths who first created money from nothing',
   },
   {
+    href: '/posts/how-did-interest-lead-to-the-conquest-of-bengal',
+    title: 'What Is Money: Part 4',
+    description: 'the same financial engine that fenced English commons goes looking for its next fence',
+  },
+  {
     href: '/posts/what-is-austerity',
     title: 'What Is Austerity?',
     description: '"we can\'t afford it" as a political choice dressed up as a financial law',
@@ -503,12 +508,13 @@ export default function HowDidTheKingLoseThePowerToMakeMoneyPage() {
         </P>
         <P>
           Neither fence asked anyone&rsquo;s permission. Both were built by people who sat in the same
-          rooms. And once you can see both fences at once, a very different question opens up, one
-          I haven&rsquo;t answered yet: if a private bank creates almost all the money that exists today,
-          using a version of the same trick the London goldsmiths worked out three and a half
-          centuries ago, then what is actually happening every time your salary lands in your
-          account, every time you make a loan payment, every time a government says it &ldquo;can&rsquo;t
-          afford&rdquo; something? That is where we go next.
+          rooms. But there&rsquo;s a more immediate question the 1694 deal itself raises, one I haven&rsquo;t
+          answered yet. That charter didn&rsquo;t just let a group of merchants manage a King&rsquo;s debt. It
+          gave them money that demands more money back, permanently, at the scale of an entire
+          nation. Money like that cannot sit still. It has to keep growing, or the arithmetic
+          behind it stops working. So where does a room full of London financiers, holding a pile
+          of money that has to keep expanding, go looking next, once one small island has already
+          been fenced? That is where we go next.
         </P>
       </ArticleSection>
 
