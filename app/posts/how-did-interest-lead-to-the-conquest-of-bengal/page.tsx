@@ -366,9 +366,9 @@ export default function HowDidInterestLeadToTheConquestOfBengalPage() {
           Settlement, and Plassey itself as the natural unfolding of free exchange, rather than as
           what the rest of this series has shown you they actually were: specific, documented,
           legal acts, carried out by specific people, against people who never agreed to any of
-          it. This is the same move Part 1 caught in the word &ldquo;inflation&rdquo; and Part 3 caught in
-          the phrase &ldquo;national debt.&rdquo; A specific choice, made by specific people, gets a name that
-          makes it sound like weather.
+          it. You&rsquo;ve seen this trick before: a specific choice, made by specific people, gets a
+          name that makes it sound like weather instead of a decision. First it was &ldquo;inflation.&rdquo;
+          Then it was &ldquo;national debt.&rdquo; Now it&rsquo;s the &ldquo;invisible hand.&rdquo;
         </P>
         <P>
           Smith&rsquo;s book arrived four months before Britain&rsquo;s American colonies declared their
