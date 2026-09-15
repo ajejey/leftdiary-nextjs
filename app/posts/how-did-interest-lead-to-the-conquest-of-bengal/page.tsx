@@ -15,22 +15,22 @@ import type { TOCItem, FAQItem, FurtherReadingItem } from '@/components/article'
 
 export const metadata: Metadata = {
   title: 'What Is Money: Part 4 | Left Diary',
-  description: "The charter that created the Bank of England didn't just let merchants manage a King's debt. It gave them money that demands more money back, permanently, at national scale — and money like that cannot sit still. Within a lifetime, the same financial engine that fenced English commons had fenced an entire subcontinent.",
+  description: "The charter that created the Bank of England didn't just let merchants manage a King's debt. It gave them money that has to keep growing, forever, or the whole thing seizes up. This is where that growth went looking — and how an empire got bought, not conquered, for the price of one bribe.",
   keywords: [
     'East India Company Bank of England',
     'Battle of Plassey explained',
-    'Permanent Settlement of Bengal 1793',
+    'why was Robert Clive so rich',
+    'Black Hole of Calcutta explained',
     'why did the East India Company conquer Bengal',
     'history of colonialism and money',
     'Robert Clive Mir Jafar',
-    'zamindars permanent settlement history',
-    'Adam Smith Wealth of Nations 1776',
     'financial revolution England history',
+    'why does money have to grow',
     'history of money part 4'
   ],
   openGraph: {
     title: 'What Is Money: Part 4',
-    description: "Money that demands more money back cannot sit still. Within a single lifetime, the financial engine that fenced English commons had fenced an entire subcontinent, through the same mechanism, run by the same class of men.",
+    description: "Money that demands more money back cannot sit still. This is where that growth went looking — and how an empire got bought, not conquered, for the price of one bribe.",
     type: 'article',
     publishedTime: '2026-08-01',
     modifiedTime: '2026-08-01',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'What Is Money: Part 4',
-    description: "Money that demands more money back cannot sit still. Within a lifetime, the engine that fenced English commons had fenced an entire subcontinent.",
+    description: "Money that demands more money back cannot sit still. This is how an empire got bought, not conquered, for the price of one bribe.",
     site: '@leftdiary',
     creator: '@leftdiary',
   },
@@ -66,7 +66,7 @@ const jsonLd = {
       '@type': 'Article',
       '@id': 'https://leftdiary.com/posts/how-did-interest-lead-to-the-conquest-of-bengal#article',
       'headline': 'What Is Money: Part 4',
-      'description': "The charter that created the Bank of England didn't just let merchants manage a King's debt. It gave them money that demands more money back, permanently, at national scale — and money like that cannot sit still. Within a lifetime, the same financial engine that fenced English commons had fenced an entire subcontinent.",
+      'description': "The charter that created the Bank of England didn't just let merchants manage a King's debt. It gave them money that has to keep growing, forever, or the whole thing seizes up. This is where that growth went looking — and how an empire got bought, not conquered, for the price of one bribe.",
       'image': [
         {
           '@type': 'ImageObject',
@@ -88,16 +88,16 @@ const jsonLd = {
         '@type': 'WebPage',
         '@id': 'https://leftdiary.com/posts/how-did-interest-lead-to-the-conquest-of-bengal'
       },
-      'keywords': 'East India Company, Battle of Plassey, Permanent Settlement of Bengal, Adam Smith, financial revolution',
+      'keywords': 'East India Company, Battle of Plassey, Robert Clive, Black Hole of Calcutta, financial revolution',
       'articleSection': 'Economics',
-      'wordCount': 2700,
+      'wordCount': 3600,
       'inLanguage': 'en-US',
       'isAccessibleForFree': true,
       'about': [
         { '@type': 'Thing', 'name': 'East India Company' },
         { '@type': 'Thing', 'name': 'Battle of Plassey' },
-        { '@type': 'Thing', 'name': 'Permanent Settlement of Bengal' },
-        { '@type': 'Thing', 'name': 'Adam Smith' }
+        { '@type': 'Thing', 'name': 'Robert Clive' },
+        { '@type': 'Thing', 'name': 'Black Hole of Calcutta' }
       ]
     },
     {
@@ -114,12 +114,12 @@ const jsonLd = {
 
 const TOC_ITEMS: TOCItem[] = [
   { id: 'the-question-i-left-you-with', text: 'The Question I Left You With', level: 2 },
-  { id: 'money-that-cannot-stand-still', text: 'Money That Cannot Stand Still', level: 2 },
-  { id: 'the-company-that-became-a-government', text: 'The Company That Became a Government', level: 2 },
-  { id: 'the-same-fence-far-larger', text: 'The Same Fence, Far Larger', level: 2 },
-  { id: 'two-fences-at-once', text: 'Two Fences, at Once', level: 2 },
-  { id: 'a-name-for-the-machine', text: 'A Name for the Machine', level: 2 },
-  { id: 'nobody-agreed-to-any-of-this', text: 'Nobody Agreed to Any of This', level: 2 },
+  { id: 'the-charter-and-the-extra-ten-pounds', text: 'The Charter and the Extra Ten Pounds', level: 2 },
+  { id: 'a-company-that-needed-a-room-to-grow-in', text: 'A Company That Needed a Room to Grow In', level: 2 },
+  { id: 'a-fort-a-nawab-and-a-black-hole', text: 'A Fort, a Nawab, and a Black Hole', level: 2 },
+  { id: 'the-battle-that-was-decided-before-it-started', text: 'The Battle That Was Decided Before It Started', level: 2 },
+  { id: 'what-was-actually-bought', text: 'What Was Actually Bought', level: 2 },
+  { id: 'the-machine-found-its-next-room', text: 'The Machine Found Its Next Room', level: 2 },
   { id: 'faq', text: 'Frequently Asked Questions', level: 2 },
 ];
 
@@ -131,8 +131,25 @@ const FAQ_ITEMS: FAQItem[] = [
         When a lender creates £100 and demands back £110, only the £100 is actually created. The
         extra £10 does not exist anywhere until someone, somewhere, borrows new money into
         existence to produce it. Multiply this across an entire financial system and it becomes a
-        structural fact: a money supply built on interest cannot stay the same size. It must keep
-        expanding, or debts across the system start becoming unpayable.
+        structural fact: the total amount owed is always larger than the total amount of money
+        that exists to pay it with. New loans, creating new money, are the only way to keep that
+        gap from becoming a wave of defaults. This is a real, named argument in economics
+        (Michael Hudson; ecological economists Herman Daly and Tim Jackson), not a consensus
+        position — mainstream economics generally attributes growth to productivity and
+        innovation instead.
+      </>
+    ),
+  },
+  {
+    question: 'What was the Black Hole of Calcutta?',
+    answer: (
+      <>
+        In June 1756, after Siraj ud-Daulah&rsquo;s forces captured Fort William in Calcutta, a group
+        of British prisoners were held overnight in a small guardroom; a number of them died,
+        reportedly of suffocation and dehydration, though the exact death toll (accounts range
+        from roughly 40 to over 120) has long been disputed by historians. The incident was used
+        by the East India Company as justification for the military campaign that culminated in
+        the Battle of Plassey the following year.
       </>
     ),
   },
@@ -143,22 +160,20 @@ const FAQ_ITEMS: FAQItem[] = [
         Fought on 23 June 1757 between the East India Company, led by Robert Clive, and Siraj
         ud-Daulah, the ruler of Bengal. Despite being outnumbered roughly fifteen to one, Clive
         won by bribing the Nawab&rsquo;s own commander-in-chief, Mir Jafar, to hold his forces back
-        during the battle in exchange for being installed as the new ruler. It marked the Company&rsquo;s
-        shift from a trading firm into a territorial ruling power, and is widely treated by
-        historians as the start of British rule in India.
+        during the battle in exchange for being installed as the new ruler. It marked the
+        Company&rsquo;s shift from a trading firm into a territorial ruling power, and is widely
+        treated by historians as the start of British rule in India.
       </>
     ),
   },
   {
-    question: 'What was the Permanent Settlement of Bengal?',
+    question: 'How much money did Robert Clive personally make from Plassey?',
     answer: (
       <>
-        A 1793 law under Governor-General Lord Cornwallis that converted zamindars, who had
-        previously been tax collectors, into hereditary private landowners over land millions of
-        cultivators depended on. A &ldquo;sunset law&rdquo; required the fixed revenue to be paid by a set
-        date or the estate was seized and auctioned; nearly 45 percent of Bengal&rsquo;s landed estates
-        changed hands this way between 1794 and 1807. Peasants lost customary rights to grazing,
-        fuel, and forest produce, the same categories of right destroyed by enclosure in England.
+        Clive transferred roughly £2.5 million seized from Bengal&rsquo;s treasury into the East India
+        Company&rsquo;s own accounts, secured a personal annual jagir (land grant) worth £30,000 from
+        Mir Jafar, and returned to Britain with a personal fortune of about £234,000 — making him,
+        at the time, the richest self-made man in Europe.
       </>
     ),
   },
@@ -217,12 +232,13 @@ export default function HowDidInterestLeadToTheConquestOfBengalPage() {
             </Link>
             , a room full of London merchants secured the permanent, legal power to create
             money, in exchange for a war loan. I told you that money couldn&rsquo;t sit still. This
-            is where it went looking, and what it did when it got there.
+            is where it went looking, and what it did when it got there — and it is a stranger,
+            smaller, more deliberate story than &ldquo;the British Empire happened.&rdquo;
           </>
         }
         date="August 1, 2026"
         dateTime="2026-08-01"
-        readingTime="13 min read"
+        readingTime="18 min read"
       />
 
       <ArticleTOC items={TOC_ITEMS} />
@@ -233,178 +249,212 @@ export default function HowDidInterestLeadToTheConquestOfBengalPage() {
           The 1694 charter gave a group of merchants the legal right to create money, forever.
           Not a one-time payout. A permanent, self-renewing supply, lent out at interest, over and
           over. I asked you to notice what kind of money that actually is: money that demands more
-          money back than was created, which means it can never simply sit in a vault and stay the
-          same size. It has to keep finding somewhere new to grow.
+          money back than was created. I told you that money like that cannot simply sit in a
+          vault and stay the same size.
         </P>
         <P>
-          England is a small island. By the early 1700s, its fields were already filling up with
-          fences. So where did a pile of money that has to keep expanding go looking next?
-        </P>
-      </ArticleSection>
-
-      <ArticleSection id="money-that-cannot-stand-still">
-        <H2 id="money-that-cannot-stand-still">Money That Cannot Stand Still</H2>
-        <P>
-          Say a bank creates &pound;100 and lends it to you, on the condition that you pay back
-          &pound;110. The bank has created the &pound;100. It has not created the extra &pound;10. That &pound;10 does
-          not exist anywhere in the world yet. For you to ever actually pay it, someone,
-          somewhere, has to borrow new money into existence, so that the total amount of money in
-          circulation is large enough for your &pound;10 to be part of it.
-        </P>
-        <P>
-          Multiply that single loan across an entire financial system, and it stops being a
-          curiosity and becomes a structural fact: a money supply built this way cannot stay the
-          same size. It has to keep growing, loan by loan, or debts across the system start
-          becoming impossible to pay, all at once. This is a real argument among economists, not a
-          settled one; economists like Michael Hudson and ecological economists such as Herman
-          Daly have argued it directly, while mainstream economics generally explains growth
-          through productivity and innovation instead. I raise it here because, whichever
-          explanation you find more convincing, what happened next in England is not in dispute.
-        </P>
-        <P>
-          By the early 1700s, London had a pile of money, freshly organized around a permanent
-          charter to keep creating more of it, and a small island&rsquo;s worth of land already being
-          fenced. Growth needs somewhere to go. It went abroad.
+          I want to actually walk you through why that&rsquo;s true, not just assert it, because it&rsquo;s
+          the whole hinge of what&rsquo;s about to happen. Once you see it for yourself, what happens
+          next stops looking like a coincidence.
         </P>
       </ArticleSection>
 
-      <ArticleSection id="the-company-that-became-a-government">
-        <H2 id="the-company-that-became-a-government">The Company That Became a Government</H2>
+      <ArticleSection id="the-charter-and-the-extra-ten-pounds">
+        <H2 id="the-charter-and-the-extra-ten-pounds">The Charter and the Extra Ten Pounds</H2>
         <P>
-          The East India Company had existed since 1600, trading spices and cloth, one ship at a
-          time. But its explosive growth in power runs through exactly the same decades as the
-          Bank of England&rsquo;s founding, financed by the same new London infrastructure: government
-          debt markets, joint-stock shares, marine insurance, all developing together. Historians
-          have a name for this stretch of English history, 1688 to roughly 1756: the{' '}
+          Picture the room in 1694 for a second, because everything after this depends on what
+          these merchants actually walked away with. Not a payout. A charter: permanent legal
+          permission to create money and lend it out, at interest, the same trick the goldsmiths
+          had already worked out. They create &pound;100. Whoever borrows it owes back &pound;110.
+        </P>
+        <P>
+          Now follow that extra &pound;10 and see if you can find it anywhere.
+        </P>
+        <P>
+          Say a shipowner borrows that &pound;100 to fund a voyage, promising to repay &pound;110 once he
+          sells his cargo. He sails, sells his goods, and comes home with money in hand, but
+          notice where that money came from. It was already circulating in London before he ever
+          set sail: in the pockets of the merchants who bought his cargo, in the tills of the men
+          who bought from them. None of it was newly created to cover his &pound;10. It was already
+          someone else&rsquo;s. For the shipowner to end up with &pound;110, &pound;10 of it has to have come out
+          of somebody else&rsquo;s hands, leaving the total amount of money in London exactly where it
+          started, and one merchant now short by ten pounds he didn&rsquo;t have a debt against.
+        </P>
+        <P>
+          Do that once, and it&rsquo;s a minor inconvenience for whoever ends up short. Do it every
+          time this charter issues a loan, to every shipowner, every merchant, every landlord, and
+          you get something worse than an inconvenience. The total amount owed across the whole
+          city is now permanently larger than the total amount of money that exists to pay it
+          with. Somebody is always going to come up short, the same way musical chairs always
+          leaves somebody standing, no matter how carefully everyone plays. The only way to keep
+          the music going is to bring in more chairs: new loans, creating new money, so the next
+          person short can borrow their way out of it instead of defaulting.
+        </P>
+        <P>
+          Which means this charter didn&rsquo;t just give a room full of merchants the power to create
+          money. It handed them a machine that has to keep finding new rooms to run in, forever,
+          or the chairs run out and the music stops.
+        </P>
+        <P>
+          England is a small, wet island. By the early 1700s, most of the rooms in it were
+          already occupied, one Act of Parliament at a time, by people you&rsquo;ve already met in
+          this series. So where does a machine like that go looking, when it has run out of room
+          at home?
+        </P>
+      </ArticleSection>
+
+      <ArticleSection id="a-company-that-needed-a-room-to-grow-in">
+        <H2 id="a-company-that-needed-a-room-to-grow-in">A Company That Needed a Room to Grow In</H2>
+        <P>
+          There was already something sitting there, waiting to be fed. The East India Company
+          had existed since 1600, sending ships to bring back pepper, cloth, and tea, one voyage
+          at a time, a modest trading concern by the standards of what it would become. What
+          changed wasn&rsquo;t the tea. What changed was that its capital started running through
+          exactly the same new London infrastructure as the Bank of England&rsquo;s: government debt
+          markets, joint-stock shares that could be bought and sold, marine insurance, all being
+          invented and refined in the same rooms, in the same years. Historians have a name for
+          this stretch of English history, 1688 to roughly 1756: the{' '}
           <strong>Financial Revolution</strong>.{' '}
           <span className="text-sm text-gray-400 not-italic">
             (Dickson, <em>The Financial Revolution in England</em>, 1967)
           </span>{' '}
-          The Bank of England and the Company&rsquo;s vastly expanded capital both belong to this same
-          machinery, the same years, the same city.
+          The Bank of England and the Company&rsquo;s newly vast pool of capital are not two separate
+          stories that happen to share a timeline. They are the same machinery, feeding two
+          different ventures out of the same room.
         </P>
         <P>
-          On 23 June 1757, that capital bought Bengal, and it barely needed an army to do it. At
-          the Battle of Plassey, the Company&rsquo;s roughly 3,000 men faced Siraj ud-Daulah&rsquo;s army of
-          around 50,000. Robert Clive won anyway, because he had already bribed Mir Jafar, the
-          Nawab&rsquo;s own commander-in-chief, to hold his forces back during the fighting, in exchange
-          for being installed as the new ruler afterward.{' '}
+          A trading company with that kind of capital behind it doesn&rsquo;t stay a trading company
+          for long, not when the money behind it has to keep growing or fail. By the 1750s, the
+          East India Company had its own private army in India, recruiting and paying soldiers
+          the way a government does, because a government is close to what it was quietly
+          becoming.
+        </P>
+      </ArticleSection>
+
+      <ArticleSection id="a-fort-a-nawab-and-a-black-hole">
+        <H2 id="a-fort-a-nawab-and-a-black-hole">A Fort, a Nawab, and a Black Hole</H2>
+        <P>
+          Bengal in the 1750s was ruled by a young nawab, Siraj ud-Daulah, and he had a specific,
+          reasonable grievance with the Company: it had been fortifying Fort William in Calcutta
+          without his permission, and sheltering people he considered his political enemies. He
+          saw, correctly, a foreign trading company quietly arming itself inside his own
+          territory. He demanded the fortifications come down. The Company refused.
+        </P>
+        <P>
+          In June 1756, Siraj marched on Calcutta and took the fort. A group of British prisoners
+          were held overnight in a small guardroom, and some number of them died there, of heat
+          and suffocation, in an incident the British called the &ldquo;Black Hole of Calcutta.&rdquo; How
+          many died is genuinely disputed. Contemporary British accounts claimed well over a
+          hundred; other historians, looking at the same evidence, have put the number closer to
+          forty. I&rsquo;m not going to pretend that dispute is settled, because it isn&rsquo;t. What isn&rsquo;t
+          disputed is what the Company did with the story afterward: it became the justification,
+          repeated in London, for a full military campaign to retake Calcutta and settle accounts
+          with Siraj permanently.{' '}
+          <span className="text-sm text-gray-400 not-italic">
+            (Black Hole of Calcutta, June 1756)
+          </span>
+        </P>
+        <P>
+          Notice the shape of that sentence, because you&rsquo;ve seen it before in this series. A
+          grievance, real or exaggerated, gets converted into the reason a much larger, much more
+          profitable action was necessary all along. It happened with a hut tax. It is about to
+          happen with an army.
+        </P>
+      </ArticleSection>
+
+      <ArticleSection id="the-battle-that-was-decided-before-it-started">
+        <H2 id="the-battle-that-was-decided-before-it-started">The Battle That Was Decided Before It Started</H2>
+        <P>
+          Robert Clive sailed to retake Calcutta, and did. But Siraj still commanded an army
+          large enough to end the matter permanently if it came to a real fight, so Clive did
+          something else first. He opened secret talks with Mir Jafar, Siraj&rsquo;s own
+          commander-in-chief, the man whose job was to lead Siraj&rsquo;s soldiers into battle against
+          the Company. The offer was simple: hold your forces back when the fighting starts, and
+          the throne of Bengal is yours afterward.
+        </P>
+        <P>
+          Mir Jafar agreed.
+        </P>
+        <P>
+          On 23 June 1757, at Plassey, the two armies met. Sit with the actual numbers for a
+          moment, because they should not make sense to you. Clive commanded roughly 3,000 men.
+          Siraj commanded something like 50,000.{' '}
           <span className="text-sm text-gray-400 not-italic">
             (Battle of Plassey, 23 June 1757)
           </span>{' '}
-          Siraj ud-Daulah was killed. Mir Jafar took the throne, backed by Company guns. It was a
-          political purchase dressed as a battle, and it marks the moment the East India Company
-          stopped being a trading firm and became the ruling power over one of the richest regions
-          on Earth.
+          Fifteen or sixteen men on Siraj&rsquo;s side for every one of Clive&rsquo;s. By any honest military
+          reckoning, that army should have ended the East India Company&rsquo;s ambitions in Bengal in
+          an afternoon.
+        </P>
+        <P>
+          It didn&rsquo;t, because most of that army never fought. Mir Jafar held his troops back
+          exactly as agreed, as did other conspirators Clive had already reached. Only a fraction
+          of Siraj&rsquo;s force actually engaged, and even that fraction, without the rest of the army
+          behind it, broke. Siraj fled the field. He was captured and killed within days. Mir
+          Jafar was installed as the new Nawab of Bengal, precisely as promised, with Company
+          soldiers standing behind his throne to make sure everyone understood who had actually
+          decided the outcome.
+        </P>
+        <P>
+          Call Plassey a battle if you want to. It is more accurate to call it a transaction that
+          required a battlefield to be witnessed on.
         </P>
       </ArticleSection>
 
-      <ArticleSection id="the-same-fence-far-larger">
-        <H2 id="the-same-fence-far-larger">The Same Fence, Far Larger</H2>
+      <ArticleSection id="what-was-actually-bought">
+        <H2 id="what-was-actually-bought">What Was Actually Bought</H2>
         <P>
-          Once the Company ruled Bengal, it needed a way to collect revenue from it, reliably,
-          every year. In 1793, Governor-General Lord Cornwallis signed the{' '}
-          <strong>Permanent Settlement</strong>. Before this law, zamindars were tax collectors,
-          local officials who gathered revenue on behalf of whoever ruled the region. The
-          Permanent Settlement made them something entirely different: hereditary private owners
-          of the land itself, in exchange for a fixed, unchangeable annual payment to the Company.{' '}
+          Here is where the story stops being about soldiers and starts being about the thing
+          this entire series has been tracking since the very first part: where the money went.
+        </P>
+        <P>
+          After Plassey, Clive had Siraj&rsquo;s treasury opened, and transferred roughly &pound;2.5 million
+          of it directly into the East India Company&rsquo;s own accounts. Mir Jafar, grateful for his
+          new throne, granted Clive a personal jagir, an annual land revenue, worth &pound;30,000 a
+          year, for life. By the time Clive returned to Britain, his personal fortune stood at
+          roughly &pound;234,000, making him, at that moment, the richest self-made man in Europe.{' '}
           <span className="text-sm text-gray-400 not-italic">
-            (Permanent Settlement, 1793)
-          </span>
+            (Plassey treasury transfer and Clive&rsquo;s personal fortune, contemporary East India
+            Company records)
+          </span>{' '}
+          When he died in 1774, his estate was valued at roughly &pound;500,000.
         </P>
         <P>
-          A &ldquo;sunset law&rdquo; backed this up: if a zamindar failed to pay the full amount by a set
-          date, the estate was seized and auctioned to the highest bidder, no exceptions. The
-          demands were set so high that nearly 45 percent of Bengal&rsquo;s landed estates changed hands
-          this way between 1794 and 1807 alone, mostly bought up by Calcutta merchants and
-          moneylenders who had never farmed a field in their lives.
-        </P>
-        <P>
-          And underneath the zamindars were the actual cultivators, the ryots, who had held
-          customary rights to the land for generations. The Permanent Settlement extinguished
-          those rights in a single stroke: no fixed leases, no protection from eviction, no
-          guaranteed share of what they grew. The rights specifically destroyed included grazing,
-          fuel, and forest produce. If those words sound familiar, they should: they are the exact
-          same rights, estovers, pannage, common pasture, that English enclosure destroyed on the
-          other side of the world, in the same decades, through a different piece of paper.
+          Read those numbers again next to the &pound;1.2 million war loan that founded the Bank of
+          England. One man, from one afternoon in one field in Bengal, personally accumulated a
+          fortune large enough to matter on the same scale as a national war loan. That is not
+          what conquest usually looks like. It is what an extremely well-financed acquisition
+          looks like, with the paperwork replaced by a bribe and the signature replaced by a
+          battlefield.
         </P>
       </ArticleSection>
 
-      <ArticleSection id="two-fences-at-once">
-        <H2 id="two-fences-at-once">Two Fences, at Once</H2>
+      <ArticleSection id="the-machine-found-its-next-room">
+        <H2 id="the-machine-found-its-next-room">The Machine Found Its Next Room</H2>
         <P>
-          Put the dates next to each other and stop treating them as two separate stories.
-          Parliamentary enclosure in England was accelerating through these exact same decades,
-          most of the 5,200 Acts you already know about from earlier in this series were passed
-          after 1694, many of them in the same years the East India Company was converting
-          Bengal&rsquo;s tax collectors into landlords. Two pieces of land, two continents apart, fenced
-          by two different legal instruments, in the same stretch of history, by men who moved in
-          the same London rooms, invested in the same companies, sat in the same Parliament.
+          Go back to the room in 1694, and to the chairs that had to keep multiplying or the
+          music would stop. England had run out of room. Bengal, in 1757, was one of the richest,
+          most productive regions on Earth, with a treasury a single afternoon&rsquo;s work could
+          empty into London&rsquo;s accounts, and a population large enough to tax for generations
+          afterward. It was not found by accident, and it was not conquered because British
+          soldiers were unusually brave. It was found because a machine that has to keep growing
+          will always, eventually, find the largest room available and let itself in, through
+          whichever door happens to be unlocked, a bribe, a fort, a disputed death toll used as a
+          pretext, whatever is lying around.
         </P>
         <P>
-          This is not a coincidence you need me to argue you into. It is what money that demands
-          more money back actually does, once it exists at national scale and has nowhere left at
-          home to grow. It goes wherever there is still land, or people, or a customary right, left
-          to convert into something that can be owned, taxed, and sold.
-        </P>
-      </ArticleSection>
-
-      <ArticleSection id="a-name-for-the-machine">
-        <H2 id="a-name-for-the-machine">A Name for the Machine</H2>
-        <P>
-          On 9 March 1776, Adam Smith published <em>An Inquiry into the Nature and Causes of the
-          Wealth of Nations</em>. It gave everything I&rsquo;ve just described a vocabulary, and a
-          defense: self-interest, pursued freely, supposedly guided by an &ldquo;invisible hand&rdquo;
-          toward outcomes that benefit everyone. Land, labor, and money, all treated as things
-          that naturally belong on a market, because a market is simply what free people do.{' '}
-          <span className="text-sm text-gray-400 not-italic">
-            (Smith, <em>The Wealth of Nations</em>, 1776)
-          </span>
+          Nobody in Bengal voted for this. Siraj didn&rsquo;t choose it. The peasants who would spend
+          the next two centuries under Company and then Crown rule were never asked. A charter
+          signed in London in 1694, to fund a war most of them had never heard of, reached a
+          continent away and rearranged who owned a treasury, in one afternoon, because the money
+          behind it had nowhere left at home to grow.
         </P>
         <P>
-          Notice what that vocabulary quietly does. It describes enclosure, the Permanent
-          Settlement, and Plassey itself as the natural unfolding of free exchange, rather than as
-          what the rest of this series has shown you they actually were: specific, documented,
-          legal acts, carried out by specific people, against people who never agreed to any of
-          it. You&rsquo;ve seen this trick before: a specific choice, made by specific people, gets a
-          name that makes it sound like weather instead of a decision. First it was &ldquo;inflation.&rdquo;
-          Then it was &ldquo;national debt.&rdquo; Now it&rsquo;s the &ldquo;invisible hand.&rdquo;
-        </P>
-        <P>
-          Smith&rsquo;s book arrived four months before Britain&rsquo;s American colonies declared their
-          independence, in July of that same year, over a list of grievances that included taxes
-          set without consent and trade forced through a single controlling power. I&rsquo;m not going
-          to resolve that crack in the story right now. I just want you to notice it&rsquo;s there: the
-          same year the machine got its philosophical defense, part of it was already breaking
-          apart from the inside.
-        </P>
-      </ArticleSection>
-
-      <ArticleSection id="nobody-agreed-to-any-of-this">
-        <H2 id="nobody-agreed-to-any-of-this">Nobody Agreed to Any of This</H2>
-        <P>
-          No English commoner voted for enclosure. No Bengali cultivator voted for the Permanent
-          Settlement. No one in either place was ever offered a real choice between the world they
-          had and the one that replaced it. Both were built the same way: a small number of people
-          who already held power, writing a law or signing a charter, and calling what came next
-          natural, inevitable, or simply progress.
-        </P>
-        <P>
-          This is also the point where this series stops being a story about England specifically.
-          The mechanism that fenced English commons is the same mechanism that fenced Bengal, and
-          it did not stop there. The same coin-and-tax trick from the very first part of this
-          series reappeared in colonial Africa, documented, in living memory, not ancient
-          history.{' '}
-          <Link
-            href="/posts/why-did-colonizers-tax-africans"
-            className="underline decoration-gray-400 hover:decoration-gray-700"
-          >
-            I&rsquo;ve written separately about the hut tax
-          </Link>{' '}
-          Britain imposed on East Africa in the 1890s, a different instrument, the same purpose.
-          Money that has to keep growing does not stay home, and it does not stay polite. What
-          it does next, and what happens when the people it did this to eventually win their
-          formal independence back, is where we go next.
+          There is a second act to what happened in Bengal, and it is not the soldiers, it is the
+          paperwork that came after them: the specific law, decades later, that decided who would
+          own the land itself, permanently, and what would happen to the people who had worked it
+          for generations. That law has a name, a date, and a mechanism as precise as anything
+          you&rsquo;ve seen in this series so far, and it is where we go next.
         </P>
       </ArticleSection>
 
@@ -412,43 +462,44 @@ export default function HowDidInterestLeadToTheConquestOfBengalPage() {
 
       <ArticleFurtherReading title="Go Deeper" items={FURTHER_READING} />
 
-      <ArticleCallout variant="dark" title="Growth Was Never Neutral">
+      <ArticleCallout variant="dark" title="An Empire, Bought, Not Conquered">
         <p>
-          If the machine that created England&rsquo;s money could only keep working by finding new land,
-          new people, and new customary rights to convert into private property, then &ldquo;economic
-          growth&rdquo; was never a neutral, technical fact about prosperity increasing. It was, from
-          its first large-scale demonstration onward, a specific, documented process of taking
-          something that was shared and making it belong to whoever already held the capital.
-          Bengal in 1793 is not a footnote to England&rsquo;s story. It is the same story, at the scale
-          the mechanism was always going to reach once nothing at home was left to fence.
+          If Plassey turned on one bribe rather than one battle, then &ldquo;the British conquered
+          India&rdquo; is already doing some quiet work of its own, the same way &ldquo;the economy grew&rdquo;
+          hides who specifically grew and at whose expense. A more honest sentence is smaller and
+          uglier: a private company, financed by money that had to keep expanding or fail, bought
+          the loyalty of one general, and one afternoon&rsquo;s treasury was enough to make one man the
+          richest self-made man in Europe. Empire, looked at this closely, keeps turning out to be
+          a business transaction that needed a flag.
         </p>
       </ArticleCallout>
 
       <ArticleSources>
         <p>
-          <strong>Primary and archival sources:</strong> the Permanent Settlement Regulations,
-          1793, Bengal; the Battle of Plassey, 23 June 1757; Adam Smith, <em>An Inquiry into the
-          Nature and Causes of the Wealth of Nations</em>, published 9 March 1776.
+          <strong>Primary and archival sources:</strong> the Battle of Plassey, 23 June 1757;
+          contemporary East India Company treasury and revenue records documenting the transfer
+          of Bengal treasury funds and Robert Clive&rsquo;s jagir grant from Mir Jafar.
         </p>
         <p>
           <strong>Secondary sources:</strong> P.G.M. Dickson, <em>The Financial Revolution in
-          England: A Study in the Development of Public Credit, 1688&ndash;1756</em> (1967); the
-          scholarship on the Permanent Settlement&rsquo;s sunset law and the roughly 45 percent turnover
-          of Bengal&rsquo;s landed estates between 1794 and 1807 draws on standard economic-history
-          accounts of the period, including work summarized in the Bengal Tenancy Act (1885)
-          historiography.
+          England: A Study in the Development of Public Credit, 1688&ndash;1756</em> (1967); standard
+          historical accounts of the Black Hole of Calcutta (June 1756) and the events leading to
+          Plassey; biographical accounts of Robert Clive&rsquo;s personal fortune, including his
+          &pound;234,000 return fortune and roughly &pound;500,000 estate at his death in 1774.
         </p>
         <p>
           <strong>Notes on disputed points:</strong> the claim that interest-bearing money
           requires perpetual growth to remain solvent is a real, named argument in economics
           (Michael Hudson; ecological economists including Herman Daly and Tim Jackson), not a
           consensus position; mainstream economics generally attributes growth primarily to
-          productivity and innovation rather than to the structure of interest itself. The
-          specific claim that individual investors in the Bank of England and the East India
-          Company overlapped is not made here; the connection drawn is that both were financed
-          through the same London credit infrastructure and public-credit markets of the same
-          decades, a link documented by Dickson (1967) and the broader &ldquo;Financial Revolution&rdquo;
-          historiography.
+          productivity and innovation rather than to the structure of interest itself. The death
+          toll of the Black Hole of Calcutta is genuinely disputed among historians, with
+          contemporary British accounts and later historical estimates differing significantly;
+          this piece does not adopt a specific figure. The specific claim that individual
+          investors in the Bank of England and the East India Company overlapped is not made
+          here; the connection drawn is that both were financed through the same London credit
+          infrastructure and public-credit markets of the same decades, a link documented by
+          Dickson (1967) and the broader &ldquo;Financial Revolution&rdquo; historiography.
         </p>
       </ArticleSources>
     </ArticleLayout>
