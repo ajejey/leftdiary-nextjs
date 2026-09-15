@@ -455,6 +455,18 @@ export const samplePosts: Post[] = [
     coverIcon: 'ship',
     coverTone: 'red',
     contentType: 'post'
+  },
+  {
+    slug: 'how-did-a-famine-turn-into-a-land-grab',
+    title: 'What Is Money: Part 5',
+    date: '2026-09-15',
+    author: 'Left Diary',
+    categories: ['Economics', 'History', 'Colonialism', 'Money'],
+    description: "After Plassey, the East India Company took the right to collect Bengal's own tax. Within five years, that right helped turn a bad harvest into a famine that killed millions — and the philosopher who attacked the Company by name for it also handed the next generation the exact theory they needed to fence an entire province and call it progress.",
+    coverHook: 'TAXED THROUGH A FAMINE',
+    coverIcon: 'fence',
+    coverTone: 'red',
+    contentType: 'post'
   }
 ];
 

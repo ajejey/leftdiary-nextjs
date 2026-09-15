@@ -209,6 +209,11 @@ const FURTHER_READING: FurtherReadingItem[] = [
     title: 'What Is Money: Part 3',
     description: 'the 1694 deal that gave a private institution the permanent power to create money',
   },
+  {
+    href: '/posts/how-did-a-famine-turn-into-a-land-grab',
+    title: 'What Is Money: Part 5',
+    description: 'a famine, a book, and the theory of history that turned Bengal’s land into private property',
+  },
 ];
 
 export default function HowDidInterestLeadToTheConquestOfBengalPage() {
@@ -461,7 +466,13 @@ export default function HowDidInterestLeadToTheConquestOfBengalPage() {
           paperwork that came after them: the specific law, decades later, that decided who would
           own the land itself, permanently, and what would happen to the people who had worked it
           for generations. That law has a name, a date, and a mechanism as precise as anything
-          you&rsquo;ve seen in this series so far, and it is where we go next.
+          you&rsquo;ve seen in this series so far, and it is where we go next.{' '}
+          <Link
+            href="/posts/how-did-a-famine-turn-into-a-land-grab"
+            className="underline decoration-gray-400 hover:decoration-gray-700"
+          >
+            A famine comes first.
+          </Link>
         </P>
       </ArticleSection>
 
