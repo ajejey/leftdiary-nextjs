@@ -268,38 +268,49 @@ export default function HowDidInterestLeadToTheConquestOfBengalPage() {
           had already worked out. They create &pound;100. Whoever borrows it owes back &pound;110.
         </P>
         <P>
-          Now follow that extra &pound;10 and see if you can find it anywhere.
+          Where does that extra &pound;10 come from?
         </P>
         <P>
-          Say a shipowner borrows that &pound;100 to fund a voyage, promising to repay &pound;110 once he
-          sells his cargo. He sails, sells his goods, and comes home with money in hand, but
-          notice where that money came from. It was already circulating in London before he ever
-          set sail: in the pockets of the merchants who bought his cargo, in the tills of the men
-          who bought from them. None of it was newly created to cover his &pound;10. It was already
-          someone else&rsquo;s. For the shipowner to end up with &pound;110, &pound;10 of it has to have come out
-          of somebody else&rsquo;s hands, leaving the total amount of money in London exactly where it
-          started, and one merchant now short by ten pounds he didn&rsquo;t have a debt against.
+          Notice something first: only this charter can create money. Not the borrower, not
+          anyone else. So that extra &pound;10 does not exist yet, anywhere, until someone borrows it
+          into existence, the same way the first &pound;100 was.
         </P>
         <P>
-          Do that once, and it&rsquo;s a minor inconvenience for whoever ends up short. Do it every
-          time this charter issues a loan, to every shipowner, every merchant, every landlord, and
-          you get something worse than an inconvenience. The total amount owed across the whole
-          city is now permanently larger than the total amount of money that exists to pay it
-          with. Somebody is always going to come up short, the same way musical chairs always
-          leaves somebody standing, no matter how carefully everyone plays. The only way to keep
-          the music going is to bring in more chairs: new loans, creating new money, so the next
-          person short can borrow their way out of it instead of defaulting.
+          Say a second man takes his own &pound;100 loan from the bank. The first man must somehow
+          &ldquo;earn&rdquo; &pound;10 from him. He now has his original &pound;100 plus the &pound;10, &pound;110 in total,
+          and pays the bank back in full. He is finished with the bank.
+        </P>
+        <P>
+          The second man is not. He started with &pound;100. He just gave &pound;10 of it. He has &pound;90 left
+          in hand, and still owes the bank &pound;110. His shortfall is no longer &pound;10. It&rsquo;s &pound;20:
+          the &pound;10 he gave, plus the &pound;10 of interest sitting on his own loan.
+        </P>
+        <P>
+          So he needs to &ldquo;earn&rdquo; &pound;20 from someone else. A third man takes his own &pound;100 loan,
+          and the second man has to &ldquo;earn&rdquo; &pound;20 from him, exactly enough to close the gap. The
+          third man now has &pound;80 left, and owes &pound;110. His shortfall is &pound;30.
+        </P>
+        <P>
+          Follow this far enough and the shape of it should unsettle you. Each man has to
+          &ldquo;earn&rdquo; more from whoever is holding a fresher, bigger loan than his own, and the
+          amount he needs to &ldquo;earn&rdquo; keeps climbing: &pound;10, then &pound;20, then &pound;30. It does not
+          level off. It compounds, the same way an avalanche gathers more snow the further down
+          the slope it travels. Keep the chain going and the sums involved, forty, fifty, sixty,
+          quickly dwarf the &pound;100 that started it, for no reason except interest.
         </P>
         <P>
           Which means this charter didn&rsquo;t just give a room full of merchants the power to create
-          money. It handed them a machine that has to keep finding new rooms to run in, forever,
-          or the chairs run out and the music stops.
+          money. It handed them a machine that has to keep finding new people willing, or
+          desperate enough, to &ldquo;earn&rdquo; their way through it, forever, or the chain runs out and
+          the whole thing comes down at once.
         </P>
         <P>
-          England is a small, wet island. By the early 1700s, most of the rooms in it were
-          already occupied, one Act of Parliament at a time, by people you&rsquo;ve already met in
-          this series. So where does a machine like that go looking, when it has run out of room
-          at home?
+          England is a small, wet island, and by the early 1700s, most of its people were already
+          spoken for this way: already tenants, already laborers, already someone&rsquo;s debt to
+          collect, one Act of Parliament at a time, by people you&rsquo;ve already met in this series.
+          A chain like this doesn&rsquo;t just need more money. It needs more people to draw into it.
+          So where does a machine like that go looking, once it has run out of both room and
+          people at home?
         </P>
       </ArticleSection>
 
