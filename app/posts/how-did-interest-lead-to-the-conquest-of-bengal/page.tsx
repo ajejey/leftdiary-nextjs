@@ -209,11 +209,6 @@ const FURTHER_READING: FurtherReadingItem[] = [
     title: 'What Is Money: Part 3',
     description: 'the 1694 deal that gave a private institution the permanent power to create money',
   },
-  {
-    href: '/posts/why-did-colonizers-tax-africans',
-    title: 'Why Did Colonizers Tax Africans?',
-    description: 'the same coin-and-tax trick, run on an entire continent, within living memory',
-  },
 ];
 
 export default function HowDidInterestLeadToTheConquestOfBengalPage() {
@@ -366,10 +361,10 @@ export default function HowDidInterestLeadToTheConquestOfBengalPage() {
           </span>
         </P>
         <P>
-          Notice the shape of that sentence, because you&rsquo;ve seen it before in this series. A
-          grievance, real or exaggerated, gets converted into the reason a much larger, much more
-          profitable action was necessary all along. It happened with a hut tax. It is about to
-          happen with an army.
+          Notice the shape of that sentence. A grievance, real or exaggerated, gets converted into
+          the reason a much larger, much more profitable action was necessary all along. Keep an
+          eye on that shape. It is about to reappear, in this same series, on a much bigger stage
+          than one fort in Calcutta.
         </P>
       </ArticleSection>
 
@@ -443,8 +438,9 @@ export default function HowDidInterestLeadToTheConquestOfBengalPage() {
       <ArticleSection id="the-machine-found-its-next-room">
         <H2 id="the-machine-found-its-next-room">The Machine Found Its Next Room</H2>
         <P>
-          Go back to the room in 1694, and to the chairs that had to keep multiplying or the
-          music would stop. England had run out of room. Bengal, in 1757, was one of the richest,
+          Go back to the room in 1694, and to the chain that had to keep finding new people to
+          add to it, or it would snap. England had run out of both. Bengal, in 1757, was one of
+          the richest,
           most productive regions on Earth, with a treasury a single afternoon&rsquo;s work could
           empty into London&rsquo;s accounts, and a population large enough to tax for generations
           afterward. It was not found by accident, and it was not conquered because British
