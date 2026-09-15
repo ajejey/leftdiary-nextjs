@@ -547,7 +547,7 @@ export default function HowDidAFamineTurnIntoALandGrabPage() {
           individual private owner is backward land, waiting for the right legal instrument to
           bring it into the modern age. That reasoning did not have to be invented in 1793. It
           had already been built, argued, and published, for a different purpose, twenty years
-          earlier, by a man who was genuinely trying to help.
+          earlier.
         </P>
       </ArticleSection>
 
