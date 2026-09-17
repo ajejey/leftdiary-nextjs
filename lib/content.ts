@@ -467,6 +467,18 @@ export const samplePosts: Post[] = [
     coverIcon: 'fence',
     coverTone: 'red',
     contentType: 'post'
+  },
+  {
+    slug: 'how-did-three-empires-fence-a-continent',
+    title: 'What Is Money: Part 6',
+    date: '2026-09-17',
+    author: 'Left Diary',
+    categories: ['Economics', 'History', 'Colonialism', 'Money'],
+    description: "A small tax on your own house provoked a war large enough to need an army to put down. A king who skipped the tax entirely built a machine that paid its soldiers in severed hands. A third empire wrote a law that needed neither. Three empires, working independently, kept arriving at the same answer.",
+    coverHook: 'A HAND FOR A BULLET',
+    coverIcon: 'chain',
+    coverTone: 'red',
+    contentType: 'post'
   }
 ];
 

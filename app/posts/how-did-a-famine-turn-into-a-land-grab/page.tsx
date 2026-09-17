@@ -223,6 +223,11 @@ const FURTHER_READING: FurtherReadingItem[] = [
     title: 'What Is Money: Part 4',
     description: 'how a charter that had to keep growing found Bengal, and bought it rather than conquered it',
   },
+  {
+    href: '/posts/how-did-three-empires-fence-a-continent',
+    title: 'What Is Money: Part 6',
+    description: 'the same fence, built independently by three empires, using three different tools, on one continent',
+  },
 ];
 
 export default function HowDidAFamineTurnIntoALandGrabPage() {
@@ -591,6 +596,18 @@ export default function HowDidAFamineTurnIntoALandGrabPage() {
           tax on surplus. You have heard that sentence before in this piece. It was true the
           first time, in 1770, when it produced a famine. It was still true in 1793, when it
           produced a fence.
+        </P>
+        <P>
+          I&rsquo;ve now shown you this fence twice, in England and in Bengal, built by the same
+          empire twenty years apart. What I haven&rsquo;t shown you yet is whether it was really an
+          English habit at all, or something closer to what any unaccountable power reaches for,
+          anywhere, once it decides what another people needs in order to survive.{' '}
+          <Link
+            href="/posts/how-did-three-empires-fence-a-continent"
+            className="underline decoration-gray-400 hover:decoration-gray-700"
+          >
+            Two other empires answer that next.
+          </Link>
         </P>
       </ArticleSection>
 
