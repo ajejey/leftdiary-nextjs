@@ -37,7 +37,7 @@ const truncateText = (text: string, maxLength: number): string => {
 };
 
 const PostCard = ({ post, className = '' }: PostCardProps) => {
-  const readingTime = calculateReadingTime(post.description);
+  const readingTime = post.readingTime ?? calculateReadingTime(post.description);
   const formattedDate = format(new Date(post.date), 'MMM dd, yyyy');
 
   return (
@@ -65,6 +65,7 @@ const PostCard = ({ post, className = '' }: PostCardProps) => {
                 title={post.title}
                 categories={post.categories}
                 hook={post.coverHook}
+                subtext={post.coverSubtext}
                 icon={post.coverIcon}
                 tone={post.coverTone}
                 className="transition-transform duration-700 group-hover:scale-110"

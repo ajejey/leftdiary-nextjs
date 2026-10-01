@@ -14,9 +14,11 @@ interface GeneratedCoverProps {
   // collides with badges positioned over the image (e.g. PostCard's
   // "Article" pill).
   categories?: string[];
-  // Short, curated punchline for the cover (e.g. "THE HUT TAX"). Falls back
-  // to the first few words of the title when not supplied.
+  // Big text on the cover. Use "\n" to force a line break. Falls back to the
+  // first few words of the title when not supplied.
   hook?: string;
+  // Plain descriptive line under the hook. Falls back to the title.
+  subtext?: string;
   icon?: CoverIcon;
   tone?: CoverTone;
   className?: string;
@@ -26,20 +28,26 @@ interface GeneratedCoverProps {
 }
 
 // Deterministic, code-generated cover used whenever a post has no real
-// image file. Styled like a YouTube thumbnail: a huge one- or two-word
-// hook fills the frame, a large low-opacity icon fills what would
-// otherwise be dead space, and the full title sits in a single tight line
+// image file. A large hook fills the frame, a large low-opacity icon fills
+// what would otherwise be dead space, and a plain descriptive line sits
 // underneath.
 export function GeneratedCover({
   title,
   className = '',
   compact = false,
   hook,
+  subtext,
   icon = 'coin',
   tone = 'brass',
 }: GeneratedCoverProps) {
   const accent = tone === 'red' ? RED : BRASS;
   const displayHook = hook ?? deriveHook(title);
+  const hookLines = displayHook.split('\n');
+  const longestLine = Math.max(...hookLines.map((line) => line.length));
+  // Explicit multi-line mixed-case headlines like "What Is Money:" need a
+  // smaller size than the short all-caps hooks to stay inside the frame.
+  // Single-line hooks keep the original size.
+  const hookSize = hookLines.length > 1 && longestLine > 12 ? '9.4cqw' : '11.5cqw';
 
   return (
     <div
@@ -93,33 +101,34 @@ export function GeneratedCover({
               fontFamily: 'Georgia, "Iowan Old Style", "Times New Roman", serif',
               fontWeight: 700,
               color: accent,
-              fontSize: '11.5cqw',
-              lineHeight: 0.98,
+              fontSize: hookSize,
+              lineHeight: 1.02,
               letterSpacing: '-0.01em',
               marginBottom: '2.6cqw',
+              whiteSpace: 'pre-line',
               textWrap: 'balance',
             }}
           >
             {displayHook}
           </div>
-          <div className="flex items-center" style={{ gap: '2.4cqw' }}>
+          <div className="flex items-start" style={{ gap: '2.4cqw' }}>
             <span
               className="flex-shrink-0 rounded-full"
-              style={{ width: '3.4cqw', height: '3.4cqw', background: accent }}
+              style={{ width: '3cqw', height: '3cqw', background: accent, marginTop: '1cqw' }}
             />
             <span
               style={{
                 color: PAPER,
                 fontWeight: 600,
-                fontSize: '3.6cqw',
+                fontSize: subtext ? '4cqw' : '3.6cqw',
                 lineHeight: 1.3,
                 display: '-webkit-box',
-                WebkitLineClamp: 1,
+                WebkitLineClamp: subtext ? 2 : 1,
                 WebkitBoxOrient: 'vertical',
                 overflow: 'hidden',
               }}
             >
-              {title}
+              {subtext ?? title}
             </span>
           </div>
         </div>

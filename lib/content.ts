@@ -15,8 +15,14 @@ export interface BaseContent {
   // when `image` is omitted. Falls back to a title-derived hook, the
   // default coin icon, and brass tone when not set.
   coverHook?: string;
+  // Plain, descriptive line shown under the hook on the generated cover.
+  // Falls back to the post title when not set.
+  coverSubtext?: string;
   coverIcon?: CoverIcon;
   coverTone?: CoverTone;
+  // Real reading time in minutes, for posts where the generic estimate
+  // (which only sees the short description) would badly understate it.
+  readingTime?: number;
   contentType: 'post' | 'news'; // To distinguish between post and news
 }
 
@@ -428,8 +434,10 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Economics', 'History', 'Money'],
     description: "The king's tax was once a year, in a fixed amount. So why couldn't people just earn that much and go back to living as before? Because over the next three hundred years, every other way of surviving was made illegal, one law at a time — the commons enclosed, gleaning outlawed, standing still criminalized, the last independent women destroyed as witches.",
-    coverHook: 'WHY CANT I JUST LIVE',
+    coverHook: 'What Is Money:\nPart 2',
+    coverSubtext: 'The commons, the enclosure acts, and the vagrancy laws',
     coverIcon: 'coin',
+    readingTime: 14,
     contentType: 'post'
   },
   {
@@ -439,9 +447,11 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Economics', 'History', 'Money'],
     description: "The King minted his own coin and could make as much of it as he wanted. So why, by 1694, was he borrowing money from private merchants and paying back more than he borrowed? One transaction, on one date, permanently separated the power to create money from the Crown that had held it since the whole story began.",
-    coverHook: '£1.2 MILLION',
+    coverHook: 'What Is Money:\nPart 3',
+    coverSubtext: 'How the Bank of England was founded in 1694',
     coverIcon: 'bank',
     coverTone: 'red',
+    readingTime: 14,
     contentType: 'post'
   },
   {
@@ -451,9 +461,11 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Economics', 'History', 'Colonialism', 'Money'],
     description: "The charter that created the Bank of England didn't just let merchants manage a King's debt. It gave them money that demands more money back, permanently, at national scale — and money like that cannot sit still. Within a lifetime, the same financial engine that fenced English commons had fenced an entire subcontinent.",
-    coverHook: 'BRIBED, NOT BEATEN',
+    coverHook: 'What Is Money:\nPart 4',
+    coverSubtext: 'The East India Company, the Battle of Plassey, and Bengal',
     coverIcon: 'ship',
     coverTone: 'red',
+    readingTime: 18,
     contentType: 'post'
   },
   {
@@ -463,9 +475,11 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Economics', 'History', 'Colonialism', 'Money'],
     description: "After Plassey, the East India Company took the right to collect Bengal's own tax. Within five years, that right helped turn a bad harvest into a famine that killed millions — and the philosopher who attacked the Company by name for it also handed the next generation the exact theory they needed to fence an entire province and call it progress.",
-    coverHook: 'TAXED THROUGH A FAMINE',
+    coverHook: 'What Is Money:\nPart 5',
+    coverSubtext: 'The Bengal famine, Adam Smith, and the Permanent Settlement',
     coverIcon: 'fence',
     coverTone: 'red',
+    readingTime: 20,
     contentType: 'post'
   },
   {
@@ -475,9 +489,11 @@ export const samplePosts: Post[] = [
     author: 'Left Diary',
     categories: ['Economics', 'History', 'Colonialism', 'Money'],
     description: "A small tax on your own house provoked a war large enough to need an army to put down. A king who skipped the tax entirely built a machine that paid its soldiers in severed hands. A third empire wrote a law that needed neither. Three empires, working independently, kept arriving at the same answer.",
-    coverHook: 'A HAND FOR A BULLET',
+    coverHook: 'What Is Money:\nPart 6',
+    coverSubtext: 'The hut tax, the Congo Free State, and the French indigénat',
     coverIcon: 'chain',
     coverTone: 'red',
+    readingTime: 26,
     contentType: 'post'
   }
 ];

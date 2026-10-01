@@ -8,7 +8,8 @@ export const alt = 'What Is Money: Part 4 — Left Diary';
 export default async function Image() {
   return renderCoverImage({
     title: 'What Is Money: Part 4',
-    hook: 'BRIBED, NOT BEATEN',
+    hook: 'What Is Money:\nPart 4',
+    subtext: 'The East India Company, the Battle of Plassey, and Bengal',
     icon: 'ship',
     tone: 'red',
   });

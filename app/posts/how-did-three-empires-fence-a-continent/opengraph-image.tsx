@@ -8,7 +8,8 @@ export const alt = 'What Is Money: Part 6 — Left Diary';
 export default async function Image() {
   return renderCoverImage({
     title: 'What Is Money: Part 6',
-    hook: 'A HAND FOR A BULLET',
+    hook: 'What Is Money:\nPart 6',
+    subtext: 'The hut tax, the Congo Free State, and the French indigénat',
     icon: 'chain',
     tone: 'red',
   });

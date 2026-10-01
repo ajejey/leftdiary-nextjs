@@ -8,7 +8,8 @@ export const alt = 'What Is Money: Part 5 — Left Diary';
 export default async function Image() {
   return renderCoverImage({
     title: 'What Is Money: Part 5',
-    hook: 'TAXED THROUGH A FAMINE',
+    hook: 'What Is Money:\nPart 5',
+    subtext: 'The Bengal famine, Adam Smith, and the Permanent Settlement',
     icon: 'fence',
     tone: 'red',
   });

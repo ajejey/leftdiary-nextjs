@@ -25,7 +25,10 @@ function truncate(text: string, max: number): string {
 
 interface RenderCoverImageOptions {
   title: string;
+  // Big text. Use "\n" to force a line break.
   hook: string;
+  // Plain descriptive line under the hook. Falls back to the title.
+  subtext?: string;
   icon?: CoverIcon;
   tone?: CoverTone;
 }
@@ -35,9 +38,13 @@ interface RenderCoverImageOptions {
 // ImageResponse) doesn't support container query units, so every size here
 // is a fixed px value tuned to look like the cqw-based on-page version at
 // the standard 1200x630 share-image size.
-export async function renderCoverImage({ title, hook, icon = 'coin', tone = 'brass' }: RenderCoverImageOptions) {
+export async function renderCoverImage({ title, hook, subtext, icon = 'coin', tone = 'brass' }: RenderCoverImageOptions) {
   const accent = tone === 'red' ? COVER_RED : COVER_BRASS;
   const { serif, sans } = loadFonts();
+  const hookLines = hook.split('\n');
+  const longestLine = Math.max(...hookLines.map((line) => line.length));
+  const hookSize = hookLines.length > 1 && longestLine > 12 ? 112 : 132;
+  const smallText = truncate(subtext ?? title, subtext ? 96 : 62);
 
   return new ImageResponse(
     (
@@ -71,24 +78,28 @@ export async function renderCoverImage({ title, hook, icon = 'coin', tone = 'bra
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', padding: '76px 72px 62px' }}>
-          <div
-            style={{
-              display: 'flex',
-              fontFamily: 'Source Serif 4',
-              fontWeight: 700,
-              color: accent,
-              fontSize: 132,
-              lineHeight: 0.98,
-              letterSpacing: '-1px',
-              marginBottom: 30,
-            }}
-          >
-            {hook}
+          <div style={{ display: 'flex', flexDirection: 'column', marginBottom: 30 }}>
+            {hookLines.map((line, i) => (
+              <div
+                key={i}
+                style={{
+                  display: 'flex',
+                  fontFamily: 'Source Serif 4',
+                  fontWeight: 700,
+                  color: accent,
+                  fontSize: hookSize,
+                  lineHeight: 1.0,
+                  letterSpacing: '-1px',
+                }}
+              >
+                {line}
+              </div>
+            ))}
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
-            <div style={{ display: 'flex', width: 34, height: 34, borderRadius: '50%', background: accent }} />
-            <div style={{ display: 'flex', fontFamily: 'Inter', fontWeight: 600, color: COVER_PAPER, fontSize: 42 }}>
-              {truncate(title, 62)}
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: 22 }}>
+            <div style={{ display: 'flex', flexShrink: 0, width: 30, height: 30, borderRadius: '50%', background: accent, marginTop: 11 }} />
+            <div style={{ display: 'flex', fontFamily: 'Inter', fontWeight: 600, color: COVER_PAPER, fontSize: subtext ? 40 : 42, lineHeight: 1.3 }}>
+              {smallText}
             </div>
           </div>
         </div>
