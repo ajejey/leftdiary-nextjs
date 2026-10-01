@@ -14,7 +14,7 @@ import {
 import type { TOCItem, FAQItem, FurtherReadingItem } from '@/components/article';
 
 export const metadata: Metadata = {
-  title: 'What Is Money: Part 5 | Left Diary',
+  title: 'What Is Money: Part 6 | Left Diary',
   description: "After Plassey, the East India Company didn't just take a treasury. It took the right to collect the tax itself. Within five years, that right helped turn a bad harvest into a famine that killed millions — and the philosopher who attacked the Company by name for it also handed the men who came after him the exact theory they needed to turn an entire province into private property.",
   keywords: [
     'Bengal famine 1770 explained',
@@ -26,10 +26,10 @@ export const metadata: Metadata = {
     'David Graeber Adam Smith critique',
     'Dawn of Everything stadial theory',
     'Diwani East India Company 1765',
-    'history of money part 5'
+    'history of money part 6'
   ],
   openGraph: {
-    title: 'What Is Money: Part 5',
+    title: 'What Is Money: Part 6',
     description: "A famine, a book, and a theory of history. Adam Smith named the Company's crime correctly, and still handed the next generation the exact idea they needed to do something worse and call it progress.",
     type: 'article',
     publishedTime: '2026-09-15',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'What Is Money: Part 5',
+    title: 'What Is Money: Part 6',
     description: "Adam Smith named the East India Company's crime correctly. He also handed the next generation the exact theory they needed to do something worse and call it progress.",
     site: '@leftdiary',
     creator: '@leftdiary',
@@ -65,7 +65,7 @@ const jsonLd = {
     {
       '@type': 'Article',
       '@id': 'https://leftdiary.com/posts/how-did-a-famine-turn-into-a-land-grab#article',
-      'headline': 'What Is Money: Part 5',
+      'headline': 'What Is Money: Part 6',
       'description': "After Plassey, the East India Company didn't just take a treasury. It took the right to collect the tax itself. Within five years, that right helped turn a bad harvest into a famine that killed millions — and the philosopher who attacked the Company by name for it also handed the men who came after him the exact theory they needed to turn an entire province into private property.",
       'image': [
         {
@@ -106,7 +106,7 @@ const jsonLd = {
       'itemListElement': [
         { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://leftdiary.com' },
         { '@type': 'ListItem', 'position': 2, 'name': 'Posts', 'item': 'https://leftdiary.com/posts' },
-        { '@type': 'ListItem', 'position': 3, 'name': 'What Is Money: Part 5', 'item': 'https://leftdiary.com/posts/how-did-a-famine-turn-into-a-land-grab' }
+        { '@type': 'ListItem', 'position': 3, 'name': 'What Is Money: Part 6', 'item': 'https://leftdiary.com/posts/how-did-a-famine-turn-into-a-land-grab' }
       ]
     }
   ]
@@ -215,17 +215,17 @@ const FURTHER_READING: FurtherReadingItem[] = [
   },
   {
     href: '/posts/how-did-the-king-lose-the-power-to-make-money',
-    title: 'What Is Money: Part 3',
+    title: 'What Is Money: Part 4',
     description: 'the 1694 deal that gave a private institution the permanent power to create money',
   },
   {
     href: '/posts/how-did-interest-lead-to-the-conquest-of-bengal',
-    title: 'What Is Money: Part 4',
+    title: 'What Is Money: Part 5',
     description: 'how a charter that had to keep growing found Bengal, and bought it rather than conquered it',
   },
   {
     href: '/posts/how-did-three-empires-fence-a-continent',
-    title: 'What Is Money: Part 6',
+    title: 'What Is Money: Part 7',
     description: 'the same fence, built independently by three empires, using three different tools, on one continent',
   },
 ];
@@ -235,7 +235,7 @@ export default function HowDidAFamineTurnIntoALandGrabPage() {
     <ArticleLayout jsonLd={jsonLd}>
       <ArticleHeader
         categories={['Economics', 'History', 'Colonialism', 'Money']}
-        title="What Is Money: Part 5"
+        title="What Is Money: Part 6"
         lead={
           <>
             <Link
@@ -367,7 +367,7 @@ export default function HowDidAFamineTurnIntoALandGrabPage() {
           </span>
         </P>
         <P>
-          This is the moment the machine this series has been tracking since Part 3 finally
+          This is the moment the machine this series has been tracking since Part 4 finally
           closes its own loop. A private charter had been given the power to create England&rsquo;s
           money in 1694. A different private charter had been given the power to tax an Indian
           province in 1765. Now the second charter, having mismanaged the province badly enough

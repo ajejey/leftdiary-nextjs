@@ -216,8 +216,13 @@ const FURTHER_READING: FurtherReadingItem[] = [
     external: true,
   },
   {
-    href: '/posts/how-did-the-king-lose-the-power-to-make-money',
+    href: '/posts/why-were-so-many-women-executed-as-witches',
     title: 'What Is Money: Part 3',
+    description: 'the witch hunts: what the records show, and what they do not',
+  },
+  {
+    href: '/posts/how-did-the-king-lose-the-power-to-make-money',
+    title: 'What Is Money: Part 4',
     description: 'the 1694 deal that permanently separated the Crown from the power to create its own money',
   },
   {

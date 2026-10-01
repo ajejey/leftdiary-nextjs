@@ -14,7 +14,7 @@ import {
 import type { TOCItem, FAQItem, FurtherReadingItem } from '@/components/article';
 
 export const metadata: Metadata = {
-  title: 'What Is Money: Part 4 | Left Diary',
+  title: 'What Is Money: Part 5 | Left Diary',
   description: "The charter that created the Bank of England didn't just let merchants manage a King's debt. It gave them money that has to keep growing, forever, or the whole thing seizes up. This is where that growth went looking — and how an empire got bought, not conquered, for the price of one bribe.",
   keywords: [
     'East India Company Bank of England',
@@ -26,10 +26,10 @@ export const metadata: Metadata = {
     'Robert Clive Mir Jafar',
     'financial revolution England history',
     'why does money have to grow',
-    'history of money part 4'
+    'history of money part 5'
   ],
   openGraph: {
-    title: 'What Is Money: Part 4',
+    title: 'What Is Money: Part 5',
     description: "Money that demands more money back cannot sit still. This is where that growth went looking — and how an empire got bought, not conquered, for the price of one bribe.",
     type: 'article',
     publishedTime: '2026-08-01',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'What Is Money: Part 4',
+    title: 'What Is Money: Part 5',
     description: "Money that demands more money back cannot sit still. This is how an empire got bought, not conquered, for the price of one bribe.",
     site: '@leftdiary',
     creator: '@leftdiary',
@@ -65,7 +65,7 @@ const jsonLd = {
     {
       '@type': 'Article',
       '@id': 'https://leftdiary.com/posts/how-did-interest-lead-to-the-conquest-of-bengal#article',
-      'headline': 'What Is Money: Part 4',
+      'headline': 'What Is Money: Part 5',
       'description': "The charter that created the Bank of England didn't just let merchants manage a King's debt. It gave them money that has to keep growing, forever, or the whole thing seizes up. This is where that growth went looking — and how an empire got bought, not conquered, for the price of one bribe.",
       'image': [
         {
@@ -106,7 +106,7 @@ const jsonLd = {
       'itemListElement': [
         { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://leftdiary.com' },
         { '@type': 'ListItem', 'position': 2, 'name': 'Posts', 'item': 'https://leftdiary.com/posts' },
-        { '@type': 'ListItem', 'position': 3, 'name': 'What Is Money: Part 4', 'item': 'https://leftdiary.com/posts/how-did-interest-lead-to-the-conquest-of-bengal' }
+        { '@type': 'ListItem', 'position': 3, 'name': 'What Is Money: Part 5', 'item': 'https://leftdiary.com/posts/how-did-interest-lead-to-the-conquest-of-bengal' }
       ]
     }
   ]
@@ -206,12 +206,12 @@ const FURTHER_READING: FurtherReadingItem[] = [
   },
   {
     href: '/posts/how-did-the-king-lose-the-power-to-make-money',
-    title: 'What Is Money: Part 3',
+    title: 'What Is Money: Part 4',
     description: 'the 1694 deal that gave a private institution the permanent power to create money',
   },
   {
     href: '/posts/how-did-a-famine-turn-into-a-land-grab',
-    title: 'What Is Money: Part 5',
+    title: 'What Is Money: Part 6',
     description: 'a famine, a book, and the theory of history that turned Bengal’s land into private property',
   },
 ];
@@ -221,7 +221,7 @@ export default function HowDidInterestLeadToTheConquestOfBengalPage() {
     <ArticleLayout jsonLd={jsonLd}>
       <ArticleHeader
         categories={['Economics', 'History', 'Colonialism', 'Money']}
-        title="What Is Money: Part 4"
+        title="What Is Money: Part 5"
         lead={
           <>
             <Link

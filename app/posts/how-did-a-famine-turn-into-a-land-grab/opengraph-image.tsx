@@ -3,12 +3,12 @@ import { renderCoverImage, OG_SIZE } from '@/lib/og/renderCoverImage';
 export const runtime = 'nodejs';
 export const size = OG_SIZE;
 export const contentType = 'image/png';
-export const alt = 'What Is Money: Part 5 — Left Diary';
+export const alt = 'What Is Money: Part 6 — Left Diary';
 
 export default async function Image() {
   return renderCoverImage({
-    title: 'What Is Money: Part 5',
-    hook: 'What Is Money:\nPart 5',
+    title: 'What Is Money: Part 6',
+    hook: 'What Is Money:\nPart 6',
     subtext: 'The Bengal famine, Adam Smith, and the Permanent Settlement',
     icon: 'fence',
     tone: 'red',

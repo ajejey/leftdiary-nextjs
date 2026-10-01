@@ -14,7 +14,7 @@ import {
 import type { TOCItem, FAQItem, FurtherReadingItem } from '@/components/article';
 
 export const metadata: Metadata = {
-  title: 'What Is Money: Part 3 | Left Diary',
+  title: 'What Is Money: Part 4 | Left Diary',
   description: "The King minted his own coin and could make as much of it as he wanted. So why, by 1694, was he borrowing money from private merchants and paying back more than he borrowed? One transaction, on one date, permanently separated the power to create money from the Crown that had held it since the whole story began.",
   keywords: [
     'how was the Bank of England founded',
@@ -27,10 +27,10 @@ export const metadata: Metadata = {
     'what is national debt really',
     'history of interest and borrowing',
     'excise tax history England',
-    'history of money part 3'
+    'history of money part 4'
   ],
   openGraph: {
-    title: 'What Is Money: Part 3',
+    title: 'What Is Money: Part 4',
     description: "The King could mint as much money as he wanted. So why did he end up borrowing it, and paying back more than he borrowed? One deal, on one date, answers it.",
     type: 'article',
     publishedTime: '2026-07-18',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'What Is Money: Part 3',
+    title: 'What Is Money: Part 4',
     description: "The King minted his own coin. So why did he end up borrowing money, and paying back more than he borrowed? One deal, on one date, in exchange for one war.",
     site: '@leftdiary',
     creator: '@leftdiary',
@@ -66,7 +66,7 @@ const jsonLd = {
     {
       '@type': 'Article',
       '@id': 'https://leftdiary.com/posts/how-did-the-king-lose-the-power-to-make-money#article',
-      'headline': 'What Is Money: Part 3',
+      'headline': 'What Is Money: Part 4',
       'description': "The King minted his own coin and could make as much of it as he wanted. So why, by 1694, was he borrowing money from private merchants and paying back more than he borrowed? One transaction, on one date, permanently separated the power to create money from the Crown that had held it since the whole story began.",
       'image': [
         {
@@ -107,7 +107,7 @@ const jsonLd = {
       'itemListElement': [
         { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://leftdiary.com' },
         { '@type': 'ListItem', 'position': 2, 'name': 'Posts', 'item': 'https://leftdiary.com/posts' },
-        { '@type': 'ListItem', 'position': 3, 'name': 'What Is Money: Part 3', 'item': 'https://leftdiary.com/posts/how-did-the-king-lose-the-power-to-make-money' }
+        { '@type': 'ListItem', 'position': 3, 'name': 'What Is Money: Part 4', 'item': 'https://leftdiary.com/posts/how-did-the-king-lose-the-power-to-make-money' }
       ]
     }
   ]
@@ -204,7 +204,7 @@ const FURTHER_READING: FurtherReadingItem[] = [
   },
   {
     href: '/posts/how-did-interest-lead-to-the-conquest-of-bengal',
-    title: 'What Is Money: Part 4',
+    title: 'What Is Money: Part 5',
     description: 'the same financial engine that fenced English commons goes looking for its next fence',
   },
   {
@@ -225,14 +225,14 @@ export default function HowDidTheKingLoseThePowerToMakeMoneyPage() {
     <ArticleLayout jsonLd={jsonLd}>
       <ArticleHeader
         categories={['Economics', 'History', 'Money']}
-        title="What Is Money: Part 3"
+        title="What Is Money: Part 4"
         lead={
           <>
             <Link
               href="/posts/why-didnt-people-just-refuse-to-use-money"
               className="underline decoration-gray-400 hover:decoration-gray-700"
             >
-              Last time
+              In Part 2
             </Link>
             , I told you about two things that hadn&rsquo;t yet found each other: a King who still,
             in theory, held the only legal power to create money in his own kingdom, and a handful
@@ -251,7 +251,7 @@ export default function HowDidTheKingLoseThePowerToMakeMoneyPage() {
       <ArticleSection id="the-question-i-left-you-with">
         <H2 id="the-question-i-left-you-with">The Question I Left You With</H2>
         <P>
-          Last time ended with two threads that hadn&rsquo;t yet met: a King who still, in theory,
+          Part 2 ended with two threads that hadn&rsquo;t yet met: a King who still, in theory,
           held the only legal power to create money in his own kingdom, and a handful of London
           goldsmiths who&rsquo;d just discovered they could create money too, with nothing but a pen
           and a promise. I told you these two threads were about to collide. This is that
@@ -320,7 +320,7 @@ export default function HowDidTheKingLoseThePowerToMakeMoneyPage() {
             href="/posts/why-didnt-people-just-refuse-to-use-money"
             className="underline decoration-gray-400 hover:decoration-gray-700"
           >
-            I told you last time
+            I told you in Part 2
           </Link>{' '}
           about the London goldsmiths: how merchants started storing their gold with them for
           safekeeping, how the goldsmiths issued paper receipts for that gold, and how, within a
@@ -483,7 +483,7 @@ export default function HowDidTheKingLoseThePowerToMakeMoneyPage() {
       <ArticleSection id="two-fences-built-by-the-same-hands">
         <H2 id="two-fences-built-by-the-same-hands">Two Fences, Built by the Same Hands</H2>
         <P>
-          Put this next to what I showed you last time, and the shape of the whole story becomes
+          Put this next to what I showed you in Part 2, and the shape of the whole story becomes
           hard to unsee. In roughly the same stretch of English history, the same class of men,
           merchants, financiers, the landowners who filled Parliament, built two separate machines
           that did the same job through two completely different doors.
@@ -496,7 +496,7 @@ export default function HowDidTheKingLoseThePowerToMakeMoneyPage() {
             href="/posts/why-didnt-people-just-refuse-to-use-money"
             className="underline decoration-gray-400 hover:decoration-gray-700"
           >
-            I walked you through that in detail last time.
+            I walked you through that in detail in Part 2.
           </Link>
         </P>
         <P>

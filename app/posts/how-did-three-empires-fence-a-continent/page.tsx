@@ -14,7 +14,7 @@ import {
 import type { TOCItem, FAQItem, FurtherReadingItem } from '@/components/article';
 
 export const metadata: Metadata = {
-  title: 'What Is Money: Part 6 | Left Diary',
+  title: 'What Is Money: Part 7 | Left Diary',
   description: "A tax on your own house, small enough to sound reasonable, provoked a war large enough to need an army to put down. Two thousand kilometers away, a king who didn't bother with a tax at all built a machine that paid its soldiers in severed hands. A third empire wrote a body of law that needed neither. Three empires, working independently, kept arriving at the same answer.",
   keywords: [
     'hut tax explained',
@@ -25,10 +25,10 @@ export const metadata: Metadata = {
     'colonial taxation Africa history',
     'hut tax Nyasaland Rhodesia',
     'history of colonialism and money',
-    'history of money part 6'
+    'history of money part 7'
   ],
   openGraph: {
-    title: 'What Is Money: Part 6',
+    title: 'What Is Money: Part 7',
     description: "A small tax on your own house provoked a war. A king who skipped the tax entirely paid his soldiers in severed hands. A third empire wrote a law that needed neither. Three empires, the same answer, independently.",
     type: 'article',
     publishedTime: '2026-09-17',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'What Is Money: Part 6',
+    title: 'What Is Money: Part 7',
     description: "A small tax on your own house provoked a war. A king who skipped the tax entirely paid his soldiers in severed hands. Three empires, the same answer, independently.",
     site: '@leftdiary',
     creator: '@leftdiary',
@@ -64,7 +64,7 @@ const jsonLd = {
     {
       '@type': 'Article',
       '@id': 'https://leftdiary.com/posts/how-did-three-empires-fence-a-continent#article',
-      'headline': 'What Is Money: Part 6',
+      'headline': 'What Is Money: Part 7',
       'description': "A tax on your own house, small enough to sound reasonable, provoked a war large enough to need an army to put down. Two thousand kilometers away, a king who didn't bother with a tax at all built a machine that paid its soldiers in severed hands. A third empire wrote a body of law that needed neither. Three empires, working independently, kept arriving at the same answer.",
       'image': [
         {
@@ -105,7 +105,7 @@ const jsonLd = {
       'itemListElement': [
         { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://leftdiary.com' },
         { '@type': 'ListItem', 'position': 2, 'name': 'Posts', 'item': 'https://leftdiary.com/posts' },
-        { '@type': 'ListItem', 'position': 3, 'name': 'What Is Money: Part 6', 'item': 'https://leftdiary.com/posts/how-did-three-empires-fence-a-continent' }
+        { '@type': 'ListItem', 'position': 3, 'name': 'What Is Money: Part 7', 'item': 'https://leftdiary.com/posts/how-did-three-empires-fence-a-continent' }
       ]
     }
   ]
@@ -224,12 +224,12 @@ const FURTHER_READING: FurtherReadingItem[] = [
   },
   {
     href: '/posts/how-did-interest-lead-to-the-conquest-of-bengal',
-    title: 'What Is Money: Part 4',
+    title: 'What Is Money: Part 5',
     description: 'how a charter that had to keep growing found Bengal, and bought it rather than conquered it',
   },
   {
     href: '/posts/how-did-a-famine-turn-into-a-land-grab',
-    title: 'What Is Money: Part 5',
+    title: 'What Is Money: Part 6',
     description: 'a famine, a book, and the theory of history that turned Bengal’s land into private property',
   },
 ];
@@ -239,7 +239,7 @@ export default function HowDidThreeEmpiresFenceAContinentPage() {
     <ArticleLayout jsonLd={jsonLd}>
       <ArticleHeader
         categories={['Economics', 'History', 'Colonialism', 'Money']}
-        title="What Is Money: Part 6"
+        title="What Is Money: Part 7"
         lead={
           <>
             <Link
